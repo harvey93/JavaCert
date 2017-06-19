@@ -1,0 +1,11 @@
+package ch1;
+
+public class Test {
+	
+	public static void main(String [] args) {
+		String num;
+//		if (null == num) {
+			System.out.println("hi");
+//		}
+	}
+}
