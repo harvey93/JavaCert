@@ -11,7 +11,7 @@ public class StringReverse {
 	}
 	
 	public static String reverseIP(String str) {
-		return reverseIP(str, 0, str.length() - 1);
+		
 	}
 	
 	public static String reverseIP(String str, int i, int j){

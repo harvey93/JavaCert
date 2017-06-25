@@ -10,16 +10,8 @@ public class StringReverse {
 		return sb.toString();
 	}
 	
-	public static String reverseIP(String str) {
-		return reverseIP(str, 0, str.length() - 1);
-	}
-	
 	public static String reverseIP(String str, int i, int j){
-		if(i ==  j) {
-			return str;
-		}
-		return Character.toString(str.charAt(i));
-	
+		
 	}
 
 }
