@@ -3,7 +3,7 @@ package aAProbs;
 public class Test {
 	
 	public static void main(String args[]) {
-		System.out.println(sumNums.sum(6));
+		System.out.println(LongestWord.longest("abc asdasda def abcde"));
 	}
 
 }
