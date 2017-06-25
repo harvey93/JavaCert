@@ -1,0 +1,8 @@
+package aAProbs;
+
+public class LongestWord {
+	
+	public static String long(String str) {
+		return str;
+	}
+}
