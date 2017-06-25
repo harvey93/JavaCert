@@ -1,0 +1,10 @@
+package aAProbs;
+
+public class StringReverse {
+	
+	public static String reverse(String str) {
+		int[] arr = new int[5];
+		
+		return "hi";
+	} 
+}
