@@ -18,8 +18,8 @@ public class StringReverse {
 		if(i >=  j) {
 			return str;
 		}
-		str = str.substring(0,i) + str.charAt(j)
-			+ str.substring(i + 1, j) + str.charAt(i) + str.substring(j + 1);
+		str = str.substring(0,i) + Character.toString(str.charAt(j))
+			+ str.substring(i + 1, j) + Character.toString(str.charAt(i)) + str.substring(j + 1);
 		return reverseIP(str, i + 1, j - 1);
 	}
 
