@@ -1,0 +1,7 @@
+package aAProbs;
+
+public class Vowels {
+	public static int countVowels(String str) {
+		return 10;
+	}
+}
