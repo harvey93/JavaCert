@@ -10,7 +10,7 @@ public class NearbyAZ {
 				for(int j = i + 1; j < i + 4; j++){
 					if(str.charAt(j) == 'z'){
 						retVal = true;
-						break outerLoop;
+						break outer_loop;
 					}
 				}
 			}

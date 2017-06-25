@@ -1,0 +1,13 @@
+package aAProbs;
+
+public class NearbyAZ {
+	
+	public static boolean nearby(String str){
+		for(int i = 0; i < str.length() - 3; i++) {
+			if(str.charAt(i) == 'a'){
+				for(int j = i + 1; j < i + 4)
+			}
+		}
+		return false;
+	} 
+}
