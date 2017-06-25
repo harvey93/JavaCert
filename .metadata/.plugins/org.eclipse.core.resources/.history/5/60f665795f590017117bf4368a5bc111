@@ -1,0 +1,10 @@
+package aAProbs;
+
+public class TimeConversion {
+	public static String timeString(int num){
+		int hours = num / 60;
+		int mins = num % 60;
+		String res = ";"
+		return Integer.toString(mins);
+	}
+}

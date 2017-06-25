@@ -10,5 +10,6 @@ public class TimeConversion {
 		} else {
 			return Integer.toString(hours) + ":" + Integer.toString(mins);
 		}
+		return Integer.toString(mins);
 	}
 }
