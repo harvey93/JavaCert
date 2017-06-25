@@ -1,0 +1,10 @@
+package aAProbs;
+
+import java.util.ArrayList;
+
+public class TwoSum {
+	
+	public static ArrayList<Integer> sum(ArrayList<Integer> arr){
+		return arr;
+	}
+}
