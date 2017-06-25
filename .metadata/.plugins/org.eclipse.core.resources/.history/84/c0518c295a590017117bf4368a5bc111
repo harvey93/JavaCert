@@ -1,0 +1,7 @@
+package aAProbs;
+
+public class TimeConversion {
+	public static String timeString(){
+		
+	}
+}
