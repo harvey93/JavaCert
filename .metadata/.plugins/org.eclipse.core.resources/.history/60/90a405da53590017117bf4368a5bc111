@@ -1,0 +1,9 @@
+package aAProbs;
+
+public class LongestWord {
+	
+	public static int longest(String str) {
+		String [] res = str.split(" ");
+		return res.length;
+	}
+}

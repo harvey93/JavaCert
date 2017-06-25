@@ -4,12 +4,12 @@ public class LongestWord {
 	
 	public static String longest(String str) {
 		String [] res = str.split(" ");
-		String maxWord = "";
+		int max = 0;
 		for(int i = 0; i < res.length; i++) {
-			if(res[i].length() > maxWord.length()) {
-				maxWord = res[i];
+			if(res[i].length() > max) {
+				max = res[i].length();
 			}
 		}
-		return maxWord;
+		return max;
 	}
 }
