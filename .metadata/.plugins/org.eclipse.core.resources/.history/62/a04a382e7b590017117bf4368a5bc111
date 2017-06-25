@@ -7,8 +7,7 @@ public class TimeConversion {
 		String res = "";
 		if(mins == 0){
 			return Integer.toString(hours) + ":00";
-		}else if(mins < 10){
-			return Integer.toString(hours) + ":0" + Integer.toString(mins);
+		}else if(){
 		} else {
 			return Integer.toString(hours) + ":" + Integer.toString(mins);
 		}
