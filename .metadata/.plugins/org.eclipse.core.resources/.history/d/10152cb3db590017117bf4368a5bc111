@@ -15,12 +15,12 @@ public class StringReverse {
 	}
 	
 	public static String reverseIP(String str, int i, int j){
-		if(i >=  j) {
+		if(i ==  j) {
 			return str;
 		}
-		str = str.substring(0,i) + Character.toString(str.charAt(j))
-			+ str.substring(i + 1, j) + Character.toString(str.charAt(i)) + str.substring(j + 1);
-		return reverseIP(str, i + 1, j - 1);
+		return str.substring(0,i) + Character.toString(str.charAt(j))
+			+ str.substring(i + 1, j) + Character.toString(str.charAt(i));
+//		str.substring(0,i) + 
 	}
 
 }

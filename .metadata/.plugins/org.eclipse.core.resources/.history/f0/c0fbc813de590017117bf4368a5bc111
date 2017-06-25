@@ -15,7 +15,7 @@ public class StringReverse {
 	}
 	
 	public static String reverseIP(String str, int i, int j){
-		if(i >=  j) {
+		if(i <=  j) {
 			return str;
 		}
 		str = str.substring(0,i) + Character.toString(str.charAt(j))
