@@ -1,11 +1,9 @@
 package ch1;
 
 public class Test {
-	
 	public static void main(String [] args) {
 //		Person prs = new Person();
 //		String str;
 //		System.out.println(prs.myDub);
-		
 	}
 }
