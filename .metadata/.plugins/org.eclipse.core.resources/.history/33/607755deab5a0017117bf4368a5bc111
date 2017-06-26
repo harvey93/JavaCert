@@ -1,0 +1,9 @@
+package aAProbs;
+import java.util.*;
+
+public class MostCommonLetter {
+	
+	public static HashMap<char, Integer> mostCommon(String str){
+		
+	}
+}
