@@ -7,9 +7,8 @@ public class Power {
 		while(num > 1){
 			if(num % 2 != 0){
 				retVal = false;
-				break;
+				break
 			}
-			num /= 2;
 		}
 		return retVal;
 	}

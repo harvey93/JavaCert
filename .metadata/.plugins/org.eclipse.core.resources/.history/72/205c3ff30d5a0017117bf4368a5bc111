@@ -1,0 +1,12 @@
+package aAProbs;
+
+public class Power {
+	
+	public static boolean powerOfTwo(int num){
+		boolean retVal;
+		while(){
+			
+		}
+		return false;
+	}
+}

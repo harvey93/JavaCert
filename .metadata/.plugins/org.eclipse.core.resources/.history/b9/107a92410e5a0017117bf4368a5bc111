@@ -9,7 +9,6 @@ public class Power {
 				retVal = false;
 				break;
 			}
-			num /= 2;
 		}
 		return retVal;
 	}
