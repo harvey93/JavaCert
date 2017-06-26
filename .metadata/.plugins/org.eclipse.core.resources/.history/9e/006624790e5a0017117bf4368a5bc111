@@ -15,14 +15,6 @@ public class Power {
 	}
 	
 	public static boolean powerOfTwoRec(int num){
-		if(num == 1){
-			return true;
-		}
 		
-		if(num % 2 == 0){
-			return powerOfTwoRec(num / 2);
-		}else {
-			return false;		
-		}
 	}
 }

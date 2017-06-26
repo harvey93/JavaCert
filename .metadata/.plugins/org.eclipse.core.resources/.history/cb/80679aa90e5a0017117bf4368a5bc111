@@ -20,7 +20,7 @@ public class Power {
 		}
 		
 		if(num % 2 == 0){
-			return powerOfTwoRec(num / 2);
+			return powerOfTwoRect(num / 2);
 		}else {
 			return false;		
 		}

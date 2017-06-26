@@ -18,11 +18,5 @@ public class Power {
 		if(num == 1){
 			return true;
 		}
-		
-		if(num % 2 == 0){
-			return powerOfTwoRec(num / 2);
-		}else {
-			return false;		
-		}
 	}
 }
