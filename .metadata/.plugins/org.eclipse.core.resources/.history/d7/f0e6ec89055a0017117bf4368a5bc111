@@ -31,9 +31,8 @@ public class TwoSum {
 				indices.add(map.get(i));
 				res.add(indices);
 			}
-			map.put(arr.get(i), i);
+			map.put();
 		}
-		System.out.println(map);
 		return res;
 	}
 }

@@ -23,17 +23,9 @@ public class TwoSum {
 	public static ArrayList<ArrayList<Integer>> sumFast(ArrayList<Integer> arr) {
 		ArrayList<ArrayList<Integer>> res= new ArrayList<ArrayList<Integer>>();
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-		for(Integer i = 0; i < arr.size(); i++) {
-			Integer target = - arr.get(i);
-			if(map.containsKey(target)){
-				ArrayList<Integer> indices = new ArrayList<Integer>();
-				indices.add(i);
-				indices.add(map.get(i));
-				res.add(indices);
-			}
-			map.put(arr.get(i), i);
+		for(int i = 0; i < arr.size(); i++) {
+			
 		}
-		System.out.println(map);
 		return res;
 	}
 }

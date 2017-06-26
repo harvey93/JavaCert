@@ -33,7 +33,6 @@ public class TwoSum {
 			}
 			map.put(arr.get(i), i);
 		}
-		System.out.println(map);
 		return res;
 	}
 }
