@@ -17,14 +17,13 @@ public class TwoSum {
 				}
 			}
 		}
-		
 		return res;
 	}
 	
 	public static ArrayList<ArrayList<Integer>> sumFast(ArrayList<Integer> arr) {
 		ArrayList<ArrayList<Integer>> res= new ArrayList<ArrayList<Integer>>();
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-		for(int i = 0; i < arr.size(); i++) {
+		for(Integer i = 0; i < arr.size(); i++) {
 			Integer target = - arr.get(i);
 			if(map.containsKey(target)){
 				ArrayList<Integer> indices = new ArrayList<Integer>();
