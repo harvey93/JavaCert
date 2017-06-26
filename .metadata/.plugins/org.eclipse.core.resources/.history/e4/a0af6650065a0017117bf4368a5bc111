@@ -27,13 +27,13 @@ public class TwoSum {
 			Integer target = - arr.get(i);
 			if(map.containsKey(target)){
 				ArrayList<Integer> indices = new ArrayList<Integer>();
-				indices.add(map.get(target));
 				indices.add(i);
+				indices.add(map.get(i));
 				res.add(indices);
 			}
 			map.put(arr.get(i), i);
 		}
-		
+		System.out.println(map);
 		return res;
 	}
 }
