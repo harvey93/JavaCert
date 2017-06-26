@@ -15,12 +15,7 @@ public class MostCommonLetter {
 				counter.put(current, 1);
 			}
 		}
-		
 		return counter;
-	}
-	
-	public static Character getMaxChar(HashMap<Character, Integer> map) {
-		return 'a';
 	}
 	
 }
