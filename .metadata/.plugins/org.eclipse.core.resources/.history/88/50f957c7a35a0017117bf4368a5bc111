@@ -17,9 +17,9 @@ public class ThirdGreatest {
 				third = second;
 				second = current;
 			} else if (current > third) {
-				third = current;
+				
 			}
 		}
-		return third;
+		return 5;
 	}
 }

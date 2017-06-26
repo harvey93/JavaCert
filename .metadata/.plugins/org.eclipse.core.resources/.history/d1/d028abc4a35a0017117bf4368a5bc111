@@ -16,10 +16,8 @@ public class ThirdGreatest {
 			}else if(current > second) {
 				third = second;
 				second = current;
-			} else if (current > third) {
-				third = current;
 			}
 		}
-		return third;
+		return 5;
 	}
 }

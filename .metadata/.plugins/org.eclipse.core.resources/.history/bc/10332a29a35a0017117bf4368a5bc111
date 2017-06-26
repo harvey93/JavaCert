@@ -1,0 +1,12 @@
+package aAProbs;
+import java.util.*;
+
+public class ThirdGreatest {
+	
+	public static int getThird(ArrayList<Integer> arr){
+		arr.forEach((el -> {
+			System.out.println(el);
+		}));
+		return 5;
+	}
+}

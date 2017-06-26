@@ -20,6 +20,6 @@ public class ThirdGreatest {
 				third = current;
 			}
 		}
-		return third;
+		return first;
 	}
 }
