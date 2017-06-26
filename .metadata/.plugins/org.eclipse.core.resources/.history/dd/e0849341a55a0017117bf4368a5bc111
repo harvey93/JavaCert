@@ -24,7 +24,7 @@ public class ThirdGreatest {
 		return third;
 	}
 	
-	public static ArrayList<Integer> getSortedThree(ArrayList<Integer> arr){
+	public static ArrayList<Integer> getSortedThree(arr){
 		ArrayList<Integer> firstThree = new ArrayList<Integer>();
 		return firstThree;
 	}
