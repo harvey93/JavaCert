@@ -16,15 +16,13 @@ public class MostCommonLetter {
 				counter.put(current, 1);
 			}
 		}
-		Character maxKey = getMaxChar(counter);
-		Integer maxVal = counter.get(maxKey);
-		result.put(maxKey, maxVal);
+		getMaxChar(counter);
 		
-		return result;
+		return counter;
 	}
 	
 	public static Character getMaxChar(HashMap<Character, Integer> map) {
-		Character max = null;
+		Character max;
 		for(Character key : map.keySet()){
 			Integer current = map.get(key);
 			if(max == null || current > map.get(max)){

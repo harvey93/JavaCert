@@ -2,7 +2,7 @@ package aAProbs;
 import java.util.*;
 
 public class MostCommonLetter {
-//	public static Character max;
+	public static Character max;
 	
 	public static HashMap<Character, Integer> mostCommon(String str){
 		HashMap<Character, Integer> result = new HashMap<Character, Integer>();
@@ -16,33 +16,18 @@ public class MostCommonLetter {
 				counter.put(current, 1);
 			}
 		}
-		Character maxKey = getMaxChar(counter);
-		Integer maxVal = counter.get(maxKey);
-		result.put(maxKey, maxVal);
+		getMaxChar(counter);
 		
-		return result;
+		return counter;
 	}
 	
 	public static Character getMaxChar(HashMap<Character, Integer> map) {
-		Character max = null;
-		for(Character key : map.keySet()){
-			Integer current = map.get(key);
-			if(max == null || current > map.get(max)){
+		map.forEach((key, val) -> {
+			if(max == null || val > map.get(max)){
 				max = key;
 			}
-		}
+		});
 		return max;
 	}
-	
-// lambda solution with class variable
-	
-//	public static Character getMaxChar(HashMap<Character, Integer> map) {
-//		map.forEach((key, val) -> {
-//			if(max == null || val > map.get(max)){
-//				max = key;
-//			}
-//		});
-//		return max;
-//	}
 	
 }

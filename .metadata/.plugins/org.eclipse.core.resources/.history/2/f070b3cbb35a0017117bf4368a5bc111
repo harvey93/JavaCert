@@ -17,10 +17,8 @@ public class MostCommonLetter {
 			}
 		}
 		Character maxKey = getMaxChar(counter);
-		Integer maxVal = counter.get(maxKey);
-		result.put(maxKey, maxVal);
 		
-		return result;
+		return maxKey;
 	}
 	
 	public static Character getMaxChar(HashMap<Character, Integer> map) {

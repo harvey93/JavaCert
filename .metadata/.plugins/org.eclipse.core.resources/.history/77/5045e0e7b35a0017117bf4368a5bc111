@@ -17,9 +17,8 @@ public class MostCommonLetter {
 			}
 		}
 		Character maxKey = getMaxChar(counter);
-		Integer maxVal = counter.get(maxKey);
-		result.put(maxKey, maxVal);
-		
+		Integer maxVal = map.get(maxKey);
+		result.put(maxKey, );
 		return result;
 	}
 	
