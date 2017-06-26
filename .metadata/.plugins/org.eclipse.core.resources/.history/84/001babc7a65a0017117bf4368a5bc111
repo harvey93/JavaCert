@@ -3,7 +3,7 @@ import java.util.*;
 
 public class ThirdGreatest {
 	
-	public static Integer getThird(ArrayList<Integer> arr){
+	public static int getThird(ArrayList<Integer> arr){
 		Integer first = null;
 		Integer second = null;
 		Integer third = null;

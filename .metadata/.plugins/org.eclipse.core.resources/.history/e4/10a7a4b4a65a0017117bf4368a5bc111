@@ -3,10 +3,10 @@ import java.util.*;
 
 public class ThirdGreatest {
 	
-	public static Integer getThird(ArrayList<Integer> arr){
+	public static int getThird(ArrayList<Integer> arr){
 		Integer first = null;
 		Integer second = null;
-		Integer third = null;
+		Integer third = arr.get(2);
 		for(int i = 0; i < arr.size(); i++) {
 			int current = arr.get(i);
 			if(first == null || current > first){
