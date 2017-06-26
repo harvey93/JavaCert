@@ -1,0 +1,21 @@
+package aAProbs;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Test {
+	
+	public static void main(String args[]) {
+		boolean bool = false;
+//		Integer [] arr = {4,1,3,-1,-4,10,12,23,-10};
+//		ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(arr));
+//		System.out.println(TwoSum.sumFast(list));
+		System.out.println(Power.powerOfTwoRec(64));
+		System.out.println("hi" + bool);
+		for(int i = 0; i < 4;){
+			i++;
+			System.out.println("hi");
+		}
+	}
+
+}
