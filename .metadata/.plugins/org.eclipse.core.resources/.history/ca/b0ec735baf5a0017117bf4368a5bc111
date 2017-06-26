@@ -8,14 +8,8 @@ public class MostCommonLetter {
 		HashMap<Character, Integer> counter = new HashMap<Character, Integer>();
 		for(int i = 0; i < str.length(); i++) {
 			char current = str.charAt(i);
-			if(counter.containsKey(current)) {
-				Integer currentCount = counter.get(current);
-				counter.put(current, ++currentCount);
-			}else {
-				counter.put(current, 1);
-			}
+			
 		}
-		return counter;
+		return result;
 	}
-	
 }
