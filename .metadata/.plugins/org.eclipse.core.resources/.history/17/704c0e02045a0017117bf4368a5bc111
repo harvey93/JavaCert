@@ -18,10 +18,4 @@ public class TwoSum {
 		}
 		return res;
 	}
-	
-	public static ArrayList<ArrayList<Integer>> sumFast(ArrayList<Integer> arr) {
-		ArrayList<ArrayList<Integer>> res= new ArrayList<ArrayList<Integer>>();
-		res.add(arr);
-		return res;
-	}
 }
