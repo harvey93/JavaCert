@@ -17,9 +17,9 @@ public class RepeatedLetters {
 		}
 		for(Character key : map.keySet()){
 			if(map.get(key) > 1){
-				resCount++;
+				res++;
 			}
 		}
-		return resCount;
+		return res;
 	}
 }
