@@ -3,12 +3,14 @@ package aAProbs;
 public class GreatestCommonFactor {
 	
 	public static int gcf(int num1, int num2) {
-		int res = 1;
+		int res;
 		int smaller;
 		if(num1 < num2){
 			smaller = num1;
-		}else {
+		}else if(num1 > num2){
 			smaller = num2;
+		}else {
+			return num1;
 		}
 		for(int i = smaller; i > 0; i--){
 			if((num1 % i == 0) && (num2 % i == 0)){

@@ -7,8 +7,10 @@ public class GreatestCommonFactor {
 		int smaller;
 		if(num1 < num2){
 			smaller = num1;
-		}else {
+		}else if(num1 > num2){
 			smaller = num2;
+		}else {
+			return num1;
 		}
 		for(int i = smaller; i > 0; i--){
 			if((num1 % i == 0) && (num2 % i == 0)){
