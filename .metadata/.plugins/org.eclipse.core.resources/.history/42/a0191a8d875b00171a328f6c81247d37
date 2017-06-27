@@ -14,10 +14,7 @@ public class CaesarCipher {
 				int newOrd = currentOrd + offset - 26;
 				char currentChar = (char) newOrd;
 				sb.append(currentChar);
-			}else {
-				sb.append(str.charAt(i));
 			}
-			
 //			System.out.println(currentOrd);
 		}
 		return sb.toString();

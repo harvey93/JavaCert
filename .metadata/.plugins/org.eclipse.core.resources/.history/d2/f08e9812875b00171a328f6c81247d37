@@ -1,0 +1,21 @@
+package aAProbs;
+
+public class CaesarCipher {
+
+	public static String cipher(String str, int offset) {
+		StringBuilder sb = new StringBuilder();
+		for(int i = 0; i < str.length(); i++){
+			int currentOrd = (int) str.charAt(i);
+			if(currentOrd + offset< 123){
+				newOrd = currentOrd + offset;
+			} else {
+				newOrd = currentOrd + offset - 26;
+			}
+			char newChar = (char) newOrd;
+			sb.append(newChar);
+
+//			System.out.println(currentOrd);
+		}
+		return sb.toString();
+	}
+}
