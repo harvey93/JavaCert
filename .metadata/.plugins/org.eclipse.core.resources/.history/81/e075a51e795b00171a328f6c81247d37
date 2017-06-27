@@ -17,6 +17,6 @@ public class Palindrome {
 				
 			}
 		}
-		return str;
+		return str.substring(str.length() - 1, str.length());
 	}
 }
