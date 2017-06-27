@@ -1,0 +1,19 @@
+package aAProbs;
+import java.util.*;
+
+public class RepeatedLetters {
+
+	public static int numRep(String str){
+		HashMap<Character, Integer> map = new HashMap<>();
+		for(int i = 0; i < str.length(); i++) {
+			char current = str.charAt(i);
+			if(map.containsKey(current)){
+				int currentCount = map.get(current);
+				map.put(current, ++currentCount);
+			}else {
+				
+			}
+		}
+		return 5;
+	}
+}
