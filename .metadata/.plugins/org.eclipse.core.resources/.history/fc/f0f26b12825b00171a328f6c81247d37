@@ -20,7 +20,7 @@ public class RepeatedLetters {
 				resCount++;
 			}
 		}
-		
+		System.out.println(map);
 		return resCount;
 	}
 }
