@@ -11,7 +11,7 @@ public class CaesarCipher {
 				char newChar = (char) newOrd;
 				sb.append(newChar);
 			}
-//			System.out.println(currentOrd);
+			System.out.println(currentOrd);
 		}
 		return sb.toString();
 	}

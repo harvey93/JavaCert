@@ -9,9 +9,9 @@ public class CaesarCipher {
 			if(currentOrd > 96 && currentOrd < 123){
 				int newOrd = currentOrd + offset;
 				char newChar = (char) newOrd;
-				sb.append(newChar);
+				sb.add(newChar);
 			}
-//			System.out.println(currentOrd);
+			System.out.println(currentOrd);
 		}
 		return sb.toString();
 	}
