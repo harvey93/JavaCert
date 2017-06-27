@@ -13,6 +13,6 @@ public class CapitalizeWords {
 	}
 	
 	public static String capWord(String str){
-		return str;
+		
 	}
 }

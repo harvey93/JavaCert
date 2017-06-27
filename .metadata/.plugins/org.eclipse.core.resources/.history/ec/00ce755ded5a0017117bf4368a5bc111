@@ -12,7 +12,7 @@ public class CapitalizeWords {
 		return str;
 	}
 	
-	public static String capWord(String str){
-		return str;
+	public static String capWord(String str) {
+		
 	}
 }
