@@ -1,8 +1,0 @@
-package aAProbs;
-
-public class StringReverse {
-	
-	public static char reverse(String str) {
-		return str.charAt(0);
-	} 
-}

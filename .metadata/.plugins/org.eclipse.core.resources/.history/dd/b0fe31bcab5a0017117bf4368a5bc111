@@ -1,8 +1,0 @@
-package aAProbs;
-
-public class MostCommonLetter {
-	
-	public static HashMap<Char, Integer> mostCommon(String){
-		
-	}
-}

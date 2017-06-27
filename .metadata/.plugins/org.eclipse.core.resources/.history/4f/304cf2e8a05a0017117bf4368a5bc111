@@ -1,8 +1,0 @@
-package aAProbs;
-
-public class ThirdGreatest {
-	
-	public static int getThird(ArrayList<Integer>){
-		
-	}
-}

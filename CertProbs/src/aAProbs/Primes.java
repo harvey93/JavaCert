@@ -1,4 +1,5 @@
 package aAProbs;
+import java.util.*;
 
 public class Primes {
 
@@ -12,5 +13,16 @@ public class Primes {
 			}
 		}
 		return retVal;
+	}
+	
+	public static int nthPrime(int num){
+		ArrayList<Integer> arr = new ArrayList<>();
+		for(int i = 2; arr.size() < num; i++) {
+			if(isPrime(i)){
+				arr.add(i);
+			}
+		}
+	
+		return arr.get(arr.size() - 1);
 	}
 }
