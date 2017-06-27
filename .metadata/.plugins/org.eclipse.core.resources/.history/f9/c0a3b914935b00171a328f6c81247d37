@@ -10,7 +10,6 @@ public class Test {
 	public static void main(String args[]) {
 		int [] arr = {1,2,3,4};
 		varArgsTest(1,2,3,4);
-		varArgsTest(arr);
 	}
 	
 	public static void varArgsTest(int ... nums){

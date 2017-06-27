@@ -10,7 +10,7 @@ public class Test {
 	public static void main(String args[]) {
 		int [] arr = {1,2,3,4};
 		varArgsTest(1,2,3,4);
-		varArgsTest(arr);
+		System.out.println();
 	}
 	
 	public static void varArgsTest(int ... nums){
