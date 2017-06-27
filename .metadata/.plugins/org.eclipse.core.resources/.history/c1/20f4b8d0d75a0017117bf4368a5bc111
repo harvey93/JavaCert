@@ -1,0 +1,26 @@
+package aAProbs;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+
+
+public class Test {
+	
+	public static void main(String args[]) {
+//		System.out.println(MostCommonLetter.mostCommon("abccdaaabgggggg"));
+		StringBuilder sb = new StringBuilder("hello");
+		String s = "h";
+//		if(s.equals(sb)){
+//			System.out.println(true);
+//		}
+		s += "ello";
+		sb.reverse();
+		if(s == "hello"){
+			System.out.println(true);
+		}
+		Integer array[] = list.toArray(new Integer[4]);
+//		System.out.println(sb);
+	}
+
+}

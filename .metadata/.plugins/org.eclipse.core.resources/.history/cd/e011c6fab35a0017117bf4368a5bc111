@@ -31,7 +31,6 @@ public class MostCommonLetter {
 				max = key;
 			}
 		}
-		
 		return max;
 	}
 	
