@@ -25,7 +25,7 @@ public class Palindrome {
 				}
 			}
 		}
-		
+		System.out.println(arr);
 		return maxPal;
 	}
 }

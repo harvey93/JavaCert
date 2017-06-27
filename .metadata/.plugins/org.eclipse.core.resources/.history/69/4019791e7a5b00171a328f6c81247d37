@@ -21,11 +21,11 @@ public class Palindrome {
 		for(String el : arr) {
 			if(isPalindrome(el)){
 				if(maxPal == null || el.length() > maxPal.length()){
-					maxPal = el;
+					
 				}
 			}
 		}
-		
-		return maxPal;
+		System.out.println(arr);
+		return str;
 	}
 }

@@ -19,13 +19,9 @@ public class Palindrome {
 		}
 		String maxPal = null;;
 		for(String el : arr) {
-			if(isPalindrome(el)){
-				if(maxPal == null || el.length() > maxPal.length()){
-					maxPal = el;
-				}
-			}
+			if
 		}
-		
-		return maxPal;
+		System.out.println(arr);
+		return str;
 	}
 }

@@ -17,15 +17,11 @@ public class Palindrome {
 				arr.add(str.substring(i, j + 1));
 			}
 		}
-		String maxPal = null;;
+		String maxPal = arr.get(0);
 		for(String el : arr) {
-			if(isPalindrome(el)){
-				if(maxPal == null || el.length() > maxPal.length()){
-					maxPal = el;
-				}
-			}
+			
 		}
-		
-		return maxPal;
+		System.out.println(arr);
+		return str;
 	}
 }
