@@ -18,8 +18,8 @@ public class CaesarCipher {
 				sb.append(str.charAt(i));
 			}
 			
+
 		}
-		
 		return sb.toString();
 	}
 }
