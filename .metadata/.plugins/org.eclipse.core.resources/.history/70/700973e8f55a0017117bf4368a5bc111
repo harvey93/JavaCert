@@ -1,0 +1,12 @@
+package aAProbs;
+
+public class Primes {
+
+	public static boolean isPrime(int num){
+		double dubNum = (double ) num;
+		for(int i = 2; i < Math.sqrt()){
+			
+		}
+		return true;
+	}
+}
