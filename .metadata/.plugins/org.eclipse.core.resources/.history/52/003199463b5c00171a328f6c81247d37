@@ -1,0 +1,10 @@
+package ch4;
+
+import aAProbs.Animal;
+import aAProbs.CheckTrait;
+
+public class CheckIfSwimmer implements CheckTrait{
+	public boolean test(Animal a){
+		return a.canSwim();
+	}
+}

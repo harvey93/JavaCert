@@ -1,0 +1,7 @@
+package ch4;
+
+import aAProbs.Animal;
+
+public interface CheckTrait {
+	boolean test(Animal a);
+}
