@@ -12,7 +12,7 @@ public class TraditionalSearch {
 		
 	}
 	
-	public static void print(ArrayList<Animal> list, CheckTrait checker){
+	public static void print(){
 		
 	}
 }

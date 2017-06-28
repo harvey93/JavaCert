@@ -11,8 +11,4 @@ public class TraditionalSearch {
 		list.add(new Animal("turtle", false, true));
 		
 	}
-	
-	public static void print(ArrayList<Animal> list, CheckTrait checker){
-		
-	}
 }
