@@ -19,7 +19,7 @@ public class Animal {
 		return this.canSwim;
 	}
 	
-	public String toString(){
+	public String species(){
 		return this.species;
 	}
 }

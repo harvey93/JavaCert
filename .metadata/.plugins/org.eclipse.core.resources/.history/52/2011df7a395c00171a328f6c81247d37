@@ -12,14 +12,6 @@ public class Animal {
 	}
 	
 	public boolean canHop(){
-		return this.canHop;
-	}
-	
-	public boolean canSwim(){
-		return this.canSwim;
-	}
-	
-	public String toString(){
-		return this.species;
+		
 	}
 }

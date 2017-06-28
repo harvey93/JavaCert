@@ -18,8 +18,4 @@ public class Animal {
 	public boolean canSwim(){
 		return this.canSwim;
 	}
-	
-	public String toString(){
-		return this.species;
-	}
 }
