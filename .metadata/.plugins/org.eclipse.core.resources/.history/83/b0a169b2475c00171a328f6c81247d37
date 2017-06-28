@@ -23,11 +23,11 @@ public class TraditionalSearch {
 	}
 	
 	public static void print(ArrayList<Animal> animals, Predicate<Animal> checker){
-//		for(Animal a : animals){
-//			if(checker.test(a)){
-//				System.out.println(a);
-//			}
-//		}
+		for(Animal a : animals){
+			if(checker.test(a)){
+				System.out.println(a);
+			}
+		}
 		animals.forEach(a -> {
 			if(checker.test(a)){
 				System.out.println(a);

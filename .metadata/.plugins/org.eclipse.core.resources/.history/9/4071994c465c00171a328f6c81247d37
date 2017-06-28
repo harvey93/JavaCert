@@ -10,28 +10,23 @@ public class TraditionalSearch {
 		list.add(new Animal("kangaroo", true, false));
 		list.add(new Animal("rabbit", true, false));
 		list.add(new Animal("turtle", false, true));
-		
-//		list.forEach(a -> {
-//			if(a.canHop()){
-//				System.out.println(a);
-//			}
-//		});
+		list.forEach(a -> {
+			if(a.canHop()){
+				System.out.println(a);
+			}
+			
+		});
 //		print(list, new CheckIfHopper());
 //		print(list, a -> a.canHop());
 //		print(list, new CheckIfSwimmer());
-		print(list, a -> a.canHop());
+//		print(list, a -> a.canHop());
 	}
 	
 	public static void print(ArrayList<Animal> animals, Predicate<Animal> checker){
-//		for(Animal a : animals){
-//			if(checker.test(a)){
-//				System.out.println(a);
-//			}
-//		}
-		animals.forEach(a -> {
+		for(Animal a : animals){
 			if(checker.test(a)){
 				System.out.println(a);
 			}
-		});
+		}
 	}
 }
