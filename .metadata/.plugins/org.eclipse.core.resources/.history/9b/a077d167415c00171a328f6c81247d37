@@ -13,11 +13,11 @@ public class TraditionalSearch {
 		
 //		print(list, new CheckIfHopper());
 //		print(list, a -> a.canHop());
-//		print(list, new CheckIfSwimmer());
-		print(list, a -> a.canHop());
+		print(list, new CheckIfSwimmer());
+		print(list, a -> a.canSwim());
 	}
 	
-	public static void print(ArrayList<Animal> animals, Predicate<Animal> checker){
+	public static void print(ArrayList<Animal> animals, Predicate<T> checker){
 		for(Animal a : animals){
 			if(checker.test(a)){
 				System.out.println(a);
