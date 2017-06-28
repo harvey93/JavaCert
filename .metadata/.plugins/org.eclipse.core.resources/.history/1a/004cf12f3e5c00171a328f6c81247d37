@@ -10,14 +10,12 @@ public class TraditionalSearch {
 		list.add(new Animal("rabbit", true, false));
 		list.add(new Animal("turtle", false, true));
 		
-//		print(list, new CheckIfHopper());
-		print(list, new CheckIfSwimmer());
 	}
 	
 	public static void print(ArrayList<Animal> animals, CheckTrait checker){
 		for(Animal a : animals){
 			if(checker.test(a)){
-				System.out.println(a);
+				
 			}
 		}
 	}
