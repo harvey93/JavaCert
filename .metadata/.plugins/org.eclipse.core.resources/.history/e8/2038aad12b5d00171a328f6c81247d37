@@ -13,15 +13,8 @@ public class Animal {
 		this.age = age;
 	}
 	
-	public Animal(int age){
-		this.age = age;
-		this.name = null;
+	public Animal(){
+		
 	} 
 	
-	public Animal(int age, String name){
-		this.age = age;
-		this.name = name;
-	}
-	
-
 }

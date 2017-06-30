@@ -2,6 +2,10 @@ package ch5;
 
 public class Lion extends Animal{
 
+	 public Lion(int age) {
+		super(age);
+		// TODO Auto-generated constructor stub
+	}
 
 	public void roar(){
 		 System.out.println("This " + super.getAge() + " year old lion says ROAR");
@@ -9,9 +13,5 @@ public class Lion extends Animal{
 	 
 	 public int getAge(){
 		 return 5;
-	 }
-	 
-	 public Lion(int age){
-		 super(age);
 	 }
 }

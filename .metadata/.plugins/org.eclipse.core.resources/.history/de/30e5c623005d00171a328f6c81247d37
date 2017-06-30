@@ -1,0 +1,18 @@
+package ch5;
+
+public class Test {
+	
+	public static void main(String[] args) {
+//		Lion simba = new Lion();
+//		simba.setAge(13);
+//		simba.roar();
+		long l = 534;
+		int b = 2323;
+//		System.out.println(l * i);
+		System.out.println(5 < 10);
+		int [] arr = new int [5];
+		for(int i = 0; i < arr.length; i++){
+			System.out.println(arr[i]);
+		}
+	}
+}

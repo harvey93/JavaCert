@@ -18,10 +18,4 @@ public class Animal {
 		this.name = null;
 	} 
 	
-	public Animal(int age, String name){
-		this.age = age;
-		this.name = name;
-	}
-	
-
 }

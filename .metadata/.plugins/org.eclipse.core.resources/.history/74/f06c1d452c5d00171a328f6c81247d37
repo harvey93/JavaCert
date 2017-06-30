@@ -12,6 +12,6 @@ public class Lion extends Animal{
 	 }
 	 
 	 public Lion(int age){
-		 super(age);
+		 super();
 	 }
 }

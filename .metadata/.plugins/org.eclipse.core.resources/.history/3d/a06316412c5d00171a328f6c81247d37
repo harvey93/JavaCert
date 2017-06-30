@@ -2,7 +2,6 @@ package ch5;
 
 public class Lion extends Animal{
 
-
 	public void roar(){
 		 System.out.println("This " + super.getAge() + " year old lion says ROAR");
 	 }
@@ -11,7 +10,7 @@ public class Lion extends Animal{
 		 return 5;
 	 }
 	 
-	 public Lion(int age){
-		 super(age);
-	 }
+//	 public Lion(int age){
+//		 super();
+//	 }
 }
