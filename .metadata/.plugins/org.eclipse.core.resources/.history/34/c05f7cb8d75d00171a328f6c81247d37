@@ -34,5 +34,6 @@ public class NearestLarger {
 			}
 		}
 		
+		return j;
 	}
 }

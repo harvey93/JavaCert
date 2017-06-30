@@ -16,23 +16,9 @@ public class NearestLarger {
 		
 		while(j <= arr.length){
 			if(j == arr.length){break;}
-			if(arr[j] > arr[k]){
-				break;
-			}
-			j++;
+			
 		}
 		
-		if(i < 0){
-			return j;
-		}else if(j == arr.length){
-			return i;
-		}else {
-			if(arr[i] >= arr[j]){
-				return i;
-			}else {
-				return j;
-			}
-		}
-		
+		return i;
 	}
 }

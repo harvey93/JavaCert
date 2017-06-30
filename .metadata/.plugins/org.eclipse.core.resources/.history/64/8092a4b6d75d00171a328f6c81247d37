@@ -30,9 +30,10 @@ public class NearestLarger {
 			if(arr[i] >= arr[j]){
 				return i;
 			}else {
-				return j;
+				return j
 			}
 		}
 		
+		return j;
 	}
 }
