@@ -1,0 +1,11 @@
+package ch1;
+
+import java.util.Collections;
+
+public class CheckPerm {
+	
+	public static boolean checkSort(String str1, String str2){
+		Collections.sort(str1.toCharArray());
+		return true;
+	}
+}

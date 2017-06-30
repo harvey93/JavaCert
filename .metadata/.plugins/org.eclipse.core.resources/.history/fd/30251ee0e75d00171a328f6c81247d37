@@ -1,0 +1,14 @@
+package ch1;
+
+import java.util.*;
+import java.util.Collections;
+
+
+public class CheckPerm {
+	
+	public static boolean checkSort(String str1, String str2){
+		ArrayList<String> list1 = Arrays.asList(str1.split(""));
+		System.out.println(Collections.sort();
+		return true;
+	}
+}
