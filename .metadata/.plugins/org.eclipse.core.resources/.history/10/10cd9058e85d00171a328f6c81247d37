@@ -14,20 +14,7 @@ public class CheckPerm {
 //		Collections.sort(list1);
 //		Collections.sort(list2);
 		
-//		if(list1.equals(list2)){
-//			res = true;
-//		}
-		String[] arr1 = str1.split(""); 
-		Arrays.sort(arr1);
-		
-		String[] arr2 = str2.split("");
-		Arrays.sort(arr2);
-		
-//		if(String.join("", arr1).equals(String.join("", arr2))){
-//			res = true;
-//		}
-		
-		if(Arrays.asList(arr1).equals(Arrays.asList(arr2))){
+		if(list1.equals(list2)){
 			res = true;
 		}
 		

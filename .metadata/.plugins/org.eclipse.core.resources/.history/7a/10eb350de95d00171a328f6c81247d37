@@ -27,8 +27,8 @@ public class CheckPerm {
 //			res = true;
 //		}
 		
-		if(Arrays.asList(arr1).equals(Arrays.asList(arr2))){
-			res = true;
+		if(arr1.equals(arr2)){
+			res = truel
 		}
 		
 		return res;
