@@ -11,12 +11,13 @@ public class CheckPerm {
 		boolean res = false;
 		HashMap<Character, Integer> map1 = fillMap(str1);
 		HashMap<Character, Integer> map2 = fillMap(str2);
+		System.out.println(map1);
+		System.out.println(map2);
 		
 		if(map1.equals(map2)){
-			res = true;
+			
 		}
-		
-		return res;
+		return true;
 	}
 	
 	public static HashMap<Character, Integer> fillMap(String str){

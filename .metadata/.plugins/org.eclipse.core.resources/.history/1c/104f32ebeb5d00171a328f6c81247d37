@@ -15,7 +15,6 @@ public class CheckPerm {
 		if(map1.equals(map2)){
 			res = true;
 		}
-		
 		return res;
 	}
 	
