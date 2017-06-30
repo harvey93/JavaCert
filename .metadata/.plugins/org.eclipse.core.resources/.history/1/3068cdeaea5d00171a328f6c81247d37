@@ -8,8 +8,7 @@ public class CheckPerm {
 	
 	
 	public static boolean checkHash(String str1, String str2){
-		HashMap<Character, Integer> map1 = fillMap(str1);
-		HashMap<Character, Integer> map2 = fillMap(str2);
+		
 		
 		return true;
 	}
