@@ -12,6 +12,4 @@ public class Fish {
 	public int getAge(){
 		return this.age;
 	}
-	
-	
 }

@@ -10,8 +10,6 @@ public class Shark extends Fish{
 	}
 	
 	public void display(){
-		System.out.println("Shark Age: " + getAge());
-		System.out.println("Size: " + this.size + " meters");
-		System.out.println("Finsh: " + numberOfFins);
+		
 	}
 }
