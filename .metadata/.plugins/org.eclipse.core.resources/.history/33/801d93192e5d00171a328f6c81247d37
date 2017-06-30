@@ -6,7 +6,7 @@ public class Animal {
 	private String name;
 	
 	public Animal(int age){
-//		super();
+		super();
 		this.age = age;
 		this.name = null;
 	} 
@@ -14,10 +14,6 @@ public class Animal {
 	public Animal(int age, String name){
 		this.age = age;
 		this.name = name;
-	}
-	
-	public Animal(){
-		
 	}
 	
 	public int getAge(){

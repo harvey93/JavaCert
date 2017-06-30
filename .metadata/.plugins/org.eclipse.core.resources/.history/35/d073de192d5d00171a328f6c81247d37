@@ -1,0 +1,8 @@
+package ch5;
+
+public class Gorilla extends Animal{
+
+	public Gorilla(){
+		super(5);
+	}
+}
