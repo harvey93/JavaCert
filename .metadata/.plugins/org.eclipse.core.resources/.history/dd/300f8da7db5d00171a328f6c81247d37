@@ -1,0 +1,15 @@
+package ch1;
+import java.util.*;
+
+public class IsUnique {
+	
+	public static boolean uniqueHash(String str){
+		HashMap<Character, Integer> map = new HashMap<>();
+		for(int i = 0; i < str.length(); i++){
+			if(map.containsKey(str.charAt(i))){
+				
+			}
+		}
+		return true;
+	}
+}

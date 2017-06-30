@@ -16,11 +16,11 @@ public class IsUnique {
 		}
 		for(Character key : map.keySet()){
 			if(map.get(key) > 1){
-				res = false;
+				
 				break;
 			}
 		}
-//		System.out.println(map);
-		return res;
+		System.out.println(map);
+		return true;
 	}
 }

@@ -1,0 +1,10 @@
+package ch1;
+import java.util.*;
+
+public class IsUnique {
+	
+	public static boolean uniqueHash(String str){
+		
+		return true;
+	}
+}

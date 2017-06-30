@@ -5,7 +5,6 @@ public class IsUnique {
 	
 	public static boolean uniqueHash(String str){
 		HashMap<Character, Integer> map = new HashMap<>();
-		boolean res = true;
 		for(int i = 0; i < str.length(); i++){
 			if(map.containsKey(str.charAt(i))){
 				int count = map.get(str.charAt(i));
@@ -14,13 +13,6 @@ public class IsUnique {
 				map.put(str.charAt(i), 1);
 			}
 		}
-		for(Character key : map.keySet()){
-			if(map.get(key) > 1){
-				res = false;
-				break;
-			}
-		}
-//		System.out.println(map);
-		return res;
+		return true;
 	}
 }
