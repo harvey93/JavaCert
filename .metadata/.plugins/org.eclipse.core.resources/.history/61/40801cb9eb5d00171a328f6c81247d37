@@ -10,8 +10,7 @@ public class CheckPerm {
 	public static boolean checkHash(String str1, String str2){
 		HashMap<Character, Integer> map1 = fillMap(str1);
 		HashMap<Character, Integer> map2 = fillMap(str2);
-		System.out.println(map1);
-		System.out.println(map2);
+		
 		return true;
 	}
 	
@@ -23,7 +22,7 @@ public class CheckPerm {
 				int currentCount = map.get(current);
 				map.put(current, ++currentCount);
 			}else {
-				map.put(current, 1);
+				
 			}
 		}
 		return map;
