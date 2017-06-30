@@ -24,9 +24,7 @@ public class IsUnique {
 		return res;
 	}
 	
-	public static boolean uniqueSet(String str){
-		HashSet<Character> set= new HashSet<>();
-		boolean res = true;
-		return true;
+	public static boolean uniqueSpace(String str){
+		
 	}
 }

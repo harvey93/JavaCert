@@ -26,7 +26,6 @@ public class IsUnique {
 	
 	public static boolean uniqueSet(String str){
 		HashSet<Character> set= new HashSet<>();
-		boolean res = true;
 		return true;
 	}
 }
