@@ -20,7 +20,7 @@ public class IsUnique {
 				break;
 			}
 		}
-
+		
 		return res;
 	}
 	
@@ -35,7 +35,6 @@ public class IsUnique {
 				set.add(str.charAt(i));
 			}
 		}
-		
-		return res;
+		return true;
 	}
 }

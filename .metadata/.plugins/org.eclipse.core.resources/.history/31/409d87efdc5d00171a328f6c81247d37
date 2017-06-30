@@ -20,7 +20,7 @@ public class IsUnique {
 				break;
 			}
 		}
-
+		
 		return res;
 	}
 	
@@ -31,11 +31,8 @@ public class IsUnique {
 			if(set.contains(str.charAt(i))){
 				res = false;
 				break;
-			}else {
-				set.add(str.charAt(i));
 			}
 		}
-		
-		return res;
+		return true;
 	}
 }

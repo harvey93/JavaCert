@@ -20,7 +20,7 @@ public class IsUnique {
 				break;
 			}
 		}
-
+		System.out.println(map);
 		return res;
 	}
 	
@@ -35,7 +35,7 @@ public class IsUnique {
 				set.add(str.charAt(i));
 			}
 		}
-		
+		System.out.println(set);
 		return res;
 	}
 }

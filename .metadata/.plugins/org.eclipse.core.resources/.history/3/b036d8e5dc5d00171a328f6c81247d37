@@ -20,7 +20,7 @@ public class IsUnique {
 				break;
 			}
 		}
-
+		
 		return res;
 	}
 	
@@ -28,14 +28,8 @@ public class IsUnique {
 		HashSet<Character> set= new HashSet<>();
 		boolean res = true;
 		for(int i = 0; i < str.length(); i++){
-			if(set.contains(str.charAt(i))){
-				res = false;
-				break;
-			}else {
-				set.add(str.charAt(i));
-			}
+			
 		}
-		
-		return res;
+		return true;
 	}
 }
