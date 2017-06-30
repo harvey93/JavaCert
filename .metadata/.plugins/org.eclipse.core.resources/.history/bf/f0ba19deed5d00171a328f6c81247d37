@@ -1,0 +1,9 @@
+package ch1;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		StringBuilder sb = new StringBuilder("Mr John Smith JJ");
+		System.out.println(Urlify.replace("Mr John Smith, 13));
+	}
+}

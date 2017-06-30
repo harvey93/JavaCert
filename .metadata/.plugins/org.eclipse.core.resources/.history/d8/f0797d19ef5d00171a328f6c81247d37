@@ -3,8 +3,8 @@ package ch1;
 public class Test {
 	
 	public static void main(String[] args) {
-		char [] arr = "Mr John Smith    ".toCharArray();
+		char [] arr = "Mr John Smith".toCharArray();
 		Urlify.replace(arr, 13);
-		System.out.println(new String(arr));
+		System.out.println(String.join("", arr));
 	}
 }

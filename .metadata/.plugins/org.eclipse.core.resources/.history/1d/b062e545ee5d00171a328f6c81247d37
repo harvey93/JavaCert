@@ -1,0 +1,9 @@
+package ch1;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		"Mr John Smith"
+		System.out.println(Urlify.replace("Mr John Smith".split("")));
+	}
+}
