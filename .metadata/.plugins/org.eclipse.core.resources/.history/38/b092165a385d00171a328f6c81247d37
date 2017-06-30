@@ -1,0 +1,7 @@
+package ch5;
+
+public class Fish {
+	
+	protected int size;
+	private int age;
+}
