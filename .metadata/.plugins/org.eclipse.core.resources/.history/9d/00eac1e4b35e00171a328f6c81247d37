@@ -3,13 +3,13 @@ package ch1;
 public class OneAway {
 
 	public static boolean isOneAway(String str1, String str2){
-		boolean res = false;
+		boolean res;
 		if(str1.length() == str2.length()){
 			res = replace(str1, str2);
 		}else {
-			if(str1.length() == str2.length() + 1){
+			if(str1.length() > str2.length()){
 				res = insertRemove(str1, str2);
-			}else if(str2.length() == str1.length() + 1){
+			}else {
 				res = insertRemove(str2, str1);
 			}
 		}
@@ -22,9 +22,6 @@ public class OneAway {
 		int shortI = 0;
 		int wrongCount = 0;
 		while(longI < longer.length()){
-			if(longI == longer.length() - 1 && wrongCount == 0){
-				break;
-			}
 			if(longer.charAt(longI) == shorter.charAt(shortI)){
 				longI++;
 				shortI++;

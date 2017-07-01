@@ -22,8 +22,8 @@ public class OneAway {
 		int shortI = 0;
 		int wrongCount = 0;
 		while(longI < longer.length()){
-			if(longI == longer.length() - 1 && wrongCount == 0){
-				break;
+			if(longI == longer.length() - 1){
+				
 			}
 			if(longer.charAt(longI) == shorter.charAt(shortI)){
 				longI++;
