@@ -1,0 +1,11 @@
+package ch1;
+import java.util.*;
+
+public class Palindrome {
+	
+	public static boolean isPerm(String str){
+		HashMap<Character, Integer> map = new HashMap<>();
+		return true;
+	}
+
+}

@@ -7,8 +7,7 @@ public class Palindrome {
 		HashMap<Character, Integer> map = new HashMap<>();
 		for(int i = 0; i < str.length(); i++) {
 			char current = str.charAt(i);
-			if(current == ' '){continue;}
-			if(map.containsKey(current)){
+			if(map.containsKey(current) && current != ' '){
 				int count = map.get(current);
 				map.put(current, ++count);
 			}else {
