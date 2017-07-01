@@ -1,0 +1,22 @@
+package ch1;
+
+public class Urlify {
+
+	public static void replace(char [] arr, int trueLength){
+		int i = arr.length - 1;
+		int j = trueLength;
+		while(j >= 0){
+			if(arr[i] == " ".charAt(0){
+				arr[i] = arr[j];
+				i -= 3;
+			}else if(arr[i] == " ".charAt(0)){
+				
+			} else {
+				
+				i--;
+			}
+			j--;
+		}
+		
+	}
+}

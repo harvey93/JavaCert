@@ -19,6 +19,7 @@ public class Urlify {
 			}
 			i--;
 		}
+		System.out.println(spaces);
 	}
 	
 	public static int countSpaces(char [] arr, int trueLength){

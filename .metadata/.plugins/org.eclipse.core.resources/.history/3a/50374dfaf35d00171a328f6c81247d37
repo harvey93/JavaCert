@@ -19,6 +19,7 @@ public class Urlify {
 			}
 			i--;
 		}
+		
 	}
 	
 	public static int countSpaces(char [] arr, int trueLength){

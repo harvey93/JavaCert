@@ -8,17 +8,14 @@ public class Urlify {
 		int j = arr.length - 1;
 		while(spaces > 0){
 			if(arr[i] == " ".charAt(0)){
-				arr[j] = "%".charAt(0);
-				arr[j - 1] = "0".charAt(0);
-				arr[j - 2] = "2".charAt(0);
-				j -= 3;
+				
 				spaces--;
 			}else {
 				arr[j] = arr[i];
-				j--;
+				i--;
 			}
-			i--;
 		}
+		System.out.println(spaces);
 	}
 	
 	public static int countSpaces(char [] arr, int trueLength){
