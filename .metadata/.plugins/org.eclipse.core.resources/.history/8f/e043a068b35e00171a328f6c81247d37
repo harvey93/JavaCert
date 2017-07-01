@@ -17,7 +17,6 @@ public class OneAway {
 	}
 	
 	public static boolean insertRemove(String longer, String shorter){
-		boolean res = true;
 		int longI = 0;
 		int shortI = 0;
 		int wrongCount = 0;
@@ -27,16 +26,8 @@ public class OneAway {
 				shortI++;
 			}else {
 				longI++;
-				wrongCount++;
-			}
-			
-			if(wrongCount > 1){
-				res = false;
-				break;
 			}
 		}
-		
-		return res;
 	}
 	
 	public static boolean replace(String str1, String str2){

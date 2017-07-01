@@ -31,12 +31,9 @@ public class OneAway {
 			}
 			
 			if(wrongCount > 1){
-				res = false;
-				break;
+				
 			}
 		}
-		
-		return res;
 	}
 	
 	public static boolean replace(String str1, String str2){

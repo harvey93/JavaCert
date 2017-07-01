@@ -35,8 +35,6 @@ public class OneAway {
 				break;
 			}
 		}
-		
-		return res;
 	}
 	
 	public static boolean replace(String str1, String str2){

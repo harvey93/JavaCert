@@ -17,26 +17,12 @@ public class OneAway {
 	}
 	
 	public static boolean insertRemove(String longer, String shorter){
-		boolean res = true;
 		int longI = 0;
 		int shortI = 0;
-		int wrongCount = 0;
-		while(longI < longer.length()){
-			if(longer.charAt(longI) == shorter.charAt(shortI)){
-				longI++;
-				shortI++;
-			}else {
-				longI++;
-				wrongCount++;
-			}
-			
-			if(wrongCount > 1){
-				res = false;
-				break;
-			}
-		}
 		
-		return res;
+		while(longI < longer.length()){
+			
+		}
 	}
 	
 	public static boolean replace(String str1, String str2){
