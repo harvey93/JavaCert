@@ -3,20 +3,11 @@ package ch1;
 public class OneAway {
 
 	public static boolean isOneAway(String str1, String str2){
-		boolean res;
-		if(str1.length() == str2.length()){
-			res = replace(str1, str2);
-		}else {
-			if(str1.length() > str2.length()){
-				res = insertRemove(str1, str2);
-			}else {
-				res = insertRemove(str2, str1);
-			}
-		}
-		return res;
+		
+		return false;
 	}
 	
-	public static boolean insertRemove(String longer, String shorter){
+	public static boolean insertRemove(String str1, String str2){
 		
 	}
 	

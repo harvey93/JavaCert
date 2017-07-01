@@ -1,0 +1,16 @@
+package ch1;
+
+public class OneAway {
+
+	public static boolean isOneAway(String str1, String str2){
+		System.out.println(replace(str1, str2));
+		return true;
+	}
+	
+	public static boolean replace(String str1, String str2){
+		while(){
+			
+		}
+		return false;
+	}
+}

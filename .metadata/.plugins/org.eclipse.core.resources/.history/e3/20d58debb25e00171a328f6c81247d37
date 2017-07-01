@@ -7,16 +7,12 @@ public class OneAway {
 		if(str1.length() == str2.length()){
 			res = replace(str1, str2);
 		}else {
-			if(str1.length() > str2.length()){
-				res = insertRemove(str1, str2);
-			}else {
-				res = insertRemove(str2, str1);
-			}
+			
 		}
 		return res;
 	}
 	
-	public static boolean insertRemove(String longer, String shorter){
+	public static boolean insertRemove(String str1, String str2){
 		
 	}
 	

@@ -16,7 +16,7 @@ public class OneAway {
 		return res;
 	}
 	
-	public static boolean insertRemove(String longer, String shorter){
+	public static boolean insertRemove(String str1, String str2){
 		
 	}
 	
