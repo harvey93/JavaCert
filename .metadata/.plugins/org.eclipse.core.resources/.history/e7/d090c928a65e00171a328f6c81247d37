@@ -16,19 +16,18 @@ public class Palindrome {
 				map.put(current, 1);
 			}
 		}
-		
+		System.out.println(map);
 		int oddCount = 0;
 		for(char key : map.keySet()){
 			if(map.get(key) % 2 == 1){
 				oddCount++;
 			}
 			if(oddCount > 1){
-				res = false;
-				break;
+				
 			}
 		}
 		
-		return res;
+		return true;
 	}
 
 }
