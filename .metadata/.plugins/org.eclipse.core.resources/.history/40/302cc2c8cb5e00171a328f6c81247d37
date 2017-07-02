@@ -13,8 +13,7 @@ public class Matrix {
 	}
 	
 	public static Integer[][] rotate(Integer[][] arr){
-		Integer[][] res = Matrix.transpose(arr);
-		return res;
+		Integer[][] res = Matrix.reverse(arr);
 	}
 	
 	public static void reverse(Integer[] arr){

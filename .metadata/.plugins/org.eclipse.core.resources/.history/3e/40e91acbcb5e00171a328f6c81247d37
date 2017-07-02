@@ -14,7 +14,6 @@ public class Matrix {
 	
 	public static Integer[][] rotate(Integer[][] arr){
 		Integer[][] res = Matrix.transpose(arr);
-		return res;
 	}
 	
 	public static void reverse(Integer[] arr){
