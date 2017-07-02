@@ -1,0 +1,9 @@
+package ch1;
+
+public class Matrix {
+	
+	public static void transpose(Integer[][] arr){
+		Integer[][] res = new Integer[arr.length][arr.length];
+		System.out.println(res.length);
+	}
+}
