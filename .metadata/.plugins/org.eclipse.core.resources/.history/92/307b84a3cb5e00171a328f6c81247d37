@@ -16,10 +16,10 @@ public class Test {
 			System.out.println(list);
 		}
 		
-//		Integer [] arr2 = {1,2,3,4,4,5};
-////		Matrix.reverse(arr2);
-////		ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(arr2));
-////		System.out.println(list2);
+		Integer [] arr2 = {1,2,3,4,4,5};
+//		Matrix.reverse(arr2);
+//		ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(arr2));
+//		System.out.println(list2);
 	}
 }
 

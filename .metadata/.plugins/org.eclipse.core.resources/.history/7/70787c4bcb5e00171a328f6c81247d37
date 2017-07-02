@@ -16,16 +16,9 @@ public class Matrix {
 		int i = 0;
 		int j = arr.length - 1;
 		while(i < j){
-			exch(i, j, arr);
 			i++;
-			j--;
+			j--''
 		}
-	}
-	
-	public static void exch(int i, int j, Integer[] arr){
-		Integer temp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = temp;
 	}
 	
 }
