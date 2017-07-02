@@ -12,8 +12,7 @@ public class Test {
 		};
 		
 		for(Integer[] el : arr){
-			ArrayList<Integer> list = new ArrayList<>(Arrays.asList(el));
-			System.out.println(list);
+			
 		}
 	}
 	

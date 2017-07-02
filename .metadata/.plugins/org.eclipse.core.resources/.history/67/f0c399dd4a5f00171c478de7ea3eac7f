@@ -2,15 +2,6 @@ package ch1;
 
 public class Matrix {
 	
-	
-	public static void zeroMatrix(Integer[][] arr){
-		for(int i = 0; i < arr.length; i++){
-			for(int j = 0; j < arr[0].length; j++){
-				
-			}
-		}
-	}
-	
 	public static Integer[][] transpose(Integer[][] arr){
 		Integer[][] res = new Integer[arr[0].length][arr.length];
 		for(int i = 0; i < arr[0].length; i++){
