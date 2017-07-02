@@ -13,12 +13,9 @@ public class StringCompression {
 				char currentCount = sb.charAt(sb.length() - 1);
 				sb.setCharAt(sb.length() - 1, ++currentCount);
 			}else{
-				sb.append(currentChar);
-				sb.append(1);
-				persist = currentChar;
+				
 			}
 		}
-		
 		return sb.toString();
 	} 
 }

@@ -15,10 +15,8 @@ public class StringCompression {
 			}else{
 				sb.append(currentChar);
 				sb.append(1);
-				persist = currentChar;
 			}
 		}
-		
 		return sb.toString();
 	} 
 }

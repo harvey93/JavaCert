@@ -1,0 +1,10 @@
+package ch1;
+
+public class StringCompression {
+
+	public static String compress(String str){
+		StringBuilder sb = new StringBuilder();
+		for()
+		return str;
+	} 
+}

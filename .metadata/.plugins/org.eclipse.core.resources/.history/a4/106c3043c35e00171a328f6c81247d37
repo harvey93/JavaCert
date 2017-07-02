@@ -1,0 +1,15 @@
+package ch1;
+
+public class StringCompression {
+
+	public static String compress(String str){
+		StringBuilder sb = new StringBuilder();
+		char current = str.charAt(0);
+		sb.append();
+		
+		for(int i = 1; i < str.length(); i++){
+			if()
+		}
+		return sb.toString();
+	} 
+}
