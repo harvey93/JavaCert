@@ -14,9 +14,9 @@ public class Matrix {
 				}
 			}
 		}
-
 		fillZeroes(xCoords, yCoords, arr);
-
+//		System.out.println(xCoords);
+//		System.out.println(yCoords);
 	}
 	
 	public static void fillZeroes(HashSet<Integer> xCoords,HashSet<Integer> yCoords, Integer[][] arr){
