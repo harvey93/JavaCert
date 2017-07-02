@@ -15,7 +15,7 @@ public class Matrix {
 	public static Integer[][] rotate(Integer[][] arr){
 		Integer[][] res = Matrix.transpose(arr);
 		for(Integer[] el : res){
-			Matrix.reverse(el);
+			
 		}
 		return res;
 	}
