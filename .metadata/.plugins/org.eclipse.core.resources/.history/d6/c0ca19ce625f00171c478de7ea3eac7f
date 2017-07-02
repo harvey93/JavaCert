@@ -5,8 +5,4 @@ public class StringRotation {
 	public static boolean isRotation(String str1, String str2){
 		return true;
 	}
-	
-	public static boolean isSubstring(String str1, String str2){
-		return str1.contains(str2);
-	}
 }

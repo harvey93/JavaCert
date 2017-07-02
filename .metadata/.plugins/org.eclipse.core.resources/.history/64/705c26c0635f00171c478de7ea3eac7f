@@ -8,5 +8,6 @@ public class StringRotation {
 	
 	public static boolean isSubstring(String str1, String str2){
 		return str1.contains(str2);
+		return true;
 	}
 }
