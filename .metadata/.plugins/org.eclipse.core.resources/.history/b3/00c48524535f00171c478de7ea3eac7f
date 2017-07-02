@@ -21,13 +21,13 @@ public class Matrix {
 	
 	public static void fillZeroes(HashSet<Integer> xCoords,HashSet<Integer> yCoords, Integer[][] arr){
 		for(int i = 0; i < arr.length; i++){
-			for(int j = 0; j < arr[0].length; j++){
+			for(int j = 0; i < arr[0].length; j++){
 				if(xCoords.contains(i)){
 					arr[i][j] = 0;
 				}
-				if(yCoords.contains(j)){
-					arr[i][j] = 0;
-				}
+//				if(yCoords.contains(j)){
+//					arr[i][j] = 0;
+//				}
 			}
 		}
 	}

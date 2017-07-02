@@ -14,18 +14,14 @@ public class Matrix {
 				}
 			}
 		}
-		fillZeroes(xCoords, yCoords, arr);
-//		System.out.println(xCoords);
-//		System.out.println(yCoords);
+		System.out.println(xCoords);
+		System.out.println(yCoords);
 	}
 	
 	public static void fillZeroes(HashSet<Integer> xCoords,HashSet<Integer> yCoords, Integer[][] arr){
 		for(int i = 0; i < arr.length; i++){
-			for(int j = 0; j < arr[0].length; j++){
+			for(int j = 0; i < arr.length - 1; j++){
 				if(xCoords.contains(i)){
-					arr[i][j] = 0;
-				}
-				if(yCoords.contains(j)){
 					arr[i][j] = 0;
 				}
 			}
