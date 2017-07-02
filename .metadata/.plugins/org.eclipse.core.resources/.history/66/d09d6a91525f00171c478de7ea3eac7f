@@ -18,10 +18,8 @@ public class Matrix {
 		System.out.println(yCoords);
 	}
 	
-	public static void fillZeroes(HashSet<Integer> xCoords,HashSet<Integer> yCoords, Integer[][] arr){
-		for(int i = 0; i < arr.length; i++){
-			
-		}
+	public static void xFill(HashSet<Integer> set, Integer[][] arr){
+		
 	}
 	
 	public static Integer[][] transpose(Integer[][] arr){

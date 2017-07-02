@@ -8,19 +8,8 @@ public class Matrix {
 		HashSet<Integer> yCoords = new HashSet<>();
 		for(int i = 0; i < arr.length; i++){
 			for(int j = 0; j < arr[0].length; j++){
-				if(arr[i][j] == 0){
-					xCoords.add(i);
-					yCoords.add(j);
-				}
+				xCoords.add(i);
 			}
-		}
-		System.out.println(xCoords);
-		System.out.println(yCoords);
-	}
-	
-	public static void fillZeroes(HashSet<Integer> xCoords,HashSet<Integer> yCoords, Integer[][] arr){
-		for(int i = 0; i < arr.length; i++){
-			
 		}
 	}
 	
