@@ -7,13 +7,7 @@ public class RemoveDups {
 		HashSet<Integer> set = new HashSet<>();
 		Node last = null;
 		while(head != null){
-			if(set.contains(head.getData())){
-				last.setNext(head.getNext());
-			}else {
-				last = head;
-				set.add(head.getData());
-				
-			}
+			if()
 			head = head.getNext();
 		}
 

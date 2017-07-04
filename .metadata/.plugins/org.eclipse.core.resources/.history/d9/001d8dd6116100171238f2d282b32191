@@ -8,7 +8,7 @@ public class RemoveDups {
 		Node last = null;
 		while(head != null){
 			if(set.contains(head.getData())){
-				last.setNext(head.getNext());
+				
 			}else {
 				last = head;
 				set.add(head.getData());

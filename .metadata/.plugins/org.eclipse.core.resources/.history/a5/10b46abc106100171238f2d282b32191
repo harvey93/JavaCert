@@ -4,19 +4,13 @@ import java.util.*;
 public class RemoveDups {
 	
 	public static void removeDups(Node head){
-		HashSet<Integer> set = new HashSet<>();
+		HashMap<Integer, Integer> map = hashCount(head);
 		Node last = null;
-		while(head != null){
-			if(set.contains(head.getData())){
-				last.setNext(head.getNext());
-			}else {
-				last = head;
-				set.add(head.getData());
-				
-			}
-			head = head.getNext();
+		Node current = head;
+		while(current != null){
+			if()
+			current = current.getNext();
 		}
-
 		
 	}
 	

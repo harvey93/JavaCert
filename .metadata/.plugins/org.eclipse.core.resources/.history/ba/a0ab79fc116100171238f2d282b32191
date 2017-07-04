@@ -4,7 +4,8 @@ import java.util.*;
 public class Test {
 	
 	public static void main(String[] args) {
-		Node head = createList();	
+		Node head = createList();
+		
 		RemoveDups.removeDups(head);
 		printList(head);
 	}
