@@ -5,12 +5,8 @@ public class RemoveDups {
 	
 	public static void removeDups(LinkedList<Integer> list){
 		HashMap<Integer, Integer> map = hashCount(list);
-		list.forEach(el -> {
-			if(map.get(el) > 1){
-				
-			}
-		});
-		
+		System.out.println();
+//		HashMap<Integer, Integer> hashCount = hashCount(list);
 	}
 	
 	public static HashMap<Integer, Integer> hashCount(LinkedList<Integer> list){

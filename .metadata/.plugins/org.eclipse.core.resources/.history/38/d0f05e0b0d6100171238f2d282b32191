@@ -5,11 +5,7 @@ public class RemoveDups {
 	
 	public static void removeDups(LinkedList<Integer> list){
 		HashMap<Integer, Integer> map = hashCount(list);
-		list.forEach(el -> {
-			if(map.get(el) > 1){
-				
-			}
-		});
+		list.remove(10);
 		
 	}
 	

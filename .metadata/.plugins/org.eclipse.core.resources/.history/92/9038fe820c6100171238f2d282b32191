@@ -7,6 +7,7 @@ public class Test {
 		LinkedList<Integer> list = new LinkedList<>();
 		fillList(list);
 		RemoveDups.removeDups(list);
+		
 	}
 	
 	public static void fillList(LinkedList<Integer> list){

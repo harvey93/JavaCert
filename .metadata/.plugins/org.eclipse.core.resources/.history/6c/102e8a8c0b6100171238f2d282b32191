@@ -4,24 +4,14 @@ import java.util.*;
 public class RemoveDups {
 	
 	public static void removeDups(LinkedList<Integer> list){
-		HashMap<Integer, Integer> map = hashCount(list);
-		list.forEach(el -> {
-			if(map.get(el) > 1){
-				
-			}
-		});
-		
+//		hashCount(list);
+//		HashMap<Integer, Integer> hashCount = hashCount(list);
 	}
 	
 	public static HashMap<Integer, Integer> hashCount(LinkedList<Integer> list){
 		HashMap<Integer, Integer> map = new HashMap<>();
 		list.forEach(el -> {
-			if(map.containsKey(el)){
-				int currentCount = map.get(el);
-				map.put(el, ++currentCount);
-			}else{
-				map.put(el,	1);
-			}
+			System.out.println(el);
 		});
 		return map;
 	}
