@@ -7,8 +7,8 @@ public class RemoveDups {
 		HashMap<Integer, Integer> hashCount = hashCount(list);
 	}
 	
-	public static HashMap<Integer, Integer> hashCount(LinkedList<Integer> list){
-		HashMap<Integer, Integer> map = new HashMap<>();
-		return map;
+	public static void hashCount(LinkedList<Integer> list){
+		HashMap<Integer, Integer> hashCount = new HashMap<>();
+		return 
 	}
 }
