@@ -24,12 +24,4 @@ public class Node {
 	public void setData(Integer data){
 		this.data = data;
 	}
-	
-	public Node getPrev(){
-		return this.prev;
-	}
-	
-	public void setPrev(Node prev){
-		this.prev = prev;
-	}
 }

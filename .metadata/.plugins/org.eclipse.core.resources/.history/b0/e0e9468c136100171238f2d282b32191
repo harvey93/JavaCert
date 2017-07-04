@@ -3,7 +3,6 @@ package ch2;
 public class Node {
 	private Integer data;
 	private Node next;
-	private Node prev;
 	
 	public Node(Integer data){
 		this.data = data;
@@ -23,13 +22,5 @@ public class Node {
 	
 	public void setData(Integer data){
 		this.data = data;
-	}
-	
-	public Node getPrev(){
-		return this.prev;
-	}
-	
-	public void setPrev(Node prev){
-		this.prev = prev;
 	}
 }
