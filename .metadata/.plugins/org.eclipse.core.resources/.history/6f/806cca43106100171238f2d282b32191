@@ -23,7 +23,6 @@ public class RemoveDups {
 			
 			current = current.getNext();
 		}
-		
 		return map;
 	}
 }

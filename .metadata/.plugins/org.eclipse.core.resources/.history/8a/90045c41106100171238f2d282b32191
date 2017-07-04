@@ -20,10 +20,9 @@ public class RemoveDups {
 			}else{
 				map.put(currentData, 1);
 			}
-			
+			System.out.println(current.getData().getClass());
 			current = current.getNext();
 		}
-		
 		return map;
 	}
 }
