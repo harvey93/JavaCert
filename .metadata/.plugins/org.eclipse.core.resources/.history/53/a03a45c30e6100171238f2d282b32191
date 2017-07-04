@@ -8,11 +8,11 @@ public class Node {
 		this.data = data;
 	}
 	
-	public Node getNext(){
+	public int getNext(){
 		return this.next;
 	}
 	
-	public void setNext(Node next){
+	public void setNext(int next){
 		this.next = next;
 	}
 	

@@ -1,0 +1,10 @@
+package ch2;
+
+public class Node {
+	int data;
+	int next;
+	
+	public Node(int data){
+		this.data = data;
+	}
+}

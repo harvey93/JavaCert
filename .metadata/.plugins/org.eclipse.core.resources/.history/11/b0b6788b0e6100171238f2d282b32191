@@ -1,0 +1,21 @@
+package ch2;
+import java.util.*;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		Node head = createList();
+		RemoveDups.removeDups(head);
+	}
+	
+	public static Node createList(){
+		Node first = new Node(10);
+		Node first = new Node(15);
+		Node first = new Node(10);
+		Node first = new Node(5);
+		Node first = new Node(10);
+		Node first = new Node(20);
+		Node first = new Node(5);
+		Node first = new Node(30);
+	}
+}

@@ -2,25 +2,21 @@ package ch2;
 
 public class Node {
 	int data;
-	Node next;
+	int next;
 	
 	public Node(int data){
 		this.data = data;
 	}
 	
-	public Node getNext(){
+	public int getNext(){
 		return this.next;
 	}
 	
-	public void setNext(Node next){
+	public void setNext(int next){
 		this.next = next;
 	}
 	
 	public int getData(){
-		return this.data;
-	}
-	
-	public void setData(int data){
-		this.data = data;
+		
 	}
 }
