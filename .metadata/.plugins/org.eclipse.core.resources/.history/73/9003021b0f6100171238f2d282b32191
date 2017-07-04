@@ -5,15 +5,13 @@ public class Test {
 	
 	public static void main(String[] args) {
 		Node head = createList();
-		printList(head);
 //		RemoveDups.removeDups(head);
 	}
 	
 	public static void printList(Node head){
 		Node current = head;
 		while(current != null){
-			System.out.println(current.getData());
-			current = current.getNext();
+			current = current.getNext()
 		}
 	}
 	

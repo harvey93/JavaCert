@@ -12,7 +12,7 @@ public class Test {
 	public static void printList(Node head){
 		Node current = head;
 		while(current != null){
-			System.out.println(current.getData());
+			System.out.println(current.data);
 			current = current.getNext();
 		}
 	}
