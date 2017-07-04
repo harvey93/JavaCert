@@ -5,8 +5,9 @@ import java.util.*;
 public class Test {
 	
 	public static void main(String[] args) {
-		System.out.println(StringRotation.isRotation("waterbottle", "ottlewaterb"));
-		
+//		System.out.println(StringRotation.isRotation("waterbottle", "ottlewaterb"));
+		Object hi = null;
+		hi.toString();
 	}
 	
 }

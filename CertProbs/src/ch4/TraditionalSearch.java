@@ -17,9 +17,13 @@ public class TraditionalSearch {
 //			}
 //		});
 //		print(list, new CheckIfHopper());
-//		print(list, a -> a.canHop());
+		print(list, 
+				(Animal a) -> {
+					return a.canHop();
+				}
+				);
 //		print(list, new CheckIfSwimmer());
-		print(list, a -> a.canHop());
+//		print(list, a -> a.canSwim());
 	}
 	
 	public static void print(ArrayList<Animal> animals, Predicate<Animal> checker){

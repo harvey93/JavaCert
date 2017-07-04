@@ -1,9 +1,0 @@
-package ch4;
-import java.util.*;
-
-public class TraditionalSearch {
-	
-	public static void main(String[] args) {
-		ArrayList<Animal> list = new ArrayList<>();
-	}
-}

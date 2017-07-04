@@ -1,5 +1,5 @@
 package ch4;
 
 public interface CheckTrait {
-	boolean test(Animal a);
+	public abstract boolean test(Animal a);
 }
