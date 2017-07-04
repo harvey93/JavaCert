@@ -11,7 +11,14 @@ public class RemoveDups {
 	
 	public static HashMap<Integer, Integer> hashCount(Node head){
 		HashMap<Integer, Integer> map = new HashMap<>();
-		
+		list.forEach(el -> {
+			if(map.containsKey(el)){
+				int currentCount = map.get(el);
+				map.put(el, ++currentCount);
+			}else{
+				map.put(el,	1);
+			}
+		});
 		return map;
 	}
 }
