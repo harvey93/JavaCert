@@ -5,7 +5,7 @@ public class Test {
 	
 	public static void main(String[] args) {
 		LinkedList<Integer> list = new LinkedList<>();
-		fillList(list);
+		createList<>
 		System.out.println(list);
 	}
 	
