@@ -2,7 +2,7 @@ package ch2;
 
 public class RemoveDups {
 	
-	public static void removeDups(){
+	public static void remove(){
 		
 	}
 }

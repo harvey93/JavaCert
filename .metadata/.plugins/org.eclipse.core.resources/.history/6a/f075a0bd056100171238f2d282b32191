@@ -16,7 +16,5 @@ public class Test {
 		list.add(15);
 		list.add(11);
 		list.add(5);
-		list.add(55);
-		list.add(5);
 	}
 }
