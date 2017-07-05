@@ -7,8 +7,4 @@ public class MiddleDelete {
 		node.setData(nextNode.getData());
 		node.setNext(nextNode.getNext());
 	} 
-	
-	public static void partition(Node node){
-		
-	}
 }

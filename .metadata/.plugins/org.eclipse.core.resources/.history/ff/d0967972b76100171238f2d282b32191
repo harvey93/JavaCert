@@ -4,8 +4,7 @@ import java.util.*;
 public class Test {
 	
 	public static void main(String[] args) {
-		Node head = createList();
-		printList(head);
+//		System.out.println(Integer.parseInt("abc"));
 		
 	}
 	
@@ -17,7 +16,7 @@ public class Test {
 		}
 	}
 	
-	public static Node createList(){
+	public static Node[] createList(){
 		Node one = new Node(10);
 		Node two = new Node(15);
 		Node three = new Node(10);
@@ -35,6 +34,6 @@ public class Test {
 		six.setNext(seven);
 		seven.setNext(eight);
 		
-		return one;
+		return new Node[] {one, four};
 	}
 }
