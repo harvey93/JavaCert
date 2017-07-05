@@ -20,8 +20,6 @@ public class MiddleDelete {
 					first.setNext(node);
 					first = first.getNext();
 				}
-			}else{
-				
 			}
 			node = node.getNext();
 		}

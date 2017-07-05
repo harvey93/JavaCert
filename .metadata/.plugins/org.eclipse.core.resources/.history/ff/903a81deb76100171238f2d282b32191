@@ -5,10 +5,8 @@ public class Test {
 	
 	public static void main(String[] args) {
 		Node head = createList();
-//		printList(head);
-		MiddleDelete.partition(head, 13);
-		System.out.println("----------------");
 		printList(head);
+		MiddleDelete.partition(head);
 		
 	}
 	

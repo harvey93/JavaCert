@@ -9,27 +9,10 @@ public class MiddleDelete {
 	} 
 	
 	public static void partition(Node node, int val){
-		Node first = null;
-		Node middleStart = null;
-		Node end;
+		Node first;
 		while(node != null){
-			if(node.getData() < val){
-				if(first == null){
-					first = node;
-				}else {
-					first.setNext(node);
-					first = first.getNext();
-				}
-			}else{
-				
-			}
+			
 			node = node.getNext();
 		}
-		
-		if(first.getNext().getData() > val){
-			first.setNext(null);
-		}
-		
-		
 	}
 }
