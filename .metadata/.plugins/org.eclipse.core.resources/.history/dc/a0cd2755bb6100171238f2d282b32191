@@ -40,7 +40,7 @@ public class MiddleDelete {
 			end.setNext(null);
 		}
 		
-		first.setNext(middleStart);
+//		first.setNext(middleStart);
 		
 		
 	}

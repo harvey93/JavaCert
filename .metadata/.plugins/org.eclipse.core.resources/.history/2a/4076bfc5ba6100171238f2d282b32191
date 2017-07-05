@@ -11,7 +11,7 @@ public class MiddleDelete {
 	public static void partition(Node node, int val){
 		Node first = null;
 		Node middleStart = null;
-		Node end = null;
+		Node end;
 		while(node != null){
 			if(node.getData() < val){
 				if(first == null){
@@ -22,25 +22,15 @@ public class MiddleDelete {
 				}
 			}else{
 				if(end == null){
-					end = node;
-					middleStart = node;
-				}else {
-					end.setNext(node);
-					end = end.getNext();
+					
 				}
 			}
 			node = node.getNext();
 		}
 		
-		if(first.getNext() != null && first.getNext().getData() >= val){
+		if(first.getNext().getData() > val){
 			first.setNext(null);
 		}
-		
-		if(end.getNext() != null && end.getNext().getData() < val){
-			end.setNext(null);
-		}
-		
-		first.setNext(middleStart);
 		
 		
 	}

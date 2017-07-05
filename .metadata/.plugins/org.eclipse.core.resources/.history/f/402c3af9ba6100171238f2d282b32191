@@ -26,21 +26,14 @@ public class MiddleDelete {
 					middleStart = node;
 				}else {
 					end.setNext(node);
-					end = end.getNext();
 				}
 			}
 			node = node.getNext();
 		}
 		
-		if(first.getNext() != null && first.getNext().getData() >= val){
+		if(first.getNext().getData() > val){
 			first.setNext(null);
 		}
-		
-		if(end.getNext() != null && end.getNext().getData() < val){
-			end.setNext(null);
-		}
-		
-		first.setNext(middleStart);
 		
 		
 	}
