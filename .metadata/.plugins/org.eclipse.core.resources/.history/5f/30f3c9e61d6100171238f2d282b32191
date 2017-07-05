@@ -5,8 +5,8 @@ public class Test {
 	
 	public static void main(String[] args) {
 		Node head = createList();	
+		RemoveDups.removeDups(head);
 		printList(head);
-		System.out.println(ToLast.kthToLast(head, 3));
 	}
 	
 	public static void printList(Node head){
