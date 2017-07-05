@@ -6,7 +6,7 @@ public class Test {
 	public static void main(String[] args) {
 		Node head = createList();	
 //		printList(head);
-		System.out.println(ToLast.kthToLast(head, 3).getData());
+		System.out.println(ToLast.kthToLast(head, 0).getData());
 	}
 	
 	public static void printList(Node head){

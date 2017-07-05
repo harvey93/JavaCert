@@ -13,7 +13,6 @@ public class ToLast {
 			}
 			current = current.getNext();
 		}
-		
 		return res;
 	}
 }
