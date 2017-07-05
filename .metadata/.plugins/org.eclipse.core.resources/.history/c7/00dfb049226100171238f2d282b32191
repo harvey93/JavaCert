@@ -4,12 +4,9 @@ import java.util.*;
 public class Test {
 	
 	public static void main(String[] args) {
-		Node[] nodes = createList();	
-		printList(nodes[0]);
-		System.out.println("------------------");
-		MiddleDelete.remove(nodes[1]);
-		printList(nodes[0]);
-		
+		Node head = createList();	
+//		printList(head);
+		System.out.println(ToLast.kthToLast(head, 3).getData());
 	}
 	
 	public static void printList(Node head){
@@ -20,7 +17,7 @@ public class Test {
 		}
 	}
 	
-	public static Node[] createList(){
+	public static Node createList(){
 		Node one = new Node(10);
 		Node two = new Node(15);
 		Node three = new Node(10);
@@ -38,6 +35,6 @@ public class Test {
 		six.setNext(seven);
 		seven.setNext(eight);
 		
-		return new Node[] {one, four};
+		return one;
 	}
 }

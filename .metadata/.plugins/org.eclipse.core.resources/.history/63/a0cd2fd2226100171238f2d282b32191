@@ -7,7 +7,7 @@ public class Test {
 		Node[] nodes = createList();	
 		printList(nodes[0]);
 		System.out.println("------------------");
-		MiddleDelete.remove(nodes[1]);
+		MiddleDelete.remove();
 		printList(nodes[0]);
 		
 	}
