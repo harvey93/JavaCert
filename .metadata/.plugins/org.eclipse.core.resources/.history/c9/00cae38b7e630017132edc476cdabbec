@@ -8,8 +8,7 @@ public class ListSum {
 	}
 	
 	public static Node backwardSum(Node first, Node second){
-		Node sum = null;
-		return sum;
+		
 	}
 
 }
