@@ -1,8 +1,0 @@
-package aAProbs;
-
-public class RepeatedLetters {
-
-	public static int numRep(String str){
-		
-	}
-}

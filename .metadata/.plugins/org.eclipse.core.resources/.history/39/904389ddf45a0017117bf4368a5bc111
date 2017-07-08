@@ -1,8 +1,0 @@
-package aAProbs;
-
-public class Primes {
-
-	public static isPrime(int num){
-		
-	}
-}

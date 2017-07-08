@@ -1,9 +1,0 @@
-package ch2;
-import java.util.*;
-
-public class RemoveDups {
-	
-	public static void removeDups(LinkedList<Integer> list){
-		HashMap<Integer, Integer> hashCount = hashCount(list);
-	}
-}

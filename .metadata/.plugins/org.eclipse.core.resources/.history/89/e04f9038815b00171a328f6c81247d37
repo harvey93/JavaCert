@@ -1,9 +1,0 @@
-package aAProbs;
-
-public class RepeatedLetters {
-
-	public static int numRep(String str){
-		HashMap<String, Integer> map = new HashMap<>();
-		return 5;
-	}
-}

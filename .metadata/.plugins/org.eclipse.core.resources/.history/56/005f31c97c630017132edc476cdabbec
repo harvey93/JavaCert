@@ -1,0 +1,9 @@
+package ch2;
+
+public class ListSum {
+	
+	public static void forwardSum(Node first, Node second){
+		
+	}
+
+}

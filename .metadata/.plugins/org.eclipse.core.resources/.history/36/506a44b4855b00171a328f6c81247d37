@@ -1,9 +1,0 @@
-package aAProbs;
-
-public class CaesarCipher {
-
-	public static String cipher(String str, int offset) {
-		StringBuilder sb = new StringBuilder();
-		return "hi";
-	}
-}

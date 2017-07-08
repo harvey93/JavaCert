@@ -1,8 +1,0 @@
-package aAProbs;
-
-public class GreatestCommonFactor {
-	
-	public static int gcf(int num1, int num2) {
-		int smaller;
-	}
-}

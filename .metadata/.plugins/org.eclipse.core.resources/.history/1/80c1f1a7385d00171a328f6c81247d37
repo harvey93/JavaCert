@@ -1,6 +1,0 @@
-package ch5;
-
-public class Shark {
-	
-	private int numberOfFins = 8;
-}
