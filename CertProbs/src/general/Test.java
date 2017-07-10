@@ -1,10 +1,21 @@
 package general;
 
+import java.util.Arrays;
+import java.io.IOException;
+
 public class Test {
 
 	public static void main(String[] args) {
-		Double d = 3.0;
-		System.out.println(d);
+			System.out.println(method());	
+	}
+	
+	public static IOException method(){
+		try{
+			
+			return new IOException("hi");
+		}finally{
+			System.out.println("finally");
+		}
 	}
 	
 	public static void nxt(Object o) {
