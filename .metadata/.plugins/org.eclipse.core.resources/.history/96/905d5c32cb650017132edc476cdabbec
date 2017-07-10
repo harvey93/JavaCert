@@ -9,10 +9,8 @@ public class Test {
 		sbTest();
 	}
 	
-	public static void sbTest(){
-		StringBuilder sb = new StringBuilder("1ZO");
-		sb.append("-808");
-		System.out.println(sb.capacity());
+	sbTest(){
+		
 	}
 	
 	public static void breakTest(){

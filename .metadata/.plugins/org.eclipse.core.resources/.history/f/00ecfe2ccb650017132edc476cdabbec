@@ -6,13 +6,7 @@ import java.io.IOException;
 public class Test {
 
 	public static void main(String[] args) {
-		sbTest();
-	}
-	
-	public static void sbTest(){
-		StringBuilder sb = new StringBuilder("1ZO");
-		sb.append("-808");
-		System.out.println(sb.capacity());
+		
 	}
 	
 	public static void breakTest(){

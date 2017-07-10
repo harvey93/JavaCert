@@ -11,7 +11,7 @@ public class Test {
 	
 	public static void sbTest(){
 		StringBuilder sb = new StringBuilder("1ZO");
-		sb.append("-808");
+		sb.append("-808")
 		System.out.println(sb.capacity());
 	}
 	
