@@ -6,7 +6,8 @@ import java.io.IOException;
 public class Test {
 
 	public static void main(String[] args) {
-		
+		Bird b = new Bird();
+		Bird b = (Bird) a;
 	}
 	
 	public static void breakTest(){

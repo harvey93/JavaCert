@@ -6,7 +6,9 @@ import java.io.IOException;
 public class Test {
 
 	public static void main(String[] args) {
-		
+		Bird b = new Bird();
+		Animal a = b;
+		System.out.println(a.getClass());
 	}
 	
 	public static void breakTest(){

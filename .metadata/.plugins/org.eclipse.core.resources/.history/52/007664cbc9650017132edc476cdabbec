@@ -7,10 +7,6 @@ public class Animal {
 	}
 	
 	public Animal(){
-		
-	}
-	
-	public void print(){
-		System.out.println("Animal Print");
+		System.out.println("No Args");
 	}
 }
