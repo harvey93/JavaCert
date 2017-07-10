@@ -6,14 +6,11 @@ import java.io.IOException;
 public class Test {
 
 	public static void main(String[] args) {
-		ifTest();
+		
 	}
 	
 	public static void ifTest(){
-		int x = 5;
-		if(x ++== 5){
-			System.out.println(x);
-		}
+		
 	}
 	
 	public static void caseTest(){
