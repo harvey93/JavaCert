@@ -9,13 +9,6 @@ public class Test {
 		forTest();
 	}
 	
-	public static void forTest(){
-		for(int i = 0, k = 3; i < k; ){
-			System.out.println(k);
-		}
-
-	}
-	
 	public static void ifTest(){
 		int x = 5;
 		if(x ++== 5){
