@@ -8,8 +8,6 @@ public class Test {
 	public static void main(String[] args) {
 			Integer[] a = new Integer [2];
 			a[1] = 10;
-			for(Integer I : a)
-				System.out.print(I);
 	}
 	
 	public static IOException method(){
