@@ -10,7 +10,7 @@ public class Test {
 	}
 	
 	public static void caseTest(){
-		final String a = "A";
+		String final a = "A";
 		String b = "B";
 		String c = "C";
 		

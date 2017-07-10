@@ -6,18 +6,10 @@ import java.io.IOException;
 public class Test {
 
 	public static void main(String[] args) {
-		caseTest();
-	}
-	
-	public static void caseTest(){
-		final String a = "A";
-		String b = "B";
-		String c = "C";
-		
-		switch(a){
-		case a: {System.out.println("FIRST");} break;
-		default: {System.out.println("DEFAULT"); break;}
-		}
+			Integer[] a = new Integer [2];
+			a[1] = 10;
+			for(Integer I : a)
+				System.out.print(I);
 	}
 	
 	public static IOException method(){

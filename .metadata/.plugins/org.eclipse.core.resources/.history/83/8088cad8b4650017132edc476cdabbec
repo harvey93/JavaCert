@@ -10,14 +10,9 @@ public class Test {
 	}
 	
 	public static void caseTest(){
-		final String a = "A";
+		String a = "A";
 		String b = "B";
 		String c = "C";
-		
-		switch(a){
-		case a: {System.out.println("FIRST");} break;
-		default: {System.out.println("DEFAULT"); break;}
-		}
 	}
 	
 	public static IOException method(){
