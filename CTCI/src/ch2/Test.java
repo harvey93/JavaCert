@@ -5,10 +5,12 @@ public class Test {
 	
 	public static void main(String[] args) {
 		Node one = createList(new int[] {7,1,6});
+		Node two = createList(new int[] {5,9,2});
 //		printList(head);
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
-		printList(one);
+		Node sumHead = ListSum.backwardSum(one, two);
+		printList(sumHead);
 		
 	}
 	
