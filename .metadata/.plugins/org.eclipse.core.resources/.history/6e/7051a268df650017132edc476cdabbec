@@ -7,10 +7,8 @@ import java.time.LocalDate;
 public class Test {
 
 	public static void main(String[] args) {
-		char [] c = new char[] {'a', 'b', 'c'};
-		String cd = "abcdef".substring(4);
-		String s1 = new String(c);
-		System.out.println(cd);
+		LocalDate date = LocalDate.ofYearDay(2017, 365);
+		System.out.println(date);
 	}
 	
 	public static void sbTest(){
