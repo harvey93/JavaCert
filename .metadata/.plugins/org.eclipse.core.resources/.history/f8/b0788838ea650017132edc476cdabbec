@@ -8,8 +8,8 @@ public class Test {
 	static int x = 50;
 
 	public static void main(String[] args) {
-		int x = 20;
-		System.out.println(Test.x);
+		int x;
+		
 	}
 	
 	public static void sbTest(){

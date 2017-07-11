@@ -5,11 +5,12 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 public class Test {
-	static int x = 50;
 
 	public static void main(String[] args) {
-		int x = 20;
-		System.out.println(Test.x);
+		char [] c = new char[] {'a', 'b', 'c'};
+		String cd = "abcdef".substring(4);
+		String s1 = new String(c);
+		System.out.println(cd);
 	}
 	
 	public static void sbTest(){
