@@ -7,8 +7,7 @@ import java.time.LocalDate;
 public class Test {
 
 	public static void main(String[] args) {
-		LocalDate date = LocalDate.ofYearDay(2017, 365);
-		System.out.println(date);
+		LocalDate date = LocalDate.ofYearDay(2016, 366);
 	}
 	
 	public static void sbTest(){
