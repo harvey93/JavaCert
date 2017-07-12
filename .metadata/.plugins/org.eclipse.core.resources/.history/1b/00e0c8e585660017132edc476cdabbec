@@ -2,15 +2,18 @@ package ch2;
 import java.util.*;
 
 public class Test {
-	static Integer i;
+	
 	public static void main(String[] args) {
 		Node one = createList(new int[] {7,1,6,2});
 		Node two = createList(new int[] {5,9,2});
 //		printList(head);
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
-//		Node sumHead = ListSum.backwardSum(one, two);
-//		printList(sumHead);
+		Node sumHead = ListSum.backwardSum(one, two);
+		printList(sumHead);
+		Object a;
+		a.toString();
+		
 		
 	}
 	

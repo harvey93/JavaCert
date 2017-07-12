@@ -11,6 +11,13 @@ public class Test {
 		System.out.println("----------------");
 //		Node sumHead = ListSum.backwardSum(one, two);
 //		printList(sumHead);
+		int [][] arr = new int[4][2];
+		System.out.println(Arrays.toString(arr[0]));
+		try{
+			System.out.println("hi");
+		}catch(Exception e){
+			System.out.println("bye");
+		}
 		
 	}
 	

@@ -9,8 +9,10 @@ public class Test {
 //		printList(head);
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
-//		Node sumHead = ListSum.backwardSum(one, two);
-//		printList(sumHead);
+		Node sumHead = ListSum.backwardSum(one, two);
+		printList(sumHead);
+		i.toString();
+		
 		
 	}
 	

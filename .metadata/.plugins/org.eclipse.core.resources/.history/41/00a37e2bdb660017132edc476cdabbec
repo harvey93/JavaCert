@@ -11,6 +11,9 @@ public class Test {
 		System.out.println("----------------");
 //		Node sumHead = ListSum.backwardSum(one, two);
 //		printList(sumHead);
+		double d = 10;
+		Double a = 10;
+
 		
 	}
 	
