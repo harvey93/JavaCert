@@ -9,13 +9,10 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-		boolean s = true;
-		if(s = true){
-			System.out.println("in");
-		}else {
-			System.out.println("else");
-		}
-		
+		short x = 10;
+		x += 10;
+		short s = x;
+		System.out.println(s);
 	}
 	
 	public static void sbTest(){

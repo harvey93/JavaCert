@@ -10,7 +10,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		boolean s = true;
-		if(s = true){
+		if(s = false){
 			System.out.println("in");
 		}else {
 			System.out.println("else");
