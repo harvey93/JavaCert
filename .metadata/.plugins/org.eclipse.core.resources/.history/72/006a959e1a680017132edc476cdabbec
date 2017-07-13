@@ -9,8 +9,10 @@ public class Test {
 	
 
 	public static void main(String[] args) {
+		StringBuilder sb = new StringBuilder("ABC");
+		sb.insert(1, "H");
+		System.out.println(sb);
 		
-		boolean b = True;
 	}
 	
 	public static void sbTest(){
