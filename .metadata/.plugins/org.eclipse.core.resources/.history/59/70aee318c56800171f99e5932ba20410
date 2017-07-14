@@ -9,9 +9,8 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-		String i = "10.0";
-		System.out.println(Double.parseDouble(i));
-		
+		Integer i = 10;
+		System.out.println(i.doubleValue());
 	}
 	
 	public static void sbTest(){
