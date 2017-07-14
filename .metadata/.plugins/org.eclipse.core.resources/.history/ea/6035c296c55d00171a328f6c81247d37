@@ -1,7 +1,0 @@
-package aAProbs;
-
-public class NearestLarger {
-	public static int nearest(ArrayList<Integer> arr, int i){
-		return 5;
-	}
-}

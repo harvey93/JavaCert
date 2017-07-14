@@ -1,8 +1,0 @@
-package aAProbs;
-import java.util.*;
-
-public class NearestLarger {
-	public static int nearest(int [] arr, int i){
-		return 5;
-	}
-}

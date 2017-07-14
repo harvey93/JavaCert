@@ -9,7 +9,7 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-		
+		AbsTest.print();
 	}
 	
 	public static void sbTest(){
