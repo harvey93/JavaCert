@@ -34,7 +34,7 @@ public class Test {
 		list.add(b2);
 		list.add(b3);
 		list.forEach(el -> {
-			el.print();
+			
 		});
 	}
 	

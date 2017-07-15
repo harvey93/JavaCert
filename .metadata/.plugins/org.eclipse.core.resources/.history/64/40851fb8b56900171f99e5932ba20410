@@ -2,9 +2,6 @@ package general;
 
 
 import java.util.*;
-
-import javax.lang.model.element.Element;
-
 import java.io.IOException;
 import java.time.LocalDate;
 
@@ -33,9 +30,6 @@ public class Test {
 		list.add(b1);
 		list.add(b2);
 		list.add(b3);
-		list.forEach(el -> {
-			el.print();
-		});
 	}
 	
 	public static void sbTest(){

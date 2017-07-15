@@ -15,10 +15,6 @@ public class Bird extends Animal{
 		this.name = name;
 	}
 	
-	public String getName(){
-		return this.name;
-	}
-	
 	public void print(){
 		System.out.println("Bird Print");
 	}

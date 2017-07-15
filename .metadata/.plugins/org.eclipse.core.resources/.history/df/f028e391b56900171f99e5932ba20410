@@ -2,9 +2,6 @@ package general;
 
 
 import java.util.*;
-
-import javax.lang.model.element.Element;
-
 import java.io.IOException;
 import java.time.LocalDate;
 
@@ -27,15 +24,7 @@ public class Test {
 //		Object list2 = new ArrayList<Integer>(Arrays.asList(intArr2));
 ////		System.out.println(p1.equals(p2));
 		ArrayList<Animal> list = new ArrayList<>();
-		Bird b1 = new Bird("Bird1");
-		Bird b2 = new Bird("Bird2");
-		Bird b3 = new Bird("Bird3");
-		list.add(b1);
-		list.add(b2);
-		list.add(b3);
-		list.forEach(el -> {
-			el.print();
-		});
+		Bird b1 = new Bird();
 	}
 	
 	public static void sbTest(){
