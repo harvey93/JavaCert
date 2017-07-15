@@ -46,9 +46,9 @@ public class Test {
 //			el.print();
 //		});
 		
-//		for(Animal a : list){
-//			((Tiger)a).print();
-//		}
+		for(Animal a : list){
+			a.print();
+		}
 	}
 	
 	public static void sbTest(){
