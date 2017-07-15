@@ -42,17 +42,17 @@ public class Test {
 		list.add(t1);
 		list.add(t2);
 		list.add(t3);
-//		list.forEach(el -> {
-//			if(el instanceof Tiger){
-//				((Tiger)el).print();
-//			}else if(el instanceof Bird){
-//				((Bird)el).print();
-//			}
-//		});
+		list.forEach(el -> {
+			if(el instanceof Tiger){
+				((Tiger)el).print();
+			}else if(el instanceof Bird){
+				
+			}
+		});
 		
-		for(Animal a : list){
-			((Tiger)a).print();
-		}
+//		for(Animal a : list){
+//			((Tiger)a).print();
+//		}
 	}
 	
 	public static void sbTest(){
