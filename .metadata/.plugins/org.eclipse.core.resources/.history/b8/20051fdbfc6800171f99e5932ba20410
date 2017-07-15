@@ -9,9 +9,7 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-		char x ='a';
-		int i = x;
-		System.out.println(i);
+		int x = 0;
 		
 		
 	}
