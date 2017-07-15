@@ -46,8 +46,8 @@ public class Test {
 //			el.print();
 //		});
 		
-		for(Animal a : list){
-			a.print();
+		for(Aninal a : list){
+			
 		}
 	}
 	

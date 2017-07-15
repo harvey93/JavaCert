@@ -30,25 +30,15 @@ public class Test {
 		Bird b1 = new Bird("Bird1");
 		Bird b2 = new Bird("Bird2");
 		Bird b3 = new Bird("Bird3");
-		
 		Tiger t1 = new Tiger("Tiger1");
 		Tiger t2 = new Tiger("Tiger2");
-		Tiger t3 = new Tiger("Tiger3");
-		
+		Tiger t1 = new Tiger("Tiger3");
 		list.add(b1);
 		list.add(b2);
 		list.add(b3);
-		
-		list.add(t1);
-		list.add(t2);
-		list.add(t3);
-//		list.forEach(el -> {
-//			el.print();
-//		});
-		
-		for(Animal a : list){
-			a.print();
-		}
+		list.forEach(el -> {
+			el.print();
+		});
 	}
 	
 	public static void sbTest(){

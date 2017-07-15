@@ -2,7 +2,14 @@ package general;
 
 public class Bird extends Animal{
 	private String name;
-
+	
+	public Bird(){
+		
+	}
+	
+	public Bird(int i){
+		super();
+	}
 	
 	public Bird(String name){
 		this.name = name;

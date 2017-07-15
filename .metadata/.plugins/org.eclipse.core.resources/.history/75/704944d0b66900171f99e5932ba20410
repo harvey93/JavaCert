@@ -45,10 +45,6 @@ public class Test {
 //		list.forEach(el -> {
 //			el.print();
 //		});
-		
-		for(Animal a : list){
-			a.print();
-		}
 	}
 	
 	public static void sbTest(){

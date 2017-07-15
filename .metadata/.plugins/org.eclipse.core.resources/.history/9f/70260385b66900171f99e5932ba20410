@@ -34,7 +34,6 @@ public class Test {
 		Tiger t1 = new Tiger("Tiger1");
 		Tiger t2 = new Tiger("Tiger2");
 		Tiger t3 = new Tiger("Tiger3");
-		
 		list.add(b1);
 		list.add(b2);
 		list.add(b3);
@@ -42,13 +41,9 @@ public class Test {
 		list.add(t1);
 		list.add(t2);
 		list.add(t3);
-//		list.forEach(el -> {
-//			el.print();
-//		});
-		
-		for(Animal a : list){
-			a.print();
-		}
+		list.forEach(el -> {
+			el.print();
+		});
 	}
 	
 	public static void sbTest(){
