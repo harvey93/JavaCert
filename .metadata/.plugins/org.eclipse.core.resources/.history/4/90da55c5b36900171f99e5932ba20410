@@ -24,8 +24,8 @@ public class Test {
 //		Object list2 = new ArrayList<Integer>(Arrays.asList(intArr2));
 ////		System.out.println(p1.equals(p2));
 		Bird b = new Bird();
-		String string = ((Animal) b).stringTest();
-		System.out.println(string);
+		
+		Animal animal = (Animal) b;
 		
 	}
 	
