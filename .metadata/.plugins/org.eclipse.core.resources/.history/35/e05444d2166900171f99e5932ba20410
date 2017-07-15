@@ -22,9 +22,7 @@ public class Test {
 		Integer [] intArr2 = {1,2,3};
 		Object list1 = new ArrayList<Integer>(Arrays.asList(intArr1));
 		Object list2 = new ArrayList<Integer>(Arrays.asList(intArr2));
-//		System.out.println(p1.equals(p2));
-		Animal a = new Bird();
-		a.print();
+//		System.out.println(s1.equals(s2));
 		
 	}
 	

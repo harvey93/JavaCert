@@ -14,17 +14,15 @@ public class Test {
 		Object s2 = new String("ABC");
 //		System.out.println(s1 == (s2));
 //		System.out.println(s1.equals(s2));
-		Object p1 = new Person("Hrant");
-		Object p2 = new Person("Hrant");
+		Person p1 = new Person("Hrant");
+		Person p2 = new Person("Hrant");
 //		Object p3 = new Person("Vuzh");
 //		System.out.println(p1.equals(p2));
 		Integer [] intArr1 = {1,2,3};
 		Integer [] intArr2 = {1,2,3};
 		Object list1 = new ArrayList<Integer>(Arrays.asList(intArr1));
 		Object list2 = new ArrayList<Integer>(Arrays.asList(intArr2));
-//		System.out.println(p1.equals(p2));
-		Animal a = new Bird();
-		a.print();
+		System.out.println(p1.equals(p2));
 		
 	}
 	

@@ -9,7 +9,7 @@ public class Bird extends Animal{
 		super(i);
 	}
 	
-	public void print(){
+	public  void print(){
 		System.out.println("Bird Print");
 	}
 }
