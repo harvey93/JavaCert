@@ -25,7 +25,7 @@ public class Test {
 ////		System.out.println(p1.equals(p2));
 		Bird b = new Bird();
 		
-		Animal animal = (Animal) b;
+		Animal animal = (Animal) b.print();
 		
 	}
 	

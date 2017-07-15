@@ -15,6 +15,6 @@ public class Animal {
 	}
 	
 	public String stringTest(){
-		return "Animal";
+		return "Animal"
 	}
 }

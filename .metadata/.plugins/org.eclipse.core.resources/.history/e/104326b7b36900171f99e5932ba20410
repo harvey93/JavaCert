@@ -12,8 +12,4 @@ public class Bird extends Animal{
 	public void print(){
 		System.out.println("Bird Print");
 	}
-	
-	public String stringTest(){
-		return "Bird";
-	}
 }

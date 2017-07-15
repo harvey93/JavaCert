@@ -13,8 +13,4 @@ public class Animal {
 	public void print(){
 		System.out.println("Animal Print");
 	}
-	
-	public String stringTest(){
-		return "Animal";
-	}
 }
