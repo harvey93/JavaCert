@@ -50,12 +50,8 @@ public class Test {
 //			}
 //		});
 		
-		for(Animal el : list){
-			if(el instanceof Tiger){
-				((Tiger)el).print();
-			}else if(el instanceof Bird){
-				((Bird)el).print();
-			}
+		for(Animal a : list){
+			((Tiger)a).print();
 		}
 	}
 	
