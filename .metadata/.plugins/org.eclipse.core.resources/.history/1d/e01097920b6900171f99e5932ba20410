@@ -22,7 +22,7 @@ public class Test {
 		int [] intArr2 = {1,2,3};
 		Object list1 = new ArrayList<Integer>(Arrays.asList(1,2,3));
 		Object list2 = new ArrayList<Integer>(Arrays.asList(1,2,3));
-		System.out.println(p1.equals(p2));
+		System.out.println(list1.equals(list2));
 		
 	}
 	
