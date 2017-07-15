@@ -20,9 +20,10 @@ public class Test {
 //		System.out.println(p1.equals(p2));
 		Integer [] intArr1 = {1,2,3};
 		Integer [] intArr2 = {1,2,3};
-		Object list1 = new ArrayList<Integer>(Arrays.asList(intArr1));
-		Object list2 = new ArrayList<Integer>(Arrays.asList(intArr2));
-		System.out.println(list1.equals(list2));
+		Object list1 = new ArrayList<Integer>(Arrays.asList(1,2,3));
+		Object list2 = new ArrayList<Integer>(Arrays.asList(1,2,3));
+		System.out.println(new ArrayList<Integer>(Arrays.asList(intArr1)));
+		System.out.println(p1.equals(p2));
 		
 	}
 	
