@@ -5,14 +5,13 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 public class Test {
-	static Integer x;
+	static int x;
 	
 
 	public static void main(String[] args) {
-		Comparable s1 = "ABC";
-		Comparable s2 = new String("ABC");
-		System.out.println(s1 == (s2));
-		System.out.println(s1.equals(s2));
+		Integer i = null;
+		System.out.println(i);
+		
 		
 	}
 	

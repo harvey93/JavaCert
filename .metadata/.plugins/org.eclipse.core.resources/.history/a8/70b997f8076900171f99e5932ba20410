@@ -10,9 +10,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		Comparable s1 = "ABC";
-		Comparable s2 = new String("ABC");
-		System.out.println(s1 == (s2));
-		System.out.println(s1.equals(s2));
+		System.out.println(s1.equals("ABC"));
 		
 	}
 	
