@@ -1,0 +1,8 @@
+package ch2;
+
+public class Palindrome {
+
+	public static boolean check1(Node node){
+		
+	} 
+}

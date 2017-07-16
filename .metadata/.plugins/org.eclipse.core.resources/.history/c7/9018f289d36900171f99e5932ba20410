@@ -6,7 +6,7 @@ public class Test {
 	public static void main(String[] args) {
 		Node one = createList(new int[] {2,1,0,1,2});
 		
-		printList(one);
+//		printList(one);
 		
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
