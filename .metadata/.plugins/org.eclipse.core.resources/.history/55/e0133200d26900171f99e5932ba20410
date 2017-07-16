@@ -5,7 +5,7 @@ public class Test {
 	static Integer i;
 	public static void main(String[] args) {
 		Node one = createList(new int[] {2,1,0,});
-		Node two = createList(new int[] {3,4,2,1});
+		Node two = createList(new int[] {3,4,2});
 //		printList(one);
 		
 //		ListSum.backwardSum(head);

@@ -8,7 +8,7 @@ public class ListSum {
 		Node firstRev = reverseList(first);
 		Node secondRev = reverseList(second);
 		Node sum = backwardSum(firstRev, secondRev);
-		return reverseList(sum);
+		return sum;
 	}
 	
 	public static Node reverseList(Node head){
