@@ -38,8 +38,8 @@ public class Palindrome {
 			}
 			walk = walk.getNext();
 		}
-		
-		
+		System.out.println(run);
+		System.out.println(walk.getNext());
 		return res;
 	}
 }

@@ -1,7 +1,5 @@
 package ch2;
 
-import java.util.Stack;
-
 public class Palindrome {
 
 	public static boolean check1(Node node){
@@ -18,27 +16,8 @@ public class Palindrome {
 		return res;
 	} 
 	
-	public static boolean check2(Node node) {
+	public boolean check2(Node node) {
 		boolean res = true;
-		Stack<Node> stack = new Stack<>();
-		
-		Node walk = node;
-		Node run = node;
-		while(walk != null){
-			if(run.getNext() == null){
-				break;
-			}else{
-				run = run.getNext();
-			}
-			
-			if(run.getNext() == null){
-				break;
-			}else {
-				run = run.getNext();
-			}
-			walk = walk.getNext();
-		}
-		
 		
 		return res;
 	}

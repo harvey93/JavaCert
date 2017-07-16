@@ -39,7 +39,6 @@ public class Palindrome {
 			walk = walk.getNext();
 		}
 		
-		
 		return res;
 	}
 }

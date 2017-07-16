@@ -34,11 +34,9 @@ public class Palindrome {
 			if(run.getNext() == null){
 				break;
 			}else {
-				run = run.getNext();
+				
 			}
-			walk = walk.getNext();
 		}
-		
 		
 		return res;
 	}

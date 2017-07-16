@@ -24,21 +24,9 @@ public class Palindrome {
 		
 		Node walk = node;
 		Node run = node;
-		while(walk != null){
-			if(run.getNext() == null){
-				break;
-			}else{
-				run = run.getNext();
-			}
+		while(true){
 			
-			if(run.getNext() == null){
-				break;
-			}else {
-				run = run.getNext();
-			}
-			walk = walk.getNext();
 		}
-		
 		
 		return res;
 	}
