@@ -39,16 +39,8 @@ public class Palindrome {
 			stack.push(walk);
 			walk = walk.getNext();
 		}
-		walk = walk.getNext();
-		while(!stack.isEmpty()){
-			Node stackCurrent = stack.pop();
-			if(walk.getData() != stackCurrent.getData()){
-				res = false;
-				break;
-			}
-			walk = walk.getNext();
-		}
 		
+		System.out.println(walk);
 		return res;
 	}
 }

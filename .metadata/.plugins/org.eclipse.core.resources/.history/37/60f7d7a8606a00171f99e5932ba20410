@@ -44,9 +44,7 @@ public class Palindrome {
 			Node stackCurrent = stack.pop();
 			if(walk.getData() != stackCurrent.getData()){
 				res = false;
-				break;
 			}
-			walk = walk.getNext();
 		}
 		
 		return res;
