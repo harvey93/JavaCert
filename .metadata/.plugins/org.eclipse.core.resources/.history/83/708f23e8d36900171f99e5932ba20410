@@ -11,8 +11,8 @@ public class Palindrome {
 				break;
 			}
 			node = node.getNext();
-			nodeRev = nodeRev.getNext();
+			nodeRev = node.getNext();
 		}
-		return res;
+		return true;
 	} 
 }

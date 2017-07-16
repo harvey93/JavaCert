@@ -4,7 +4,7 @@ import java.util.*;
 public class Test {
 	static Integer i;
 	public static void main(String[] args) {
-		Node one = createList(new int[] {2,1,0,1,2,7});
+		Node one = createList(new int[] {2,1,0,1,2});
 		
 		printList(one);
 		
