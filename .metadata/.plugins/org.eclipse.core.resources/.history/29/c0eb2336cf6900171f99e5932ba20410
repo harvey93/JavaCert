@@ -12,11 +12,6 @@ public class ListSum {
 	public static Node reverseList(Node head){
 		Stack<Node> stack = new Stack<>();
 		Node current = head;
-		while(current != null){
-			stack.push(current);
-			current = current.getNext();
-		}
-		System.out.println(stack);
 		return head;
 	}
 	

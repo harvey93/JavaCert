@@ -13,10 +13,9 @@ public class ListSum {
 		Stack<Node> stack = new Stack<>();
 		Node current = head;
 		while(current != null){
-			stack.push(current);
+			stack.push(current)
 			current = current.getNext();
 		}
-		System.out.println(stack);
 		return head;
 	}
 	

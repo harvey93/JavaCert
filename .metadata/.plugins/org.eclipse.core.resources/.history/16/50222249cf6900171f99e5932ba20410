@@ -16,7 +16,6 @@ public class ListSum {
 			stack.push(current);
 			current = current.getNext();
 		}
-		System.out.println(stack);
 		return head;
 	}
 	
