@@ -10,7 +10,7 @@ public class Test {
 		
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
-		System.out.println(Palindrome.check2(one));
+		System.out.println(Palindrome.check1(one));
 		
 		
 		

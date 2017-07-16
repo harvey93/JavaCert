@@ -15,9 +15,4 @@ public class Palindrome {
 		}
 		return res;
 	} 
-	
-	public boolean check2(Node node) {
-		boolean res = true;
-		return res;
-	}
 }

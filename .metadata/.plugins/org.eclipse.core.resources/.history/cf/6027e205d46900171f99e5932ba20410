@@ -4,13 +4,13 @@ import java.util.*;
 public class Test {
 	static Integer i;
 	public static void main(String[] args) {
-		Node one = createList(new int[] {2,1,5,0,5,1,2});
+		Node one = createList(new int[] {2,1,0,1,2,7});
 		
 		printList(one);
 		
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
-		System.out.println(Palindrome.check2(one));
+		System.out.println(Palindrome.check1(one));
 		
 		
 		
