@@ -1,6 +1,6 @@
 package general;
 
-
+import org.omg.CORBA.PUBLIC_MEMBER;
 
 public class Tiger extends Animal{
 	

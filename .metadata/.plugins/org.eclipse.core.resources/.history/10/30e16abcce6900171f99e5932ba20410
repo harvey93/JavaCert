@@ -7,11 +7,6 @@ public class ListSum {
 		return sum;
 	}
 	
-	public static Node reverseList(Node head){
-		
-		return head;
-	}
-	
 	public static Node backwardSum(Node first, Node second){
 		Node last = null;
 		Node head = null;

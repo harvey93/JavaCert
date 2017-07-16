@@ -9,7 +9,6 @@ public class ListSum {
 	
 	public static Node reverseList(Node head){
 		
-		return head;
 	}
 	
 	public static Node backwardSum(Node first, Node second){
