@@ -5,13 +5,13 @@ public class Test {
 	static Integer i;
 	public static void main(String[] args) {
 		Node one = createList(new int[] {5,2,1,0,1,2,5});
-		Node two = createList(new int[] {6,2,1,1,2,6});
+		Node two = createList(new int[] {6,2,1,1,2,6,7});
 		
-		
+		printList(two);
 		
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
-		
+		System.out.println(Palindrome.check2(two));
 		
 		
 		

@@ -30,13 +30,13 @@ public class Palindrome {
 			}else{
 				run = run.getNext();
 			}
-			stack.push(walk);
+			
 			if(run.getNext() == null){
 				break;
 			}else {
 				run = run.getNext();
 			}
-			
+			stack.push(walk);
 			walk = walk.getNext();
 		}
 		walk = walk.getNext();
@@ -48,8 +48,7 @@ public class Palindrome {
 			}
 			walk = walk.getNext();
 		}
-
-		System.out.println(walk);
+		
 		return res;
 	}
 }

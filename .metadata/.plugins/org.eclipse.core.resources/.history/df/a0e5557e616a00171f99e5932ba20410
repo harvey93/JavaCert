@@ -48,7 +48,10 @@ public class Palindrome {
 			}
 			walk = walk.getNext();
 		}
-
+//		System.out.println(walk.getNext());
+//		if (walk != null) {
+//			res = false;
+//		}
 		System.out.println(walk);
 		return res;
 	}

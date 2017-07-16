@@ -30,26 +30,25 @@ public class Palindrome {
 			}else{
 				run = run.getNext();
 			}
-			stack.push(walk);
+			
 			if(run.getNext() == null){
 				break;
 			}else {
 				run = run.getNext();
 			}
-			
+			stack.push(walk);
 			walk = walk.getNext();
 		}
 		walk = walk.getNext();
-		while(!stack.isEmpty()){
-			Node stackCurrent = stack.pop();
-			if(walk.getData() != stackCurrent.getData()){
-				res = false;
-				break;
-			}
-			walk = walk.getNext();
-		}
-
-		System.out.println(walk);
+//		while(!stack.isEmpty()){
+//			Node stackCurrent = stack.pop();
+//			if(walk.getData() != stackCurrent.getData()){
+//				res = false;
+//				break;
+//			}
+//			walk = walk.getNext();
+//		}
+		System.out.println(walk.getNext());
 		return res;
 	}
 }
