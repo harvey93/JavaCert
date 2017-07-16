@@ -7,10 +7,10 @@ public class Test {
 		Node one = createList(new int[] {7,1,6,2});
 		Node two = createList(new int[] {5,9,2});
 		printList(one);
-		Node oneRev = ListSum.reverseList(one);
+		ListSum.reverseList(one);
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
-		printList(oneRev);
+		printList(one);
 //		Node sumHead = ListSum.backwardSum(one, two);
 //		printList(sumHead);
 		

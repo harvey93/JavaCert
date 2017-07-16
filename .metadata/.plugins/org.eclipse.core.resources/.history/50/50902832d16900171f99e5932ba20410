@@ -5,8 +5,6 @@ import java.util.Stack;
 public class ListSum {
 	
 	public static Node forwardSum(Node first, Node second){
-		Node firstRev = reverseList(first);
-		Node secondRev = reverseList(second);
 		Node sum = null;
 		return sum;
 	}
@@ -18,13 +16,13 @@ public class ListSum {
 			stack.push(current);
 			current = current.getNext();
 		}
-		Node newHead = new Node(stack.pop().getData());
+		Node newHead = new Node(stack.pop().getData())
 		Node newCurrent = newHead;
 		while(!stack.isEmpty()){
 			Node next = new Node(stack.pop().getData());
 			
 			newCurrent.setNext(next);
-			newCurrent = newCurrent.getNext();
+//			newCurrent = newCurrent.getNext();
 		}
 //		System.out.println(stack);
 		

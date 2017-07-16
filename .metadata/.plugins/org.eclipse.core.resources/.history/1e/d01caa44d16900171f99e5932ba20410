@@ -10,7 +10,7 @@ public class Test {
 		Node oneRev = ListSum.reverseList(one);
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
-		printList(oneRev);
+		printList(one);
 //		Node sumHead = ListSum.backwardSum(one, two);
 //		printList(sumHead);
 		

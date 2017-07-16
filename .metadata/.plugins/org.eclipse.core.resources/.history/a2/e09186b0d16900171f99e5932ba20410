@@ -6,7 +6,7 @@ public class ListSum {
 	
 	public static Node forwardSum(Node first, Node second){
 		Node firstRev = reverseList(first);
-		Node secondRev = reverseList(second);
+		Node firstRev = reverseList(one);
 		Node sum = null;
 		return sum;
 	}
