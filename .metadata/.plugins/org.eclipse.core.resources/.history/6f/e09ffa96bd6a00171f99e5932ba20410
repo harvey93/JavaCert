@@ -7,12 +7,10 @@ public class ListLoop {
 		int oneSize = listLength(node1);
 		int twoSize = listLength(node2);
 		if(oneSize > twoSize){
-			node1 = pushStart(node1, oneSize - twoSize);
+			
 		}else if(twoSize > oneSize){
-			node2 = pushStart(node2, twoSize - oneSize);
+			
 		}
-		System.out.println(node1);
-		System.out.println(node2);
 		return res;
 	}
 	
@@ -31,6 +29,6 @@ public class ListLoop {
 			node = node.getNext();
 			i--;
 		}
-		return node;
+		reutnr node;
 	}
 }
