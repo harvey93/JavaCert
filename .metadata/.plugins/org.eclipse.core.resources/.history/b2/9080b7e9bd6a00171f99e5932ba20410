@@ -3,7 +3,7 @@ package ch2;
 public class ListLoop {
 
 	public static boolean isIntersect(Node node1, Node node2){
-		boolean res = false;
+		boolean res = true;
 		int oneSize = listLength(node1);
 		int twoSize = listLength(node2);
 		if(oneSize > twoSize){
