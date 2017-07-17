@@ -9,7 +9,6 @@ public class Node<T> {
 	public Node(T el){
 		this.data = el;
 		this.next = null;
-		this.prev = null;
 	}
 
 	public T getData() {

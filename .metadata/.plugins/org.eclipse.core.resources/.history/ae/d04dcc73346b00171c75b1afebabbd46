@@ -1,7 +1,5 @@
 package ch3;
 
-import javax.swing.Popup;
-
 public class NodeStack<T> {
 
 	private Node<T> head;
@@ -14,11 +12,6 @@ public class NodeStack<T> {
 		this.current = null;
 		this.popCurrent = null;
 		this.size = 0;
-	}
-	
-	public Node<T> pop(){
-		Node<T> res = this.current;
-		return res;
 	}
 	
 	public void push(T el){

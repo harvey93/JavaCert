@@ -17,8 +17,7 @@ public class NodeStack<T> {
 	}
 	
 	public Node<T> pop(){
-		Node<T> res = this.current;
-		return res;
+		
 	}
 	
 	public void push(T el){
