@@ -7,7 +7,6 @@ public class ListLoop {
 		int oneSize = listLength(node1);
 		int twoSize = listLength(node2);
 		System.out.println(oneSize);
-		System.out.println(twoSize);
 		return res;
 	}
 	

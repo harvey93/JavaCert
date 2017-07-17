@@ -1,0 +1,15 @@
+package ch2;
+
+public class ListLoop {
+
+	public static boolean isIntersect(Node node1, Node node2){
+		boolean res = true;
+		int oneSize = listLength(node1);
+		int twoSize = 0;
+		return res;
+	}
+	
+	public static int listLength(Node node){
+		
+	}
+}

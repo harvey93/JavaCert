@@ -24,7 +24,7 @@ public class Test {
 		negThree.setNext(three);
 //		printList(one);
 //		ListSum.backwardSum(head);
-//		System.out.println("----------------");
+		System.out.println("----------------");
 //		printList(negOne);
 		System.out.println("----------------");
 		System.out.println(ListLoop.isIntersect(one, negOne));

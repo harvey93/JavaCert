@@ -6,8 +6,6 @@ public class ListLoop {
 		boolean res = true;
 		int oneSize = listLength(node1);
 		int twoSize = listLength(node2);
-		System.out.println(oneSize);
-		System.out.println(twoSize);
 		return res;
 	}
 	
@@ -15,7 +13,6 @@ public class ListLoop {
 		int count = 0;
 		Node current = node;
 		while(current != null){
-			count++;
 			current = current.getNext();
 		}
 		return count;
