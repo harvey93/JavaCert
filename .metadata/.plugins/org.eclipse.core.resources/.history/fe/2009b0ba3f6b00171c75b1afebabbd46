@@ -14,7 +14,7 @@ public class NodeStack<T> {
 		this.size = 0;
 	}
 	
-	public Node<T> pop() throws StackEmptyException{
+	public Node<T> pop(){
 		if(getSize() == 0){
 			return null;
 		}else if(getSize() == 1){
