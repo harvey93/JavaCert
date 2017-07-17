@@ -1,0 +1,11 @@
+package ch3;
+
+public class NodeStack<T> {
+
+	Node<T> head;
+	int size;
+	
+	public NodeStack(){
+		this.head = null;
+	}
+}

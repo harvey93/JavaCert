@@ -10,7 +10,6 @@ public class NodeStack<T> {
 	public NodeStack(){
 		this.head = null;
 		this.current = null;
-		this.popCurrent = null;
 		this.size = 0;
 	}
 }

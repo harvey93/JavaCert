@@ -1,0 +1,8 @@
+package ch3;
+
+public class NodeStack<T> {
+
+	public NodeStack(){
+		
+	}
+}
