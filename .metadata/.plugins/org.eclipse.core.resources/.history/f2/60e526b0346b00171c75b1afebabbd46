@@ -12,14 +12,6 @@ public class Node<T> {
 		this.prev = null;
 	}
 
-	public Node<T> getPrev() {
-		return prev;
-	}
-
-	public void setPrev(Node<T> prev) {
-		this.prev = prev;
-	}
-
 	public T getData() {
 		return data;
 	}
@@ -34,12 +26,6 @@ public class Node<T> {
 
 	public void setNext(Node<T> next) {
 		this.next = next;
-	}
-	
-	public String toString(){
-		String result = "";
-		result += " "+ this.data;
-		return result;
 	}
 	
 	

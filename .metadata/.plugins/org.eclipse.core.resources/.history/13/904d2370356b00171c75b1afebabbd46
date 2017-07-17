@@ -36,11 +36,5 @@ public class Node<T> {
 		this.next = next;
 	}
 	
-	public String toString(){
-		String result = "";
-		result += " "+ this.data;
-		return result;
-	}
-	
 	
 }

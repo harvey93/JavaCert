@@ -17,32 +17,20 @@ public class NodeStack<T> {
 	
 	public Node<T> pop(){
 		if(getSize() == 0){
-			return null;
-		}else if(getSize() == 1){
-			this.head = null;
+			
 		}
-		
 		Node<T> res = this.current;
-		this.current = this.current.getPrev();
-		
-		if(this.current != null){
-			this.current.setNext(null);
-		}
-		
-		this.size--;
 		return res;
 	}
 	
 	public void push(T el){
 		Node<T> newNode = new Node<T>(el);
-		newNode.setPrev(this.current);
 		
 		if(getSize() == 0){
 			this.head = newNode;	
 		}else if(getSize() == 1){
 			this.head.setNext(newNode);
 			this.current.setNext(newNode);
-			
 		}else {
 			this.current.setNext(newNode);		
 		}

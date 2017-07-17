@@ -12,14 +12,6 @@ public class Test {
 		stack.push(14.2);
 		stack.push(15.1);
 
-		System.out.println(stack.pop());
-		System.out.println(stack.pop());
-		System.out.println(stack.pop());
-		System.out.println(stack.pop());
-		System.out.println(stack.pop());
-		
-		stack.push(18.2);
-		System.out.println("----------------");
 		System.out.println(stack);
 	}
 }

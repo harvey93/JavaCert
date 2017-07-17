@@ -38,8 +38,6 @@ public class Node<T> {
 	
 	public String toString(){
 		String result = "";
-		result += " "+ this.data;
-		return result;
 	}
 	
 	
