@@ -12,20 +12,15 @@ public class Test {
 		
 		one.setNext(two);
 		two.setNext(three);
-		three.setNext(four);
-		four.setNext(five);
 		
 		Node negOne = new Node(-1);
 		Node negTwo = new Node(-2);
 		Node negThree = new Node(-3);
-		
-		negOne.setNext(negTwo);
-		negTwo.setNext(negThree);
-		negThree.setNext(three);
-		printList(one);
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
-		printList(negOne);
+		
+		
+		
 		
 	}
 	

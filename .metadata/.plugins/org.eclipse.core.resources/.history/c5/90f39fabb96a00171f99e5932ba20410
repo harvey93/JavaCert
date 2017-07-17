@@ -22,10 +22,11 @@ public class Test {
 		negOne.setNext(negTwo);
 		negTwo.setNext(negThree);
 		negThree.setNext(three);
-		printList(one);
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
-		printList(negOne);
+		
+		
+		
 		
 	}
 	

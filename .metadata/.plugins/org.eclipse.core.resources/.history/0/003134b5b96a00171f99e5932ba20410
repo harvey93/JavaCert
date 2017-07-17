@@ -27,6 +27,9 @@ public class Test {
 		System.out.println("----------------");
 		printList(negOne);
 		
+		
+		
+		
 	}
 	
 	public static void printList(Node head){

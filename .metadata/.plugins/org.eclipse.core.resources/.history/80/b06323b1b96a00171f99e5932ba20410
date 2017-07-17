@@ -25,7 +25,10 @@ public class Test {
 		printList(one);
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
-		printList(negOne);
+		printList(negOn);
+		
+		
+		
 		
 	}
 	

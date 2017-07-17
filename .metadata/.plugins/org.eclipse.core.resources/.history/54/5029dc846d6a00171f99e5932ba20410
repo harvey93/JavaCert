@@ -4,28 +4,16 @@ import java.util.*;
 public class Test {
 	static Integer i;
 	public static void main(String[] args) {
-		Node one = new Node(1);
-		Node two = new Node(2);
-		Node three = new Node(3);
-		Node four = new Node(4);
-		Node five = new Node(5);
+		Node one = createList(new int[] {5,2,1,0,1,2,5});
+		Node two = createList(new int[] {6,2,1,1,2,6});
 		
-		one.setNext(two);
-		two.setNext(three);
-		three.setNext(four);
-		four.setNext(five);
+		int i args= 10;
 		
-		Node negOne = new Node(-1);
-		Node negTwo = new Node(-2);
-		Node negThree = new Node(-3);
-		
-		negOne.setNext(negTwo);
-		negTwo.setNext(negThree);
-		negThree.setNext(three);
-		printList(one);
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
-		printList(negOne);
+		
+		
+		
 		
 	}
 	
@@ -36,7 +24,6 @@ public class Test {
 			current = current.getNext();
 		}
 	}
-	
 	
 	public static Node createList(int[] arr){
 		Node head = new Node(arr[0]);
