@@ -26,8 +26,6 @@ public class Test {
 		System.out.println("----------------");
 //		System.out.println(ListLoop.loopDetect(one));
 		
-		
-		
 	}
 	
 	public static void printList(Node head){
