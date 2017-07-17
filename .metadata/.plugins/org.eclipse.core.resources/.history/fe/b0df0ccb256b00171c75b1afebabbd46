@@ -3,17 +3,15 @@ package ch3;
 
 public class MyStack {
 	
-	private Integer[] store;
-	private int index;
+	Integer[] store;
+	int index;
 	public MyStack(){
 		this.store = new Integer[4];
 		this.index = 0;
 	}
 	
 	public void pop(Integer el){
-		if(this.index == size()){
-			resize();
-		}
+		
 		add(el);
 	}
 	
@@ -26,7 +24,7 @@ public class MyStack {
 		index++;
 	}
 	
-	private void resize(){
+	public void resize(){
 		
 	}
 }

@@ -12,7 +12,7 @@ public class MyStack {
 	
 	public void pop(Integer el){
 		if(this.index == size()){
-			resize();
+			
 		}
 		add(el);
 	}
