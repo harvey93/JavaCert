@@ -16,15 +16,11 @@ public class MyStack<T> {
 	}
 	
 	public T pop(){
-		return this.store.remove(size() - 1);
+		this.store.remove(size() - 1);
 	}
 	
 	public int size(){
 		return this.store.size();
-	}
-	
-	public String toString(){
-		return this.store.toString();
 	}
 	
 

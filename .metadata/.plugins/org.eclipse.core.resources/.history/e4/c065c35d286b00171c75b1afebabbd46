@@ -24,7 +24,7 @@ public class MyStack<T> {
 	}
 	
 	public String toString(){
-		return this.store.toString();
+		
 	}
 	
 

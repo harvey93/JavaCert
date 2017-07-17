@@ -9,7 +9,6 @@ public class Test {
 		stack.push(10.0);
 		stack.push(15.3);
 		stack.push(9.1);
-		stack.push(12.);
-		System.out.println(stack);
+		stack.push(12.9);
 	}
 }

@@ -23,8 +23,8 @@ public class MyStack<T> {
 		return this.store.size();
 	}
 	
-	public String toString(){
-		return this.store.toString();
+	public void toString(){
+		
 	}
 	
 
