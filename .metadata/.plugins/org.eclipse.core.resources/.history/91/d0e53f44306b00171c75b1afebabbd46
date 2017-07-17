@@ -13,8 +13,4 @@ public class NodeStack<T> {
 		this.popCurrent = null;
 		this.size = 0;
 	}
-	
-	public void push(){
-		
-	}
 }
