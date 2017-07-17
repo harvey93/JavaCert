@@ -11,8 +11,5 @@ public class Test {
 		stack.push(9.1);
 		stack.push(12.);
 		System.out.println(stack);
-		Double a = stack.pop();
-		Double b = stack.pop();
-		System.out.println(b);
 	}
 }

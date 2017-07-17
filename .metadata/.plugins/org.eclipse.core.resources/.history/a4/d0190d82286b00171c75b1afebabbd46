@@ -13,6 +13,6 @@ public class Test {
 		System.out.println(stack);
 		Double a = stack.pop();
 		Double b = stack.pop();
-		System.out.println(b);
+		System.out.println(stack);
 	}
 }
