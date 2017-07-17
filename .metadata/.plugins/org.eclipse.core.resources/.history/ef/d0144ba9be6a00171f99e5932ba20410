@@ -17,14 +17,15 @@ public class Test {
 		two.setNext(three);
 		three.setNext(four);
 		four.setNext(five);
-		five.setNext(six);
-		six.setNext(seven);
-		seven.setNext(eight);
-		eight.setNext(five);
 		
-		
+
+
+//		printList(one);
+//		ListSum.backwardSum(head);
+//		System.out.println("----------------");
+//		printList(negOne);
 		System.out.println("----------------");
-		System.out.println(ListLoop.loopDetect(one));
+		System.out.println(ListLoop.isIntersect(one, negOne));
 		
 	}
 	

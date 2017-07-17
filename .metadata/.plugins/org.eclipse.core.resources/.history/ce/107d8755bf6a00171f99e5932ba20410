@@ -1,25 +1,11 @@
 package ch2;
 
-import java.util.HashSet;
-
 public class ListLoop {
 	
 	
 	public static Node loopDetect(Node node){
 		Node res = null;
-		HashSet<Integer> set = new HashSet<>();
-		Node current = node;
-		
-		while(node != null){
-			if(set.contains(current.getData())){
-				res = current;
-				break;
-			}
-			set.add(current.getData());
-			current = current.getNext();
-		}
-		
-		return res;
+		return node;
 	}
 
 	public static boolean isIntersect(Node node1, Node node2){

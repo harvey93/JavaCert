@@ -9,7 +9,6 @@ public class ListLoop {
 		Node res = null;
 		HashSet<Integer> set = new HashSet<>();
 		Node current = node;
-		
 		while(node != null){
 			if(set.contains(current.getData())){
 				res = current;
@@ -18,7 +17,6 @@ public class ListLoop {
 			set.add(current.getData());
 			current = current.getNext();
 		}
-		
 		return res;
 	}
 

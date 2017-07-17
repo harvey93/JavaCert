@@ -24,7 +24,7 @@ public class Test {
 		
 		
 		System.out.println("----------------");
-		System.out.println(ListLoop.loopDetect(one));
+		System.out.println(ListLoop.loopDetect(one););
 		
 	}
 	

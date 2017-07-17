@@ -22,9 +22,14 @@ public class Test {
 		seven.setNext(eight);
 		eight.setNext(five);
 		
+
+
 		
+//		ListSum.backwardSum(head);
+//		System.out.println("----------------");
+//		printList(negOne);
 		System.out.println("----------------");
-		System.out.println(ListLoop.loopDetect(one));
+		
 		
 	}
 	

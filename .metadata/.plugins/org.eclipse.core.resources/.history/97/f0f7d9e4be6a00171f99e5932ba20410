@@ -22,9 +22,9 @@ public class Test {
 		seven.setNext(eight);
 		eight.setNext(five);
 		
-		
+		ListLoop.loopDetect(one);
 		System.out.println("----------------");
-		System.out.println(ListLoop.loopDetect(one));
+		
 		
 	}
 	

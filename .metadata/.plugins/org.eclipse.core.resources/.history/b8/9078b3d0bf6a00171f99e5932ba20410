@@ -7,18 +7,17 @@ public class ListLoop {
 	
 	public static Node loopDetect(Node node){
 		Node res = null;
-		HashSet<Integer> set = new HashSet<>();
+		HashSet<Node> set = new HashSet<>();
 		Node current = node;
-		
-		while(node != null){
-			if(set.contains(current.getData())){
+//		while(node != null){
+		System.out.println(set.contains(current));
+			if(set.contains(current)){
 				res = current;
-				break;
+//				break;
 			}
-			set.add(current.getData());
-			current = current.getNext();
-		}
-		
+			set.add(current);
+			node = node.getNext();
+//		}
 		return res;
 	}
 
