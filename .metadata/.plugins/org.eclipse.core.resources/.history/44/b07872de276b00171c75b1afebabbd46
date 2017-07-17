@@ -5,10 +5,11 @@ import java.util.*;
 public class MyStack<T> {
 	
 	private ArrayList<T> store;
-	
+	private int length;
 	
 	public MyStack(){
 		this.store = new ArrayList<>();
+		this.length = 0;
 	}
 	
 	public void push(T el){
@@ -16,13 +17,13 @@ public class MyStack<T> {
 	}
 	
 	public void pop(){
-		this.store.remove(size() - 1);
+		
 	}
 	
 	public int size(){
-		return this.store.size();
+		return this.length;
 	}
 	
 
-
+	
 }

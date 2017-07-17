@@ -13,10 +13,11 @@ public class MyStack<T> {
 	
 	public void push(T el){
 		this.store.add(el);
+		
 	}
 	
 	public void pop(){
-		this.store.remove(size() - 1);
+		
 	}
 	
 	public int size(){
