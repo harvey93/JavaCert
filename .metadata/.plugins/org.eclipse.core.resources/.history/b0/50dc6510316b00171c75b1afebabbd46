@@ -18,8 +18,7 @@ public class NodeStack<T> {
 		Node<T> newNode = new Node<>(el);
 		
 		if(getSize() == 0){
-			this.head = newNode;
-			this.current = newNode;
+			head = newNode;
 		}
 	}
 	

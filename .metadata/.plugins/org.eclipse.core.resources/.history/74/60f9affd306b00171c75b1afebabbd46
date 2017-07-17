@@ -17,13 +17,15 @@ public class NodeStack<T> {
 	public void push(T el){
 		Node<T> newNode = new Node<>(el);
 		
-		if(getSize() == 0){
-			this.head = newNode;
-			this.current = newNode;
+		if(head == null){
+			head = newNode;
 		}
+		
+		
+		
 	}
 	
 	public int getSize(){
-		return this.size;
+		
 	}
 }

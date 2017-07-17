@@ -14,16 +14,7 @@ public class NodeStack<T> {
 		this.size = 0;
 	}
 	
-	public void push(T el){
-		Node<T> newNode = new Node<>(el);
+	public void push(){
 		
-		if(getSize() == 0){
-			this.head = newNode;
-			this.current = newNode;
-		}
-	}
-	
-	public int getSize(){
-		return this.size;
 	}
 }

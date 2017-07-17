@@ -19,7 +19,7 @@ public class NodeStack<T> {
 		
 		if(getSize() == 0){
 			this.head = newNode;
-			this.current = newNode;
+			
 		}
 	}
 	
