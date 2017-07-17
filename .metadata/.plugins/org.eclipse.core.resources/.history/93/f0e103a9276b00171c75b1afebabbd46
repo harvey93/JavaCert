@@ -9,7 +9,6 @@ public class MyStack<T> {
 	
 	public MyStack(){
 		this.store = new ArrayList<>();
-		this.length = 0;
 	}
 	
 	public void pop(T el){

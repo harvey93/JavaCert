@@ -1,0 +1,27 @@
+package ch3;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class MyStack<E> {
+	
+	private ArrayList<E>;
+	
+	public MyStack(){
+		this.store = (E[])Array.newInstance(componentType, length);
+		this.index = 0;
+	}
+	
+	public void pop(E el){
+
+		add(el);
+	}
+	
+	public int size(){
+		return this.store.length;
+	}
+	
+
+	
+}

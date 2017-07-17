@@ -1,0 +1,36 @@
+package ch3;
+
+import java.util.Arrays;
+
+public class MyStack<E> {
+	
+	private E[] store;
+	private int index;
+	public MyStack(){
+		this.store = new E[4];
+		this.index = 0;
+	}
+	
+	public void pop(E el){
+		if(this.index == size()){
+			resize();
+		}
+		add(E);
+	}
+	
+	public int size(){
+		return this.store.length;
+	}
+	
+	public void add(T el){
+		this.store[this.index] = el;
+		index++;
+	}
+	
+	private void resize(){
+		Integer[] newStore = new Integer[size() * 2];
+		System.err.println(Arrays.toString(this.store));
+		System.err.println(Arrays.toString(newStore));
+
+	}
+}

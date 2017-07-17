@@ -1,6 +1,8 @@
 package ch3;
 
-import java.util.*;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MyStack<T> {
 	
@@ -9,7 +11,6 @@ public class MyStack<T> {
 	
 	public MyStack(){
 		this.store = new ArrayList<>();
-		this.length = 0;
 	}
 	
 	public void pop(T el){

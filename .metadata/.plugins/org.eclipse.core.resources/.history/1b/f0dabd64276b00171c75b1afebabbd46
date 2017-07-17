@@ -1,0 +1,24 @@
+package ch3;
+
+
+public class MyStack<E> {
+	
+	private ;
+	
+	public MyStack(){
+		
+		
+	}
+	
+	public void pop(E el){
+
+	
+	}
+	
+	public int size(){
+		return this.store.length;
+	}
+	
+
+	
+}
