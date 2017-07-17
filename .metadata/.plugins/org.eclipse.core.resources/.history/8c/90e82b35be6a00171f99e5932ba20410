@@ -15,7 +15,7 @@ public class ListLoop {
 		while(node1 != null){
 			if(node1.equals(node2)){
 				res = true;
-				break;
+				break
 			}
 			node1 = node1.getNext();
 			node2 = node2.getNext();
