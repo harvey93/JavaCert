@@ -1,0 +1,12 @@
+package ch3;
+
+public class Node<T> {
+	
+	private T data;
+	private T next;
+	
+	public Node(T el){
+		this.data = el;
+		
+	}
+}
