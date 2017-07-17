@@ -11,16 +11,10 @@ public class MyStack {
 	}
 	
 	public void pop(Integer el){
-		
 		add(el);
 	}
 	
-	public int size(){
-		return this.store.length;
-	}
-	
 	public void add(Integer el){
-		this.store[this.index] = el;
-		index++;
+		
 	}
 }

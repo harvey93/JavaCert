@@ -1,0 +1,15 @@
+package ch3;
+
+
+
+public class MyStack {
+	
+	Integer[] store;
+	public MyStack(){
+		this.store = new Integer[4];
+	}
+	
+	public void pop(){
+		PUBLIC_MEMBER 
+	}
+}
