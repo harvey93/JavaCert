@@ -16,7 +16,7 @@ public class NodeStack<T> {
 	
 	public Node<T> pop() throws StackEmptyException{
 		if(getSize() == 0){
-			throw new StackEmptyException("Can't perform pop. Stack is empty.");
+			throw new StackEmptyException("This stack is empty");
 		}else if(getSize() == 1){
 			this.head = null;
 		}
