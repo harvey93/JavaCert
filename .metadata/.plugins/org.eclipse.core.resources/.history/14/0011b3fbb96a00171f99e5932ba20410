@@ -26,8 +26,6 @@ public class Test {
 //		ListSum.backwardSum(head);
 		System.out.println("----------------");
 		printList(negOne);
-		System.out.println("----------------");
-		System.out.println(ListLoop.isIntersect(one, negOne));
 		
 	}
 	

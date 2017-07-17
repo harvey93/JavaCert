@@ -27,7 +27,6 @@ public class Test {
 		System.out.println("----------------");
 		printList(negOne);
 		System.out.println("----------------");
-		System.out.println(ListLoop.isIntersect(one, negOne));
 		
 	}
 	
