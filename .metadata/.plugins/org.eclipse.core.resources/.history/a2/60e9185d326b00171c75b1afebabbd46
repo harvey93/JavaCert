@@ -37,15 +37,7 @@ public class NodeStack<T> {
 	}
 	
 	public String toString(){
-		String result = "{";
-		Node<T> current = this.head;
-		
-		while(current != null){
-			result += " " + current.getData();
-			current = current.getNext();
-		}
-		
-		result += " }";
+		String result;
 		
 		return result;
 	}

@@ -11,6 +11,5 @@ public class Test {
 		stack.push(13.3);
 		stack.push(14.2);
 		stack.push(15.1);
-		System.out.println(stack);
 	}
 }

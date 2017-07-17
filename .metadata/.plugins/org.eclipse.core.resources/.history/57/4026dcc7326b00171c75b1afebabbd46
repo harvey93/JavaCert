@@ -45,8 +45,6 @@ public class NodeStack<T> {
 			current = current.getNext();
 		}
 		
-		result += " }";
-		
 		return result;
 	}
 }

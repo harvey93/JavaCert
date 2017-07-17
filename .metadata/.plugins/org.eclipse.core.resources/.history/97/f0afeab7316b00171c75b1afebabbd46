@@ -18,35 +18,16 @@ public class NodeStack<T> {
 		Node<T> newNode = new Node<T>(el);
 		
 		if(getSize() == 0){
-			this.head = newNode;	
+			this.head = newNode;
 		}else if(getSize() == 1){
 			this.head.setNext(newNode);
-			this.current.setNext(newNode);
-		}else {
-			this.current.setNext(newNode);		
 		}
 		
-		this.popCurrent = current;
 		this.current = newNode;
 		
-		this.size++;
 	}
 	
 	public int getSize(){
 		return this.size;
-	}
-	
-	public String toString(){
-		String result = "{";
-		Node<T> current = this.head;
-		
-		while(current != null){
-			result += " " + current.getData();
-			current = current.getNext();
-		}
-		
-		result += " }";
-		
-		return result;
 	}
 }

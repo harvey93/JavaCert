@@ -41,11 +41,9 @@ public class NodeStack<T> {
 		Node<T> current = this.head;
 		
 		while(current != null){
-			result += " " + current.getData();
+			result += current.getData();
 			current = current.getNext();
 		}
-		
-		result += " }";
 		
 		return result;
 	}
