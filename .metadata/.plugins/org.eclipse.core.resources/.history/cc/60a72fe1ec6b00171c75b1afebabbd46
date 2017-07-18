@@ -9,7 +9,6 @@ public class Test {
 		String string = "Hello";
 		string.length();
 		String [] arr = string.split("");
-		System.out.println(String.join("-", arr));
 	}
 	
 }
