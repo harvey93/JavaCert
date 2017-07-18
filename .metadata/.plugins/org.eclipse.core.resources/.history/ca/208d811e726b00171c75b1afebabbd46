@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class ArrStack<T> {
 	
 	private T[] store;
-	private int size;
+	private int i;
 	
 	
 	@SuppressWarnings("unchecked")
@@ -15,25 +15,18 @@ public class ArrStack<T> {
 	}
 	
 	public void push(T el){
-		store[size] = el;
-		size++;
+		store[i] = el;
+		i++;
 	}
 	
-	public T pop() throws StackEmptyException{
-		if(size == 0){
-			throw new StackEmptyException("Can't perform pop. Stack is empty.");
-		}
-		size--;
-		T result = this.store[size];
-		this.store[size] = null;
+	public T pop(){
+		T result = this.store[size() - 1];
+		this.store[size() - 1] = null;
+		i--;
 		return result;
 	}
 	
-	public int getSize(){
-		return this.size;
-	}
-	
-	private int capacity(){
+	public int size(){
 		return this.store.length;
 	}
 	

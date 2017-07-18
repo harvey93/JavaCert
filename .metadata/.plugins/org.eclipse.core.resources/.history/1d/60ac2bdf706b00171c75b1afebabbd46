@@ -1,0 +1,11 @@
+package ch3;
+
+
+public class Test {
+	
+	public static void main(String[] args) {
+		ArrStack<Double> stack = new ArrStack<>();
+		stack.push(12.4);
+	}
+	
+}

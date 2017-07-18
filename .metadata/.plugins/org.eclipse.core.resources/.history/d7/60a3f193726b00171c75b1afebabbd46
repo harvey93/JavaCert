@@ -19,9 +19,9 @@ public class ArrStack<T> {
 		size++;
 	}
 	
-	public T pop() throws StackEmptyException{
+	public T pop(){
 		if(size == 0){
-			throw new StackEmptyException("Can't perform pop. Stack is empty.");
+			throw StackEmptyException;
 		}
 		size--;
 		T result = this.store[size];
