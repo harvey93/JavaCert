@@ -1,18 +1,19 @@
 package ch3;
 
-import java.util.Stack;
 
 public class Test {
-	
+	int a = 10;
 	public static void main(String[] args) {
-		NodeStack<Integer> stack = new NodeStack<>();
-//		stack.push(10);
-		try {
-			stack.pop();
-		} catch (Exception e) {
-			// TODO: handle exception
-			System.out.println(e.getMessage());
-		}
-		
+//		int [] arr = {1,2,3,4};
+//		for(int a : arr){
+//			System.out.println(a);
+//		}
+		int n = 808;
+		System.out.format("%04d", n);
+	}
+	
+	public void test(){
+		  int a = 2;
+
 	}
 }

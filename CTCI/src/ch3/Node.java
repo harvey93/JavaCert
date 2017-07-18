@@ -13,7 +13,7 @@ public class Node<T> {
 	}
 
 	public Node<T> getPrev() {
-		return prev;
+		return this.prev;
 	}
 
 	public void setPrev(Node<T> prev) {
@@ -38,7 +38,7 @@ public class Node<T> {
 	
 	public String toString(){
 		String result = "";
-		result += " "+ this.data;
+		result += " "+ (this.data == null ? "null" : this.data);
 		return result;
 	}
 	

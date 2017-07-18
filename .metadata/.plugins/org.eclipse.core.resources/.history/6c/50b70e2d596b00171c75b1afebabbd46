@@ -1,0 +1,14 @@
+package ch3;
+
+import java.util.Stack;
+
+public class Test {
+	int a = 10;
+	public static void main(String[] args) {
+		
+	}
+	
+	public void test(){
+		int a = 2;
+	}
+}
