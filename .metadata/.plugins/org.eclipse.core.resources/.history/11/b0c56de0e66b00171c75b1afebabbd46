@@ -3,10 +3,12 @@ package ch3;
 
 public class Test {
 	
-	final static int i;
+	final int i;
+	{i = 5;}
 	
-	
-	static {i = 5;}
+	public Test(){
+		i = 10;
+	}
 	
 	public static void main(String[] args){
 		System.out.println(new Test().i);

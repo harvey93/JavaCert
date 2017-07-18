@@ -1,15 +1,10 @@
 package ch3;
-
+import static java.lang.Math.pow;
 
 public class Test {
 	
-	final static int i;
-	
-	
-	static {i = 5;}
-	
 	public static void main(String[] args){
-		System.out.println(new Test().i);
+		
 	}
 	
 }
