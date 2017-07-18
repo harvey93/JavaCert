@@ -15,20 +15,11 @@ public class ArrStack<T> {
 	}
 	
 	public void push(T el){
-		if(this.size == capacity()){
-			resize();
+		if(this.size == capacity() - 1){
+			
 		}
 		store[this.size] = el;
 		size++;
-	}
-	
-	private void resize(){
-		@SuppressWarnings("unchecked")
-		T[] newStore = (T[])new Object[capacity() * 2];
-		for(int i = 0; i < this.store.length; i++){
-			newStore[i] = this.store[0];
-		}
-		this.store = newStore;
 	}
 	
 	public T pop() throws StackEmptyException{

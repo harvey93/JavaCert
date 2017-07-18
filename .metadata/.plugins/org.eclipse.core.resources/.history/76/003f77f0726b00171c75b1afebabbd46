@@ -15,20 +15,8 @@ public class ArrStack<T> {
 	}
 	
 	public void push(T el){
-		if(this.size == capacity()){
-			resize();
-		}
-		store[this.size] = el;
+		store[size] = el;
 		size++;
-	}
-	
-	private void resize(){
-		@SuppressWarnings("unchecked")
-		T[] newStore = (T[])new Object[capacity() * 2];
-		for(int i = 0; i < this.store.length; i++){
-			newStore[i] = this.store[0];
-		}
-		this.store = newStore;
 	}
 	
 	public T pop() throws StackEmptyException{
@@ -36,8 +24,8 @@ public class ArrStack<T> {
 			throw new StackEmptyException("Can't perform pop. Stack is empty.");
 		}
 		size--;
-		T result = this.store[this.size];
-		this.store[this.size] = null;
+		T result = this.store[size];
+		this.store[size] = null;
 		return result;
 	}
 	

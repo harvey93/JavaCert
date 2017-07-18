@@ -22,14 +22,7 @@ public class ArrStack<T> {
 		size++;
 	}
 	
-	private void resize(){
-		@SuppressWarnings("unchecked")
-		T[] newStore = (T[])new Object[capacity() * 2];
-		for(int i = 0; i < this.store.length; i++){
-			newStore[i] = this.store[0];
-		}
-		this.store = newStore;
-	}
+	private void resize()
 	
 	public T pop() throws StackEmptyException{
 		if(size == 0){

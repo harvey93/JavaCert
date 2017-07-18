@@ -9,10 +9,10 @@ public class Test {
 		stack.push(8.6);
 		stack.push(14.9);
 		stack.push(14.9);
-		stack.push(14.9);
-		stack.pop();
-		stack.pop();
-		stack.pop();
+//		stack.push(14.9);
+//		stack.pop();
+//		stack.pop();
+//		stack.pop();
 		
 		
 		System.out.println(stack);

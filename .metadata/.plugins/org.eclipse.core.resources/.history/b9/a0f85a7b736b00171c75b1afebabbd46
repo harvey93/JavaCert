@@ -25,10 +25,7 @@ public class ArrStack<T> {
 	private void resize(){
 		@SuppressWarnings("unchecked")
 		T[] newStore = (T[])new Object[capacity() * 2];
-		for(int i = 0; i < this.store.length; i++){
-			newStore[i] = this.store[0];
-		}
-		this.store = newStore;
+		
 	}
 	
 	public T pop() throws StackEmptyException{
