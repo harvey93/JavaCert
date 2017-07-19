@@ -59,10 +59,6 @@ public class NodeStack<T> {
 		return this.size;
 	}
 	
-	public boolean isEmpty(){
-		return this.size == 0;
-	}
-	
 	public String toString(){
 		String result = "{";
 		Node<T> current = this.head;

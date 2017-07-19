@@ -32,9 +32,7 @@ public class MinStack{
 	}
 	
 	public Integer getMin() throws StackEmptyException{
-		if(isEmpty()){
-			throw new StackEmptyException("Stack is empty. Cannot get Min");
-		}
+		
 		return this.min;
 	}
 	

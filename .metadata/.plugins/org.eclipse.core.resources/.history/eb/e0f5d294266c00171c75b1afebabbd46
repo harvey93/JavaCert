@@ -24,22 +24,17 @@ public class MinStack{
 	public Integer pop() throws StackEmptyException{
 		HashMap<String, Integer> map = this.stack.pop().getData();
 		Integer newMin = null;
-		if(!isEmpty()){
+		if(!this.stack.isEmpty()){
 			newMin = this.stack.peek().getData().get("Min");
+		}else {
+			I
 		}
 		this.min = newMin;
 		return map.get("Value");
 	}
 	
-	public Integer getMin() throws StackEmptyException{
-		if(isEmpty()){
-			throw new StackEmptyException("Stack is empty. Cannot get Min");
-		}
+	public Integer getMin(){
 		return this.min;
-	}
-	
-	public boolean isEmpty(){
-		return this.stack.isEmpty();
 	}
 	
 	public String toString(){
