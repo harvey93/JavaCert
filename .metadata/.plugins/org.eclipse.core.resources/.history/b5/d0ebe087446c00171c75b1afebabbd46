@@ -13,11 +13,6 @@ public class Test {
 		stacks.pop();
 		stacks.push(20);
 		stacks.pop();
-		stacks.pop();
-		stacks.pop();
-		stacks.pop();
-		stacks.pop();
-		stacks.pop();
 		System.out.println(stacks);
 	}
 	

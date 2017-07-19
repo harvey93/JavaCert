@@ -20,15 +20,7 @@ public class Plates<T>{
 		currentStack().add(el);
 	}
 	
-	public boolean isEmpty(){
-		return this.store.isEmpty();
-	}
-	
 	public T pop() throws StackEmptyException{
-		if(isEmpty()){
-			throw new StackEmptyException("Stack is empty. Cannot perform pop.");
-		}
-		
 		T result = currentStack().pop();
 		if(currentStack().isEmpty()){
 			removePlate();

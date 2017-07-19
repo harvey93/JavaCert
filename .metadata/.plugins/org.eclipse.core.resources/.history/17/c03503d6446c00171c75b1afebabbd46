@@ -17,7 +17,7 @@ public class Test {
 		stacks.pop();
 		stacks.pop();
 		stacks.pop();
-		stacks.pop();
+//		stacks.pop();
 		System.out.println(stacks);
 	}
 	

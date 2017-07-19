@@ -12,12 +12,6 @@ public class Test {
 		stacks.push(5);
 		stacks.pop();
 		stacks.push(20);
-		stacks.pop();
-		stacks.pop();
-		stacks.pop();
-		stacks.pop();
-		stacks.pop();
-		stacks.pop();
 		System.out.println(stacks);
 	}
 	

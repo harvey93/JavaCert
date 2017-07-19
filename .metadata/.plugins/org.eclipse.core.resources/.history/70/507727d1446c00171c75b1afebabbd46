@@ -25,9 +25,6 @@ public class Plates<T>{
 	}
 	
 	public T pop() throws StackEmptyException{
-		if(isEmpty()){
-			throw new StackEmptyException("Stack is empty. Cannot perform pop.");
-		}
 		
 		T result = currentStack().pop();
 		if(currentStack().isEmpty()){
