@@ -28,10 +28,6 @@ public class MinStack{
 		return map.get("Value");
 	}
 	
-	public Integer getMin(){
-		return this.min;
-	}
-	
 	public String toString(){
 		return this.stack.toString();
 	}
