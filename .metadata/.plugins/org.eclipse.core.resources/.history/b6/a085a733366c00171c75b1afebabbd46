@@ -1,0 +1,10 @@
+package ch3;
+
+public class Plates<T>{
+	
+	NodeStack<T>[] store;
+	public Plates(){
+		this.store = new NodeStack[4];
+	}
+
+}

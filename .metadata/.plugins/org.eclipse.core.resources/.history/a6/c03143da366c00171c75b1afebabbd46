@@ -5,10 +5,10 @@ import java.util.Stack;
 
 public class Plates<T>{
 	
-	private ArrayList<Stack<T>> store;
-	
+	ArrayList<Stack> store;
+	@SuppressWarnings("unchecked")
 	public Plates(){
-		this.store = new ArrayList<>();
+		this.store = (NodeStack<T>[])new Object[4];
 		
 	}
 	

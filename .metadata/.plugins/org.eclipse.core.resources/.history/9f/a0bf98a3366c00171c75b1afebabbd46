@@ -1,0 +1,16 @@
+package ch3;
+
+import java.util.Stack;
+
+public class Plates<T>{
+	
+	NodeStack<T>[] store;
+	@SuppressWarnings("unchecked")
+	public Plates(){
+		this.store = (NodeStack<T>[])new Object[4];
+		Stack<T>[] arr = {new Stack<Integer>};
+	}
+	
+	
+
+}

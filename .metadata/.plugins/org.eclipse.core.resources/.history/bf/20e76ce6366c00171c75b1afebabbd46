@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class Plates<T>{
 	
-	private ArrayList<Stack<T>> store;
+	ArrayList<Stack<T>> store;
 	
 	public Plates(){
 		this.store = new ArrayList<>();
