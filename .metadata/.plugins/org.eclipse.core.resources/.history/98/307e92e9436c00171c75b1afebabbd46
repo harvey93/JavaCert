@@ -16,12 +16,13 @@ public class Plates<T>{
 	}
 	
 	public void push(T el){
-		if (this.store.isEmpty() || currentStack().size() == this.maxPlates) {
+		if (currentStack().size() == this.maxPlates) {
 			addPlate();
 		}
 		currentStack().add(el);
 	}
 	
+	public
 	
 	private void addPlate(){
 		this.store.add(new Stack<T>());
