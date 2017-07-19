@@ -16,9 +16,7 @@ public class Plates<T>{
 	}
 	
 	public void push(T el){
-		if (this.store.get(this.currentStack).size() == this.maxPlates) {
-			
-		}
+		
 	}
 	
 	public int size(){
