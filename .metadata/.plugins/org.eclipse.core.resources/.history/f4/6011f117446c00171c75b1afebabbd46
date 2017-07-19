@@ -6,10 +6,12 @@ import java.util.Stack;
 public class Plates<T>{
 	
 	private ArrayList<Stack<T>> store;
+	
 	private final int maxPlates;
 	
 	public Plates(int maxPlates){
 		this.store = new ArrayList<>();
+		
 		this.maxPlates = maxPlates;
 	}
 	
@@ -18,18 +20,6 @@ public class Plates<T>{
 			addPlate();
 		}
 		currentStack().add(el);
-	}
-	
-	public T pop(){
-		T result = currentStack().pop();
-		if(currentStack().isEmpty()){
-			removePlate();
-		}
-		return result;
-	}
-	
-	private void removePlate(){
-		
 	}
 	
 	

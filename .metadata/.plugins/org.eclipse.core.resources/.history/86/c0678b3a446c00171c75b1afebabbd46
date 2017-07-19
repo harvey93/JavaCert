@@ -21,14 +21,6 @@ public class Plates<T>{
 	}
 	
 	public T pop(){
-		T result = currentStack().pop();
-		if(currentStack().isEmpty()){
-			removePlate();
-		}
-		return result;
-	}
-	
-	private void removePlate(){
 		
 	}
 	
