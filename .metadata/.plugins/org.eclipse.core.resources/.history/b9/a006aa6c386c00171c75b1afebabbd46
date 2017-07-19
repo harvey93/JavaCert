@@ -16,7 +16,7 @@ public class Plates<T>{
 	}
 	
 	public void push(T el){
-		System.out.println(this.store);
+		
 	}
 	
 	public int size(){

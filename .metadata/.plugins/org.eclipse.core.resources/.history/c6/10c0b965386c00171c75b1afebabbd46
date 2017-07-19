@@ -11,12 +11,12 @@ public class Plates<T>{
 	
 	public Plates(int maxPlates){
 		this.store = new ArrayList<>();
-		this.store.add(new Stack<T>());
+		this.store.add(new Stack<I>());
 		this.maxPlates = maxPlates;
 	}
 	
 	public void push(T el){
-		System.out.println(this.store);
+		
 	}
 	
 	public int size(){
