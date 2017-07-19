@@ -7,17 +7,15 @@ public class Plates<T>{
 	
 	private ArrayList<Stack<T>> store;
 	private int currentStack;
-	private final int maxPlates;
 	
-	public Plates(int maxPlates){
+	public Plates(){
 		this.store = new ArrayList<>();
-		this.maxPlates = maxPlates;
 	}
 	
 	public int size(){
 		int result =  this.store.get(this.currentStack).size();
 		if (currentStack != 0) {
-			result += this.maxPlates * (currentStack - 1);
+			
 		}
 		return result;
 	}

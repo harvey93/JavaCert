@@ -1,0 +1,12 @@
+package ch3;
+
+public class Test {
+
+	
+	public static void main(String[] args) throws StackEmptyException{
+		int a = 16;
+		a /= 4 + 2;
+		System.out.println(a);
+	}
+	
+}
