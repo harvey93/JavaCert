@@ -16,7 +16,7 @@ public class Plates<T>{
 	}
 	
 	public void push(T el){
-		if (currentStack().size() == this.maxPlates) {
+		if (this.store.get(this.currentStack()).size() == this.maxPlates) {
 			addPlate();
 		}
 		
@@ -30,14 +30,11 @@ public class Plates<T>{
 		return this.store.get(this.store.size() - 1);
 	}
 	
-	private int currentIndex(){
-		return this.store.size() - 1;
-	}
 	
 	public int size(){
-		int result =  currentStack().size();
-		if (currentIndex() != 0) {
-			result += this.maxPlates * currentIndex();
+		int result =  this.store.get(this.currentStack()).size();
+		if (currentStack() != 0) {
+			result += this.maxPlates * (currentStack() - 1);
 		}
 		return result;
 	}

@@ -35,9 +35,9 @@ public class Plates<T>{
 	}
 	
 	public int size(){
-		int result =  currentStack().size();
-		if (currentIndex() != 0) {
-			result += this.maxPlates * currentIndex();
+		int result =  this.store.get(this.currentStack()).size();
+		if (currentStack() != 0) {
+			result += this.maxPlates * (currentStack() - 1);
 		}
 		return result;
 	}
