@@ -6,7 +6,7 @@ import java.util.Stack;
 public class Plates<T>{
 	
 	private ArrayList<Stack<T>> store;
-	
+	private int currentStack;
 	private final int maxPlates;
 	
 	public Plates(int maxPlates){
@@ -16,24 +16,15 @@ public class Plates<T>{
 	}
 	
 	public void push(T el){
-		if (this.store.get(this.currentStack()).size() == this.maxPlates) {
-			addPlate();
+		if (this.store.get(this.currentStack).size() == this.maxPlates) {
+			
 		}
 	}
 	
-	public void addPlate(){
-		this.store.add(new Stack<T>());
-	}
-	
-	private int currentStack(){
-		return this.store.size() - 1;
-	}
-	
-	
 	public int size(){
-		int result =  this.store.get(this.currentStack()).size();
-		if (currentStack() != 0) {
-			result += this.maxPlates * (currentStack() - 1);
+		int result =  this.store.get(this.currentStack).size();
+		if (currentStack != 0) {
+			result += this.maxPlates * (currentStack - 1);
 		}
 		return result;
 	}

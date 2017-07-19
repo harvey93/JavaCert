@@ -6,7 +6,7 @@ import java.util.Stack;
 public class Plates<T>{
 	
 	private ArrayList<Stack<T>> store;
-	
+	private int currentStack;
 	private final int maxPlates;
 	
 	public Plates(int maxPlates){
@@ -26,7 +26,7 @@ public class Plates<T>{
 	}
 	
 	private int currentStack(){
-		return this.store.size() - 1;
+		return this.store.length - 1;
 	}
 	
 	
