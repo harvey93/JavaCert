@@ -22,8 +22,7 @@ public class MinStack{
 	}
 	
 	public Integer pop() throws StackEmptyException{
-		HashMap<String, Integer> map = this.stack.pop().getData();
-		return map.get("Value");
+		HashMap<String, Integer> map = this.stack.pop();
 	}
 	
 	public String toString(){
