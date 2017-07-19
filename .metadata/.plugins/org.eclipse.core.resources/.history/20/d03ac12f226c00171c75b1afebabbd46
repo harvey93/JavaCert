@@ -15,12 +15,7 @@ public class MinStack{
 		if(this.min == null || this.min > el) {
 			min = el;
 		}
-		HashMap<Integer, Integer> map = new HashMap<>();
-		map.put(el, min);
-		this.stack.push(map);
-		System.out.println(this.stack);
+		HashMap<Integer, Integer>
 	}
-	
-	
 	 
 }
