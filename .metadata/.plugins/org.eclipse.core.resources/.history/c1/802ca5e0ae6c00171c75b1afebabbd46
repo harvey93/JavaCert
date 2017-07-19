@@ -4,10 +4,9 @@ package ch3;
 
 public class Test {
 	
-	
+	static boolean b = false;
 	
 	public static void main(String[] args){
-
 		
 	}
 	

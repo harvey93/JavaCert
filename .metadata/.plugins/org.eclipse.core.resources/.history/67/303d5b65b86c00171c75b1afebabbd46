@@ -19,8 +19,4 @@ public class Bird extends Animal{
 	public String stringTest(){
 		return "Bird";
 	}
-	
-	public static void write(){
-		System.out.println("Bird write");
-	}
 }

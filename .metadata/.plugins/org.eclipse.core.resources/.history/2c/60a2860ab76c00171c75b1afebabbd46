@@ -1,0 +1,22 @@
+package ch3;
+
+
+
+public class Test {
+	
+	
+	
+	public static void main(String[] args){
+		int a = 5;
+		switch(a){
+		case 3: 
+			case 4: 
+				case 5:
+		case 6:{System.out.println("in"); break;}
+		}
+		
+		
+	}
+	
+	
+}

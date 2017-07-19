@@ -1,0 +1,20 @@
+package ch3;
+
+import java.io.IOException;
+
+public class Test {
+
+	
+	public static void main(String[] args){
+		try{
+			hi();
+		}catch (StackEmptyException e) {
+			// TODO: handle exception
+		}
+	}
+	
+	public static void  hi(){
+		
+	}
+	
+}

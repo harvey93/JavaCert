@@ -1,0 +1,18 @@
+package ch3;
+
+public class Test {
+
+	
+	public static void main(String[] args) throws StackEmptyException{
+		try{
+			hi();
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	public static void  hi(){
+		
+	}
+	
+}

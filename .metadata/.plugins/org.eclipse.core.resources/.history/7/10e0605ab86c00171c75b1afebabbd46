@@ -1,6 +1,6 @@
 package general;
 
-public abstract class Animal {
+public class Animal {
 //	public Animal(int i){
 ////		super();
 //		System.out.println("hello");
