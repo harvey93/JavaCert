@@ -5,10 +5,11 @@ import java.util.Stack;
 
 public class MinStack{
 	private NodeStack<HashMap<Integer, Integer>> stack;
-	private Integer min;
+	private Integer mInteger;
 	
 	public MinStack(){
 		 this.stack = new NodeStack<>();
+		
 	}
 	 
 }

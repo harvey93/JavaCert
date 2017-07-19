@@ -9,6 +9,7 @@ public class MinStack{
 	
 	public MinStack(){
 		 this.stack = new NodeStack<>();
+		
 	}
 	 
 }

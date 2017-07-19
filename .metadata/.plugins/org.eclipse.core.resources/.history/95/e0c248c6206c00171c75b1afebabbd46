@@ -1,0 +1,12 @@
+package ch3;
+
+import java.util.HashMap;
+import java.util.Stack;
+
+public class MinStack<Key, Min>{
+	
+	public MinStack(){
+		Stack<HashMap<Key, Min>> stack = new Stack<>();
+	}
+	 
+}
