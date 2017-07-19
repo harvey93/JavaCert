@@ -15,7 +15,6 @@ public class MinStack{
 		if(this.min == null || this.min > el) {
 			min = el;
 		}
-		
 	}
 	 
 }

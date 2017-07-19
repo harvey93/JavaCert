@@ -12,10 +12,9 @@ public class MinStack{
 	}
 	
 	public void push(Integer el){
-		if(this.min == null || this.min > el) {
-			min = el;
+		if(this.min == null) {
+			
 		}
-		
 	}
 	 
 }

@@ -11,11 +11,10 @@ public class MinStack{
 		 this.stack = new NodeStack<>();
 	}
 	
-	public void push(Integer el){
-		if(this.min == null || this.min > el) {
-			min = el;
+	public void push(){
+		if(this.min == null) {
+			
 		}
-		
 	}
 	 
 }
