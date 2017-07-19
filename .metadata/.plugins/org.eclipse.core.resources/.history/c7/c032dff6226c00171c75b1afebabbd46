@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Stack;
 
 public class MinStack{
-	private NodeStack<HashMap<String, Integer>> stack;
+	private NodeStack<HashMap<Integer, Integer>> stack;
 	private Integer min;
 	
 	public MinStack(){
@@ -13,12 +13,12 @@ public class MinStack{
 	
 	public void push(Integer el){
 		if(this.min == null || this.min > el) {
-			this.min = el;
+			min = el;
 		}
-		HashMap<String, Integer> map = new HashMap<>();
-		map.put("Value", el);
-		map.put("Min", this.min);
+		HashMap<Integer, Integer> map = new HashMap<>();
+		map.put(el, min);
 		this.stack.push(map);
+		
 	}
 	
 	public String toString(){

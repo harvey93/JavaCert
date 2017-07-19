@@ -8,8 +8,6 @@ public class Test {
 		minStack.push(10);
 		minStack.push(3);
 		minStack.push(6);
-		minStack.push(0);
-		System.out.println(minStack);
 	}
 	
 }
