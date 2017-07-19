@@ -42,9 +42,6 @@ public class Plates<T>{
 		return result;
 	}
 	
-	public String toString() {
-		return this.store.toString();
-	}
 	
 
 }

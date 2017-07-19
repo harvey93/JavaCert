@@ -19,7 +19,7 @@ public class Plates<T>{
 		if (currentStack().size() == this.maxPlates) {
 			addPlate();
 		}
-		currentStack().add(el);
+		
 	}
 	
 	public void addPlate(){
@@ -42,9 +42,6 @@ public class Plates<T>{
 		return result;
 	}
 	
-	public String toString() {
-		return this.store.toString();
-	}
 	
 
 }
