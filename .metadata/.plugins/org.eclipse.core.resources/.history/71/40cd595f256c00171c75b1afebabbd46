@@ -32,10 +32,6 @@ public class NodeStack<T> {
 		return res;
 	}
 	
-	public Node<T> peek() throws StackEmptyException{
-		return this.current;
-	}
-	
 	public void push(T el){
 		Node<T> newNode = new Node<T>(el);
 		newNode.setPrev(this.current);

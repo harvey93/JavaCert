@@ -33,7 +33,7 @@ public class NodeStack<T> {
 	}
 	
 	public Node<T> peek() throws StackEmptyException{
-		return this.current;
+		
 	}
 	
 	public void push(T el){

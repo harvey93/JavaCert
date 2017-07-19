@@ -23,8 +23,6 @@ public class MinStack{
 	
 	public Integer pop() throws StackEmptyException{
 		HashMap<String, Integer> map = this.stack.pop().getData();
-		Integer newMin = this.stack.peek().getData().get("Min");
-		this.min = newMin;
 		return map.get("Value");
 	}
 	
