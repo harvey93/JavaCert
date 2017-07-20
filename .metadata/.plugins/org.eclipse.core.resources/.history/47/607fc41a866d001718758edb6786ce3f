@@ -37,7 +37,7 @@ public class SortStack{
 			if(this.store.peek() < el){
 				this.tempStack.push(this.store.pop());
 			}else {
-				break;
+				breal;
 			}
 		}
 	}

@@ -36,8 +36,6 @@ public class SortStack{
 		while(!isEmpty()){
 			if(this.store.peek() < el){
 				this.tempStack.push(this.store.pop());
-			}else {
-				break;
 			}
 		}
 	}
@@ -46,9 +44,12 @@ public class SortStack{
 		return this.store.isEmpty();
 	}
 	
+	public void print(){
+		System.out.println("in");
+	}
 
 	public String toString(){
-		
+		System.out.println("in");
 		return this.store.toString();
 	}
 	
