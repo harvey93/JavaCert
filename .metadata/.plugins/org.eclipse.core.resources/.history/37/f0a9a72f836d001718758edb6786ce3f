@@ -12,7 +12,7 @@ public class SortStack{
 		this.tempStack = new Stack<>();
 	}
 	
-	public void push(Integer el){
+	public void push(T el){
 		while(!isEmpty()){
 			if(this.store.peek() < el){
 				

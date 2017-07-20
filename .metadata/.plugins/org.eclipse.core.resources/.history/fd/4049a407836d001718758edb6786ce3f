@@ -2,17 +2,17 @@ package ch3;
 
 import java.util.Stack;
 
-public class SortStack{
+public class SortStack<T>{
 
-	Stack<Integer> store;
-	Stack<Integer> tempStack;
+	Stack<T> store;
+	Stack<T> tempStack;
 	
 	public SortStack(){
 		this.store = new Stack<>();
 		this.tempStack = new Stack<>();
 	}
 	
-	public void push(Integer el){
+	public void push(E el){
 		while(!isEmpty()){
 			if(this.store.peek() < el){
 				

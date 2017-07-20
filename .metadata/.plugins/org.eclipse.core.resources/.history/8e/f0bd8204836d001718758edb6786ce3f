@@ -5,14 +5,14 @@ import java.util.Stack;
 public class SortStack{
 
 	Stack<Integer> store;
-	Stack<Integer> tempStack;
+	Stack<E> tempStack;
 	
 	public SortStack(){
 		this.store = new Stack<>();
 		this.tempStack = new Stack<>();
 	}
 	
-	public void push(Integer el){
+	public void push(E el){
 		while(!isEmpty()){
 			if(this.store.peek() < el){
 				
