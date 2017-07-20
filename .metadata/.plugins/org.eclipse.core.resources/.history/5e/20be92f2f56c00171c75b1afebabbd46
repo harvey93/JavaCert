@@ -13,7 +13,12 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-
+		try{
+			System.out.println("hello");
+		}catch (ArithmeticException | NullPointerException | Exception e) {
+			// TODO: handle exception
+			System.out.println("in");
+		}
 	}
 	
 	public static void sbTest(){

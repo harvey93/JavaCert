@@ -1,0 +1,10 @@
+package general;
+
+public class BlueJay extends Bird{
+
+	public BlueJay(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
+}

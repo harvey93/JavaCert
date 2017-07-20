@@ -13,7 +13,8 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-
+		Animal a = new Bird("hrant");
+		a.write();
 	}
 	
 	public static void sbTest(){
