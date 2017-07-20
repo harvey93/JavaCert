@@ -18,10 +18,6 @@ public class SortStack{
 		dumpToStore();
 	}
 	
-	public Integer pop(){
-		return 5;
-	}
-	
 	private void dumpToStore(){
 		while(!this.tempStack.isEmpty()){
 			this.store.push(this.tempStack.pop());

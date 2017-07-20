@@ -19,7 +19,7 @@ public class SortStack{
 	}
 	
 	public Integer pop(){
-		return 5;
+		
 	}
 	
 	private void dumpToStore(){
