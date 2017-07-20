@@ -10,7 +10,7 @@ public class Test {
 		stack.push(10);
 		stack.push(140);
 		stack.push(12);
-		stack.push(123);
+		stack.push(10);
 	}
 	 
 
