@@ -13,7 +13,6 @@ public class SortStack<E>{
 	}
 	
 	public boolean isEmpty(){
-		return this.store.isEmpty();
+		return true;
 	}
-	
 }
