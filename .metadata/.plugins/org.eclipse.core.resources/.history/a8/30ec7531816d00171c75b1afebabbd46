@@ -10,5 +10,6 @@ public class SortStack<E>{
 	public SortStack(){
 		this.store = new Stack<>();
 		this.tempStack = new Stack<>();
+				
 	}
 }

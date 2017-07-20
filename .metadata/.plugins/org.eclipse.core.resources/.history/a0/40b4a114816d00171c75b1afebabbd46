@@ -1,0 +1,11 @@
+package ch3;
+
+import java.util.Stack;
+
+public class SortStack<E>{
+
+	Stack<E>
+	public SortStack(){
+		
+	}
+}
