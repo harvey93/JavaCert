@@ -21,10 +21,6 @@ public class SortStack{
 		
 	}
 	
-	private void divideStacks(Integer el){
-		
-	}
-	
 	public boolean isEmpty(){
 		return this.store.isEmpty();
 	}
