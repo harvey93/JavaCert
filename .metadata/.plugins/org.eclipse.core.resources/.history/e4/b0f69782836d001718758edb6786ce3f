@@ -13,11 +13,11 @@ public class SortStack{
 	}
 	
 	public void push(Integer el){
-		fillStacks(el);
+		divideStacks(el);
 		
 	}
 	
-	private void fillStacks(Integer el){
+	private void divideStacks(Integer el){
 		while(!isEmpty()){
 			if(this.store.peek() < el){
 				this.tempStack.push(this.store.pop());
