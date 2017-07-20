@@ -19,12 +19,7 @@ public class StackQueue<T> {
 		
 	}
 	
-	public boolean isEmpty(){
-		return true;
-	}
-	
 	public String toString(){
 		return this.pushStack.toString() + " " + this.popStack.toString();
 	}
-	
 }
