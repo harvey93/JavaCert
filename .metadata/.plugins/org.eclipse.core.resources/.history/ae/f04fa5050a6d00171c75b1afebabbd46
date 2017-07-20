@@ -15,10 +15,7 @@ public class StackQueue<T> {
 		this.pushStack.push(el);
 	}
 	
-	public void dequeue() throws StackEmptyException{
-		if(isEmpty()){
-			throw new StackEmptyException("Stack is empty. Cannot perform pop.");
-		}
+	public void dequeue(){
 		if(this.popStack.isEmpty()){
 			fillPopStack();
 		}

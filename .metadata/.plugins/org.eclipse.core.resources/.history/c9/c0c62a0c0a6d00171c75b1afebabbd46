@@ -16,9 +16,6 @@ public class StackQueue<T> {
 	}
 	
 	public void dequeue() throws StackEmptyException{
-		if(isEmpty()){
-			throw new StackEmptyException("Stack is empty. Cannot perform pop.");
-		}
 		if(this.popStack.isEmpty()){
 			fillPopStack();
 		}

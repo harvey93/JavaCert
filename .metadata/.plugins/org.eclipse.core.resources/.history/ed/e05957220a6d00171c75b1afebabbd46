@@ -6,7 +6,7 @@ public class Test {
 	
 	
 	
-	public static void main(String[] args) throws StackEmptyException{
+	public static void main(String[] args){
 		StackQueue<Integer> queue = new StackQueue<>();
 		queue.queue(10);
 		queue.queue(20);
@@ -18,7 +18,7 @@ public class Test {
 		queue.dequeue();
 		queue.dequeue();
 		queue.dequeue();
-		queue.dequeue();
+//		queue.dequeue();
 		System.out.println(queue.toString());
 	}
 	
