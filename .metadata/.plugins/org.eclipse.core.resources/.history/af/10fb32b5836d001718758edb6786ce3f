@@ -15,13 +15,8 @@ public class SortStack{
 	public void push(Integer el){
 		fillStacks(el);
 		this.store.push(el);
-		dumpToStore();
-	}
-	
-	private void dumpToStore(){
-		while(!this.tempStack.isEmpty()){
-			this.store.push(this.tempStack.pop());
-		}
+		
+		
 	}
 	
 	private void fillStacks(Integer el){

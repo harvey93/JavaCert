@@ -16,6 +16,7 @@ public class SortStack{
 		fillStacks(el);
 		this.store.push(el);
 		dumpToStore();
+		
 	}
 	
 	private void dumpToStore(){
