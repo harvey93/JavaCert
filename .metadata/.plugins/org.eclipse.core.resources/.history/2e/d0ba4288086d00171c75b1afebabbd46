@@ -16,12 +16,6 @@ public class StackQueue<T> {
 	}
 	
 	public void dequeue(){
-		if(this.popStack.isEmpty()){
-			fillPopStack();
-		}
-	}
-	
-	public void fillPopStack(){
 		
 	}
 	
