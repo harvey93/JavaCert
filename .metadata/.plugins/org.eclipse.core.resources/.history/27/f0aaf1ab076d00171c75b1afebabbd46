@@ -11,7 +11,7 @@ public class StackQueue<T> {
 		this.popStack = new Stack<>();
 	}
 	
-	public void queue(T el){
+	public void push(T el){
 		this.pushStack.push(el);
 	}
 }
