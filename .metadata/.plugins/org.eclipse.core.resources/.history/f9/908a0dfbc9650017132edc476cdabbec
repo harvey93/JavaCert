@@ -1,9 +1,0 @@
-package general;
-
-public class Bird extends Animal{
-	
-	
-	public Bird(int i){
-		super(i);
-	}
-}

@@ -12,7 +12,5 @@ public class SortStack<E>{
 		this.tempStack = new Stack<>();
 	}
 	
-	public boolean isEmpty(){
-		return true;
-	}
+	
 }
