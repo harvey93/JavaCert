@@ -15,10 +15,6 @@ public class StackQueue<T> {
 		this.pushStack.push(el);
 	}
 	
-	public void dequeue(){
-		
-	}
-	
 	public String toString(){
 		return this.pushStack.toString() + " " + this.popStack.toString();
 	}
