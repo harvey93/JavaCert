@@ -19,7 +19,6 @@ public class StackQueue<T> {
 		if(this.popStack.isEmpty()){
 			fillPopStack();
 		}
-		this.popStack.pop();
 	}
 	
 	public void fillPopStack(){

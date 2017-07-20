@@ -19,13 +19,13 @@ public class StackQueue<T> {
 		if(this.popStack.isEmpty()){
 			fillPopStack();
 		}
-		this.popStack.pop();
 	}
 	
 	public void fillPopStack(){
 		while(!this.pushStack.isEmpty()){
 			this.popStack.push(this.pushStack.pop());
 		}
+		
 	}
 	
 	public boolean isEmpty(){

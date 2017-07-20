@@ -12,7 +12,7 @@ public class Test {
 		queue.queue(20);
 		queue.queue(30);
 		queue.queue(40);
-		queue.queue(50);
+		queue.queue(30);
 		queue.dequeue();
 		queue.dequeue();
 		System.out.println(queue.toString());
