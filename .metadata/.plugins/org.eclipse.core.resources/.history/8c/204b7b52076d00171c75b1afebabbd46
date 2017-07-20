@@ -7,7 +7,6 @@ public class StackQueue<T> {
 	Stack<T> pushStack;
 	Stack<T> popStack;
 	public StackQueue(){
-		this.pushStack = new Stack<>();
-		this.popStack = new Stack<>();
+		
 	}
 }
