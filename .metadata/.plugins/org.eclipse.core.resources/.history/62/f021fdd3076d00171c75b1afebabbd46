@@ -14,8 +14,4 @@ public class StackQueue<T> {
 	public void queue(T el){
 		this.pushStack.push(el);
 	}
-	
-	public String toString(){
-		return this.pushStack.toString() + " " + this.popStack.toString();
-	}
 }
