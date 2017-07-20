@@ -18,17 +18,11 @@ public class SortStack{
 		dumpToStore();
 	}
 	
-	public Integer pop() throws StackEmptyException{
-		if(isEmpty()){
-			throw new StackEmptyException("Stack is Empty. Cannot perform pop action.");
-		}
+	public Integer pop(){
 		return this.store.pop();
 	}
 	
-	public Integer peek() throws StackEmptyException{
-		if(isEmpty()){
-			throw new StackEmptyException("Stack is Empty. Cannot perform peek action.");
-		}
+	public Integer peek(){
 		return this.store.peek();
 	}
 	
