@@ -22,10 +22,6 @@ public class SortStack{
 		return this.store.pop();
 	}
 	
-	public Integer peek(){
-		return 5;
-	}
-	
 	private void dumpToStore(){
 		while(!this.tempStack.isEmpty()){
 			this.store.push(this.tempStack.pop());
