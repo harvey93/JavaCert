@@ -13,9 +13,6 @@ public class SortStack<E>{
 	}
 	
 	public void push(E el){
-		while(!isEmpty()){
-//			if(this.store.peek())
-		}
 		
 	}
 	
