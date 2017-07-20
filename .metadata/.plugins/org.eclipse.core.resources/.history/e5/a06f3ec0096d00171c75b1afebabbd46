@@ -15,10 +15,6 @@ public class Test {
 		queue.queue(50);
 		queue.dequeue();
 		queue.dequeue();
-		queue.dequeue();
-		queue.dequeue();
-		queue.dequeue();
-//		queue.dequeue();
 		System.out.println(queue.toString());
 	}
 	

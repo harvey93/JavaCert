@@ -18,7 +18,6 @@ public class Test {
 		queue.dequeue();
 		queue.dequeue();
 		queue.dequeue();
-//		queue.dequeue();
 		System.out.println(queue.toString());
 	}
 	
