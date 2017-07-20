@@ -13,7 +13,7 @@ public class SortStack{
 	}
 	
 	public void push(Integer el){
-		fillStacks(el);
+		fillStacks(el);s
 		this.store.push(el);
 		
 		

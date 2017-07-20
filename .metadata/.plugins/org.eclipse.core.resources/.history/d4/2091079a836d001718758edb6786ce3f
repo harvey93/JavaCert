@@ -14,9 +14,8 @@ public class SortStack{
 	
 	public void push(Integer el){
 		fillStacks(el);
+		
 		this.store.push(el);
-		
-		
 	}
 	
 	private void fillStacks(Integer el){
