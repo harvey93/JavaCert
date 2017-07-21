@@ -33,7 +33,12 @@ public class AnimalShelter {
 			this.animal = animal;
 			this.count = count;
 		}
-				
+
+		public int getCount() {
+			return count;
+		}
+		
+		
 	}
 
 }

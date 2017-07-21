@@ -20,20 +20,28 @@ public class AnimalShelter {
 		}else if(a instanceof Cat){
 			
 		}
-		count++;
 	}
 	
 
 	private class AnimalNode{
 		
-		private Animal animal;
+		private String name;
 		private int count;
 		
-		private AnimalNode(Animal animal, int count){
-			this.animal = animal;
+		private AnimalNode(String name, int count){
+			this.name = name;
 			this.count = count;
 		}
-				
+
+		public String getName() {
+			return name;
+		}
+
+		public int getCount() {
+			return count;
+		}
+		
+		
 	}
 
 }
