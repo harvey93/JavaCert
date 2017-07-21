@@ -27,10 +27,6 @@ public class AnimalShelter {
 		return (Dog)this.dogList.removeFirst().animal;
 	}
 	
-	public Cat dequeuCat(){
-		return (Cat)this.catList.removeFirst().animal;
-	}
-	
 	public String toString(){
 		return "Dogs: " + this.dogList.toString() + "\n" +
 				"Cats: " + this.catList.toString();
