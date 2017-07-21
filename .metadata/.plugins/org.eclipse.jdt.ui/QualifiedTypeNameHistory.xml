@@ -19,7 +19,6 @@
 <fullyQualifiedTypeName name="ch3.MinStack"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="ch3.Node"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="ch3.NodeStack"/>
 <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
 <fullyQualifiedTypeName name="ch3.Plates"/>
@@ -37,11 +36,13 @@
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="java.io.PushbackInputStream"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="ch3.StackQueue"/>
 <fullyQualifiedTypeName name="java.util.concurrent.DelayQueue"/>
 <fullyQualifiedTypeName name="T"/>
-<fullyQualifiedTypeName name="ch3.StackEmptyException"/>
-<fullyQualifiedTypeName name="ch3.SortStack"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="E"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="ch3.SortStack"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="ch3.StackEmptyException"/>
 </qualifiedTypeNameHistroy>

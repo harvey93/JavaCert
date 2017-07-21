@@ -1,0 +1,13 @@
+package ch3;
+
+
+
+public class Test {
+	
+	public static void main(String[] args) throws StackEmptyException{
+		Double double1 = new Double(4);
+		Number number = double1;
+	}
+	 
+
+}

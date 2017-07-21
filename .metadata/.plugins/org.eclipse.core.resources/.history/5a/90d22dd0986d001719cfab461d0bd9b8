@@ -1,0 +1,17 @@
+package ch3;
+
+
+
+public class Test {
+	
+	public static void main(String[] args) throws StackEmptyException{
+		Object c = 10.0f;
+		int a = 5;
+		Double double1 = new Double(4);
+		Long long1 = new Long(12);
+		Number number = (Number)c;
+		System.out.println(c instanceof Double);
+	}
+	 
+
+}

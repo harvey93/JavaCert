@@ -1,0 +1,17 @@
+package ch3;
+
+
+
+public class Test {
+	
+	public Test(){
+	}
+	
+	public static void main(String[] args) {
+		Character character = new Character('a');
+		
+		System.out.println(Character.isLetterOrDigit(character));
+
+	}
+
+}

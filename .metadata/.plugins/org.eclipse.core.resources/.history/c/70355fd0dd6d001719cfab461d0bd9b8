@@ -1,0 +1,17 @@
+package ch3;
+
+import java.time.LocalDate;
+
+import javax.swing.text.DateFormatter;
+
+public class Test {
+	
+
+	
+	public static void main(String[] args) {
+		
+		String date = LocalDateTime.parse("2014-05-04")
+				.format(DateFormatter.ISO_DATE);
+	}
+
+}

@@ -1,0 +1,12 @@
+package ch3;
+
+
+
+public class Test {
+	
+	public Test(){
+		Character character = new Character('a');
+	}
+	
+
+}

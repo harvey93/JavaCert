@@ -1,0 +1,16 @@
+package ch3;
+
+
+
+public class Test {
+	
+	public static void main(String[] args) throws StackEmptyException{
+		int a = 5;
+		Double double1 = new Double(4);
+		Long long1 = new Long(12);
+		Number number = long1;
+		System.out.println(number);
+	}
+	 
+
+}

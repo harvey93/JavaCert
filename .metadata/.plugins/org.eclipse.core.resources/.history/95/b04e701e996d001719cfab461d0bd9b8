@@ -1,0 +1,16 @@
+package ch3;
+
+
+
+public class Test {
+	
+	public static void main(String[] args) throws StackEmptyException{
+		System.out.println("main");
+	}
+	
+	static {System.out.println("static block");}
+	
+	{System.out.println("instance block");}
+	 
+
+}
