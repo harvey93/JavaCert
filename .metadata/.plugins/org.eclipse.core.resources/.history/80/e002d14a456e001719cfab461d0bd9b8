@@ -18,7 +18,7 @@ public class AnimalShelter {
 		if(a instanceof Dog){
 			this.dogList.add(new AnimalNode(a, this.count));
 		}else if(a instanceof Cat){
-			this.catList.add(new AnimalNode(a, this.count));
+			
 		}
 		count++;
 	}
