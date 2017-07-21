@@ -9,11 +9,6 @@ public class AnimalShelter {
 	private LinkedList<AnimalNode> dogList;
 	private LinkedList<AnimalNode> catList;
 	
-	public AnimalShelter(){
-		this.dogList = new LinkedList<>();
-		this.catList = new LinkedList<>();
-	}
-	
 
 	private class AnimalNode{
 		

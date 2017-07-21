@@ -10,8 +10,7 @@ public class AnimalShelter {
 	private LinkedList<AnimalNode> catList;
 	
 	public AnimalShelter(){
-		this.dogList = new LinkedList<>();
-		this.catList = new LinkedList<>();
+		
 	}
 	
 
