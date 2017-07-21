@@ -48,7 +48,7 @@ public class AnimalShelter {
 		}
 		
 		public String toString(){
-			return "{ Name: " + this.animal.getName()
+			return "{Name: " + this.animal.getName()
 					+ " Count: " + this.count + "} ";
 		}
 				

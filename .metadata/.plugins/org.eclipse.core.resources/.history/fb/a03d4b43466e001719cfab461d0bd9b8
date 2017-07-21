@@ -46,11 +46,6 @@ public class AnimalShelter {
 			this.animal = animal;
 			this.count = count;
 		}
-		
-		public String toString(){
-			return "{ Name: " + this.animal.getName()
-					+ " Count: " + this.count + "} ";
-		}
 				
 	}
 
