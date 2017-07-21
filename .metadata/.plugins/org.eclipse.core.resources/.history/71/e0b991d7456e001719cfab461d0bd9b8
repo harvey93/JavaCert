@@ -23,7 +23,7 @@ public class AnimalShelter {
 		count++;
 	}
 	
-	public Dog dequeuDog(){
+	public Dog dequeu(){
 		return (Dog)this.dogList.removeFirst().animal;
 	}
 	
