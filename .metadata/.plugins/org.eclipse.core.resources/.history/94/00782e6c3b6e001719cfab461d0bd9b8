@@ -17,16 +17,6 @@ public class AnimalShelter {
 			this.name = dog.getName();
 			this.count = count;
 		}
-
-		public String getName() {
-			return name;
-		}
-
-		public int getCount() {
-			return count;
-		}
-		
-		
 	}
 
 }

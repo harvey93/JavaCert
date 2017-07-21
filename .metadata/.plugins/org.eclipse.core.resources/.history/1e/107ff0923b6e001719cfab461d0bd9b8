@@ -1,14 +1,12 @@
 package ch3;
 
-public class Dog {
+public class Cat {
 
 	private String name;
-	
 	public String getName() {
 		return name;
 	}
-
-	public Dog(String name){
+	public Cat(String name){
 		this.name = name;
 	}
 }
