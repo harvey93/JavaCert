@@ -6,7 +6,7 @@ import java.util.LinkedList;
 public class AnimalShelter {
 
 	private int count;
-	private LinkedList<DogNode> dogList;
+	private LinkedList<DogNode>;
 	
 	private class DogNode{
 		
