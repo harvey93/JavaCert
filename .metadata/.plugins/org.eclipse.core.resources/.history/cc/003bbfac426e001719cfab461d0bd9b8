@@ -14,7 +14,7 @@ public class AnimalShelter {
 		this.catList = new LinkedList<>();
 	}
 	
-	public void enqueue(Animal a){
+	public void enqueue(Animal){
 		
 	}
 	
