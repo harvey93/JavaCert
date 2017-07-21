@@ -6,17 +6,15 @@ import java.util.LinkedList;
 public class AnimalShelter {
 
 	private int count;
-	private LinkedList<AnimalNode> dogList;
-	private LinkedList<AnimalNode> catList;
+	private LinkedList<DogNode> dogList;
 	
-
-	private class AnimalNode{
+	private class DogNode{
 		
 		private String name;
 		private int count;
 		
-		private AnimalNode(String name, int count){
-			this.name = name;
+		private DogNode(Dog dog, int count){
+			this.name = dog.getName();
 			this.count = count;
 		}
 

@@ -6,8 +6,8 @@ import java.util.LinkedList;
 public class AnimalShelter {
 
 	private int count;
-	private LinkedList<AnimalNode> dogList;
-	private LinkedList<AnimalNode> catList;
+	private LinkedList<DogNode> dogList;
+	private LinkedList<CatNode> catList;
 	
 
 	private class AnimalNode{
