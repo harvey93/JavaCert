@@ -46,10 +46,6 @@ public class AnimalShelter {
 			}else {
 				result = this.dogList.removeFirst().animal;
 			}
-		}else if(!this.catList.isEmpty()){
-			result = dequeuCat();
-		}else if (!this.dogList.isEmpty()){
-			result = dequeuDog();
 		}
 		return result;
 	}
