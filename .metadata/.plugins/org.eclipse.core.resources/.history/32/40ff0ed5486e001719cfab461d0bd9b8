@@ -10,7 +10,7 @@ public class Test {
 		shelter.enqueue(new Dog("Hrant"));
 		shelter.enqueue(new Dog("Fredo"));
 		shelter.enqueue(new Dog("Paul"));
-//		shelter.dequeuDog();
+		shelter.dequeuDog();
 		shelter.enqueue(new Cat("Mittens"));
 		shelter.enqueue(new Cat("Kat"));
 //		shelter.dequeuCat();

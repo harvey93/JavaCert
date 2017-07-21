@@ -14,7 +14,7 @@ public class Test {
 		shelter.enqueue(new Cat("Mittens"));
 		shelter.enqueue(new Cat("Kat"));
 //		shelter.dequeuCat();
-		shelter.dequeueAny();
+//		shelter.dequeueAny();
 		System.out.println(shelter);
 	}
 

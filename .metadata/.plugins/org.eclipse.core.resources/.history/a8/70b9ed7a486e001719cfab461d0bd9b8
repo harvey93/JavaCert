@@ -41,11 +41,7 @@ public class AnimalShelter {
 		if(!this.catList.isEmpty() && !this.dogList.isEmpty()){
 			AnimalNode firstDogNode = this.dogList.getFirst();
 			AnimalNode firstCatNode = this.catList.getFirst();
-			if(firstCatNode.count < firstDogNode.count){
-				result = this.catList.removeFirst().animal;
-			}else {
-				result = this.dogList.removeFirst().animal;
-			}
+			if(firstCat.cou)
 		}
 		return result;
 	}
