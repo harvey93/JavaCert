@@ -10,10 +10,7 @@ public class AnimalShelter {
 	
 	private class DogNode{
 		
-		private String name;
-		private int count;
-		
-		private DogNode(Dog dog, int count){
+		public DogNode(){
 			
 		}
 	}
