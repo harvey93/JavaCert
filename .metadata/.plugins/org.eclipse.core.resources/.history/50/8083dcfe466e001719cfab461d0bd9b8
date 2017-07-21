@@ -37,7 +37,7 @@ public class AnimalShelter {
 	}
 	
 	public Animal dequeueAny(){
-		Animal result = null;
+		Animal result;
 		if(!this.catList.isEmpty() && !this.dogList.isEmpty()){
 			
 		}
