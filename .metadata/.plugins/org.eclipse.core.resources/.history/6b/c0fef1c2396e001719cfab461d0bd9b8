@@ -2,8 +2,7 @@ package ch3;
 
 public class Cat {
 
-	String name;
-	public Cat(String name){
+	public Cat(){
 		this.name = name;
 	}
 }
