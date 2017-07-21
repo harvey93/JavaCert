@@ -2,7 +2,7 @@ package ch3;
 
 public class Dog {
 
-	private String name;
+	String name;
 	
 	public String getName() {
 		return name;
