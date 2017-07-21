@@ -11,8 +11,6 @@ public class Test {
 		shelter.enqueue(new Dog("Paul"));
 		shelter.dequeuDog();
 		shelter.enqueue(new Cat("Mittens"));
-		shelter.enqueue(new Cat("Kat"));
-		shelter.dequeuCat();
 		System.out.println(shelter);
 	}
 
