@@ -30,7 +30,7 @@ public class DataTypes implements A{
 	}
 	
 	public void defaultArrays(){
-		double[] arr = new double[4];
+		Integer[] arr = new char[4];
 		System.out.println(Arrays.toString(arr));
 	}
 	

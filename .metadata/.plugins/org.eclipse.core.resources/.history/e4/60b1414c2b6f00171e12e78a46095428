@@ -1,7 +1,5 @@
 package sectionTests;
 
-import java.util.Arrays;
-
 import aAProbs.sumNums;
 
 public class DataTypes implements A{
@@ -30,8 +28,7 @@ public class DataTypes implements A{
 	}
 	
 	public void defaultArrays(){
-		double[] arr = new double[4];
-		System.out.println(Arrays.toString(arr));
+		char arr = new char[4];
 	}
 	
 	public void interfaceTest(){
