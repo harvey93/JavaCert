@@ -27,7 +27,7 @@ public class DataTypes implements A{
 		
 	}
 	
-	public void interfaceTest(){
+	public boolean interfaceTest(){
 		System.out.println(this.s);
 	}
 	
@@ -38,7 +38,7 @@ public class DataTypes implements A{
 		}else {
 			f = true;
 		}
-		
+		return ;
 		System.out.println(f); 
 	}
 	

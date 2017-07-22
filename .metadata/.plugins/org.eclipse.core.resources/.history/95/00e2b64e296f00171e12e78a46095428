@@ -39,7 +39,7 @@ public class DataTypes implements A{
 			f = true;
 		}
 		
-		System.out.println(f); 
+		return 
 	}
 	
 

@@ -31,15 +31,8 @@ public class DataTypes implements A{
 		System.out.println(this.s);
 	}
 	
-	public void truthTest2(){
-		boolean f = true;
-		if(true){
-			f = false;
-		}else {
-			f = true;
-		}
+	public boolean truthTest2(){
 		
-		System.out.println(f); 
 	}
 	
 
