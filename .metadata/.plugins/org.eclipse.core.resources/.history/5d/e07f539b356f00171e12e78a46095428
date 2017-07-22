@@ -15,9 +15,9 @@ public class Test {
 		}
 	}
 	
-	public static void method() throws IOException{
+	public static IOException method() throws IOException{
 		try{
-			
+			throw new FileNotFoundException();
 			throw new IOException();
 			
 		}catch(FileNotFoundException e){

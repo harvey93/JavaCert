@@ -1,6 +1,5 @@
 package sectionTests;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
@@ -15,13 +14,7 @@ public class Test {
 		}
 	}
 	
-	public static void method() throws IOException{
-		try{
-			
-			throw new IOException();
-			
-		}catch(FileNotFoundException e){
-			
-		}
+	public static IOException method(){
+		
 	}
 }
