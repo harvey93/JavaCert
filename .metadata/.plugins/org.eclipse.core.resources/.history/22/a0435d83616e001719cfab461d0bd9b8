@@ -1,0 +1,13 @@
+package ch3;
+
+
+
+public class Test {
+	
+	public static void main(String[] args) {
+		int [] res = new int[5];
+		int [] two = {1,2,3,4};
+		System.out.println(res.concat(two));
+	}
+
+}
