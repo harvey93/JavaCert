@@ -22,7 +22,7 @@ public class DataTypes {
 		if(go(10)){
 			y = 3;
 		} 
-		
+		System.out.println(y);
 	}
 	
 	public boolean go(int y){
@@ -31,6 +31,6 @@ public class DataTypes {
 //		}else{
 //			return false;
 //		}
-		return true;
+		
 	}
 }

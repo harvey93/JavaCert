@@ -16,21 +16,4 @@ public class DataTypes {
 		System.out.println(x + y);
 		
 	}
-	
-	public void truthTest(){
-		int y;
-		if(go(10)){
-			y = 3;
-		} 
-		
-	}
-	
-	public boolean go(int y){
-//		if( y > 5){
-//			return true;
-//		}else{
-//			return false;
-//		}
-		return true;
-	}
 }

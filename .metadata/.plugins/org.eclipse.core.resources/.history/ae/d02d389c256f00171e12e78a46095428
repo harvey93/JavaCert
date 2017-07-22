@@ -22,15 +22,14 @@ public class DataTypes {
 		if(go(10)){
 			y = 3;
 		} 
-		
 	}
 	
 	public boolean go(int y){
-//		if( y > 5){
-//			return true;
-//		}else{
-//			return false;
-//		}
-		return true;
+		if( y > 5){
+			return true;
+		}else{
+			return false;
+		}
+		
 	}
 }

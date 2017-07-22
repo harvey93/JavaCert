@@ -19,18 +19,10 @@ public class DataTypes {
 	
 	public void truthTest(){
 		int y;
-		if(go(10)){
-			y = 3;
-		} 
-		
+		if 
 	}
 	
 	public boolean go(int y){
-//		if( y > 5){
-//			return true;
-//		}else{
-//			return false;
-//		}
-		return true;
+		if(y > 5){return true;} 
 	}
 }
