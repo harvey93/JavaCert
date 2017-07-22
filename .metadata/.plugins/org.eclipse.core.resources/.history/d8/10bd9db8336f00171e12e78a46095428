@@ -8,7 +8,7 @@ public class Test {
 		DataTypes dTTest = new DataTypes();
 //		dTTest.defaultArrays();
 		Integer arr[] = {1,2,3,4};
-		Integer arr2[] = {1,2,3,4};
+		int arr2[] = {1,2,3,4};
 		System.out.println(Arrays.deepEquals(arr, arr2));
 	}
 }
