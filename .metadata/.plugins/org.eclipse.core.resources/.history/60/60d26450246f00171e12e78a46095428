@@ -10,10 +10,10 @@ public class DataTypes {
 	}
 	
 	public void localVarTest(){
-		int y = 5;
+		int y;
 		final int x;
 		x = 10;
-		System.out.println(x + y);
+		System.out.println(x);
 		
 	}
 }
