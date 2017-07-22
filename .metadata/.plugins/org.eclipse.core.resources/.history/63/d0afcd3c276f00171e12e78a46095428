@@ -1,8 +1,6 @@
 package sectionTests;
 
-import aAProbs.sumNums;
-
-public class DataTypes implements A{
+public class DataTypes {
 
 	char c;
 	static int y = 10;
@@ -28,10 +26,13 @@ public class DataTypes implements A{
 	}
 	
 	public void interfaceTest(){
-		System.out.println(this.s);
+		System.out.println(A.x);
 	}
 	
-
+	interface A{
+		static int x = 10;
+		String s = "Value";
+	}
 	
 	public boolean go(int y){
 //		if( y > 5){

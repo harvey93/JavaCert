@@ -28,7 +28,7 @@ public class DataTypes implements A{
 	}
 	
 	public void interfaceTest(){
-		System.out.println(this.s);
+		System.out.println(s);
 	}
 	
 
