@@ -12,9 +12,6 @@ public class StringProbs {
 		HashMap<Character, Integer> map1 = new HashMap<>();
 		HashMap<Character, Integer> map2 = new HashMap<>();
 		fillMap(first, map1);
-		fillMap(second, map2);
-		System.out.println(map1);
-		System.out.println(map2);
 		return 5;
 	}
 	

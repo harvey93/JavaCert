@@ -14,7 +14,6 @@ public class StringProbs {
 		fillMap(first, map1);
 		fillMap(second, map2);
 		System.out.println(map1);
-		System.out.println(map2);
 		return 5;
 	}
 	
