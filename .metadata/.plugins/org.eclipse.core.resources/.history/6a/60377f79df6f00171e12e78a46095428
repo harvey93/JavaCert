@@ -14,7 +14,14 @@ public class Test {
 		
 		Double i = 100.0;
 		Double j = 100.0;
-		
+		System.out.println(i == j);
+		try{
+			
+		}catch(ArithmeticException e){
+			
+		}catch(NullPointerException bex){
+			
+		}
 	}
 }
 

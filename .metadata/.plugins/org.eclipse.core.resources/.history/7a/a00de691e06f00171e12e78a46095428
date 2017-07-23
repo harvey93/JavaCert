@@ -15,6 +15,9 @@ public class Test {
 		Double i = 100.0;
 		Double j = 100.0;
 		
+		Byte b = 8;
+		Byte c = 8;
+		System.out.println(b == c);
 	}
 }
 

@@ -14,7 +14,11 @@ public class Test {
 		
 		Double i = 100.0;
 		Double j = 100.0;
-		
+		System.out.println(i == j);
+		byte b = 8;
+		while(b-- < 10){
+			System.out.println(b);
+		}
 	}
 }
 

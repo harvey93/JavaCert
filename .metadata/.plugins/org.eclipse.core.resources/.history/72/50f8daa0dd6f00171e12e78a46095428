@@ -12,9 +12,8 @@ public class Test {
 		int [] arr = new int[0];
 		
 		
-		Double i = 100.0;
-		Double j = 100.0;
-		
+		Integer i = 200;
+		Integer j = 200;
+		System.out.println(i == j);
 	}
 }
-

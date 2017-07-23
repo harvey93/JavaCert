@@ -1,20 +1,14 @@
 package hackerRank;
 
-import java.util.Arrays;
-
 public class Test {
 	
 	public static void main(String[] args) {
 		StringProbs stringProbs = new StringProbs();
 		HashMapProbs mapProbs = new HashMapProbs();
-
+		mapProbs.ransomNoteMap(
+				new String[]{"two", "times", "two", "is", "four"}, 
+				new String[]{"two", "times", "three", "is", "not", "four"});
 		
 		int [] arr = new int[0];
-		
-		
-		Double i = 100.0;
-		Double j = 100.0;
-		
 	}
 }
-
