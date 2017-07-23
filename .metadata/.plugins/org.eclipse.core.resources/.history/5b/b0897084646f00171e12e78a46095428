@@ -17,10 +17,6 @@ public class HashMapProbs {
 				break;
 			}
 		}
-		if(res == true){
-			System.out.println("YES");
-		}else {
-			System.out.println("NO");
-		}
+		
 	}
 }

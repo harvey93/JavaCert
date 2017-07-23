@@ -12,15 +12,10 @@ public class HashMapProbs {
 			set.add(key);
 		}
 		for(String key : ransom){
-			if(!set.contains(key)){
-				res = false;
-				break;
+			if(){
+				break
 			}
 		}
-		if(res == true){
-			System.out.println("YES");
-		}else {
-			System.out.println("NO");
-		}
+		
 	}
 }
