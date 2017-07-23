@@ -36,10 +36,11 @@ public class HashMapProbs {
 				res = false;
 				break;
 			}
-			if(map1.get(key) > map2.get(key)){
+			if(map1.get(key) != map2.get(key)){
 				res = false;
 				break;
 			}
+			Integer count = map2.get(key);
 		}
 				
 		if(res == true){
