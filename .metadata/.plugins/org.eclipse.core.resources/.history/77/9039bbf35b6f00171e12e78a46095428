@@ -1,0 +1,10 @@
+package hackerRank;
+
+public class StringProbs {
+
+	public int numbersNeeded(String first, String second){
+		StringBuilder sb1 = new StringBuilder(first);
+		StringBuilder sb2 = new StringBuilder(second);
+		return 5;
+	}
+}

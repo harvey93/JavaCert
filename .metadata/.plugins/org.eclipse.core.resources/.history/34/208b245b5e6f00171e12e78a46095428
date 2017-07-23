@@ -13,8 +13,4 @@ public class StringProbs {
 		HashMap<Character, Integer> map2 = new HashMap<>();
 		return 5;
 	}
-	
-	public void fillMap(String str, HashMap<Character, Integer> map){
-		
-	}
 }

@@ -14,7 +14,7 @@ public class StringProbs {
 		return 5;
 	}
 	
-	public void fillMap(String str, HashMap<Character, Integer> map){
+	public void fillMap(String str, HashMap<Character, Integer){
 		
 	}
 }

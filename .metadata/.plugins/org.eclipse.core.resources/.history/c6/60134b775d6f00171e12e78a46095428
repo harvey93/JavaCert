@@ -1,0 +1,16 @@
+package hackerRank;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class StringProbs {
+
+	public int numbersNeeded(String first, String second){
+		ArrayList<Character> chars1 = new ArrayList<>(first.toCharArray());
+		char [] chars2 = second.toCharArray();
+		
+		System.out.println(sb1);
+		System.out.println(sb2);
+		return 5;
+	}
+}
