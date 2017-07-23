@@ -26,8 +26,7 @@ public class HashMapProbs {
 	
 	public void ransomNoteMap(String[] ransom, String[] magazine){
 		boolean res = true;
-		HashMap<String, Integer> map1 = new HashMap<>();
-		HashMap<String, Integer> map2 = new HashMap<>();
+		HashMap<K, V>
 		
 		
 		if(res == true){
@@ -37,15 +36,15 @@ public class HashMapProbs {
 		}
 	}
 	
-	public void fillMap(String str, HashMap<String, Integer> map){
-//		for(int i = 0; i < str.length(); i++){
-//			String currentChar = str.charAt(i);
-//			if(map.containsKey(currentChar)){
-//				Integer currentCount = map.get(currentChar);
-//				map.put(currentChar, ++currentCount);
-//			}else{
-//				map.put(currentChar, 1);
-//			}
-//		}
+	public void fillMap(String str, HashMap<Character, Integer> map){
+		for(int i = 0; i < str.length(); i++){
+			Character currentChar = str.charAt(i);
+			if(map.containsKey(currentChar)){
+				Integer currentCount = map.get(currentChar);
+				map.put(currentChar, ++currentCount);
+			}else{
+				map.put(currentChar, 1);
+			}
+		}
 	}
 }

@@ -26,8 +26,7 @@ public class HashMapProbs {
 	
 	public void ransomNoteMap(String[] ransom, String[] magazine){
 		boolean res = true;
-		HashMap<String, Integer> map1 = new HashMap<>();
-		HashMap<String, Integer> map2 = new HashMap<>();
+		HashMap<, V>
 		
 		
 		if(res == true){
