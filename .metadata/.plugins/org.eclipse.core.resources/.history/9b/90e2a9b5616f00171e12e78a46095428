@@ -1,6 +1,5 @@
 package hackerRank;
 
-import java.awt.Checkbox;
 import java.awt.List;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,42 +13,22 @@ public class StringProbs {
 		HashMap<Character, Integer> map2 = new HashMap<>();
 		fillMap(first, map1);
 		fillMap(second, map2);
-		int count = checkMap(map1, map2);
-//		for(Character key : map1.keySet()){
-//			Integer map1Count = map1.get(key);
-//			if(map2.containsKey(key)){
-//				Integer map2Count = map2.get(key);
-//				count += Math.abs(map1Count - map2Count);
-//				map1.put(key, 0);
-//				map2.put(key, 0);
-//
-//			}else {
-//				count += map1Count;
-//			}
-//			
-//		}
-		System.out.println(map1);
-		System.out.println(map2);
-		System.out.println(count);
-		return count;
-	}
-	
-	public int checkMap(HashMap<Character, Integer> map1, HashMap<Character, Integer> map2){
 		int count = 0;
 		for(Character key : map1.keySet()){
 			Integer map1Count = map1.get(key);
 			if(map2.containsKey(key)){
 				Integer map2Count = map2.get(key);
 				count += Math.abs(map1Count - map2Count);
-				map1.put(key, 0);
-				map2.put(key, 0);
-
+				map1.remove(key);
+				map2.remove(key);
 			}else {
 				count += map1Count;
 			}
-			
 		}
-		return count;
+		System.out.println(map1);
+		System.out.println(map2);
+		System.out.println(count);
+		return 5;
 	}
 	
 	public void fillMap(String str, HashMap<Character, Integer> map){
