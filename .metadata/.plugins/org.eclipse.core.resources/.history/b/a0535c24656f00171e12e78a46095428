@@ -26,9 +26,6 @@ public class HashMapProbs {
 	
 	public void ransomNoteMap(String[] ransom, String[] magazine){
 		boolean res = true;
-		
-		
-		
 		if(res == true){
 			System.out.println("YES");
 		}else {
