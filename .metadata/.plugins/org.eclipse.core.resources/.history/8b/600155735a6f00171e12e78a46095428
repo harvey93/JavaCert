@@ -1,0 +1,8 @@
+package hackerRank;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		StringProbs stringTest = new StringProbs();
+	}
+}

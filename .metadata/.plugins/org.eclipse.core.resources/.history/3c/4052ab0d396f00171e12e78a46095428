@@ -10,8 +10,7 @@ public class Test {
 	int x = y;
 	static int y = 10;
 	public static void main(String[] args) {
-		Long long1 = new Long(3);
-		Double double1 = 5.0;
+		Long long1 = 3f;
 		
 	}
 	

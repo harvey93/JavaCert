@@ -1,0 +1,9 @@
+package hackerRank;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		StringProbs stringTest = new StringProbs();
+		System.out.println(stringTest.numbersNeeded(String cde, Stringabc));
+	}
+}
