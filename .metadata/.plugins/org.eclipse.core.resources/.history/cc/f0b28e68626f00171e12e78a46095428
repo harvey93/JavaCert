@@ -16,6 +16,22 @@ public class StringProbs {
 		fillMap(second, map2);
 		int count = checkMap(map1, map2);
 		count += checkMap(map2, map1);
+//		for(Character key : map1.keySet()){
+//			Integer map1Count = map1.get(key);
+//			if(map2.containsKey(key)){
+//				Integer map2Count = map2.get(key);
+//				count += Math.abs(map1Count - map2Count);
+//				map1.put(key, 0);
+//				map2.put(key, 0);
+//
+//			}else {
+//				count += map1Count;
+//			}
+//			
+//		}
+		System.out.println(map1);
+		System.out.println(map2);
+		System.out.println(count);
 		return count;
 	}
 	
