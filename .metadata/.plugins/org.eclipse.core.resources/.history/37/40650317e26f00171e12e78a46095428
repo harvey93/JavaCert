@@ -11,15 +11,9 @@ public class Test {
 		
 		int [] arr = new int[0];
 		
-		int i = 5;
-		if(i > 5){
-			System.out.println("bigger");
-		}else 
-			if(i++ == 6)
-				System.out.println("if");
-			else
-				System.out.println("last else");
-
+		
+		Double i = 100.0;
+		Double j = 100.0;
 		
 	}
 }
