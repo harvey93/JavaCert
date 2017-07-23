@@ -18,9 +18,9 @@ public class HashMapProbs {
 			}
 		}
 		if(res == true){
-			System.out.println("Yes");
+			System.out.println("YES");
 		}else {
-			System.out.println("No");
+			System.out.println("NO");
 		}
 	}
 	
@@ -28,24 +28,13 @@ public class HashMapProbs {
 		boolean res = true;
 		HashMap<String, Integer> map1 = new HashMap<>();
 		HashMap<String, Integer> map2 = new HashMap<>();
-		fillMap(ransom, map1);
-		fillMap(magazine, map2);
+		fillMap(map1, ransom);
+		fillMap(map2, magazine);
 		
-		for(String key : map1.keySet()){
-			if(!map2.containsKey(key)){
-				res = false;
-				break;
-			}
-			if(map1.get(key) != map2.get(key)){
-				res = false;
-				break;
-			}
-		}
-				
 		if(res == true){
-			System.out.println("Yes");
+			System.out.println("YES");
 		}else {
-			System.out.println("No");
+			System.out.println("NO");
 		}
 	}
 	

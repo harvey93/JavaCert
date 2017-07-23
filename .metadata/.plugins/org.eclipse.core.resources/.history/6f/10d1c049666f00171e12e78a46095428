@@ -18,9 +18,9 @@ public class HashMapProbs {
 			}
 		}
 		if(res == true){
-			System.out.println("Yes");
+			System.out.println("YES");
 		}else {
-			System.out.println("No");
+			System.out.println("NO");
 		}
 	}
 	
@@ -32,20 +32,16 @@ public class HashMapProbs {
 		fillMap(magazine, map2);
 		
 		for(String key : map1.keySet()){
-			if(!map2.containsKey(key)){
-				res = false;
-				break;
-			}
-			if(map1.get(key) != map2.get(key)){
-				res = false;
-				break;
-			}
+			
 		}
-				
+		
+		System.out.println(map1);
+		System.out.println(map2);
+		
 		if(res == true){
-			System.out.println("Yes");
+			System.out.println("YES");
 		}else {
-			System.out.println("No");
+			System.out.println("NO");
 		}
 	}
 	

@@ -43,9 +43,9 @@ public class HashMapProbs {
 		}
 				
 		if(res == true){
-			System.out.println("Yes");
+			System.out.println("YES");
 		}else {
-			System.out.println("No");
+			System.out.println("NO");
 		}
 	}
 	
