@@ -10,6 +10,11 @@ public class Test {
 	
 	static int y = 10;
 	public static void main(String[] args) {
+		Device device = new MiniDevice();
+		Device device2 = new Device();
+		if(device instanceof A){System.out.println(true);}
+		if(device2 instanceof Object){System.out.println(true);}
+		if(device instanceof Device){System.out.println(true);}
 	}
 	
 	static {y = 15;}
