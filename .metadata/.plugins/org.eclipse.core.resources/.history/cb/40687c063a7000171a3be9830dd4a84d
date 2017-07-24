@@ -37,17 +37,22 @@ public class Test {
 				stack.push(')');
 			}else if(s == '['){
 				stack.push(']');
-			}else {
-				if(stack.isEmpty() || s != stack.peek()){
-					res = false;
-					break;
-				}
-				stack.pop();
 			}
 		}
 		return res;
-
-	}
+//		  Stack<Character> s;
+//		  for (char c : ) {
+//		    if      (c == '{') s.push('}');
+//		    else if (c == '[') s.push(']');
+//		    else if (c == '(') s.push(')');
+//		    else {
+//		      if (s.empty() || c != s.top())
+//		        return false;
+//		      s.pop();
+//		    }
+//		  }
+//		  return s.empty();
+		}
 	
 	  public static boolean isBalanced(String str) {
 	        boolean res = true;
