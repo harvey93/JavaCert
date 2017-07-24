@@ -14,7 +14,7 @@ import org.omg.CORBA.PRIVATE_MEMBER;
 
 public class Test {
 
-	public static char[][] TOKENS = {{'{','}'},{'[',']'},{'(',')'}};
+	
 	static int y = 10;
 	public static void main(String[] args) {
 
