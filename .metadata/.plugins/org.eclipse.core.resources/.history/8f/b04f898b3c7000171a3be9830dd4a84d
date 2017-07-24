@@ -27,10 +27,10 @@ public class Test {
 			if(openTerm(c)){
 				stack.push(c);
 			}else {
-				if(stack.isEmpty() || !match(stack.pop(), c)){
+				char top = stack.pop();
+				if(!match(top, c)){
 					return false;
 				}
-
 			}
 		}
 		return stack.isEmpty();
