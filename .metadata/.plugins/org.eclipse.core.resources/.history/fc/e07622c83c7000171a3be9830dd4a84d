@@ -36,7 +36,7 @@ public class Test {
 		return stack.isEmpty();
 	}
 	
-	public static boolean isOpenTerm(Character c){
+	public static boolean isOpenTerm(){
 		return true;
 	}
 	
@@ -66,6 +66,7 @@ public class Test {
         if(!stack.isEmpty()){
         	res = false;
         }
+        return res;
 		return res;
 	}
 	
