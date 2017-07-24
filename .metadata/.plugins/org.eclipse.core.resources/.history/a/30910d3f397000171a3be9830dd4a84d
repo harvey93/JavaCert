@@ -30,9 +30,6 @@ public class Test {
 	public static boolean isBalancedTwo(String str) {
 		boolean res = true;
 		Stack<Character> stack;
-		for(Character s : str.toCharArray()){
-			
-		}
 		return res;
 //		  Stack<Character> s;
 //		  for (char c : ) {

@@ -31,7 +31,7 @@ public class Test {
 		boolean res = true;
 		Stack<Character> stack;
 		for(Character s : str.toCharArray()){
-			
+			System.out.println((s == '{'));
 		}
 		return res;
 //		  Stack<Character> s;
