@@ -37,12 +37,7 @@ public class Test {
 	}
 	
 	public static boolean isOpenTerm(Character c){
-		for(char [] arr : TOKENS){
-			if(arr[0] == c){
-				return true;
-			}
-		}
-		return false;
+		return true;
 	}
 	
 	public static boolean matches(Character top,Character c){
