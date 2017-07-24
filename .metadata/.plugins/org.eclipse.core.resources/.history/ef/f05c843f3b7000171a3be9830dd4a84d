@@ -22,7 +22,7 @@ public class Test {
 	}
 	
 	public static boolean isBalancedThree(String str){
-		return true;
+		
 	}
 	
 	public static boolean isBalancedTwo(String str) {

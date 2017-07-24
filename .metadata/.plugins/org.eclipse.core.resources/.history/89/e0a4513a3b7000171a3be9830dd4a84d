@@ -21,8 +21,10 @@ public class Test {
 		System.out.println(isBalancedThree("{[(])}"));
 	}
 	
-	public static boolean isBalancedThree(String str){
-		return true;
+	static {y = 15;}
+	
+	public static void method() throws IOException{
+		
 	}
 	
 	public static boolean isBalancedTwo(String str) {
