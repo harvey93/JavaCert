@@ -22,10 +22,6 @@ public class Test {
 	}
 	
 	public static boolean isBalancedThree(String str){
-		Stack<Character> stack = new Stack<>();
-		for(char c : str.toCharArray()){
-			
-		}
 		return true;
 	}
 	
