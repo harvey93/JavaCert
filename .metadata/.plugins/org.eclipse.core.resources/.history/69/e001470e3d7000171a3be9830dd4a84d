@@ -45,13 +45,8 @@ public class Test {
 		return false;
 	}
 	
-	public static boolean matches(Character openTerm, Character closedTerm){
-		for(char [] arr : TOKENS){
-			if(arr[0] == openTerm){
-				return arr[1] == closedTerm;
-			}
-		}
-		return false;
+	public static boolean matches(Character top,Character c){
+		return true;
 	}
 	
 	public static boolean isBalancedTwo(String str) {
