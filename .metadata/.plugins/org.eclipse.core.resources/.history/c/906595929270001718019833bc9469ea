@@ -23,7 +23,7 @@ public class Test {
 	static int x = 10;
 	
 	public static void main(String[] args) {
-		ArrayList<Double> list = new ArrayList<>();
+		ArrayListlist<Double> list= new ArrayList<>();
 		list.add(21.6);
 		list.add(21.39);
 		list.add(21.5d);
@@ -31,7 +31,7 @@ public class Test {
 		
 		DoublePredicate  ip = i -> i > 21.4;
 		
-		for(Double d : list){
+		for((Double)Double d : list){
 			if(ip.test(d)){
 				System.out.println(d);
 			}
