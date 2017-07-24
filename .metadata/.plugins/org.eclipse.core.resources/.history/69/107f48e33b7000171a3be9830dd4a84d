@@ -33,7 +33,7 @@ public class Test {
 				}
 			}
 		}
-		return stack.isEmpty();
+		return true;
 	}
 	
 	public static boolean isBalancedTwo(String str) {
@@ -54,11 +54,6 @@ public class Test {
 				stack.pop();
 			}
 		}
-
-        if(!stack.isEmpty()){
-        	res = false;
-        }
-        return res;
 		return res;
 	}
 	
@@ -93,9 +88,6 @@ public class Test {
 	            }
 	        }
 
-	        if(!stack.isEmpty()){
-	        	res = false;
-	        }
 	        return res;
 	    }
 }

@@ -21,20 +21,20 @@ public class Test {
 		System.out.println(isBalancedThree("{[(])}"));
 	}
 	
-	public static boolean isBalancedThree(String str){
-		Stack<Character> stack = new Stack<>();
-		for(char c : str.toCharArray()){
-			if(openTerm(c)){
-				stack.push(c);
-			}else {
-				char top = stack.pop();
-				if(!match(top, c)){
-					return false;
-				}
-			}
-		}
-		return stack.isEmpty();
-	}
+//	public static boolean isBalancedThree(String str){
+//		Stack<Character> stack = new Stack<>();
+//		for(char c : str.toCharArray()){
+//			if(openTerm(c)){
+//				stack.push(c);
+//			}else {
+//				char top = stack.pop();
+//				if(!match(top, c)){
+//					return false;
+//				}
+//			}
+//		}
+//		return stack.isEmpty();
+//	}
 	
 	public static boolean isBalancedTwo(String str) {
 		boolean res = true;
@@ -54,11 +54,6 @@ public class Test {
 				stack.pop();
 			}
 		}
-
-        if(!stack.isEmpty()){
-        	res = false;
-        }
-        return res;
 		return res;
 	}
 	
@@ -93,9 +88,6 @@ public class Test {
 	            }
 	        }
 
-	        if(!stack.isEmpty()){
-	        	res = false;
-	        }
 	        return res;
 	    }
 }
