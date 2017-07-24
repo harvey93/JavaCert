@@ -1,0 +1,41 @@
+package sectionTests;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+
+import org.omg.CORBA.PRIVATE_MEMBER;
+
+public class Test {
+
+	
+	static int y = 10;
+	public static void main(String[] args) {
+		System.out.println((int)(Math.random() * 6) + 1);
+	}
+	
+	static {y = 15;}
+	
+	public static void method() throws IOException{
+		try{
+			
+			throw new IOException();
+			
+		}catch(FileNotFoundException e){
+			
+		}
+	}
+}
+
+//enum Speed{
+////	FAST(2);
+////	FASTER(3);
+////	SLOW(1);
+//	
+//	private final int speed;
+//	
+//	Speed(int speedCode){
+//		this.speed = speedCode;
+//	}
+//}

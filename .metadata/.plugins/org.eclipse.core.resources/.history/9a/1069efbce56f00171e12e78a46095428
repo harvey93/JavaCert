@@ -1,0 +1,8 @@
+package sectionTests;
+
+public class Device extends B{
+
+	public void print(){
+		
+	}
+}

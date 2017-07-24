@@ -1,9 +1,0 @@
-package general;
-
-public class Tiger {
-
-	public String getName(){
-		return this.name;
-	}
-	
-}

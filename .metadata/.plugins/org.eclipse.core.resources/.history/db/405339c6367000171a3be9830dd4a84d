@@ -1,0 +1,74 @@
+package sectionTests;
+import java.math.*;
+import java.util.regex.*;
+import java.text.*;
+import java.io.*;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.Stack;
+
+import org.omg.CORBA.PRIVATE_MEMBER;
+
+public class Test {
+
+	
+	static int y = 10;
+	public static void main(String[] args) {
+
+		System.out.println(isBalanced("{[(])}"));
+	}
+	
+	static {y = 15;}
+	
+	public static void method() throws IOException{
+		
+	}
+	
+	  public static boolean isBalanced(String str) {
+	        boolean res = true;
+	        String[] arr = str.split("");
+	        
+	        Stack<String> stack = new Stack<String>();
+	        for(String s : arr){
+	        	
+	            if(s.equals("{") || s.equals("(") || s == "["){
+	                stack.push(s);
+	            }else if(s == "}" || s == "]" || s == ")"){
+	                if(stack.isEmpty()){
+	                    res = false;
+	                    break;
+	                }
+	                String currentPop = stack.pop();
+	                if(s == "}" && currentPop != "{"){
+	                    res = false;
+	                    break;
+	                }
+	                if(s == ")" && currentPop != "("){
+	                    res = false;
+	                    break;
+	                }
+	                if(s == "]" && currentPop != "["){
+	                    res = false;
+	                    break;
+	                }
+	            }
+	        }
+
+	        return res;
+	    }
+}
+
+//enum Speed{
+////	FAST(2);
+////	FASTER(3);
+////	SLOW(1);
+//	
+//	private final int speed;
+//	
+//	Speed(int speedCode){
+//		this.speed = speedCode;
+//	}
+//}

@@ -1,0 +1,9 @@
+package sectionTests;
+
+enum Speed {
+
+//	Integer speed;
+	Speed(int SpeedCode){
+		
+	}
+}

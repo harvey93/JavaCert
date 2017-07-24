@@ -1,0 +1,6 @@
+package sectionTests;
+
+enum Speed {
+
+	private int speed;
+}
