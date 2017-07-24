@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="general.Bird"/>
-<fullyQualifiedTypeName name="java.io.WriteAbortedException"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="java.io.PushbackInputStream"/>
@@ -41,7 +39,6 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
-<fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="java.awt.Checkbox"/>
 <fullyQualifiedTypeName name="hackerRank.HashMapProbs"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
@@ -60,4 +57,7 @@
 <fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+<fullyQualifiedTypeName name="sectionTests.Test"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
 </qualifiedTypeNameHistroy>
