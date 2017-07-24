@@ -33,7 +33,13 @@ public class Test {
 		
 		DoublePredicate  ip = i -> i > 21.4;
 		
+		for(Double d : list){
+			if(ip.test(d)){
+				System.out.println(d);
+			}
+		}
 		
+		System.out.println(LocalDate.now());
 		
 	}
 	

@@ -5,9 +5,7 @@ import java.util.regex.*;
 import javax.management.ImmutableDescriptor;
 
 import java.text.*;
-import java.time.LocalDate;
 import java.time.Year;
-import java.awt.List;
 import java.io.*;
 
 import java.io.FileNotFoundException;
@@ -33,8 +31,13 @@ public class Test {
 		
 		DoublePredicate  ip = i -> i > 21.4;
 		
+		for(Double d : list){
+			if(ip.test(d)){
+				System.out.println(d);
+			}
+		}
 		
-		
+		System.out.println(new Date());
 	}
 	
 }
