@@ -14,7 +14,7 @@ public class BMinHeap {
 	}
 	
 	private int getParentIndex(int childIndex){
-		return (childIndex - 1) / 2;
+		return childIndex / 2;
 	}
 
 }
