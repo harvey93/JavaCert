@@ -1,17 +1,13 @@
 package hackerRank;
 
 
+
 public class TreeTest {
 	
-	public boolean checkBST(Node node){
+	public boolean checkBST(Node root){
 		
 		return true;
 	}
-	
-	public boolean checkBST(Node node, int max, int min){
-		
-	}
-
 
 }
 

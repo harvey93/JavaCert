@@ -8,10 +8,7 @@ public class TreeTest {
 		return true;
 	}
 	
-	public boolean checkBST(Node node, int max, int min){
-		
-	}
-
+	public boolean checkBST(Node root, )
 
 }
 
