@@ -5,7 +5,7 @@ public class TreeTest {
 	
 	public boolean checkBST(Node node){
 		
-		return (checkBST(node.left, node.data, null) && checkBST(node.right, null, node.data));
+		return checkBST(node, null, null);
 		
 	}
 	
@@ -13,7 +13,7 @@ public class TreeTest {
 		if(node.data < max && node.data > min){
 			return (checkBST(node.left, node.data, null) && checkBST(node.right, null, node.data));
 		}else {
-			return false;
+			return false
 		}
 		
 	}

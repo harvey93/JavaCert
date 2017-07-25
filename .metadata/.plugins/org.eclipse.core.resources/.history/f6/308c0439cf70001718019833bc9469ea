@@ -1,0 +1,26 @@
+package hackerRank;
+
+
+public class TreeTest {
+	
+	public boolean checkBST(Node node){
+		
+		checkBST(node, null, null);
+		return true;
+	}
+	
+	public boolean checkBST(Node node, Integer max, Integer min){
+		if(checkBST(node.left, node.data, null) && checkBST(node.right, null, node.data)){
+			
+		}
+		return true;
+	}
+
+
+}
+
+class Node {
+    int data;
+    Node left;
+    Node right;
+ }
