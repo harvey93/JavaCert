@@ -41,10 +41,8 @@ public class BMinHeap {
 		return items[getParentIndex(childIndex)];
 	}
 	
-	private void swap(int i, int j){
-		int temp = items[i];
-		items[i] = items[j];
-		items[j] = temp;
+	private void swap(int j, int j){
+		
 	}
 
 }

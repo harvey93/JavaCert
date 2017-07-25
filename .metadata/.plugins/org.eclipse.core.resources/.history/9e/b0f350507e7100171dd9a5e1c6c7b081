@@ -42,9 +42,7 @@ public class BMinHeap {
 	}
 	
 	private void swap(int i, int j){
-		int temp = items[i];
-		items[i] = items[j];
-		items[j] = temp;
+		
 	}
 
 }
