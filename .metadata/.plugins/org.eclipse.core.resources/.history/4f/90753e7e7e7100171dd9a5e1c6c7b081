@@ -51,8 +51,7 @@ public class BMinHeap {
 	
 	private void ensureExtraCapacity(){
 		if(size == capacity){
-			items = Arrays.copyOf(items, 2 * capacity);
-			capacity *= 2;
+			items = Arrays.copyOf(items, newLength)
 		}
 	}
 

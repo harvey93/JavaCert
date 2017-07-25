@@ -1,7 +1,5 @@
 package hackerRank;
 
-import java.util.Arrays;
-
 public class BMinHeap {
 	private int size = 0;
 	private int capacity = 10;
@@ -51,8 +49,7 @@ public class BMinHeap {
 	
 	private void ensureExtraCapacity(){
 		if(size == capacity){
-			items = Arrays.copyOf(items, 2 * capacity);
-			capacity *= 2;
+			
 		}
 	}
 
