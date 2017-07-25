@@ -55,38 +55,34 @@ public class BMinHeap {
 			capacity *= 2;
 		}
 	}
-
-	public int peek() {
-		if (size == 0) {
-			throw new IllegalStateException("Empty Heap");
-		}
-		return items[0];
+	
+	public int peek(){
+		if(size == 0){throw new IllegalStateException("Empty Heap");}
+		return items[0];	
 	}
-
-	public int poll() {
-		if (size == 0) {
-			throw new IllegalStateException("Empty Heap");
-		}
+	
+	public int poll(){
+		if(size == 0){throw new IllegalStateException("Empty Heap");}
 		int item = items[0];
-		items[0] = items[size - 1];
-		size--;
-		heapifyDown();
-		return item;
+ 		items[0] = items[size - 1];
+ 		size--;
+ 		heapifyDown();
+		return item;	
 	}
-
-	public void add(int item) {
+	
+	private void heapifyDown(){
+		
+	}
+	
+	public void add(int item){
 		ensureExtraCapacity();
 		items[size] = item;
 		size++;
 		heapifyUp();
-	}
-
-	private void heapifyDown() {
-
-	}
-
-	private void heapifyUp() {
-
+	} 
+	
+	private void heapifyUp(){
+		
 	}
 
 }
