@@ -4,7 +4,7 @@ public enum Color {
 	Red("RED", 1), Blue("BLUE", 2), Green("GREEN",3);
 
 	private String color = null;
-	private int value;
+	int value;
 
 	Color(String color, int value) {
 		this.color = color;

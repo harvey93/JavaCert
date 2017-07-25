@@ -3,12 +3,10 @@ package sectionTests;
 public enum Color {
 	Red("RED", 1), Blue("BLUE", 2), Green("GREEN",3);
 
-	private String color = null;
-	private int value;
+	String color = null;
 
 	Color(String color, int value) {
 		this.color = color;
-		this.value = value;
 	}
 
 	public static int getColorCode(Color color) {
