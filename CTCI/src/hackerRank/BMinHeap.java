@@ -69,6 +69,7 @@ public class BMinHeap {
 		}
 		int item = items[0];
 		items[0] = items[size - 1];
+		items[size - 1] = 0;
 		size--;
 		heapifyDown();
 		return item;
@@ -85,7 +86,7 @@ public class BMinHeap {
 		int currentIndex = 0;
 		while(hasLeftChild(currentIndex)){
 			int smallerChildIndex = getLeftChildIndex(currentIndex);
-			if(hasRightChild(currentIndex) && rightChild(currentIndex) < rightChild(currentIndex)){
+			if(hasRightChild(currentIndex) && rightChild(currentIndex) < leftChild(currentIndex)){
 				smallerChildIndex = getRightChildIndex(currentIndex);
 			}
 			if(items[currentIndex] < items[smallerChildIndex]){

@@ -63,13 +63,12 @@ public class BMaxHeap {
 		return items[0];
 	}
 
-	public int getMax() {
+	public int getMin() {
 		if (size == 0) {
 			throw new IllegalStateException("Empty Heap");
 		}
 		int item = items[0];
 		items[0] = items[size - 1];
-		items[size - 1] = 0;
 		size--;
 		heapifyDown();
 		return item;
@@ -85,22 +84,22 @@ public class BMaxHeap {
 	private void heapifyDown() {
 		int currentIndex = 0;
 		while(hasLeftChild(currentIndex)){
-			int largerChildIndex = getLeftChildIndex(currentIndex);
-			if(hasRightChild(currentIndex) && rightChild(currentIndex) > leftChild(currentIndex)){
-				largerChildIndex = getRightChildIndex(currentIndex);
+			int smallerChildIndex = getLeftChildIndex(currentIndex);
+			if(hasRightChild(currentIndex) && rightChild(currentIndex) < rightChild(currentIndex)){
+				smallerChildIndex = getRightChildIndex(currentIndex);
 			}
-			if(items[currentIndex] > items[largerChildIndex]){
+			if(items[currentIndex] < items[smallerChildIndex]){
 				break;
 			}
 			
-			swap(currentIndex, largerChildIndex);
-			currentIndex = largerChildIndex;
+			swap(currentIndex, smallerChildIndex);
+			currentIndex = smallerChildIndex;
 		}
 	}
 
 	private void heapifyUp() {
 		int currentIndex = size - 1;
-		while(hasParent(currentIndex) && parent(currentIndex) < items[currentIndex]){
+		while(hasParent(currentIndex) && parent(currentIndex) > items[currentIndex]){
 			swap(currentIndex, getParentIndex(currentIndex));
 			currentIndex = getParentIndex(currentIndex);
 		}

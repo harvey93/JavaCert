@@ -64,12 +64,12 @@ public class BMaxHeap {
 	}
 
 	public int getMax() {
+		System.out.println("IN");
 		if (size == 0) {
 			throw new IllegalStateException("Empty Heap");
 		}
 		int item = items[0];
 		items[0] = items[size - 1];
-		items[size - 1] = 0;
 		size--;
 		heapifyDown();
 		return item;

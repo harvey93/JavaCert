@@ -69,7 +69,6 @@ public class BMaxHeap {
 		}
 		int item = items[0];
 		items[0] = items[size - 1];
-		items[size - 1] = 0;
 		size--;
 		heapifyDown();
 		return item;
@@ -85,16 +84,16 @@ public class BMaxHeap {
 	private void heapifyDown() {
 		int currentIndex = 0;
 		while(hasLeftChild(currentIndex)){
-			int largerChildIndex = getLeftChildIndex(currentIndex);
-			if(hasRightChild(currentIndex) && rightChild(currentIndex) > leftChild(currentIndex)){
-				largerChildIndex = getRightChildIndex(currentIndex);
+			int LargerChildIndex = getLeftChildIndex(currentIndex);
+			if(hasRightChild(currentIndex) && rightChild(currentIndex) < rightChild(currentIndex)){
+				smallerChildIndex = getRightChildIndex(currentIndex);
 			}
-			if(items[currentIndex] > items[largerChildIndex]){
+			if(items[currentIndex] < items[smallerChildIndex]){
 				break;
 			}
 			
-			swap(currentIndex, largerChildIndex);
-			currentIndex = largerChildIndex;
+			swap(currentIndex, smallerChildIndex);
+			currentIndex = smallerChildIndex;
 		}
 	}
 

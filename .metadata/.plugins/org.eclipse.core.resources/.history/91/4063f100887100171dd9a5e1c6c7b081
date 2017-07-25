@@ -14,7 +14,6 @@ public class Test {
 		System.out.println(maxHeap);
 		maxHeap.getMax();
 		maxHeap.getMax();
-		maxHeap.add(145);
 		System.out.println(maxHeap);
 //		BMinHeap minHeap = new BMinHeap();
 //		minHeap.add(10);
