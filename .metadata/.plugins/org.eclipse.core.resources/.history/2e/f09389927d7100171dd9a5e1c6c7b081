@@ -21,10 +21,7 @@ public class BMinHeap {
 		return getLeftChildIndex(parentIndex) < size;
 	}
 	private boolean hasRightChild(int parentIndex){
-		return getRightChildIndex(parentIndex)< size;
-	}
-	private boolean hasParent(int childIndex){
-		return getParentIndex(childIndex) >= 0;
+		return 2 * parentIndex + 2 < size;
 	}
 
 }

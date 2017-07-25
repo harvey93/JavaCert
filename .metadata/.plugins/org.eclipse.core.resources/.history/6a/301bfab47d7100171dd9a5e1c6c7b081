@@ -23,7 +23,7 @@ public class BMinHeap {
 	private boolean hasRightChild(int parentIndex){
 		return getRightChildIndex(parentIndex)< size;
 	}
-	private boolean hasParent(int childIndex){
+	private booleean hasParent(int childIndex){
 		return getParentIndex(childIndex) >= 0;
 	}
 
