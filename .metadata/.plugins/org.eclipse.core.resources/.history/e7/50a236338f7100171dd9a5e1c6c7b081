@@ -21,12 +21,7 @@ public class RunningMedian {
 		return 0.0;
 	}
 	
-	public static void addNumber(int number, PriorityQueue<Integer> lowers, PriorityQueue<Integer> highers){
+	public static void addNumber(int number, PriorityQueue<Integer>){
 		
 	}
-	
-	public static void rebalance(PriorityQueue<Integer> lowers, PriorityQueue<Integer> highers){
-		
-	}
-	
 }

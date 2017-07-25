@@ -16,17 +16,8 @@ public class RunningMedian {
 		double[] medians = new double[arr.length];
 		for(int i = 0; i < arr.length; i++){
 			int number = arr[i];
-			addNumber(number, lowers, highers);
+			addNumber(number, lowers, higher)
 		}
 		return 0.0;
 	}
-	
-	public static void addNumber(int number, PriorityQueue<Integer> lowers, PriorityQueue<Integer> highers){
-		
-	}
-	
-	public static void rebalance(PriorityQueue<Integer> lowers, PriorityQueue<Integer> highers){
-		
-	}
-	
 }
