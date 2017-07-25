@@ -28,17 +28,15 @@ public class BMinHeap {
 	private boolean hasParent(int childIndex) {
 		return getParentIndex(childIndex) >= 0;
 	}
-
-	private int leftChild(int parentIndex) {
+	
+	private int leftChild(int parentIndex){
 		return items[getLeftChildIndex(parentIndex)];
 	}
-
-	private int rightChild(int parentIndex) {
+	private int rightChild(int parentIndex){
 		return items[getRightChildIndex(parentIndex)];
 	}
-
-	private int parent(int childIndex) {
-		return items[getParentIndex(childIndex)];
+	private int parent(int childIndex){
+		
 	}
 
 }
