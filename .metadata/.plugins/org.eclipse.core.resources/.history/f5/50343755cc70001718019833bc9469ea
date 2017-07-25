@@ -18,10 +18,6 @@ public class StackQueue<T> {
 	public T peek(){
 		if(!this.popStack.isEmpty()){
 			return this.popStack.peek();
-		}else if(!this.pushStack.isEmpty()){
-			return this.pushStack.peek();
-		}else {
-			return null;
 		}
 	}
 }
