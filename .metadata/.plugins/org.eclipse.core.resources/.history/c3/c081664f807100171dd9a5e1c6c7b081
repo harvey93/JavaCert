@@ -57,9 +57,7 @@ public class BMinHeap {
 	}
 	
 	public int peek(){
-		if(size == 0){throw new IllegalStateException("Empty Heap");}
-		return itesm[0];
-		
+		if(size == 0){throw new IllegalStateException("Empty Heap")};
 	}
 
 }

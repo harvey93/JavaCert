@@ -42,24 +42,18 @@ public class BMinHeap {
 	private int parent(int childIndex) {
 		return items[getParentIndex(childIndex)];
 	}
-
-	private void swap(int i, int j) {
+	
+	private void swap(int i, int j){
 		int temp = items[i];
 		items[i] = items[j];
 		items[j] = temp;
 	}
-
-	private void ensureExtraCapacity() {
-		if (size == capacity) {
+	
+	private void ensureExtraCapacity(){
+		if(size == capacity){
 			items = Arrays.copyOf(items, 2 * capacity);
 			capacity *= 2;
 		}
-	}
-	
-	public int peek(){
-		if(size == 0){throw new IllegalStateException("Empty Heap");}
-		return itesm[0];
-		
 	}
 
 }
