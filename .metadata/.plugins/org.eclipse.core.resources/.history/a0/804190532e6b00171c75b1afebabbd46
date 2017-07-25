@@ -1,8 +1,0 @@
-package ch3;
-
-public class Node<T> {
-	
-	public Node(T el){
-		
-	}
-}

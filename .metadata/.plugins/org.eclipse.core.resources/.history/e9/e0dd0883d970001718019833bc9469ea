@@ -1,9 +1,0 @@
-package sectionTests;
-
-enum Speed {
-	FAST(2);
-//	Integer speed;
-	Speed(){
-		
-	}
-}

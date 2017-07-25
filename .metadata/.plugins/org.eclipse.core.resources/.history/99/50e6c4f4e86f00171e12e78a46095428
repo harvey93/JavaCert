@@ -1,6 +1,0 @@
-package sectionTests;
-
-enum Speed {
-
-	private final speed;
-}
