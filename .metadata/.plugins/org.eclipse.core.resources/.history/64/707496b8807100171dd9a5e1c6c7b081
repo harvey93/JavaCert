@@ -66,12 +66,7 @@ public class BMinHeap {
 		int item = items[0];
  		items[0] = items[size - 1];
  		size--;
- 		heapifyDown();
 		return item;	
-	}
-	
-	public void heapifyDown(){
-		
 	}
 
 }

@@ -60,18 +60,9 @@ public class BMinHeap {
 		if(size == 0){throw new IllegalStateException("Empty Heap");}
 		return items[0];	
 	}
-	
-	public int poll(){
+	public int peek(){
 		if(size == 0){throw new IllegalStateException("Empty Heap");}
-		int item = items[0];
- 		items[0] = items[size - 1];
- 		size--;
- 		heapifyDown();
-		return item;	
-	}
-	
-	public void heapifyDown(){
-		
+		return items[0];	
 	}
 
 }

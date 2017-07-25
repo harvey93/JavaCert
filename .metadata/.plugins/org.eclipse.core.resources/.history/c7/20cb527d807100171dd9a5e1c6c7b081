@@ -63,15 +63,7 @@ public class BMinHeap {
 	
 	public int poll(){
 		if(size == 0){throw new IllegalStateException("Empty Heap");}
-		int item = items[0];
- 		items[0] = items[size - 1];
- 		size--;
- 		heapifyDown();
-		return item;	
-	}
-	
-	public void heapifyDown(){
-		
+		return items;	
 	}
 
 }
