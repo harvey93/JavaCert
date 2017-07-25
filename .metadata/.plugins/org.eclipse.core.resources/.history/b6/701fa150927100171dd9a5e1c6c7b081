@@ -19,7 +19,7 @@ public class RunningMedian {
 			addNumber(number, lowers, highers);
 			rebalance(lowers, highers);
 			medians[i] = getMedian(lowers, highers);
-		}
+		}}
 		return medians;
 	}
 	

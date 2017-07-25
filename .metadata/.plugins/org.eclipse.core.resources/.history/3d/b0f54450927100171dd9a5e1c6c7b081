@@ -19,6 +19,8 @@ public class RunningMedian {
 			addNumber(number, lowers, highers);
 			rebalance(lowers, highers);
 			medians[i] = getMedian(lowers, highers);
+			System.out.println(lowers);
+			System.out.println(highers);
 		}
 		return medians;
 	}

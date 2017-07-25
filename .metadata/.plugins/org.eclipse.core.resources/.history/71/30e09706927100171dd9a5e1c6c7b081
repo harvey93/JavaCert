@@ -44,7 +44,7 @@ public class RunningMedian {
 		PriorityQueue<Integer> biggerHeap = lowers.size() > highers.size() ? lowers : highers;
 		PriorityQueue<Integer> smallerHeap = lowers.size() > highers.size() ? highers : lowers;
 		if(biggerHeap.size() == smallerHeap.size()){
-			return ((double)biggerHeap.peek() + smallerHeap.peek()) / 2;
+			return ((double)biggerHeap.poll() + smallerHeap.poll()) / 2;
 		}else {
 			return biggerHeap.peek();
 		}

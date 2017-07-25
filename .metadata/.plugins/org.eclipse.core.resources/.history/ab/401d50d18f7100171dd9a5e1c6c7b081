@@ -24,30 +24,15 @@ public class RunningMedian {
 	}
 	
 	public static void addNumber(int number, PriorityQueue<Integer> lowers, PriorityQueue<Integer> highers){
-		if(lowers.isEmpty() || number < lowers.peek()){
-			lowers.add(number);
-		}else {
-			highers.add(number);
-		}
+		
 	}
 	
 	public static void rebalance(PriorityQueue<Integer> lowers, PriorityQueue<Integer> highers){
-		PriorityQueue<Integer> biggerHeap = lowers.size() > highers.size() ? lowers : highers;
-		PriorityQueue<Integer> smallerHeap = lowers.size() > highers.size() ? highers : lowers;
 		
-		if(biggerHeap.size() - smallerHeap.size() >= 2){
-			smallerHeap.add(biggerHeap.poll());
-		}
 	}
 	
 	public static double getMedian(PriorityQueue<Integer> lowers, PriorityQueue<Integer> highers){
-		PriorityQueue<Integer> biggerHeap = lowers.size() > highers.size() ? lowers : highers;
-		PriorityQueue<Integer> smallerHeap = lowers.size() > highers.size() ? highers : lowers;
-		if(biggerHeap.size() == smallerHeap.size()){
-			return ((double)biggerHeap.peek() + smallerHeap.peek()) / 2;
-		}else {
-			return biggerHeap.peek();
-		}
+		return 0.0;
 	}
 
 	
