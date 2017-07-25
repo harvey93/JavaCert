@@ -1,0 +1,22 @@
+package hackerRank;
+
+
+
+public class BMaxHeap {
+	private int [] items;
+	
+	public BMaxHeap(){
+		
+	}
+	
+	public boolean less(int i, int j){
+		return this.store.get(i) < this.store.get(j);
+	}
+	
+	public void exch(int i, int j){
+		Integer temp = this.store.get(i);
+		this.store.set(i, this.store.get(j));
+		this.store.set(j, temp);
+	}
+	
+}
