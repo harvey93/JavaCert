@@ -34,8 +34,7 @@ public class StackQueue<T> {
 		if(!this.popStack.isEmpty()){
 			return this.popStack.peek();
 		}else if(!this.pushStack.isEmpty()){
-			fillPopStack();
-			return this.popStack.peek();
+			return this.pushStack.peek();
 		}else {
 			return null;
 		}

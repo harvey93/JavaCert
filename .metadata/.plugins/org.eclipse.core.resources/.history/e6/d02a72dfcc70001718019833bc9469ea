@@ -15,7 +15,7 @@ public class StackQueue<T> {
 		this.pushStack.push(el);
 	}
 	
-	public T dequeue(){
+	public T pop(){
 		if(!this.popStack.isEmpty()){
 			return this.popStack.pop();
 		}else {
@@ -34,8 +34,7 @@ public class StackQueue<T> {
 		if(!this.popStack.isEmpty()){
 			return this.popStack.peek();
 		}else if(!this.pushStack.isEmpty()){
-			fillPopStack();
-			return this.popStack.peek();
+			return this.pushStack.peek();
 		}else {
 			return null;
 		}
