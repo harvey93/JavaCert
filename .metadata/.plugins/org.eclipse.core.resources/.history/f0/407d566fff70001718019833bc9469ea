@@ -13,11 +13,7 @@ public class Test {
 		String string = "hello";
 		String string2 = "hello2";
 		String string3 = "hello3";
-		StringJoiner sj = new StringJoiner("-", "[", "]");
-		sj.add(string);
-		sj.add(string2);
-		sj.add(string3);
-		System.out.println(sj);
+		StringJoiner sj = new StringJoiner('-', '[', ']');
 	}
 	
 }
