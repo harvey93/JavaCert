@@ -1,0 +1,15 @@
+package hackerRank;
+
+import java.util.Arrays;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		BMinHeap minHeap = new BMinHeap();
+		minHeap.add(10);
+		minHeap.add(15);
+		minHeap.add(20);
+		System.out.println(minHeap);
+	}
+}
+

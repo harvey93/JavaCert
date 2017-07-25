@@ -10,9 +10,9 @@ public class Test {
 		maxHeap.add(15);
 		maxHeap.add(20);
 		maxHeap.add(6);
-		System.out.println(maxHeap);
-		maxHeap.getMin();
-		System.out.println(maxHeap);
+		System.out.println(minHeap);
+		minHeap.getMin();
+		System.out.println(minHeap);
 	}
 }
 

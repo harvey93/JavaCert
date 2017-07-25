@@ -11,8 +11,8 @@ public class Test {
 		maxHeap.add(20);
 		maxHeap.add(6);
 		System.out.println(maxHeap);
-		maxHeap.getMin();
-		System.out.println(maxHeap);
+		minHeap.getMin();
+		System.out.println(minHeap);
 	}
 }
 

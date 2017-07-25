@@ -2,7 +2,7 @@ package hackerRank;
 
 import java.util.Arrays;
 
-public class BMaxHeap {
+public class BMMaxHeap {
 	private int size = 0;
 	private int capacity = 10;
 	private int[] items = new int[capacity];
@@ -108,6 +108,5 @@ public class BMaxHeap {
 	public String toString(){
 		return Arrays.toString(items);
 	}
-	
-	
+
 }

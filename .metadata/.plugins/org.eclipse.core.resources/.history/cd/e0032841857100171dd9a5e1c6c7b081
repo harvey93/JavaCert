@@ -12,7 +12,7 @@ public class Test {
 		maxHeap.add(6);
 		System.out.println(maxHeap);
 		maxHeap.getMin();
-		System.out.println(maxHeap);
+		System.out.println(minHeap);
 	}
 }
 
