@@ -25,9 +25,7 @@ public class StackQueue<T> {
 	}
 	
 	private void fillPopStack(){
-		while(!this.pushStack.isEmpty()){
-			this.popStack.push(this.pushStack.pop());
-		}
+		
 	}
 	
 	public T peek(){
