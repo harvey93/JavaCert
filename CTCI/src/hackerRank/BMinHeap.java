@@ -109,5 +109,22 @@ public class BMinHeap {
 	public String toString(){
 		return Arrays.toString(items);
 	}
+	
+	public boolean isEmpty(){
+		
+		return size == 0;
+	}
+
+	
+	public void heapSort(){
+		if (size == 0) {
+			throw new IllegalStateException("Empty Heap");
+		}
+		while(!isEmpty()){
+			swap(0, size - 1);
+			size--;
+			heapifyDown();
+		}
+	}
 
 }

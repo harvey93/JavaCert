@@ -120,7 +120,7 @@ public class BMaxHeap {
 			throw new IllegalStateException("Empty Heap");
 		}
 		while(!isEmpty()){
-			swap(0, size - 1);
+			swap(0, size);
 			size--;
 			heapifyDown();
 		}

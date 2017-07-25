@@ -69,7 +69,8 @@ public class BMaxHeap {
 		}
 		int item = items[0];
 		items[0] = items[size - 1];
-		items[size - 1] = 0;
+		swap(0, size - 1);
+//		items[size - 1] = 0;
 		size--;
 		heapifyDown();
 		return item;
@@ -114,18 +115,6 @@ public class BMaxHeap {
 		
 		return size == 0;
 	}
-	
-	public void heapSort(){
-		if (size == 0) {
-			throw new IllegalStateException("Empty Heap");
-		}
-		while(!isEmpty()){
-			swap(0, size - 1);
-			size--;
-			heapifyDown();
-		}
-	}
-
 	
 	
 	
