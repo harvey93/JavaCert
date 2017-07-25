@@ -9,10 +9,10 @@ public enum Color {
 		this.color = color;
 	}
 
-	public static int getColorCode(Color color) {
+	public int getColorCode(Color color) {
 		int ret = -1;
 		switch (color) {
-		case Red:
+		case:
 			ret = 1;
 			break;
 		case Blue:
