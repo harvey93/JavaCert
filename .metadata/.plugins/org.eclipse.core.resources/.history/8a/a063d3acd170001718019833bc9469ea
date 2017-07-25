@@ -5,21 +5,18 @@ public class TreeTest {
 	
 	public boolean checkBST(Node node){
 		
-		return (checkBST(node.left, node.data, Integer.MIN_VALUE) &&
-				checkBST(node.right, Integer.MAX_VALUE, node.data));
+		return (checkBST(node.left, node.data, null) && checkBST(node.right, null, node.data));
 		
 	}
 	
 	public boolean checkBST(Node node, Integer max, Integer min){
-		
-		if(node.data > min && node.data < max){
-			return (checkBST(node.left, node.data, min) && 
+		if(max != null && min != null){
+			if(node.data > min && node.data < max){
+				return (checkBST(node.left, node.data, min) && 
 						checkBST(node.right, max, node.data));		
-		}else {
-			return false;
+			}
 		}
-		
-
+		return false;
 	}
 
 
