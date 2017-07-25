@@ -10,10 +10,6 @@ public enum Color {
 		this.color = color;
 		this.value = value;
 	}
-	
-	public int getValue(){
-		return this.value;
-	}
 
 	public static int getColorCode(Color color) {
 		int ret = -1;
