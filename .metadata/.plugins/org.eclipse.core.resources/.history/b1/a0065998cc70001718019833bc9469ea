@@ -18,14 +18,7 @@ public class StackQueue<T> {
 	public T pop(){
 		if(!this.popStack.isEmpty()){
 			return this.popStack.pop();
-		}else {
-			fillPopStack();
-			return this.popStack.pop();
 		}
-	}
-	
-	private void fillPopStack(){
-		
 	}
 	
 	public T peek(){
