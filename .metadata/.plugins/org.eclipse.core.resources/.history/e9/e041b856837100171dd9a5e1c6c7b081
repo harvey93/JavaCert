@@ -63,7 +63,7 @@ public class BMinHeap {
 		return items[0];
 	}
 
-	public int getMin() {
+	public int poll() {
 		if (size == 0) {
 			throw new IllegalStateException("Empty Heap");
 		}

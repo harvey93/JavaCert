@@ -63,7 +63,7 @@ public class BMinHeap {
 		return items[0];
 	}
 
-	public int getMin() {
+	public int poll() {
 		if (size == 0) {
 			throw new IllegalStateException("Empty Heap");
 		}
@@ -85,15 +85,6 @@ public class BMinHeap {
 		int currentIndex = 0;
 		while(hasLeftChild(currentIndex)){
 			int smallerChildIndex = getLeftChildIndex(currentIndex);
-			if(hasRightChild(currentIndex) && rightChild(currentIndex) < rightChild(currentIndex)){
-				smallerChildIndex = getRightChildIndex(currentIndex);
-			}
-			if(items[currentIndex] < items[smallerChildIndex]){
-				break;
-			}
-			
-			swap(currentIndex, smallerChildIndex);
-			currentIndex = smallerChildIndex;
 		}
 	}
 
