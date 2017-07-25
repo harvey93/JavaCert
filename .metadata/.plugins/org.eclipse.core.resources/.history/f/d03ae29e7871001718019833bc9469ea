@@ -5,9 +5,9 @@ import java.util.*;
 public class BMaxHeap {
 	ArrayList<Integer> store;
 	public BMaxHeap(){
-		this.store = new ArrayList<>();
+		this.store = new ArrayList<>()getClass();
 	}
 	public boolean less(int i, int j){
-		return this.store.get(i) < this.store.get(j);
+		
 	}
 }

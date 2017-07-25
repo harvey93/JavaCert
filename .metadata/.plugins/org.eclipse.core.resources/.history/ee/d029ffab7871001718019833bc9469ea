@@ -8,6 +8,6 @@ public class BMaxHeap {
 		this.store = new ArrayList<>();
 	}
 	public boolean less(int i, int j){
-		return this.store.get(i) < this.store.get(j);
+		
 	}
 }
