@@ -1,0 +1,11 @@
+package sectionTests;
+
+public enum Color {
+	Red("RED"), Blue("BLUE"), Green("GREEN");
+
+	String color = null;
+
+	Color(String color) {
+		this.color = color;
+	}
+}

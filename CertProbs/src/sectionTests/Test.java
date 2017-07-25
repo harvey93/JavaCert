@@ -22,31 +22,12 @@ import org.omg.CORBA.PRIVATE_MEMBER;
 
 public class Test {
 
-	static int x = 10;
+	static {int x = 10;}
 	
 	public static void main(String[] args) {
-		ArrayList<Double> list = new ArrayList<>();
-		list.add(21.6);
-		list.add(21.39);
-		list.add(21.5d);
-		list.add(21.41);
-		
-		DoublePredicate  ip = i -> i > 21.4;
-		
-		
+		System.out.println(Color.Blue);
 		
 	}
 	
 }
 
-//enum Speed{
-////	FAST(2);
-////	FASTER(3);
-////	SLOW(1);
-//	
-//	private final int speed;
-//	
-//	Speed(int speedCode){
-//		this.speed = speedCode;
-//	}
-//}

@@ -1,0 +1,9 @@
+package sectionTests;
+
+public enum Color {
+	Red ("RED"),
+	Blue ("BLUE"),
+	Green ("GREEN")
+	
+	
+}

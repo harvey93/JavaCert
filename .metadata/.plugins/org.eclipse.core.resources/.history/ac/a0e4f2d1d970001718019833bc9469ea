@@ -1,0 +1,11 @@
+package sectionTests;
+
+enum Speed {
+	Red,
+	Blue,
+	Green
+//	Integer speed;
+	Speed(){
+		
+	}
+}
