@@ -10,11 +10,7 @@ public class Trie {
 		this.head = new TrieNode(null);
 	}
 	
-	public void addChar(char c){
-		
-	}
-	
-	private void addChar(TrieNode node, char c){
+	private void addChar(TrieNode node, ){
 		
 	}
 }

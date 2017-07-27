@@ -4,19 +4,6 @@ import java.util.HashMap;
 
 public class Trie {
 
-	private TrieNode head;
-	
-	public Trie(){
-		this.head = new TrieNode(null);
-	}
-	
-	public void addChar(char c){
-		
-	}
-	
-	private void addChar(TrieNode node, char c){
-		
-	}
 }
 
 class TrieNode{
