@@ -1,0 +1,21 @@
+package hackerRank;
+
+import java.util.HashMap;
+
+public class Trie{
+
+	TrieNode head = new TrieNode();
+	
+	public TrieNode getNode(String str){
+		char [] arr = str.toCharArray();
+		return head;
+	}
+	
+	
+}
+
+class TrieNode{
+	Character data;
+	boolean isCompleteWord = false;
+	HashMap<Character, TrieNode> children = new HashMap<>();
+}

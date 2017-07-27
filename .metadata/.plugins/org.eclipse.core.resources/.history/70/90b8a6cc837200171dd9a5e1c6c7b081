@@ -10,12 +10,7 @@ public class Trie{
 		TrieNode node = getNode(str);
 		System.out.println(node);
 	}
-	
-	public TrieNode getNode(String str){
-		TrieNode res = head;
-		return res;
-	}
-	
+		
 	private TrieNode getNode(TrieNode node, Character c){
 		TrieNode res = null;
 		if(node.children.containsKey(c)){
@@ -30,10 +25,6 @@ class TrieNode{
 	Character data;
 	boolean isCompleteWord = false;
 	HashMap<Character, TrieNode> children = new HashMap<>();
-	
-	public TrieNode(Character data){
-		this.data = data;
-	}
 	
 	public String toString(){
 		return data.toString();

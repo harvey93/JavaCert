@@ -31,8 +31,8 @@ class TrieNode{
 	boolean isCompleteWord = false;
 	HashMap<Character, TrieNode> children = new HashMap<>();
 	
-	public TrieNode(Character data){
-		this.data = data;
+	public TrieNode(data){
+		
 	}
 	
 	public String toString(){

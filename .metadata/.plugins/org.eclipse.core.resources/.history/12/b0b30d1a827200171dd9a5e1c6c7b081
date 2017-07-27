@@ -7,13 +7,21 @@ public class Trie{
 	TrieNode head = new TrieNode();
 	
 	public void addNode(String str){
-		TrieNode node = getNode(str);
-		System.out.println(node);
+		
 	}
 	
 	public TrieNode getNode(String str){
-		TrieNode res = head;
-		return res;
+		TrieNode res = null;
+		char [] arr = str.toCharArray();
+		TrieNode current = head;
+		for(int i = 0; i < arr.length; i++){
+			current = getNode(current, arr[i]);
+			if(current == null){
+				break;
+			}
+			res = current;
+		}
+		return head;
 	}
 	
 	private TrieNode getNode(TrieNode node, Character c){
@@ -31,11 +39,7 @@ class TrieNode{
 	boolean isCompleteWord = false;
 	HashMap<Character, TrieNode> children = new HashMap<>();
 	
-	public TrieNode(Character data){
-		this.data = data;
-	}
-	
 	public String toString(){
-		return data.toString();
+		
 	}
 }

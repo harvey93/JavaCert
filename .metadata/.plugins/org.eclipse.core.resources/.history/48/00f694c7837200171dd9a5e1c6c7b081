@@ -12,7 +12,16 @@ public class Trie{
 	}
 	
 	public TrieNode getNode(String str){
-		TrieNode res = head;
+		TrieNode current = head;
+		TrieNode res = current;
+		char [] arr = str.toCharArray();
+		for(int i = 0; i < arr.length; i++){
+			current = getNode(current, arr[i]);
+			if(current == null){
+				break;
+			}
+			res = current;
+		}
 		return res;
 	}
 	
@@ -30,10 +39,6 @@ class TrieNode{
 	Character data;
 	boolean isCompleteWord = false;
 	HashMap<Character, TrieNode> children = new HashMap<>();
-	
-	public TrieNode(Character data){
-		this.data = data;
-	}
 	
 	public String toString(){
 		return data.toString();
