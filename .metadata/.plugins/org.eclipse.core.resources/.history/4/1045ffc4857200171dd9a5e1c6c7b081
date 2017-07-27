@@ -4,22 +4,15 @@ import java.util.HashMap;
 
 public class Trie{
 
-	TrieNode head = new TrieNode(null);
+	TrieNode head = new TrieNode('');
 	
 	public void addNode(String str){
-		TrieNode node = getNode(str, head);
+		TrieNode node = getNode(str);
 		System.out.println(node);
 	}
 	
-	public TrieNode getNode(String str, TrieNode node){
-		if(str.length() == 0){
-			return node;
-		}
-		TrieNode res = node;
-		TrieNode newNode = getNode(node, str.charAt(0));
-		if(newNode != null){
-			res = getNode(str.substring(1, str.length() - 1), newNode);
-		}
+	public TrieNode getNode(String str){
+		TrieNode res = head;
 		return res;
 	}
 	
@@ -43,9 +36,6 @@ class TrieNode{
 	}
 	
 	public String toString(){
-		if(this.data == null){
-			return "null";
-		}
 		return data.toString();
 	}
 }

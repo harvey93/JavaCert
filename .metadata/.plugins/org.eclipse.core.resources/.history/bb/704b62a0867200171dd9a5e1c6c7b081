@@ -16,9 +16,8 @@ public class Trie{
 			return node;
 		}
 		TrieNode res = node;
-		TrieNode newNode = getNode(node, str.charAt(0));
-		if(newNode != null){
-			res = getNode(str.substring(1, str.length() - 1), newNode);
+		if(getNode(node, str.charAt(0)) != null){
+			
 		}
 		return res;
 	}
