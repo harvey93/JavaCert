@@ -22,9 +22,9 @@ public class Trie {
 		if(node.data != null && node.data == c){
 			return node;
 		}else if(node.children.containsKey(c)){
-			return getChar(node.children.get(c), c);
+			return addChar(node.children.get(c), c);
 		}else {
-			return null;
+			return addNode(node, c);
 		}
 	}
 	

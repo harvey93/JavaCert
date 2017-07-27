@@ -10,7 +10,7 @@ public class Test {
 		Trie  trie = new Trie();
 		System.out.println(trie.addChar('A'));
 		System.out.println(trie.addChar('B'));
-		System.out.println(trie.getChar('X'));
+		System.out.println(trie.getChar('B'));
 	}
 }
 

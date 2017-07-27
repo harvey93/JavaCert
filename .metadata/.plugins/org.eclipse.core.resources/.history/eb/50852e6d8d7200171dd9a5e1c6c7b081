@@ -19,13 +19,8 @@ public class Trie {
 	}
 	
 	private TrieNode getChar(TrieNode node, char c){
-		if(node.data != null && node.data == c){
-			return node;
-		}else if(node.children.containsKey(c)){
-			return getChar(node.children.get(c), c);
-		}else {
-			return null;
-		}
+		
+		return node;
 	}
 	
 	private TrieNode addChar(TrieNode node, char c){

@@ -24,7 +24,7 @@ public class Trie {
 		}else if(node.children.containsKey(c)){
 			return getChar(node.children.get(c), c);
 		}else {
-			return null;
+			return addNode(node, c);
 		}
 	}
 	
