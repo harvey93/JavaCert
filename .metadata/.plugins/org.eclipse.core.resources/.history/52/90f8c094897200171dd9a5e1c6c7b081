@@ -15,11 +15,4 @@ class TrieNode{
 		this.children = new HashMap<>();
 		this.data = data;
 	}
-	
-	public String toString(){
-		if(data == null){
-			return "null";
-		}
-		return data.toString();
-	}
 }

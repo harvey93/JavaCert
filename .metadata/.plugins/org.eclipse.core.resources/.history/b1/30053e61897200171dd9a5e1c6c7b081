@@ -1,0 +1,17 @@
+package hackerRank;
+
+import java.util.HashMap;
+
+public class Trie {
+
+}
+
+class TrieNode{
+	String data;
+	HashMap<Character, TrieNode> children;
+	boolean isWord;
+	
+	public TrieNode(){
+		
+	}
+}
