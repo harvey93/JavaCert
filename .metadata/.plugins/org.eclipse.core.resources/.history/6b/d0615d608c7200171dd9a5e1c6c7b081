@@ -56,6 +56,6 @@ class TrieNode{
 		if(data == null){
 			return "Data: null | Children: " + children.toString();
 		}
-		return "Data: " + data.toString() + " Children: " + children.toString();
+		return data.toString();
 	}
 }

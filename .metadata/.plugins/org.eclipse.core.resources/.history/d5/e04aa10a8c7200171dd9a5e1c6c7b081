@@ -23,23 +23,16 @@ public class Trie {
 	}
 	
 	private TrieNode addChar(TrieNode node, char c){
-		if(node.data == null){
-			return addNode(node, c);
-		}else if(node.data == c){
+		if(node.data == null || node.data == c){
 			return node;
 		}else if(node.children.containsKey(c)){
 			return addChar(node.children.get(c), c);
 		}else {
-			return addNode(node, c);
+			TrieNode newNode = new TrieNode(c);
+			node.children.put(c, newNode);
+			return newNode;
 		}
 	}
-	
-	private TrieNode addNode(TrieNode node, char c){
-		TrieNode newNode = new TrieNode(c);
-		node.children.put(c, newNode);
-		return newNode;
-	}
-	
 }
 
 class TrieNode{
@@ -54,8 +47,8 @@ class TrieNode{
 	
 	public String toString(){
 		if(data == null){
-			return "Data: null | Children: " + children.toString();
+			return "null";
 		}
-		return "Data: " + data.toString() + " Children: " + children.toString();
+		return data.toString();
 	}
 }

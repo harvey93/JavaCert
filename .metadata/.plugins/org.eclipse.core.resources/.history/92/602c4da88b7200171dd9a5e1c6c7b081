@@ -1,0 +1,51 @@
+package hackerRank;
+
+import java.util.HashMap;
+
+public class Trie {
+
+	private TrieNode head;
+	
+	public Trie(){
+		this.head = new TrieNode(null);
+	}
+	
+	public void addChar(char c){
+		addChar(head, c);
+	}
+	
+	public TrieNode getChar(char c){
+		return getChar(head, c);
+	}
+	
+	private TrieNode getChar(TrieNode node, char c){
+		return node;
+	}
+	
+	private void addChar(TrieNode node, char c){
+		if(node.children.containsKey(c)){
+			addChar(node.children.get(c), c);
+		}else {
+			TrieNode newNode = new TrieNode(c);
+			node.children.put(c, newNode);
+		}
+	}
+}
+
+class TrieNode{
+	Character data;
+	HashMap<Character, TrieNode> children;
+	boolean isWord;
+	
+	public TrieNode(Character data){
+		this.children = new HashMap<>();
+		this.data = data;
+	}
+	
+	public String toString(){
+		if(data == null){
+			return "null";
+		}
+		return data.toString();
+	}
+}
