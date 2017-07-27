@@ -12,7 +12,7 @@ public class TrieNode {
 		
 	}
 	
-	public void add(String s, TrieNode node){
+	private void add(String s, TrieNode node){
 		
 	}
 	

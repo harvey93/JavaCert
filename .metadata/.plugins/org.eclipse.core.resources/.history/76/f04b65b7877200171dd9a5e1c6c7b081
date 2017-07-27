@@ -1,0 +1,11 @@
+package hackerRank;
+
+public class TrieNode {
+
+	private static int NUMBER_OF_CHARACTERS = 26;
+	
+	TrieNode[] children = new TrieNode[NUMBER_OF_CHARACTERS];
+	
+	private TrieNode getNode(){
+
+}

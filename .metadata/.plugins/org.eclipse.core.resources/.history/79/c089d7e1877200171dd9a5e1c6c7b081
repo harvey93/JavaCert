@@ -11,13 +11,5 @@ public class TrieNode {
 	private void setNode(char c, TrieNode node){
 		
 	}
-	
-	public void add(String s, TrieNode node){
-		
-	}
-	
-	public int find(String s, int index){
-		return index;
-	}
 
 }

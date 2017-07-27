@@ -1,0 +1,6 @@
+package hackerRank;
+
+public class TrieNode {
+
+	private static int NUMBER_OF_CHARACTERS = 26;
+}
