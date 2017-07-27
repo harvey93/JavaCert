@@ -1,0 +1,10 @@
+package hackerRank;
+
+public class Trie {
+
+}
+
+class Node{
+	String data;
+	boolean isCompleteWord;
+}
