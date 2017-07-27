@@ -1,0 +1,89 @@
+package hackerRank;
+
+import java.util.HashMap;
+
+public class Trie {
+
+	private TrieNode head;
+	
+	public Trie(){
+		this.head = new TrieNode(null);
+	}
+	
+	public TrieNode addChar(char c){
+		return addChar(head, c);
+	}
+	
+	public void addString2(String str){
+		
+	}
+	
+	public void addString(String str){
+		
+		TrieNode node = head;
+		for(int i = 0; i < str.length(); i++){
+			char c = str.charAt(i);
+				node = addChar(node, c);			
+		}
+	}
+	
+	public TrieNode getChar(char c){
+		return getChar(head, c);
+	}
+	private TrieNode getChar(TrieNode node, char c){
+		if(node.children.containsKey(c)){
+			return getChar(node.children.get(c), c);
+		}else if(node.data != null && node.data == c){
+			return node;
+		}else {
+			return null;
+		}
+	}
+	
+	private TrieNode addChar(TrieNode node, char c){
+		if(node.children.containsKey(c)){
+			return addChar(node.children.get(c), c);
+		}else if(node.data != null && node.data == c){
+			return node;
+		} else {
+			return addNode(node, c);
+		}
+	}
+	
+	private TrieNode addCharCopy(TrieNode node, char c){
+		if(node.children.containsKey(c)){
+			return addChar(node.children.get(c), c);
+		}else {
+			return addNode(node, c);
+		}
+	}
+	
+	private TrieNode addNode(TrieNode node, char c){
+		TrieNode newNode = new TrieNode(c);
+		node.children.put(c, newNode);
+		return newNode;
+	}
+	
+	public String toString(){
+		return head.toString();
+	}
+	
+}
+
+class TrieNode{
+	Character data;
+	HashMap<Character, TrieNode> children;
+	boolean isWord;
+	
+	public TrieNode(Character data){
+		this.children = new HashMap<>();
+		this.data = data;
+	}
+	
+	public String toString(){
+		if(data == null){
+			return "Data: null | Children: " + children.toString();
+		}
+		return "Data: " + data.toString() + " Children: " + children.toString();
+	}
+}

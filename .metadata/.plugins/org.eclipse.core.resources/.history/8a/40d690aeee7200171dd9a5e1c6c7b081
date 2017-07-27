@@ -20,16 +20,51 @@ public class Trie {
 		while(i < str.length()){
 			Character c = str.charAt(i);
 			if(current.children.containsKey(c)){
-				current = current.children.get(c);
-			}else {
 				
 			}
 			
-			i++;
-			
 		}
 	}
-
+	
+	public void addString(String str){
+		
+		TrieNode node = head;
+		for(int i = 0; i < str.length(); i++){
+			char c = str.charAt(i);
+				node = addChar(node, c);			
+		}
+	}
+	
+	public TrieNode getChar(char c){
+		return getChar(head, c);
+	}
+	private TrieNode getChar(TrieNode node, char c){
+		if(node.children.containsKey(c)){
+			return getChar(node.children.get(c), c);
+		}else if(node.data != null && node.data == c){
+			return node;
+		}else {
+			return null;
+		}
+	}
+	
+	private TrieNode addChar(TrieNode node, char c){
+		if(node.children.containsKey(c)){
+			return addChar(node.children.get(c), c);
+		}else if(node.data != null && node.data == c){
+			return node;
+		} else {
+			return addNode(node, c);
+		}
+	}
+	
+	private TrieNode addCharCopy(TrieNode node, char c){
+		if(node.children.containsKey(c)){
+			return addChar(node.children.get(c), c);
+		}else {
+			return addNode(node, c);
+		}
+	}
 	
 	private TrieNode addNode(TrieNode node, char c){
 		TrieNode newNode = new TrieNode(c);
