@@ -11,7 +11,7 @@ public class Trie {
 	}
 	
 	
-	public void addString(String str){
+	public void addString2(String str){
 		int i = 0;
 		TrieNode current = head;
 		while(i < str.length()){

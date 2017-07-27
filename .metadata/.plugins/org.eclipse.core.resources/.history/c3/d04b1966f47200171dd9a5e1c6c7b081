@@ -10,8 +10,11 @@ public class Trie {
 		this.head = new TrieNode(null);
 	}
 	
+	public TrieNode addChar(char c){
+		return addChar(head, c);
+	}
 	
-	public void addString(String str){
+	public void addString2(String str){
 		int i = 0;
 		TrieNode current = head;
 		while(i < str.length()){
@@ -19,9 +22,9 @@ public class Trie {
 			if(current.children.containsKey(c)){
 				current = current.children.get(c);
 			}else {
-				current = addNode(current, c);
+				
 			}
-	
+			
 			i++;
 			
 		}
