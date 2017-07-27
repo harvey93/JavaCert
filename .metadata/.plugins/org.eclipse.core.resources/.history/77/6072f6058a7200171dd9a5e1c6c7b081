@@ -11,19 +11,11 @@ public class Trie {
 	}
 	
 	public void addChar(char c){
-		addChar(head, c);
+		
 	}
 	
-	private TrieNode addChar(TrieNode node, char c){
-		if(node.data == c){
-			return node;
-		}else if(node.children.containsKey(c)){
-			return addChar(node.children.get(c), c);
-		}else {
-			TrieNode newNode = new TrieNode(c);
-			node.children.put(c, newNode);
-			return newNode;
-		}
+	private void addChar(TrieNode node, char c){
+		
 	}
 }
 

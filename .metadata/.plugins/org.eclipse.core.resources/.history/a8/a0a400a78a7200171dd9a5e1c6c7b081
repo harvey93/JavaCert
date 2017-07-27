@@ -19,10 +19,6 @@ public class Trie {
 			return node;
 		}else if(node.children.containsKey(c)){
 			return addChar(node.children.get(c), c);
-		}else {
-			TrieNode newNode = new TrieNode(c);
-			node.children.put(c, newNode);
-			return newNode;
 		}
 	}
 }
