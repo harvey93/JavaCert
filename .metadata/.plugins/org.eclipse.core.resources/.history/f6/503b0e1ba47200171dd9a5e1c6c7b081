@@ -14,16 +14,17 @@ public class Trie {
 		return addChar(head, c);
 	}
 	
-	public void addString2(String str){
-		
-	}
-	
 	public void addString(String str){
 		
 		TrieNode node = head;
 		for(int i = 0; i < str.length(); i++){
 			char c = str.charAt(i);
-				node = addChar(node, c);			
+			if(node.data != null && node.data == c){
+				node = addCharCopy(node, c);
+			}else {
+				node = addChar(node, c);
+			}
+			
 		}
 	}
 	
