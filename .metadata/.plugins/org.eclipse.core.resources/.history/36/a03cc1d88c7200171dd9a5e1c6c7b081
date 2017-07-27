@@ -24,7 +24,9 @@ public class Trie {
 	}
 	
 	private TrieNode addChar(TrieNode node, char c){
-		if(node.data != null && node.data == c){
+		if(node.data == null && !node.children.containsKey(c)){
+			return addNode(node, c);
+		}else if(node.data == c){
 			return node;
 		}else if(node.children.containsKey(c)){
 			return addChar(node.children.get(c), c);
