@@ -44,7 +44,7 @@ public class Trie {
 				break;
 			}
 			
-			if ((i == str.length() - 1)) {
+			if ((i == str.length() - 1) && current.isWord) {
 				res = current.wordCount;
 			}
 

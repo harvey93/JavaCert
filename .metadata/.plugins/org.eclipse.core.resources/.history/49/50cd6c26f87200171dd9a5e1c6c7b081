@@ -34,23 +34,7 @@ public class Trie {
 	
 	public int wordStart(String str){
 		int res = 0;
-		int i = 0;
-		TrieNode current = head;
-		while(i < str.length()){
-			Character c = str.charAt(i);
-			if(current.children.containsKey(c)){
-				current = current.children.get(c);
-			}else {
-				break;
-			}
-			
-			if ((i == str.length() - 1)) {
-				res = current.wordCount;
-			}
-
-			i++;		
-		}
-
+		
 		return res;
 	}
 	
