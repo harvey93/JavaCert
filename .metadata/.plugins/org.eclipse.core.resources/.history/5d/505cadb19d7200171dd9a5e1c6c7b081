@@ -15,11 +15,10 @@ public class Trie {
 	}
 	
 	public void addString(String str){
-		
+		System.out.println(str);
 		TrieNode node = head;
 		for(int i = 0; i < str.length(); i++){
-			char c = str.charAt(i);
-			node = addChar(node, c);
+			
 		}
 	}
 	
