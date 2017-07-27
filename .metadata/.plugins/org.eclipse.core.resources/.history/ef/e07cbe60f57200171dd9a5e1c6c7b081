@@ -22,7 +22,7 @@ public class Trie {
 				break;
 			}
 			
-			if ((i == str.length() - 1) && current.isWord) {
+			if (i == str.length() - 1) {
 				res = true;
 			}
 

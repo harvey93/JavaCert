@@ -12,7 +12,7 @@ public class Test {
 		trie.addString("hrazdan");
 		trie.addString("vazgen");
 		
-		System.out.println(trie.find("vazge"));
+		System.out.println(trie.find("hreant"));
 //		trie.addString("hrazdan");
 //		System.out.println(trie.toString());
 	}

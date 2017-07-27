@@ -19,16 +19,15 @@ public class Trie {
 			if(current.children.containsKey(c)){
 				current = current.children.get(c);
 			}else {
-				break;
+				current = addNode(current, c);
 			}
 			
-			if ((i == str.length() - 1) && current.isWord) {
-				res = true;
+			if (i == str.length() - 1) {
+				
 			}
 
 			i++;		
 		}
-		return res;
 
 	}
 	

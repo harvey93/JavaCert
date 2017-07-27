@@ -10,27 +10,6 @@ public class Trie {
 		this.head = new TrieNode(null);
 	}
 	
-	public boolean find(String str){
-		boolean res = false;
-		int i = 0;
-		TrieNode current = head;
-		while(i < str.length()){
-			Character c = str.charAt(i);
-			if(current.children.containsKey(c)){
-				current = current.children.get(c);
-			}else {
-				break;
-			}
-			
-			if ((i == str.length() - 1) && current.isWord) {
-				res = true;
-			}
-
-			i++;		
-		}
-		return res;
-
-	}
 	
 	public void addString(String str){
 		int i = 0;
@@ -47,7 +26,8 @@ public class Trie {
 				current.isWord = true;
 			}
 
-			i++;		
+			i++;
+			
 		}
 	}
 
@@ -78,6 +58,6 @@ class TrieNode{
 		if(data == null){
 			return "Data: null | Children: " + children.toString();
 		}
-		return "Data: " + data.toString() + "| Children: " + children.toString();
+		return "Data: " + data.toString() + "| Children: " + children.toString() + " | isWord: " + isWord;
 	}
 }
