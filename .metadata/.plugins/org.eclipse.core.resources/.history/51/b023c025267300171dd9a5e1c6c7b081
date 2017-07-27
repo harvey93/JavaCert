@@ -13,8 +13,6 @@ public class Sorting {
 					exch(arr, i, i+1);
 				}
 			}
-			System.out.println("in");
-			if(sorted){break;}
 			times--;
 		}
 	}

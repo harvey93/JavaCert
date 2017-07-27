@@ -1,0 +1,20 @@
+package hackerRank;
+
+public class Sorting {
+	
+	public static void bubbleSort(int [] arr){
+		for(int i = 0; i < arr.length - 1; i++){
+			for(int j = i; j < arr.length - 1; j++){
+				
+			}
+		}
+	}
+	
+	public static void exch(int [] arr, int i, int j){
+		int temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = arr[i];
+	}
+	
+
+}
