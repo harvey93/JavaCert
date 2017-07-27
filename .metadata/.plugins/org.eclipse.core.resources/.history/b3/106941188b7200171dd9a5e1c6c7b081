@@ -14,20 +14,15 @@ public class Trie {
 		addChar(head, c);
 	}
 	
-	public TrieNode getChar(char c){
-		return getChar(head, c);
-	}
-	
-	private TrieNode getChar(TrieNode node, char c){
-		return node;
-	}
-	
-	private void addChar(TrieNode node, char c){
-		if(node.children.containsKey(c)){
-			addChar(node.children.get(c), c);
+	private TrieNode addChar(TrieNode node, char c){
+		if(node.data == null || node.data == c){
+			return node;
+		}else if(node.children.containsKey(c)){
+			return addChar(node.children.get(c), c);
 		}else {
 			TrieNode newNode = new TrieNode(c);
 			node.children.put(c, newNode);
+			return newNode;
 		}
 	}
 }
