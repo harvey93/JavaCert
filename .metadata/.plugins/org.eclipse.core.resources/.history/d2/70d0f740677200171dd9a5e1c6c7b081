@@ -6,14 +6,14 @@ public class Trie{
 
 	TrieNode head = new TrieNode();
 	
-	TrieNode getNode(String data){
+	TrieNode<T> getNode(String data){
 		
 		return head;
 	}
 }
 
-class TrieNode{
-	Character data;
+class TrieNode<T>{
+	T data;
 	boolean isCompleteWord = false;
-	HashMap<Character, TrieNode> children = new HashMap<>();
+	HashMap<T, TrieNode> children = new HashMap<>();
 }
