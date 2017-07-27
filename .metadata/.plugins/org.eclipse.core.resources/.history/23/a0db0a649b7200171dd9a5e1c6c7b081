@@ -14,10 +14,6 @@ public class Trie {
 		return addChar(head, c);
 	}
 	
-	public void addString(String str){
-		
-	}
-	
 	public TrieNode getChar(char c){
 		return getChar(head, c);
 	}

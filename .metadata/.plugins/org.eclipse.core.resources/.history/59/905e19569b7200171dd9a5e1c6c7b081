@@ -14,14 +14,9 @@ public class Trie {
 		return addChar(head, c);
 	}
 	
-	public void addString(String str){
-		
-	}
-	
 	public TrieNode getChar(char c){
 		return getChar(head, c);
 	}
-
 	
 	private TrieNode getChar(TrieNode node, char c){
 		if(node.data != null && node.data == c){
