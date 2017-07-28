@@ -6,10 +6,6 @@ public class Sorting {
 		
 	}
 	
-	public static void merge(int [] arr1, int [] arr2){
-		
-	}
-	
 	
 	public static int bubbleSort(int [] arr){
 		int swaps = 0;

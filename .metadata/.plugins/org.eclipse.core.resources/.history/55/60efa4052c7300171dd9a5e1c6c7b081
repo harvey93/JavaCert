@@ -6,7 +6,7 @@ public class Sorting {
 		
 	}
 	
-	public static void merge(int [] arr1, int [] arr2){
+	public static void merge(){
 		
 	}
 	
