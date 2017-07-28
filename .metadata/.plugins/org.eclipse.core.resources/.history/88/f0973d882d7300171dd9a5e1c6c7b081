@@ -11,7 +11,7 @@ public class Test {
 		Sorting.mergeSort(arr);
 		System.out.println(Arrays.toString(arr));
 		int[] arr1 = {1,3};
-		int[] arr2 = {2,4,5,7};
+		int[] arr2 = {2,5};
 		System.out.println(Arrays.toString(Sorting.merge(arr1, arr2)));
 		
 //		System.out.println(Sorting.mergeSort(arr));
