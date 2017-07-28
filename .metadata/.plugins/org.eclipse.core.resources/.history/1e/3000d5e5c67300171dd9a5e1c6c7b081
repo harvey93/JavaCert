@@ -138,7 +138,7 @@ public class Sorting {
 			}
 			
 			while(arr[right] > pivot){
-				right--;
+				right++;
 			}
 			
 			if(left <= right){

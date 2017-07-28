@@ -138,13 +138,13 @@ public class Sorting {
 			}
 			
 			while(arr[right] > pivot){
-				right--;
+				right++;
 			}
 			
 			if(left <= right){
 				exch(arr, left, right);
 				left++;
-				right--;
+				right++;
 			}
 		}
 		return left;

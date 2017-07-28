@@ -132,22 +132,8 @@ public class Sorting {
 	}
 	
 	public static int partition(int[] arr, int left, int right, int pivot){
-		while(left <= right){
-			while(arr[left] < pivot){
-				left++;
-			}
-			
-			while(arr[right] > pivot){
-				right--;
-			}
-			
-			if(left <= right){
-				exch(arr, left, right);
-				left++;
-				right--;
-			}
-		}
-		return left;
+		while()
+		return 5;
 	}
 	
 //	public static ArrayList<Integer> quickSortList(ArrayList<Integer> arr){
