@@ -122,12 +122,7 @@ public class Sorting {
 			list.add(i);
 		}
 		Collections.shuffle(list);
-		int index = 0;
-		for(int el : list){
-			arr[index] = el;
-			index++;
-		}
-		System.out.println(Arrays.toString(arr));
+		System.out.println(list);
 //		Collections.shuffle();
 //		quicksort(arr, 0, arr.length - 1);
 	}

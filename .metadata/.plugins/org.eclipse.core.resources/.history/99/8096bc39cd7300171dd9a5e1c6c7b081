@@ -117,23 +117,11 @@ public class Sorting {
 	}
 	
 	public static void quicksort(int [] arr){
-		ArrayList<Integer> list = new ArrayList<>();
-		for(int i : arr){
-			list.add(i);
-		}
-		Collections.shuffle(list);
-		int index = 0;
-		for(int el : list){
-			arr[index] = el;
-			index++;
-		}
-		System.out.println(Arrays.toString(arr));
-//		Collections.shuffle();
-//		quicksort(arr, 0, arr.length - 1);
+		quicksort(arr, 0, arr.length - 1);
 	}
 	
 	
-	private static void quicksort(int [] arr, int lo, int hi){
+	public static void quicksort(int [] arr, int lo, int hi){
 		if(lo >= hi){
 			return;
 		}

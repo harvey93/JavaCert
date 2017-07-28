@@ -127,7 +127,7 @@ public class Sorting {
 			arr[index] = el;
 			index++;
 		}
-		System.out.println(Arrays.toString(arr));
+		
 //		Collections.shuffle();
 //		quicksort(arr, 0, arr.length - 1);
 	}
