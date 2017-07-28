@@ -117,18 +117,19 @@ public class Sorting {
 	}
 	
 	public static void quicksort(int [] arr){
-//		ArrayList<Integer> list = new ArrayList<>();
-//		for(int i : arr){
-//			list.add(i);
-//		}
-//		Collections.shuffle(list);
-//		int index = 0;
-//		for(int el : list){
-//			arr[index] = el;
-//			index++;
-//		}
+		ArrayList<Integer> list = new ArrayList<>();
+		for(int i : arr){
+			list.add(i);
+		}
+		Collections.shuffle(list);
+		int index = 0;
+		for(int el : list){
+			arr[index] = el;
+			index++;
+		}
 		
-		quicksort(arr, 0, arr.length - 1);
+		
+//		quicksort(arr, 0, arr.length - 1);
 	}
 	
 	
@@ -136,8 +137,7 @@ public class Sorting {
 		if(lo >= hi){
 			return;
 		}
-		int newLo = partition(arr, lo, hi);
-		
+		int pivot = 0;
 		
 	}
 	
