@@ -120,8 +120,6 @@ public class Sorting {
 		
 	}
 	
-	
-	
 //	public static void quickSort(int [] arr){
 //		quickSort(arr, 0, arr.length - 1);
 //	}

@@ -116,12 +116,6 @@ public class Sorting {
 		arr[j] = temp;
 	}
 	
-	public static void quicksort(int [] arr){
-		
-	}
-	
-	
-	
 //	public static void quickSort(int [] arr){
 //		quickSort(arr, 0, arr.length - 1);
 //	}
