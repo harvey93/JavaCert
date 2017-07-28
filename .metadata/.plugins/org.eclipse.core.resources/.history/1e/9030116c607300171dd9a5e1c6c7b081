@@ -9,17 +9,7 @@ public class Sorting {
 		mergeSort(arr, 0, arr.length - 1);
 	}
 	
-	public static void mergeSort(int [] arr, int leftStart, int rightEnd){
-		if(leftStart >= rightEnd){
-			return;
-		}
-		int middle = (leftStart + rightEnd) / 2;
-		mergeSort(arr, leftStart, middle);
-		mergeSort(arr, middle + 1, rightEnd);
-		mergeHalves(arr, leftStart, rightEnd);
-	}
-	
-	public static void mergeHalves(int [] arr, int leftStart, int rightEnd){
+	public static void mergeSort(int [] arr, int start, int end){
 		
 	}
 	

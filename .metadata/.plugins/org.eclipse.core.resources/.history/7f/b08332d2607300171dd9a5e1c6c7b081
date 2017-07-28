@@ -19,10 +19,6 @@ public class Sorting {
 		mergeHalves(arr, leftStart, rightEnd);
 	}
 	
-	public static void mergeHalves(int [] arr, int leftStart, int rightEnd){
-		
-	}
-	
 	
 	
 	public int [] mergeSort(int [] arr ){

@@ -14,13 +14,6 @@ public class Sorting {
 			return;
 		}
 		int middle = (leftStart + rightEnd) / 2;
-		mergeSort(arr, leftStart, middle);
-		mergeSort(arr, middle + 1, rightEnd);
-		mergeHalves(arr, leftStart, rightEnd);
-	}
-	
-	public static void mergeHalves(int [] arr, int leftStart, int rightEnd){
-		
 	}
 	
 	
