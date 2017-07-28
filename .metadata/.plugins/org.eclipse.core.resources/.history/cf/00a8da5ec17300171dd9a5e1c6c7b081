@@ -116,9 +116,5 @@ public class Sorting {
 		arr[j] = temp;
 	}
 	
-	public static int[] quickSort(int [] arr){
-		return arr;
-	}
-	
 
 }
