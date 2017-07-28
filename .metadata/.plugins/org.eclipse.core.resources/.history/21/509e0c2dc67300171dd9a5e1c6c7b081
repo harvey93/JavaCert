@@ -131,8 +131,8 @@ public class Sorting {
 		quickSort(arr, index, right);
 	}
 	
-	public static int partition(int[] arr, int left, int right){
-		return 5;
+	public static int partition(int[], int left, int right){
+		
 	}
 	
 //	public static ArrayList<Integer> quickSortList(ArrayList<Integer> arr){

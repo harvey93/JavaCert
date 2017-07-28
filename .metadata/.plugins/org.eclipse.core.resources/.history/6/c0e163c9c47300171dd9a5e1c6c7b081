@@ -117,22 +117,8 @@ public class Sorting {
 	}
 	
 	public static void quickSort(int [] arr){
-		quickSort(arr, 0, arr.length - 1);
-	}
-	
-	public static void quickSort(int [] arr, int left, int right){
-		if(left >= right){
-			return;
-		}
-		
-		int pivot = arr[(left + right) / 2];
-		int index = parition(arr, left, right, pivot);
-		quickSort(arr, left, index - 1);
-		quickSort(arr, index, right);
-	}
-	
-	public static int partition(int[] arr, int left, int right){
-		return 5;
+		int pivot = (int)(Math.random() * arr.length);
+		System.out.println(pivot);
 	}
 	
 //	public static ArrayList<Integer> quickSortList(ArrayList<Integer> arr){

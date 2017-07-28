@@ -124,15 +124,6 @@ public class Sorting {
 		if(left >= right){
 			return;
 		}
-		
-		int pivot = arr[(left + right) / 2];
-		int index = parition(arr, left, right, pivot);
-		quickSort(arr, left, index - 1);
-		quickSort(arr, index, right);
-	}
-	
-	public static int partition(int[] arr, int left, int right){
-		return 5;
 	}
 	
 //	public static ArrayList<Integer> quickSortList(ArrayList<Integer> arr){

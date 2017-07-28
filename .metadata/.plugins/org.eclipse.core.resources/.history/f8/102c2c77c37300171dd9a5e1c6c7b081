@@ -116,48 +116,25 @@ public class Sorting {
 		arr[j] = temp;
 	}
 	
-	public static void quickSort(int [] arr){
-		quickSort(arr, 0, arr.length - 1);
-	}
-	
-	public static void quickSort(int [] arr, int left, int right){
-		if(left >= right){
-			return;
-		}
+	public static ArrayList<Integer> quickSortList(ArrayList<Integer> arr){
+		int pivot = arr.get(0);
+		ArrayList<Integer> left = new ArrayList<>();
+		ArrayList<Integer> right = new ArrayList<>();
+		arr.forEach(el -> {
+			if(el > pivot){
+				right.add(el);
+			}else {
+				left.add(el);
+			}
+		});
 		
-		int pivot = arr[(left + right) / 2];
-		int index = parition(arr, left, right, pivot);
-		quickSort(arr, left, index - 1);
-		quickSort(arr, index, right);
+		ArrayList<Integer> sortedLeft = quickSortList(left);
+		sortedLeft.add(pivot);
+		ArrayList<Integer> sortedRight = quickSortList(right);
+		sortedLeft.addAll(right);
+		return sortedLeft;
+		
 	}
-	
-	public static int partition(int[] arr, int left, int right){
-		return 5;
-	}
-	
-//	public static ArrayList<Integer> quickSortList(ArrayList<Integer> arr){
-//		if(arr.size() < 2){
-//			return arr;
-//		}
-//		System.out.println(arr);
-//		int pivot = arr.get(0);
-//		ArrayList<Integer> left = new ArrayList<>();
-//		ArrayList<Integer> right = new ArrayList<>();
-//		arr.forEach(el -> {
-//			if(el > pivot){
-//				right.add(el);
-//			}else {
-//				left.add(el);
-//			}
-//		});
-//		
-//		ArrayList<Integer> sortedLeft = quickSortList(left);
-//		sortedLeft.add(pivot);
-//		ArrayList<Integer> sortedRight = quickSortList(right);
-//		sortedLeft.addAll(right);
-//		return sortedLeft;
-//		
-//	}
 	
 
 }

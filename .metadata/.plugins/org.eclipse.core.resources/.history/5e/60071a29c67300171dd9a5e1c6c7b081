@@ -131,10 +131,6 @@ public class Sorting {
 		quickSort(arr, index, right);
 	}
 	
-	public static int partition(int[] arr, int left, int right){
-		return 5;
-	}
-	
 //	public static ArrayList<Integer> quickSortList(ArrayList<Integer> arr){
 //		if(arr.size() < 2){
 //			return arr;
