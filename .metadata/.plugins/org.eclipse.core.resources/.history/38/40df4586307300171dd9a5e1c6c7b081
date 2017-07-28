@@ -6,7 +6,7 @@ public class Sorting {
 	
 	public static int [] mergeSort(int [] arr ){
 		if(arr.length < 2){
-			return arr;
+			
 		}
 		int mid = arr.length / 2;
 		int [] left = Arrays.copyOfRange(arr, 0, mid);

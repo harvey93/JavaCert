@@ -4,14 +4,9 @@ import java.util.Arrays;
 
 public class Sorting {
 	
-	public static int [] mergeSort(int [] arr ){
-		if(arr.length < 2){
-			return arr;
-		}
+	public static void mergeSort(double [] arr ){
 		int mid = arr.length / 2;
-		int [] left = Arrays.copyOfRange(arr, 0, mid);
-		int [] right = Arrays.copyOfRange(arr, mid, arr.length);
-		return merge(mergeSort(left), mergeSort(right));
+		double [] = Arrays.copyOfRange(arr, from, to);
 	}
 	
 	public static int[] merge(int [] arr1, int [] arr2){
