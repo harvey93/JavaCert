@@ -15,7 +15,7 @@ public class Sorting {
 					swaps++;
 				}
 			}
-			
+			System.out.println("in");
 			if(sorted){break;}
 			times--;
 		}

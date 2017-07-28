@@ -15,11 +15,10 @@ public class Sorting {
 					swaps++;
 				}
 			}
-			
+			System.out.println("in");
 			if(sorted){break;}
 			times--;
 		}
-		return swaps;
 	}
 	
 	public static void exch(int [] arr, int i, int j){

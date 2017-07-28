@@ -10,7 +10,7 @@ public class Test {
 		int [] arr = {10,1,2,3,4,5};
 		
 		
-		System.out.println(Sorting.bubbleSort(arr));
+		System.out.println(Sorting.bubbleSort(arr););
 	}
 	
 }
