@@ -29,19 +29,8 @@ public class Sorting {
 		int index = leftStart;
 		
 		while(left <= leftEnd && right <= rightEnd){
-			if(arr[left] <= arr[right]){
-				temp[index] = arr[left];
-				left++;
-			}else {
-				temp[index] = arr[right];
-				right++;
-			}
-			index++;
+			
 		}
-		
-		System.arraycopy(arr, left, temp, index, leftEnd - left + 1);
-		System.arraycopy(arr, right, temp, index, rightEnd - right + 1);
-		System.arraycopy(temp, leftStart, arr, leftStart, size);
 		
 	}
 	

@@ -39,10 +39,6 @@ public class Sorting {
 			index++;
 		}
 		
-		System.arraycopy(arr, left, temp, index, leftEnd - left + 1);
-		System.arraycopy(arr, right, temp, index, rightEnd - right + 1);
-		System.arraycopy(temp, leftStart, arr, leftStart, size);
-		
 	}
 	
 	
