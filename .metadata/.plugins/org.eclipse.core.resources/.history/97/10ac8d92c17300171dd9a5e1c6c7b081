@@ -1,6 +1,6 @@
 package hackerRank;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class Sorting {
 	
@@ -116,9 +116,8 @@ public class Sorting {
 		arr[j] = temp;
 	}
 	
-	public static ArrayList<Integer> quickSortList(ArrayList<Integer> arr){
-		int pivot = arr.get(0);
-		
+	public static int[] quickSort(int [] arr){
+		int pivot = arr[0];
 		return arr;
 	}
 	

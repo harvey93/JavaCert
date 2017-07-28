@@ -118,7 +118,7 @@ public class Sorting {
 	
 	public static ArrayList<Integer> quickSortList(ArrayList<Integer> arr){
 		int pivot = arr.get(0);
-		
+		int
 		return arr;
 	}
 	

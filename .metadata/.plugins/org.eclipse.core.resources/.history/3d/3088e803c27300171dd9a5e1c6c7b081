@@ -12,7 +12,7 @@ public class Test {
 		
 		ArrayList<Integer> arr = new ArrayList<Integer>(Arrays.asList(array));
 		ArrayList<Integer> sorted = Sorting.quickSortList(arr);
-		System.out.println(sorted);
+		System.out.println(Arrays.toString(sorted));
 	}
 	
 }
