@@ -22,16 +22,6 @@ public class Sorting {
 	public static void mergeHalves(int [] arr, int[] temp, int leftStart, int rightEnd){
 		int leftEnd = (rightEnd + leftStart)/ 2;
 		int rightStart = leftEnd + 1;
-		int size = rightEnd - leftStart + 1;
-		
-		int left = leftStart;
-		int right = rightStart;
-		int index = leftStart;
-		
-		while(left <= leftEnd && right <= rightEnd){
-			
-		}
-		
 	}
 	
 	

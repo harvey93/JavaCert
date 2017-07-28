@@ -6,7 +6,7 @@ public class Sorting {
 	
 	
 	public static void mergeSort2(int [] arr){
-		mergeSort(arr, new int[arr.length], 0, arr.length - 1);
+		mergeSort(arr,, new int[arr.length] 0, arr.length - 1);
 	}
 	
 	public static void mergeSort(int [] arr, int[] temp, int leftStart, int rightEnd){
@@ -14,23 +14,12 @@ public class Sorting {
 			return;
 		}
 		int middle = (leftStart + rightEnd) / 2;
-		mergeSort(arr, temp, leftStart, middle);
-		mergeSort(arr, temp, middle + 1, rightEnd);
-		mergeHalves(arr, temp, leftStart, rightEnd);
+		mergeSort(arr, leftStart, middle);
+		mergeSort(arr, middle + 1, rightEnd);
+		mergeHalves(arr, leftStart, rightEnd);
 	}
 	
-	public static void mergeHalves(int [] arr, int[] temp, int leftStart, int rightEnd){
-		int leftEnd = (rightEnd + leftStart)/ 2;
-		int rightStart = leftEnd + 1;
-		int size = rightEnd - leftStart + 1;
-		
-		int left = leftStart;
-		int right = rightStart;
-		int index = leftStart;
-		
-		while(left <= leftEnd && right <= rightEnd){
-			
-		}
+	public static void mergeHalves(int [] arr, int leftStart, int rightEnd){
 		
 	}
 	

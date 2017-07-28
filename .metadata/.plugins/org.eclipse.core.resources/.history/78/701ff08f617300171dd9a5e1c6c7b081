@@ -28,10 +28,6 @@ public class Sorting {
 		int right = rightStart;
 		int index = leftStart;
 		
-		while(left <= leftEnd && right <= rightEnd){
-			
-		}
-		
 	}
 	
 	
