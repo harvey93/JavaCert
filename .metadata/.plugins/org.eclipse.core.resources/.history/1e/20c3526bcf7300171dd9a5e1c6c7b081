@@ -137,7 +137,7 @@ public class Sorting {
 			return;
 		}
 		int newLo = partition(arr, lo, hi);
-		quicksort(arr, 0, newLo - 1);
+		quicksort(arr, 0, newLo);
 		quicksort(arr, newLo + 1, hi);
 //		System.out.println(newLo);
 		
