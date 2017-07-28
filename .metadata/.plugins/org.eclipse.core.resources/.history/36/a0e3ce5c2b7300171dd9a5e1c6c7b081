@@ -2,11 +2,6 @@ package hackerRank;
 
 public class Sorting {
 	
-	public static void mergeSort(int [] arr ){
-		
-	}
-	
-	
 	public static int bubbleSort(int [] arr){
 		int swaps = 0;
 		int times = arr.length;
