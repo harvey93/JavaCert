@@ -20,18 +20,9 @@ public class Sorting {
 				res[k] = arr2[j];
 				k++;
 				j++;
+				
 			}
 		}
-		for(; i < arr1.length; i++){
-			res[k] = arr1[i];
-			k++;
-		}
-		
-		for(; j < arr2.length; j++){
-			res[k] = arr2[j];
-			k++;
-		}
-		
 		return res;
 	}
 	
