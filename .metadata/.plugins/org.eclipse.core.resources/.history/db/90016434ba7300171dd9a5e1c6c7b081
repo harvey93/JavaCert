@@ -34,7 +34,6 @@ public class Sorting {
 				temp[index] = arr[left];
 				left++;
 			}else {
-				
 				temp[index] = arr[right];
 				right++;
 			}
@@ -70,7 +69,7 @@ public class Sorting {
 				k++;
 				i++;
 			}else{
-				inversions += arr1.length - i;
+				
 				res[k] = arr2[j];
 				k++;
 				j++;

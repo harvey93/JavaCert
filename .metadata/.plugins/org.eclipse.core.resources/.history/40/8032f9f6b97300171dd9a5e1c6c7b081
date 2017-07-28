@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class Sorting {
 	
-	public int inversions = 0;
 	
 	public static void mergeSort2(int [] arr){
 		mergeSort(arr, new int[arr.length], 0, arr.length - 1);
@@ -34,7 +33,6 @@ public class Sorting {
 				temp[index] = arr[left];
 				left++;
 			}else {
-				
 				temp[index] = arr[right];
 				right++;
 			}
@@ -69,8 +67,8 @@ public class Sorting {
 				res[k] = arr1[i];
 				k++;
 				i++;
-			}else{
-				inversions += arr1.length - i;
+			}else(arr1[i] > arr2[j]){
+				
 				res[k] = arr2[j];
 				k++;
 				j++;

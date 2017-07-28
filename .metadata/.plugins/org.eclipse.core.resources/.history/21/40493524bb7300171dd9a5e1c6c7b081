@@ -70,7 +70,7 @@ public class Sorting {
 				k++;
 				i++;
 			}else{
-				inversions += arr1.length - i;
+				inversions++;
 				res[k] = arr2[j];
 				k++;
 				j++;
