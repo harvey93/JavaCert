@@ -117,7 +117,7 @@ public class Sorting {
 	}
 	
 	public static void quicksort(int [] arr){
-		quicksort(arr, 0, arr.length - 1);
+		quickSort(arr, 0, arr.length - 1);
 	}
 	
 	

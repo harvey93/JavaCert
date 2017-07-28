@@ -117,17 +117,11 @@ public class Sorting {
 	}
 	
 	public static void quicksort(int [] arr){
-		quicksort(arr, 0, arr.length - 1);
-	}
-	
-	
-	public static void quicksort(int [] arr, int lo, int hi){
 		
 	}
 	
-	
-	public static int partition(int[] arr, int lo, int hi){
-		return 5;
+	public static void partition(int[] arr,int i, int j){
+		
 	}
 	
 	
