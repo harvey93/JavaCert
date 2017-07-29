@@ -145,7 +145,8 @@ public class Sorting {
 	
 	
 	public static int partition(int[] arr, int lo, int hi){
-		int i = lo + 1;
+		int i = lo;
+		i++;
 		int j = hi;
 		while(true){
 			while(less(arr[i], arr[lo])){
