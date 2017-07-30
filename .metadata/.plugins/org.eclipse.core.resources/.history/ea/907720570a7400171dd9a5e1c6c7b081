@@ -9,12 +9,12 @@ public class Test {
 //		double []medians = RunningMedian.getMedians(new int []{1,2,3,4,5,6,7,8,9});
 //		int [] arr = {10,-5,2,13,4,3,0,-9,4};
 		int [] arr = {3,-1,5,2,4,-1,10};
-		boolean x = true;
-		if(x = false){
-			System.out.println("in");
-		}else {
-			System.out.println(x);
-		}
+		Sorting.quicksort(arr);
+		System.out.println(Arrays.toString(arr));
+		System.out.println(Speed.FASTER.speed);
+		int x = 0;
+		System.out.println(5 * x++);
+		System.out.println(x);
 	}
 	
 }
