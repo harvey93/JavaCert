@@ -7,8 +7,7 @@ import java.util.Arrays;
 public class Test {
 
 	public static void main(String[] args) {
-		TestB b = new TestB();
-		b.print();
+		
 	}
 	
 }
@@ -38,11 +37,6 @@ class TestA{
 class TestB extends TestA{
 	public int weight = 3;
 	public int height = 5;
-	
-	public void print(){
-		System.out.println(super.getWeight());
-		System.out.println(super.getHeight());
-	}
 
 	public void method() throws FileNotFoundException{
 		

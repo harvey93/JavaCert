@@ -41,7 +41,7 @@ class TestB extends TestA{
 	
 	public void print(){
 		System.out.println(super.getWeight());
-		System.out.println(super.getHeight());
+		System.out.println(super.height);
 	}
 
 	public void method() throws FileNotFoundException{
