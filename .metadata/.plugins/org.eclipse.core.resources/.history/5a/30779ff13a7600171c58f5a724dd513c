@@ -17,13 +17,6 @@ class TestA{
 	protected int weight = 3;
 	private int height = 5;
 	
-	public int getHeight(){
-		return height;
-	}
-	public int getWeight(){
-		return weight;
-	}
-	
 	public void method(String [] arr) throws IOException{
 		
 	}
