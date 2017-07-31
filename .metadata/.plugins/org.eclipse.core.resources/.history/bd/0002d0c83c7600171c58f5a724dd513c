@@ -10,8 +10,6 @@ public class Test {
 		TestA a =(TestA)new TestB();
 		Inter i = (Inter) a;
 		
-		
-		
 	}
 	
 }

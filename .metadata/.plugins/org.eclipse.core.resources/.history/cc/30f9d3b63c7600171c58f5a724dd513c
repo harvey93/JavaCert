@@ -8,16 +8,13 @@ public class Test {
 
 	public static void main(String[] args) {
 		TestA a =(TestA)new TestB();
-		Inter i = (Inter) a;
-		
-		
 		
 	}
 	
 }
 
 
-interface Inter{
+interface inter{
 	
 }
 

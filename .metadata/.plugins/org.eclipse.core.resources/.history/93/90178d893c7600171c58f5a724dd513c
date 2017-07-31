@@ -7,17 +7,9 @@ import java.util.Arrays;
 public class Test {
 
 	public static void main(String[] args) {
-		TestA a =(TestA)new TestB();
-		Inter i = (Inter) a;
-		
-		
-		
+		TestB b = new TestB();
+		b.print();
 	}
-	
-}
-
-
-interface Inter{
 	
 }
 
@@ -42,8 +34,7 @@ class TestA{
 //	}
 
 }
-
-class TestB extends TestA implements inter{
+class TestB extends TestA{
 	public int weight = 3;
 	public int height = 5;
 	

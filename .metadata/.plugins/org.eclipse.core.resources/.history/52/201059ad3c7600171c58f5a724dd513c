@@ -7,17 +7,14 @@ import java.util.Arrays;
 public class Test {
 
 	public static void main(String[] args) {
-		TestA a =(TestA)new TestB();
-		Inter i = (Inter) a;
-		
-		
+		(TestA)new TestB();
 		
 	}
 	
 }
 
 
-interface Inter{
+interface inter{
 	
 }
 
