@@ -24,8 +24,8 @@ class TestA{
 
 }
 
-class TestB extends TestA{
-	public void method(String str) throws FileNotFoundException{
+class TestB{
+	public void method(String str) throws Exception{
 		
 	}
 }

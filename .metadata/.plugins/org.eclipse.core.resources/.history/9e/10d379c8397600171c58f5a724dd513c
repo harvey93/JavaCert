@@ -25,7 +25,7 @@ class TestA{
 }
 
 class TestB extends TestA{
-	public void method(String str) throws FileNotFoundException{
+	public void method() throws IOException{
 		
 	}
 }

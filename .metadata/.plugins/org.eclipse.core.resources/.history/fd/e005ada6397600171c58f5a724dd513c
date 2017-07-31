@@ -18,14 +18,14 @@ class TestA{
 		
 	}
 	
-//	public void method(String str) throws FileNotFoundException{
-//		
-//	}
+	public void method(String str) throws FileNotFoundException{
+		
+	}
 
 }
 
-class TestB extends TestA{
-	public void method(String str) throws FileNotFoundException{
+class TestB{
+	public void method() throws FileNotFoundException{
 		
 	}
 }
