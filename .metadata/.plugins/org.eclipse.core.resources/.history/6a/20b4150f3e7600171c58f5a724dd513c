@@ -8,7 +8,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		TestA a =(TestA)new TestB();
-		System.out.println(a.weight);
+		Inter i = (Inter) a;
 		
 		
 		
@@ -44,7 +44,7 @@ class TestA{
 }
 
 class TestB extends TestA implements Inter{
-	public int weight = 10;
+	public int weight = 3;
 	public int height = 5;
 	
 	
