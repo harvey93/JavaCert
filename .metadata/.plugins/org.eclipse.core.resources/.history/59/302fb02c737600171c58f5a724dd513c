@@ -7,9 +7,15 @@ import java.util.Arrays;
 public class Test {
 
 	public static void main(String[] args) {
-		StringBuilder sb = new StringBuilder("el");
-		StringBuilder sb1 = new StringBuilder("el");
-		System.out.println(sb1.equals(sb));
+		
+		try{
+			System.out.println("try");
+			
+		}catch(Exception e){
+			System.out.println("exception");
+		}finally{
+			System.out.println("finally");
+		}
 		
 	}
 	
