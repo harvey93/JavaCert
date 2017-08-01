@@ -10,9 +10,6 @@ public class Test {
 		
 		try{
 			System.out.println("try");
-			
-		}catch(Exception e){
-			System.out.println("exception");
 		}finally{
 			System.out.println("finally");
 		}

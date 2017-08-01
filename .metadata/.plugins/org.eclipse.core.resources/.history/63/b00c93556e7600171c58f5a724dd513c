@@ -11,9 +11,9 @@ public class Test {
 		try{
 			System.out.println("try");
 			
-		}catch(Exception e){
+		}catch(Exception e)
 			System.out.println("exception");
-		}finally{
+		finally{
 			System.out.println("finally");
 		}
 		

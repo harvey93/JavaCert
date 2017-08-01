@@ -7,15 +7,10 @@ import java.util.Arrays;
 public class Test {
 
 	public static void main(String[] args) {
+		TestA a =(TestA)new TestB();
+		System.out.println(a.weight);
 		
-		try{
-			System.out.println("try");
-			
-		}catch(Exception e){
-			System.out.println("exception");
-		}finally{
-			System.out.println("finally");
-		}
+		
 		
 	}
 	
@@ -34,12 +29,11 @@ class TestA{
 	public int getHeight(){
 		return height;
 	}
-	
 	public int getWeight(){
 		return weight;
 	}
 	
-	public void method(String [] arr) throws IOException{return;};
+	public void method(String [] arr) throws IOException{};
 	
 //	public void method(String str) throws FileNotFoundException{
 //		
