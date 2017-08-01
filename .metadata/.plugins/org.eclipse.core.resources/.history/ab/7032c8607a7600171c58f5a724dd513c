@@ -3,17 +3,13 @@ package sectionTests;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.List;
 
 public class Test {
 
 	public static void main(String[] args) {
-		StringBuilder sb = new StringBuilder("hello");
-		String str = "hello";
-		String str1 = str.replace('l', 'x');
-//		System.out.println(str);
-		sb.replace(0, 2, "vazgen");
-		System.out.println(sb);
+		StringBuilder sb = new StringBuilder("el");
+		StringBuilder sb1 = new StringBuilder("el");
+		System.out.println(sb1.equals(sb));
 		
 	}
 	

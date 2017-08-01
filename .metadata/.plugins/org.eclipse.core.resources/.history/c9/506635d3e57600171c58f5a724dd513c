@@ -11,9 +11,7 @@ public class Test {
 		StringBuilder sb = new StringBuilder("hello");
 		String str = "hello";
 		String str1 = str.replace('l', 'x');
-//		System.out.println(str);
-		sb.replace(0, 2, "vazgen");
-		System.out.println(sb);
+		System.out.println(str1);
 		
 	}
 	

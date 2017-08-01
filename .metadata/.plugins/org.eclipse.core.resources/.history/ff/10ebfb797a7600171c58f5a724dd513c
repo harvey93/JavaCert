@@ -8,13 +8,8 @@ import java.util.List;
 public class Test {
 
 	public static void main(String[] args) {
-		StringBuilder sb = new StringBuilder("hello");
-		String str = "hello";
-		String str1 = str.replace('l', 'x');
-//		System.out.println(str);
-		sb.replace(0, 2, "vazgen");
-		System.out.println(sb);
-		
+		Integer [] arr = {1,2,34};
+		List b = Arrays.asList(arr);
 	}
 	
 }

@@ -9,10 +9,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		StringBuilder sb = new StringBuilder("hello");
-		String str = "hello";
-		String str1 = str.replace('l', 'x');
-//		System.out.println(str);
-		sb.replace(0, 2, "vazgen");
+		sb.reverse();
 		System.out.println(sb);
 		
 	}
