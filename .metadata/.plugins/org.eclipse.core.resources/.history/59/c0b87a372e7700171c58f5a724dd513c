@@ -21,12 +21,7 @@ public class HashSet<T> {
 	}
 	
 	public boolean contains(T val){
-		boolean res = false;
-		ArrayList<T> bucket = getBucket(val);
-		if(bucket.contains(val)){
-			res = true;
-		}
-		return res;
+		
 	}
 	
 	public void insert(T val){

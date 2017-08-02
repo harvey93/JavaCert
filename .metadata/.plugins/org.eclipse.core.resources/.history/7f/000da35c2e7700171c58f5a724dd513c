@@ -11,7 +11,7 @@ public class Test {
 		set.insert(8);
 		set.insert(0);
 		set.insert(1);
-		System.out.println(set.contains(5));
+		System.out.println(set.contains(9));
 		System.out.println(set);
 //		ArrayList<ArrayList<Integer>> store = new ArrayList<>();
 		
