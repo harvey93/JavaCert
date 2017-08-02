@@ -1,0 +1,12 @@
+package cache;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		MaxIntSet set = new MaxIntSet(5);
+		set.insert(3);
+		System.out.println(set.contains(1));
+		System.out.println(set);
+	}
+
+}

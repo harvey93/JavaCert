@@ -12,12 +12,10 @@ public class MaxIntSet {
 	}
 	
 	public void insert(int val) throws ExceedMaxException{
-		error(val);
 		store[val] = true;
 	}
 	
 	public boolean contains(int val) throws ExceedMaxException{
-		error(val);
 		boolean res = false;
 		if(store[val]){
 			res = true;
@@ -26,7 +24,6 @@ public class MaxIntSet {
 	}
 	
 	public void delete(int val) throws ExceedMaxException{
-		error(val);
 		store[val] = false;
 	}
 	
@@ -34,9 +31,7 @@ public class MaxIntSet {
 		return Arrays.toString(store);
 	}
 	
-	private void error(int val) throws ExceedMaxException{
-		if(val > maxIndex){
-			throw new ExceedMaxException("Value exceeds max");
-		}
+	private void error() throws ExceedMaxException{
+		
 	}
 }
