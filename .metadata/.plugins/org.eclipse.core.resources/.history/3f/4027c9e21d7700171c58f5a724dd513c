@@ -2,9 +2,9 @@ package cache;
 
 public class MaxIntSet {
 	
-	boolean [] store;
+	int [] store;
 	public MaxIntSet(int max){
-		this.store = new boolean[max];
+		this.store = new int[max];
 	}
 	
 	public void insert(int val){
@@ -13,9 +13,7 @@ public class MaxIntSet {
 	
 	public boolean contains(int val){
 		boolean res = false;
-		if(store[val]){
-			res = true;
-		}
+		
 		return res;
 	}
 	

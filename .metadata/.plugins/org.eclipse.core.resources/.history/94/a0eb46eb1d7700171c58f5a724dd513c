@@ -13,9 +13,7 @@ public class MaxIntSet {
 	
 	public boolean contains(int val){
 		boolean res = false;
-		if(store[val]){
-			res = true;
-		}
+		if(store[val] ==)
 		return res;
 	}
 	
