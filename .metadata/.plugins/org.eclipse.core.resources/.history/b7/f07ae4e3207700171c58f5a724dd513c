@@ -4,19 +4,18 @@ import java.util.Arrays;
 
 public class IntSet {
 
-	Integer[][] store;
+	int[][] store;
 	
 	public IntSet(int size){
-		this.store = new Integer [size][size];
+		this.store = new int [size][size];
 	}
 	
 	public String toString(){
 		String str = "[";
-		for(Integer[] arr : store){
-			str += Arrays.toString(arr);
+		for(int[] arr : store){
+			
 		}
-		str += "]";
-		return str;
+		
 		
 	}
 }
