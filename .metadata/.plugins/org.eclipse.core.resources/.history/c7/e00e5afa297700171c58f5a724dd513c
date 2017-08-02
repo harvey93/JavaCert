@@ -11,16 +11,12 @@ public class HashSet<T> {
 		this.store = new ArrayList<ArrayList<T>>();
 		this.size = size;
 	}
-	
-	public void insert(T val){
-		
-	}
 
 	
 	
 	private ArrayList<T> getBucket(T val){
-		int bucket = hash(val) % size;
-		return store.get(bucket);
+		int bucket = val % size; 
+		return store.get(bucket];
 	}
 
 	private int hash(T el){

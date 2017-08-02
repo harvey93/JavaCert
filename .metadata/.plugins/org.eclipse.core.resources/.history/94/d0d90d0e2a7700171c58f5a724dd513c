@@ -11,10 +11,6 @@ public class HashSet<T> {
 		this.store = new ArrayList<ArrayList<T>>();
 		this.size = size;
 	}
-	
-	public void insert(T val){
-		
-	}
 
 	
 	
