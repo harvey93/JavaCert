@@ -1,0 +1,8 @@
+package cache;
+
+public class MaxIntSet {
+	
+	public MaxIntSet(int max){
+		
+	}
+}
