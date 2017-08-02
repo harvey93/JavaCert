@@ -26,11 +26,8 @@ public class IntSet {
 	}
 	
 	private void fillEmptySlot(Integer[] bucket, int val){
-		for(int i = 0; i < bucket.length; i++){
-			if(bucket[i] == null){
-				bucket[i] = val;
-				break;
-			}
+		for(Integer el : bucket){
+			
 		}
 	}
 	

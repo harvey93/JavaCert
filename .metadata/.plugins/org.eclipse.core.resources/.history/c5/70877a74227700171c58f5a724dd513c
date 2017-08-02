@@ -13,8 +13,7 @@ public class IntSet {
 	}
 	
 	public void insert(int val){
-		Integer[] bucket = getBucket(val);
-		fillEmptySlot(bucket, val);
+		
 	}
 	
 	public Integer delete(int val){
@@ -25,18 +24,9 @@ public class IntSet {
 		return true;
 	}
 	
-	private void fillEmptySlot(Integer[] bucket, int val){
-		for(int i = 0; i < bucket.length; i++){
-			if(bucket[i] == null){
-				bucket[i] = val;
-				break;
-			}
-		}
-	}
-	
-	private Integer[] getBucket(int val){
+	private int[] getBucket(int val){
 		int bucket = val % size; 
-		return store[bucket];
+		return 5;
 	}
 	
 	public String toString(){

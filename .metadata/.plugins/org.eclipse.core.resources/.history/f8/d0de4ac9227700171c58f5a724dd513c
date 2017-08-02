@@ -13,8 +13,7 @@ public class IntSet {
 	}
 	
 	public void insert(int val){
-		Integer[] bucket = getBucket(val);
-		fillEmptySlot(bucket, val);
+		int[] bucket = getBucket(val);
 	}
 	
 	public Integer delete(int val){
@@ -23,15 +22,6 @@ public class IntSet {
 	
 	public boolean contains(int val){
 		return true;
-	}
-	
-	private void fillEmptySlot(Integer[] bucket, int val){
-		for(int i = 0; i < bucket.length; i++){
-			if(bucket[i] == null){
-				bucket[i] = val;
-				break;
-			}
-		}
 	}
 	
 	private Integer[] getBucket(int val){
