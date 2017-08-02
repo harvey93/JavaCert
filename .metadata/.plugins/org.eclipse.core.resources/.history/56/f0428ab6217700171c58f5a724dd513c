@@ -14,15 +14,9 @@ public class IntSet {
 		
 	}
 	
-	public Integer delete(int val){
-		return 5;
-	}
-	
 	public boolean contains(int val){
 		return true;
 	}
-	
-	
 	
 	public String toString(){
 		String str = "[";
