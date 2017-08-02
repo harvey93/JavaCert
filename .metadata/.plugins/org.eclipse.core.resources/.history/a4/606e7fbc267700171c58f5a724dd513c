@@ -9,7 +9,7 @@ public class IntSet {
 	private int currentSize = 0;
 	
 	public IntSet(int size){
-		this.store = new Integer [size][3];
+		this.store = new Integer [size][size];
 		this.size = size;
 	}
 	
@@ -35,18 +35,8 @@ public class IntSet {
 	private void resize(){
 		Integer[][] oldStore = store;
 		size *= 2;
-		currentSize = 0;
-		System.out.println(size);
-		store = new Integer[size][3];
-		for(Integer[] arr : oldStore){
-			for(Integer val : arr){
-				if(val == null){
-					break;
-				}else {
-					insert(val);
-				}		
-			}
-		}
+		store = new Integer[size][size];
+		
 	}
 	
 	private boolean checkBucket(Integer[] bucket, int val){

@@ -6,20 +6,15 @@ public class IntSet {
 
 	private Integer[][] store;
 	private int size;
-	private int currentSize = 0;
 	
 	public IntSet(int size){
-		this.store = new Integer [size][3];
+		this.store = new Integer [size][size];
 		this.size = size;
 	}
 	
 	public void insert(int val){
 		Integer[] bucket = getBucket(val);
 		fillEmptySlot(bucket, val);
-		currentSize++;
-		if(currentSize == size){
-			resize();
-		}
 	}
 	
 	public void delete(int val){
@@ -30,23 +25,6 @@ public class IntSet {
 	public boolean contains(int val){
 		Integer[] bucket = getBucket(val);
 		return checkBucket(bucket, val);
-	}
-	
-	private void resize(){
-		Integer[][] oldStore = store;
-		size *= 2;
-		currentSize = 0;
-		System.out.println(size);
-		store = new Integer[size][3];
-		for(Integer[] arr : oldStore){
-			for(Integer val : arr){
-				if(val == null){
-					break;
-				}else {
-					insert(val);
-				}		
-			}
-		}
 	}
 	
 	private boolean checkBucket(Integer[] bucket, int val){
@@ -73,9 +51,6 @@ public class IntSet {
 	
 	private void fillEmptySlot(Integer[] bucket, int val){
 		for(int i = 0; i < bucket.length; i++){
-			if(bucket[i] != null && bucket[i] == val){
-				break;
-			}
 			if(bucket[i] == null){
 				bucket[i] = val;
 				break;
@@ -89,12 +64,11 @@ public class IntSet {
 	}
 	
 	public String toString(){
-		String str = "[ ";
+		String str = "[";
 		for(Integer[] arr : store){
 			str += Arrays.toString(arr);
-			str += " ";
 		}
-		str += " ]";
+		str += "]";
 		return str;
 		
 	}

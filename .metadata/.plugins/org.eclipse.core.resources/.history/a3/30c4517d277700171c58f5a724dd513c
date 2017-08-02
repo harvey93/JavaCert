@@ -35,8 +35,6 @@ public class IntSet {
 	private void resize(){
 		Integer[][] oldStore = store;
 		size *= 2;
-		currentSize = 0;
-		System.out.println(size);
 		store = new Integer[size][3];
 		for(Integer[] arr : oldStore){
 			for(Integer val : arr){
