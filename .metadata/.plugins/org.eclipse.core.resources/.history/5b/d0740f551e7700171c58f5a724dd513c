@@ -8,7 +8,7 @@ public class MaxIntSet {
 	}
 	
 	public void insert(int val){
-		store[val] = true;
+		
 	}
 	
 	public boolean contains(int val){
@@ -20,6 +20,6 @@ public class MaxIntSet {
 	}
 	
 	public void delete(int val){
-		store[val] = false;
+		
 	}
 }

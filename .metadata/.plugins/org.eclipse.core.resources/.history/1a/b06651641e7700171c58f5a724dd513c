@@ -20,6 +20,6 @@ public class MaxIntSet {
 	}
 	
 	public void delete(int val){
-		store[val] = false;
+		
 	}
 }
