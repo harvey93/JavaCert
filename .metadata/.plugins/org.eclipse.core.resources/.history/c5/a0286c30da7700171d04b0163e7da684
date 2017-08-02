@@ -1,0 +1,11 @@
+package cache;
+
+public class LinkedList<T>{
+
+	Node<T> head;
+	Node<T> tail;
+	
+	public LinkedList(){
+		Node<T> start
+	}
+}

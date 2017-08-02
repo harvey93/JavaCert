@@ -10,11 +10,5 @@ public class LinkedList<T>{
 		tail.prev = head;
 	}
 	
-	public boolean isEmpty(){
-		boolean res = false;
-		if(head.next == null){
-			res = true;
-		}
-		return res;
-	}
+	public boolean 
 }

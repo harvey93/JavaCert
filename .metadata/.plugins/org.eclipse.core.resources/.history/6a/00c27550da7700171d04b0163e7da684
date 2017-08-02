@@ -1,0 +1,12 @@
+package cache;
+
+public class LinkedList<T>{
+
+	Node<T> head;
+	Node<T> tail;
+	
+	public LinkedList(){
+		Node<T> head = new Node<T>(null);
+		Node<T> tail = new Node<T>(null);
+	}
+}
