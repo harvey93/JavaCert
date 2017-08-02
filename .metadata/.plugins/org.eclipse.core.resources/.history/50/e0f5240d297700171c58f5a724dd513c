@@ -1,0 +1,8 @@
+package cache;
+
+public class HashSet<T> {
+
+	private int hashCode(T el){
+		
+	}
+}

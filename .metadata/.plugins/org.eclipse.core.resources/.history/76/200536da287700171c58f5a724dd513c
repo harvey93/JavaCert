@@ -83,7 +83,6 @@ public class IntSet {
 		}
 	}
 	
-	
 	private Integer[] getBucket(int val){
 		int bucket = val % size; 
 		return store[bucket];
