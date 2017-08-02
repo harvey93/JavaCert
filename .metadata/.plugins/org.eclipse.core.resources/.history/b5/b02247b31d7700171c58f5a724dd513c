@@ -7,15 +7,7 @@ public class MaxIntSet {
 		this.store = new int[max];
 	}
 	
-	public void insert(int val){
-		
-	}
-	
-	public boolean contains(int val){
-		return true;
-	}
-	
-	public void delete(int val){
+	public insert(){
 		
 	}
 }

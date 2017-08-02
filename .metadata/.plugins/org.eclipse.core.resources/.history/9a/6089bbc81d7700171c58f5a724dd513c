@@ -10,12 +10,4 @@ public class MaxIntSet {
 	public void insert(int val){
 		
 	}
-	
-	public boolean contains(int val){
-		return true;
-	}
-	
-	public void delete(int val){
-		
-	}
 }
