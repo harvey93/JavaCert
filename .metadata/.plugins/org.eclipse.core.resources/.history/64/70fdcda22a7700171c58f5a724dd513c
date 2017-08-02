@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Test {
 	
 	public static void main(String[] args) throws Exception{
-		HashSet<Integer> set = new HashSet<>(4);
+		HashSet<Integer> set = new HashSet<>();
 		System.out.println(set);
 	}
 

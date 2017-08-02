@@ -14,21 +14,10 @@ public class HashSet<T> {
 	
 	public void insert(T val){
 		ArrayList<T> bucket = getBucket(val);
-		if(currentSize == size){
-			resize();
-		}
-		
-	}
-	
-	private void resize(){
-		
-	}
-	
-	private void fillBucket(ArrayList<T> bucket, T val){
-		bucket.add(val);
-		currentSize++;
 	}
 
+	
+	
 	private ArrayList<T> getBucket(T val){
 		int bucket = hash(val) % size;
 		return store.get(bucket);
@@ -36,9 +25,5 @@ public class HashSet<T> {
 
 	private int hash(T el){
 		return el.hashCode();
-	}
-	
-	public String toString(){
-		return store.toString();
 	}
 }

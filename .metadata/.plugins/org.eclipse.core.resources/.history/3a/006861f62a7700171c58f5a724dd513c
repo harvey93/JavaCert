@@ -20,10 +20,6 @@ public class HashSet<T> {
 		
 	}
 	
-	private void resize(){
-		
-	}
-	
 	private void fillBucket(ArrayList<T> bucket, T val){
 		bucket.add(val);
 		currentSize++;
