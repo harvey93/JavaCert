@@ -20,14 +20,6 @@ public class HashSet<T> {
 		this.size = size;
 	}
 	
-	public void delete(T val){
-		if(contains(val)){
-			ArrayList<T> bucket = getBucket(val);
-			bucket.remove(val);
-		}
-		
-	}
-	
 	public boolean contains(T val){
 		boolean res = false;
 		ArrayList<T> bucket = getBucket(val);
