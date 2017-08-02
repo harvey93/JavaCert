@@ -3,8 +3,8 @@ package cache;
 public class Node<T> {
 
 	T data;
-	Node next;
-	Node prev;
+	T next;
+	T prev;
 	
 	public Node(T data){
 		this.data = data;
