@@ -51,15 +51,4 @@ public class LinkedList<T>{
 		}
 		return res;
 	}
-	
-	public String toString(){
-		String res = "";
-		Node<T> current = head; 
-		while(current != null){
-			res += " " + current.toString();
-			current = current.next;
-			res += "\n";
-		}
-		return res;
-	}
 }

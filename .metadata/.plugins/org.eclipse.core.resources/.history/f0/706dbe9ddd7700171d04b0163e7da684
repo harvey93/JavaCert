@@ -58,7 +58,7 @@ public class LinkedList<T>{
 		while(current != null){
 			res += " " + current.toString();
 			current = current.next;
-			res += "\n";
+			res += "\n"
 		}
 		return res;
 	}

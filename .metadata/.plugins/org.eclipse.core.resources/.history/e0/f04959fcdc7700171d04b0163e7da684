@@ -23,8 +23,7 @@ public class LinkedList<T>{
 		currentEnd.next = newNode;
 		newNode.prev = currentEnd;
 		
-		newNode.next = tail;
-		tail.prev = newNode;
+		
 	}
 	
 	public Node<T> last(){
@@ -48,17 +47,6 @@ public class LinkedList<T>{
 		boolean res = false;
 		if(head.next == tail){
 			res = true;
-		}
-		return res;
-	}
-	
-	public String toString(){
-		String res = "";
-		Node<T> current = head; 
-		while(current != null){
-			res += " " + current.toString();
-			current = current.next;
-			res += "\n";
 		}
 		return res;
 	}
