@@ -1,7 +1,5 @@
 package cache;
 
-import java.util.Arrays;
-
 public class MaxIntSet {
 	
 	boolean [] store;
@@ -23,9 +21,5 @@ public class MaxIntSet {
 	
 	public void delete(int val){
 		store[val] = false;
-	}
-	
-	public String toString(){
-		return Arrays.toString(store);
 	}
 }
