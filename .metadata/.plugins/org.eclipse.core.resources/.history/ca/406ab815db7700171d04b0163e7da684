@@ -10,14 +10,6 @@ public class LinkedList<T>{
 		tail.prev = head;
 	}
 	
-	public Node<T> first(){
-		Node<T> res = null;
-		if(!isEmpty()){
-			res = head.next;
-		}
-		return res;
-	}
-	
 	public boolean isEmpty(){
 		boolean res = false;
 		if(head.next == tail){

@@ -11,11 +11,7 @@ public class LinkedList<T>{
 	}
 	
 	public Node<T> first(){
-		Node<T> res = null;
-		if(!isEmpty()){
-			res = head.next;
-		}
-		return res;
+		
 	}
 	
 	public boolean isEmpty(){
