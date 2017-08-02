@@ -1,8 +1,0 @@
-package ch3;
-
-public class StackQueue<T> {
-
-	public StackQueue(){
-		
-	}
-}

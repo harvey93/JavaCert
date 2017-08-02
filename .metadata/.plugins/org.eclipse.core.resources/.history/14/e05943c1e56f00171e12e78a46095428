@@ -1,5 +1,0 @@
-package sectionTests;
-
-public abstract class B {
-	abstract protected void print();
-}

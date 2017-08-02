@@ -7,13 +7,16 @@ import javax.lang.model.element.Element;
 
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class Test {
-	static Integer x;
+	static float f = 10;
 	
 
 	public static void main(String[] args) {
-
+		String str = "hxllx";
+		System.out.println(str.indexOf('x', 5));
 	}
 	
 	public static void sbTest(){

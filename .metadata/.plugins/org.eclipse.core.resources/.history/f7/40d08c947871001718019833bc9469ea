@@ -1,8 +1,0 @@
-package hackerRank;
-
-public class BMaxHeap {
-
-	public boolean less(int i, int j){
-		
-	}
-}

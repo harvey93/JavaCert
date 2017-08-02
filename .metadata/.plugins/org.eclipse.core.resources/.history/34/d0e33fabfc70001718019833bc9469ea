@@ -1,9 +1,0 @@
-package sectionTests;
-
-public enum Speed {
-	Red ("RED"),
-	Blue ("BLUE"),
-	Green ("GREEN")
-	
-	
-}

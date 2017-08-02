@@ -1,8 +1,0 @@
-package hackerRank;
-
-public class HashMapProbs {
-
-	public void ransomNote(){
-		
-	}
-}
