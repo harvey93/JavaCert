@@ -7,26 +7,21 @@ public class HashSet<T> {
 	private int size;
 	private int currentSize = 0;
 	
-	private void fillList(ArrayList<ArrayList<T>> list, int num){
-		while(num > 0){
-			list.add(new ArrayList<T>());
-			num--;
-		}
+	private static void fillList(ArrayList<ArrayList<T>> list, size){
+		
 	}
 	
 	public HashSet(int size){
 		this.store = new ArrayList<ArrayList<T>>();
-		fillList(store, size);
 		this.size = size;
 	}
 	
 	public void insert(T val){
 		ArrayList<T> bucket = getBucket(val);
-		fillBucket(bucket, val);
 		if(currentSize == size){
 			resize();
 		}
-
+		
 	}
 	
 	private void resize(){
@@ -34,7 +29,6 @@ public class HashSet<T> {
 		currentSize = 0;
 		ArrayList<ArrayList<T>> oldStore = store;
 		store = new ArrayList<ArrayList<T>>(size);
-		fillList(store, size);
 		for(ArrayList<T> list : oldStore){
 			for(T el : list){
 				insert(el);
@@ -44,10 +38,8 @@ public class HashSet<T> {
 	}
 	
 	private void fillBucket(ArrayList<T> bucket, T val){
-		if(!bucket.contains(val)){
-			bucket.add(val);
-			currentSize++;
-		}
+		bucket.add(val);
+		currentSize++;
 	}
 
 	private ArrayList<T> getBucket(T val){

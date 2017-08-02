@@ -44,10 +44,9 @@ public class HashSet<T> {
 	}
 	
 	private void fillBucket(ArrayList<T> bucket, T val){
-		if(!bucket.contains(val)){
-			bucket.add(val);
-			currentSize++;
-		}
+		if(bucket.contains(val))
+		bucket.add(val);
+		currentSize++;
 	}
 
 	private ArrayList<T> getBucket(T val){

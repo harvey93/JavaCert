@@ -47,6 +47,7 @@ public class HashSet<T> {
 		if(!bucket.contains(val)){
 			bucket.add(val);
 			currentSize++;
+
 		}
 	}
 
