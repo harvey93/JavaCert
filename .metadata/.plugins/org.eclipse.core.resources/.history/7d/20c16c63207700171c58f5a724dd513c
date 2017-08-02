@@ -1,0 +1,10 @@
+package cache;
+
+public class IntSet {
+
+	int[][] store;
+	
+	public IntSet(int size){
+		this.store = new int [max][max];
+	}
+}
