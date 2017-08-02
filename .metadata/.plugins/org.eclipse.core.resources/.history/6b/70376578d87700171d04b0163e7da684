@@ -7,6 +7,6 @@ public class Node<T> {
 	T prev;
 	
 	public Node(T data){
-		this.data = data;
+		
 	}
 }
