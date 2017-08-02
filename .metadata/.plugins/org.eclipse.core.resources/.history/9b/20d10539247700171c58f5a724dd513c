@@ -24,24 +24,23 @@ public class IntSet {
 	
 	public boolean contains(int val){
 		Integer[] bucket = getBucket(val);
-		return checkBucket(bucket, val);
+		
+		return true;
 	}
 	
-	private boolean checkBucket(Integer[] bucket, int val){
-		boolean res = false;
+	private void checkBucket(Integer[] bucket, int val){
 		for(int i = 0; i < bucket.length; i++){
-			if(bucket[i] != null && bucket[i] == val){
-				res = true;
+			if(bucket[i] == val){
+				bucket[i] = null;
 				break;
 			}
 		}
-		return res;
 
 	}
 	
 	private void deleteFromBucket(Integer[] bucket, int val){
 		for(int i = 0; i < bucket.length; i++){
-			if(bucket[i] != null && bucket[i] == val){
+			if(bucket[i] == val){
 				bucket[i] = null;
 				break;
 			}

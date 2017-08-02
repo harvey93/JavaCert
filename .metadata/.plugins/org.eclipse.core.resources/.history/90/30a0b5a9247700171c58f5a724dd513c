@@ -30,7 +30,7 @@ public class IntSet {
 	private boolean checkBucket(Integer[] bucket, int val){
 		boolean res = false;
 		for(int i = 0; i < bucket.length; i++){
-			if(bucket[i] != null && bucket[i] == val){
+			if(bucket[i] == val){
 				res = true;
 				break;
 			}

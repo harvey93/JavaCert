@@ -9,10 +9,9 @@ public class Test {
 		set.insert(3);
 		set.insert(7);
 		set.insert(4);
-		
+		System.out.println(set);
 		System.out.println(set.contains(4));
 		set.delete(4);
-		System.out.println(set.contains(4));
 		System.out.println(set);
 	}
 
