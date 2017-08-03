@@ -1,0 +1,11 @@
+package cache;
+
+public class HashMap<Key, Value> {
+	
+	
+	ArrayList<LinkedList<Key, Value>> store = new ArrayList<>();
+	public HashMap(){
+		
+	}
+
+}

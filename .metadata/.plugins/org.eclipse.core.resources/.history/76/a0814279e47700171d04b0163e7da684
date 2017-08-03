@@ -10,19 +10,11 @@ public class HashMap<Key, Value> {
 	
 	public HashMap(int capacity){
 		this.capacity = capacity;
-		fillStore();
-	}
-	
-	private void fillStore(){
-		
 	}
 	
 	public HashMap(){
 		this(4);
 	}
-	
-	
-	
 	
 	
 

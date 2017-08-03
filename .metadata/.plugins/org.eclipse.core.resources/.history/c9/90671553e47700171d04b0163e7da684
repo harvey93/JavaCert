@@ -15,6 +15,6 @@ public class Node<Key, Value> {
 	public String toString(){
 		String keyString = key == null ? "null" : key.toString();
 		String valueString = value == null ? "null" : value.toString();
-		return "< Key: " + keyString + " | " + " Value: " + valueString + " >";
+		return "Key: " + keyString + " | " + " Value: " + valueString;
 	}
 }
