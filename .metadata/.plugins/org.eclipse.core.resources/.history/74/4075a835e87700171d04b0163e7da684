@@ -15,23 +15,14 @@ public class HashMap<Key, Value> {
 	
 	public void set(Key key, Value value){
 		LinkedList<Key, Value> bucket = getBucket(key);
-		if(contains(key)){
-			bucket.update(key, value);
-		}else {
+		if(!contains(key)){
 			bucket.add(key, value);
+		}else {
+			bucket.update(key, value);
 		}
 	}
 	
-	public Value get(Key key){
-		Value res = null;
-		if(contains(key)){
-			LinkedList<Key, Value> bucket = getBucket(key);
-			res = bucket.get(key).value;
-		}
-		return res;
-	}
-	
-	private boolean contains(Key key){
+	public boolean contains(Key key){
 		LinkedList<Key, Value> bucket = getBucket(key);
 		boolean res = bucket.contains(key);
 		return res;	

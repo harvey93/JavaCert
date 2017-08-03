@@ -23,12 +23,7 @@ public class HashMap<Key, Value> {
 	}
 	
 	public Value get(Key key){
-		Value res = null;
-		if(contains(key)){
-			LinkedList<Key, Value> bucket = getBucket(key);
-			res = bucket.get(key).value;
-		}
-		return res;
+		
 	}
 	
 	private boolean contains(Key key){

@@ -12,7 +12,7 @@ public class Test {
 		map.set("fourth", 50);
 		map.set("third", 200);
 		map.set("first", 120);
-		System.out.println(map.get("third"));
+		System.out.println(map.get("first"));
 	}
 
 }

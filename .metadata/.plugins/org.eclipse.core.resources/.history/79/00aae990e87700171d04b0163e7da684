@@ -26,7 +26,7 @@ public class HashMap<Key, Value> {
 		Value res = null;
 		if(contains(key)){
 			LinkedList<Key, Value> bucket = getBucket(key);
-			res = bucket.get(key).value;
+			bucket.get(key);
 		}
 		return res;
 	}
