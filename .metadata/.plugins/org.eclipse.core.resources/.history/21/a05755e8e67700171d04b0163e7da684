@@ -20,7 +20,6 @@ public class HashMap<Key, Value> {
 	
 	public boolean contains(Key key, Value value){
 		boolean res = false;
-		
 		return res;
 		
 	}

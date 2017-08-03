@@ -18,13 +18,6 @@ public class HashMap<Key, Value> {
 		bucket.add(key, value);
 	}
 	
-	public boolean contains(Key key, Value value){
-		boolean res = false;
-		
-		return res;
-		
-	}
-	
 	private void fillStore(){
 		int count = capacity;
 		
