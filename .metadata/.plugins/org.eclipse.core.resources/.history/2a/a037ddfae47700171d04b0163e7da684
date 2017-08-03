@@ -17,7 +17,7 @@ public class HashMap<Key, Value> {
 		int count = capacity;
 		
 		while(count > 0){
-			store.add(new LinkedList<Key, Value>());
+			store.add(new LinkedList<Key, Value>() list);
 			count--;
 		}
 	}
@@ -26,9 +26,6 @@ public class HashMap<Key, Value> {
 		this(4);
 	}
 	
-	public String toString(){
-		return store.toString();
-	}
 	
 	
 	

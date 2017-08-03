@@ -6,8 +6,8 @@ import java.util.Arrays;
 public class Test {
 	
 	public static void main(String[] args) throws Exception{
-		HashMap<String, Integer> map = new HashMap<>(3);
-		System.out.println(map);
+		HashMap<String, Integer> map = new HashMap<>();
+		System.out.println();
 	}
 
 }

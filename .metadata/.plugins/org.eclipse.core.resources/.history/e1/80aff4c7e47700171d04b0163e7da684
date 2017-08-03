@@ -14,21 +14,13 @@ public class HashMap<Key, Value> {
 	}
 	
 	private void fillStore(){
-		int count = capacity;
 		
-		while(count > 0){
-			store.add(new LinkedList<Key, Value>());
-			count--;
-		}
 	}
 	
 	public HashMap(){
 		this(4);
 	}
 	
-	public String toString(){
-		return store.toString();
-	}
 	
 	
 	

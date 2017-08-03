@@ -26,9 +26,6 @@ public class HashMap<Key, Value> {
 		this(4);
 	}
 	
-	public String toString(){
-		return store.toString();
-	}
 	
 	
 	
