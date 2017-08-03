@@ -45,7 +45,7 @@ public class HashMap<Key, Value> {
 		return res;
 	}
 	
-	private boolean contains(Key key){
+	public boolean contains(Key key){
 		LinkedList<Key, Value> bucket = getBucket(key);
 		boolean res = bucket.contains(key);
 		return res;	

@@ -6,10 +6,20 @@ import java.util.Arrays;
 public class Test {
 	
 	public static void main(String[] args) throws Exception{
-		StringBuilder sb = new StringBuilder("Java");
-		
+		A a = new B();
 		
 	}
 
 }
 
+class B{
+	static{
+		System.out.println("in B");
+	}
+}
+
+class A{
+	static {
+		System.out.println("in A");
+	}
+}
