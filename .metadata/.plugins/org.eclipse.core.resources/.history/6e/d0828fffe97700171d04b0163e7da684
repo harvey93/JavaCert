@@ -58,9 +58,8 @@ public class LinkedList<Key, Value>{
 		Node<Key, Value> res = null;
 		if(!isEmpty()){
 			Node<Key, Value> first = first();
-			res = remove(first.key);
+			remove(first.key);
 		}
-		return res;
 	}
 
 	

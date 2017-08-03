@@ -10,6 +10,8 @@ public class Test {
 		map.set("first", 10);
 		map.set("third", 30);
 		map.set("fourth", 50);
+		map.set("third", 200);
+		map.set("first", 120);
 		System.out.println(map);
 	}
 

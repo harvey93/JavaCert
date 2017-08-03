@@ -10,7 +10,6 @@ public class LinkedList<Key, Value>{
 		tail.prev = head;
 	}
 	
-	
 	public void add(Key key,  Value value){
 		Node<Key, Value> newNode = new Node<>(key, value);
 		Node<Key, Value> currentEnd;
@@ -53,16 +52,6 @@ public class LinkedList<Key, Value>{
 		
 		return node;
 	}
-	
-	public Node<Key, Value> removeFirst(){
-		Node<Key, Value> res = null;
-		if(!isEmpty()){
-			Node<Key, Value> first = first();
-			res = remove(first.key);
-		}
-		return res;
-	}
-
 	
 	public boolean contains(Key key){
 		boolean res = false;

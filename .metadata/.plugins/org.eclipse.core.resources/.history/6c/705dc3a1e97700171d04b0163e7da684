@@ -83,8 +83,6 @@ public class HashMap<Key, Value> {
 		capacity *= 2;
 		ArrayList<LinkedList<Key, Value>> oldStore = store;
 		ArrayList<LinkedList<Key, Value>> store = new ArrayList<>();
-		fillStore();
-//		for(LinkedList<Key, Value> : )
 	}
 	
 	

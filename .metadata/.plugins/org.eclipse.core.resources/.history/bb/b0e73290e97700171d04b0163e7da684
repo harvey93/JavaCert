@@ -80,11 +80,8 @@ public class HashMap<Key, Value> {
 	}
 	
 	private void resize(){
-		capacity *= 2;
 		ArrayList<LinkedList<Key, Value>> oldStore = store;
-		ArrayList<LinkedList<Key, Value>> store = new ArrayList<>();
-		fillStore();
-//		for(LinkedList<Key, Value> : )
+		ArrayList<LinkedList<Key, Value>> newStore = new ArrayList<>();
 	}
 	
 	
