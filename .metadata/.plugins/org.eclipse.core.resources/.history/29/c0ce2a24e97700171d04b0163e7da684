@@ -19,10 +19,6 @@ public class HashMap<Key, Value> {
 			bucket.update(key, value);
 		}else {
 			bucket.add(key, value);
-			size++;
-		}
-		if(size == capacity){
-			resize();
 		}
 	}
 	
@@ -79,9 +75,6 @@ public class HashMap<Key, Value> {
 		return key.hashCode();
 	}
 	
-	private void resize(){
-		
-	}
 	
 	
 	

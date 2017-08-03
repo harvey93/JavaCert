@@ -79,9 +79,6 @@ public class HashMap<Key, Value> {
 		return key.hashCode();
 	}
 	
-	private void resize(){
-		
-	}
 	
 	
 	
