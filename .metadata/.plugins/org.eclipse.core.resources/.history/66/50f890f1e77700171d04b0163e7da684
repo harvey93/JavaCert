@@ -14,11 +14,9 @@ public class HashMap<Key, Value> {
 	}
 	
 	public void set(Key key, Value value){
-		LinkedList<Key, Value> bucket = getBucket(key);
 		if(!contains(key)){
+			LinkedList<Key, Value> bucket = getBucket(key);
 			bucket.add(key, value);
-		}else {
-			bucket.update(key, value);
 		}
 	}
 	

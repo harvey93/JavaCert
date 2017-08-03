@@ -13,12 +13,10 @@ public class HashMap<Key, Value> {
 		fillStore();
 	}
 	
-	public void set(Key key, Value value){
-		LinkedList<Key, Value> bucket = getBucket(key);
+	public void add(Key key, Value value){
 		if(!contains(key)){
+			LinkedList<Key, Value> bucket = getBucket(key);
 			bucket.add(key, value);
-		}else {
-			bucket.update(key, value);
 		}
 	}
 	
