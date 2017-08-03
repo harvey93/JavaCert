@@ -35,7 +35,8 @@ public class HashMap<Key, Value> {
 		Value res = null;
 		if(contains(key)){
 			LinkedList<Key, Value> bucket = getBucket(key);
-			res = bucket.remove(key).value;
+			res = bucket.get(key).value;
+			bucket.remove(key);
 		}
 
 		return res;

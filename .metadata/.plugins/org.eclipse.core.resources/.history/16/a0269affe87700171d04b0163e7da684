@@ -12,8 +12,7 @@ public class Test {
 		map.set("fourth", 50);
 		map.set("third", 200);
 		map.set("first", 120);
-		System.out.println(map.delete("fifth"));
-		System.out.println(map);
+		System.out.println(map.delete("third"));
 	}
 
 }

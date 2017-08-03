@@ -31,16 +31,6 @@ public class HashMap<Key, Value> {
 		return res;
 	}
 	
-	public Value delete(Key key){
-		Value res = null;
-		if(contains(key)){
-			LinkedList<Key, Value> bucket = getBucket(key);
-			res = bucket.remove(key).value;
-		}
-
-		return res;
-	}
-	
 	public boolean contains(Key key){
 		LinkedList<Key, Value> bucket = getBucket(key);
 		boolean res = bucket.contains(key);

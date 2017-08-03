@@ -33,10 +33,7 @@ public class HashMap<Key, Value> {
 	
 	public Value delete(Key key){
 		Value res = null;
-		if(contains(key)){
-			LinkedList<Key, Value> bucket = getBucket(key);
-			res = bucket.remove(key).value;
-		}
+		LinkedList<Key, Value> bucket = getBucket(key);
 
 		return res;
 	}
