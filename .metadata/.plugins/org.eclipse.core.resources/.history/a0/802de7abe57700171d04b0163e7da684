@@ -13,11 +13,6 @@ public class HashMap<Key, Value> {
 		fillStore();
 	}
 	
-	public void add(Key key, Value value){
-		LinkedList<Key, Value> bucket = getBucket(key);
-		bucket.add(key, value);
-	}
-	
 	private void fillStore(){
 		int count = capacity;
 		
@@ -36,9 +31,7 @@ public class HashMap<Key, Value> {
 	}
 	
 	private LinkedList<Key, Value> getBucket(Key key){
-		int bucketI = Math.abs(hash(key)) % capacity;
-		
-		
+		int bucketI = hash(key) % capacity;
 		return store.get(bucketI);
 	}
 	

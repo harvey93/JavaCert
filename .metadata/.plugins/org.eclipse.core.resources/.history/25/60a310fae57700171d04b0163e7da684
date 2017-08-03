@@ -98,7 +98,7 @@ public class LinkedList<Key, Value>{
 			if(current.key != null){
 				res += " " + current.toString();
 			}else {
-				res += "Sentinel";
+				res += 
 			}
 			res += "\n";
 			current = current.next;

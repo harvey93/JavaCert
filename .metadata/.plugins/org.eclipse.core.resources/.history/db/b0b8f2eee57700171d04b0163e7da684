@@ -95,14 +95,9 @@ public class LinkedList<Key, Value>{
 		String res = "";
 		Node<Key, Value> current = head; 
 		while(current != null){
-			if(current.key != null){
-				res += " " + current.toString();
-			}else {
-				res += "Sentinel";
-			}
-			res += "\n";
+			res += " " + current.toString();
 			current = current.next;
-
+			res += "\n";
 		}
 		return res;
 	}

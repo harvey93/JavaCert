@@ -37,9 +37,9 @@ public class HashMap<Key, Value> {
 	
 	private LinkedList<Key, Value> getBucket(Key key){
 		int bucketI = Math.abs(hash(key)) % capacity;
+		System.out.println(hash(key));
 		
-		
-		return store.get(bucketI);
+//		return store.get(bucketI);
 	}
 	
 	private int hash(Key key){

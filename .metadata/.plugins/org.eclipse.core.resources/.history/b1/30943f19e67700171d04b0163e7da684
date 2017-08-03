@@ -14,8 +14,7 @@ public class HashMap<Key, Value> {
 	}
 	
 	public void add(Key key, Value value){
-		LinkedList<Key, Value> bucket = getBucket(key);
-		bucket.add(key, value);
+		System.out.println(getBucket(key));
 	}
 	
 	private void fillStore(){
@@ -36,9 +35,7 @@ public class HashMap<Key, Value> {
 	}
 	
 	private LinkedList<Key, Value> getBucket(Key key){
-		int bucketI = Math.abs(hash(key)) % capacity;
-		
-		
+		int bucketI = hash(key) % capacity;
 		return store.get(bucketI);
 	}
 	
