@@ -10,7 +10,7 @@ public class Test {
 		map.add("first", 10);
 		map.add("third", 30);
 		map.add("fourth", 50);
-		System.out.println(map.contains("third"));
+		System.out.println(map);
 	}
 
 }

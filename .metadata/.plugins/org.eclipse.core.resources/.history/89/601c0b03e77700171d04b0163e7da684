@@ -19,9 +19,11 @@ public class HashMap<Key, Value> {
 	}
 	
 	public boolean contains(Key key){
+		boolean res = false;
 		LinkedList<Key, Value> bucket = getBucket(key);
-		boolean res = bucket.contains(key);
-		return res;	
+		bucket.contains(key)
+		return res;
+		
 	}
 	
 	private void fillStore(){

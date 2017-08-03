@@ -18,10 +18,12 @@ public class HashMap<Key, Value> {
 		bucket.add(key, value);
 	}
 	
-	public boolean contains(Key key){
+	public boolean contains(Key key, Value value){
+		boolean res = false;
 		LinkedList<Key, Value> bucket = getBucket(key);
-		boolean res = bucket.contains(key);
-		return res;	
+		
+		return res;
+		
 	}
 	
 	private void fillStore(){
