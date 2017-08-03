@@ -42,9 +42,6 @@ public class LinkedList<T>{
 	public boolean contains(String key){
 		boolean res = false;
 		Node<T> node = get(key);
-		if(node != null){
-			res = true;
-		}
 		return res;
 	}
 	

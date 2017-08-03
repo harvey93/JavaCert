@@ -27,29 +27,6 @@ public class LinkedList<T>{
 		tail.prev = newNode;
 	}
 	
-	public Node<T> get(String key){
-		Node<T> res = null;
-		Node<T> current = head;
-		while(current != null){
-			if(current.key == key){
-				res = current;
-			}
-			current = current.next;
-		}
-		return res;
-	}
-	
-	public boolean contains(String key){
-		boolean res = false;
-		Node<T> node = get(key);
-		if(node != null){
-			res = true;
-		}
-		return res;
-	}
-	
-	
-	
 	
 	
 	public Node<T> last(){

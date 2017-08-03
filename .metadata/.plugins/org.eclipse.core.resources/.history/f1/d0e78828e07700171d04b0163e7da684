@@ -43,7 +43,7 @@ public class LinkedList<T>{
 		boolean res = false;
 		Node<T> node = get(key);
 		if(node != null){
-			res = true;
+			
 		}
 		return res;
 	}

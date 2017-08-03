@@ -36,15 +36,10 @@ public class LinkedList<T>{
 			}
 			current = current.next;
 		}
-		return res;
 	}
 	
 	public boolean contains(String key){
 		boolean res = false;
-		Node<T> node = get(key);
-		if(node != null){
-			res = true;
-		}
 		return res;
 	}
 	
