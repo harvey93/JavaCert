@@ -65,7 +65,6 @@ public class LinkedList<Key, Value>{
 	public void update(Key key, Value value){
 		if(contains(key)){
 			Node<Key, Value> node = get(key);
-			node.value = value;
 		}
 	}
 	

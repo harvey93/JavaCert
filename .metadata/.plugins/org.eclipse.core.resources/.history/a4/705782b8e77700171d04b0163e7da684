@@ -62,10 +62,9 @@ public class LinkedList<Key, Value>{
 		return res;
 	}
 	
-	public void update(Key key, Value value){
+	public void update(Key key, Value, value){
 		if(contains(key)){
-			Node<Key, Value> node = get(key);
-			node.value = value;
+			
 		}
 	}
 	
