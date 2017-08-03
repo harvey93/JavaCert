@@ -2,8 +2,8 @@ package cache;
 
 public class LinkedList<Key, Value>{
 
-	private Node<Key, Value> head = new Node<>(null, null);;
-	private Node<Key, Value> tail = new Node<>(null, null);;
+	private Node<Key, Value> head = new Node<Key, Value>(null, null);;
+	private Node<Key, Value> tail = new Node<Key, Value>(null, null);;
 	
 	public LinkedList(){
 		head.next = tail;
@@ -93,7 +93,7 @@ public class LinkedList<Key, Value>{
 	
 	public String toString(){
 		String res = "";
-		Node<Key, Value> current = head; 
+		Node<T> current = head; 
 		while(current != null){
 			res += " " + current.toString();
 			current = current.next;

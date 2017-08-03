@@ -2,8 +2,8 @@ package cache;
 
 public class LinkedList<Key, Value>{
 
-	private Node<Key, Value> head = new Node<>(null, null);;
-	private Node<Key, Value> tail = new Node<>(null, null);;
+	private Node<String, Value> head = new Node<>(null, null);;
+	private Node<String, Value> tail = new Node<>(null, null);;
 	
 	public LinkedList(){
 		head.next = tail;

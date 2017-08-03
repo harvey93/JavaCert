@@ -2,15 +2,15 @@ package cache;
 
 public class LinkedList<Key, Value>{
 
-	private Node<Key, Value> head = new Node<>(null, null);;
-	private Node<Key, Value> tail = new Node<>(null, null);;
+	private Node<Key, Value> head = new Node<Key, Value>(null, null);;
+	private Node<Key, Value> tail = new Node<Key, Value>(null, null);;
 	
 	public LinkedList(){
 		head.next = tail;
 		tail.prev = head;
 	}
 	
-	public void add(Key key,  Value value){
+	public void add(String key, T value){
 		Node<Key, Value> newNode = new Node<>(key, value);
 		Node<Key, Value> currentEnd;
 		
@@ -39,12 +39,12 @@ public class LinkedList<Key, Value>{
 		return res;
 	}
 	
-	public Node<Key, Value> remove(Key key){
-		Node<Key, Value> node = get(key);
+	public Node<T> remove(String key){
+		Node<T> node = get(key);
 		
 		if(node != null){
-			Node<Key, Value> prevNode = node.prev;
-			Node<Key, Value> nextNode = node.next;
+			Node<T> prevNode = node.prev;
+			Node<T> nextNode = node.next;
 			
 			prevNode.next = nextNode;
 			nextNode.prev = prevNode;
@@ -53,9 +53,9 @@ public class LinkedList<Key, Value>{
 		return node;
 	}
 	
-	public boolean contains(Key key){
+	public boolean contains(String key){
 		boolean res = false;
-		Node<Key, Value> node = get(key);
+		Node<T> node = get(key);
 		if(node != null){
 			res = true;
 		}
@@ -66,8 +66,8 @@ public class LinkedList<Key, Value>{
 	
 	
 	
-	public Node<Key, Value> last(){
-		Node<Key, Value> res = null;
+	public Node<T> last(){
+		Node<T> res = null;
 		if(!isEmpty()){
 			res = tail.prev;
 		}
@@ -75,8 +75,8 @@ public class LinkedList<Key, Value>{
 
 	}
 	
-	public Node<Key, Value> first(){
-		Node<Key, Value> res = null;
+	public Node<T> first(){
+		Node<T> res = null;
 		if(!isEmpty()){
 			res = head.next;
 		}
@@ -93,7 +93,7 @@ public class LinkedList<Key, Value>{
 	
 	public String toString(){
 		String res = "";
-		Node<Key, Value> current = head; 
+		Node<T> current = head; 
 		while(current != null){
 			res += " " + current.toString();
 			current = current.next;
