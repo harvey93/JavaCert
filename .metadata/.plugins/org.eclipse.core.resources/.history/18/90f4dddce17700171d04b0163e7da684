@@ -10,6 +10,9 @@ public class Test {
 		list.add("first", 1);
 		list.add("second", 2);
 		list.add("third", 3);
+		list.remove("second");
+		list.remove("first");
+		list.remove("third");
 		
 		System.out.println(list);
 	}

@@ -11,6 +11,7 @@ public class Test {
 		list.add("second", 2);
 		list.add("third", 3);
 		
+		
 		System.out.println(list);
 	}
 

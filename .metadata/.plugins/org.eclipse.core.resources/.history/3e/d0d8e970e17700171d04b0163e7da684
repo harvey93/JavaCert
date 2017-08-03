@@ -39,20 +39,6 @@ public class LinkedList<T>{
 		return res;
 	}
 	
-	public Node<T> remove(String key){
-		Node<T> node = get(key);
-		
-		if(node != null){
-			Node<T> prevNode = node.prev;
-			Node<T> nextNode = node.next;
-			
-			prevNode.next = nextNode;
-			nextNode.prev = prevNode;
-		}
-		
-		return node;
-	}
-	
 	public boolean contains(String key){
 		boolean res = false;
 		Node<T> node = get(key);

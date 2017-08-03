@@ -41,14 +41,10 @@ public class LinkedList<T>{
 	
 	public Node<T> remove(String key){
 		Node<T> node = get(key);
+		Node<T> prevNode = node.prev;
+		Node<T> nextNode = node.next;
 		
-		if(node != null){
-			Node<T> prevNode = node.prev;
-			Node<T> nextNode = node.next;
-			
-			prevNode.next = nextNode;
-			nextNode.prev = prevNode;
-		}
+		prevNode.next = nextNode;
 		
 		return node;
 	}

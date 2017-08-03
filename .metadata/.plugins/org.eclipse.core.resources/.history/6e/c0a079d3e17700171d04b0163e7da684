@@ -48,7 +48,7 @@ public class LinkedList<T>{
 			
 			prevNode.next = nextNode;
 			nextNode.prev = prevNode;
-		}
+			}
 		
 		return node;
 	}
