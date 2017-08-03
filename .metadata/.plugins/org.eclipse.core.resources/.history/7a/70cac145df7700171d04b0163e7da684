@@ -10,8 +10,8 @@ public class LinkedList<T>{
 		tail.prev = head;
 	}
 	
-	public void add(String key, T value){
-		Node<T> newNode = new Node<T>(key, value);
+	public void add(T data){
+		Node<T> newNode = new Node<T>(data);
 		Node<T> currentEnd;
 		
 		if(isEmpty()){
