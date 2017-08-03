@@ -88,7 +88,7 @@ public class HashMap<Key, Value> {
 		
 		for(LinkedList<Key, Value> list : oldStore){
 			while(!list.isEmpty()){
-				
+				System.out.println(list);
 				Node<Key, Value> node = list.removeFirst();
 				set(node.key, node.value);
 			}

@@ -86,13 +86,13 @@ public class HashMap<Key, Value> {
 		store = new ArrayList<>();
 		fillStore();
 		
-		for(LinkedList<Key, Value> list : oldStore){
-			while(!list.isEmpty()){
-				
-				Node<Key, Value> node = list.removeFirst();
-				set(node.key, node.value);
-			}
-		}
+//		for(LinkedList<Key, Value> list : oldStore){
+//			while(!list.isEmpty()){
+//				System.out.println(list);
+//				Node<Key, Value> node = list.removeFirst();
+//				set(node.key, node.value);
+//			}
+//		}
 	}
 	
 	

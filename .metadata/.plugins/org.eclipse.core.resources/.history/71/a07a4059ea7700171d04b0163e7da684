@@ -9,8 +9,7 @@ public class Test {
 		HashMap<String, Integer> map = new HashMap<>(3);
 		map.set("first", 10);
 		map.set("third", 30);
-		map.set("fourth", 50);
-		map.set("six", 85);
+//		map.set("fourth", 50);
 		System.out.println(map);
 	}
 
