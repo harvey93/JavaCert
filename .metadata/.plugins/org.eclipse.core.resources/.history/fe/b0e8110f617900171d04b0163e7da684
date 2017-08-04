@@ -40,19 +40,6 @@ public class Graph {
 		LinkedList<Node> queue = new LinkedList<>();
 		queue.add(source);
 		while(!queue.isEmpty()){
-			Node current = queue.removeFirst();
-			if(current == destination){
-				res = true;
-				break;
-			}
-
-			if(visited.contains(current.id)){
-				continue;
-			}
-			
-			visited.add(current.id);
-
-			current.adjacent.forEach(el -> queue.add(el));
 			
 		}
 		

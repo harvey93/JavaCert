@@ -51,7 +51,7 @@ public class Graph {
 			}
 			
 			visited.add(current.id);
-
+			
 			current.adjacent.forEach(el -> queue.add(el));
 			
 		}

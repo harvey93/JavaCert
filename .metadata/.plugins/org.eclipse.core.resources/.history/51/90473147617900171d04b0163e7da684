@@ -49,11 +49,10 @@ public class Graph {
 			if(visited.contains(current.id)){
 				continue;
 			}
-			
 			visited.add(current.id);
-
-			current.adjacent.forEach(el -> queue.add(el));
-			
+			if(current == destination){
+				
+			}
 		}
 		
 		return res;
