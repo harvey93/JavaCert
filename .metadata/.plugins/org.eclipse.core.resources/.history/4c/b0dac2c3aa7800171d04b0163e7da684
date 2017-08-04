@@ -74,13 +74,11 @@ public class LinkedList<Key, Value>{
 		return res;
 	}
 	
-	public Node<Key, Value> update(Key key, Value value){
-		Node<Key, Value> node = null;
+	public void update(Key key, Value value){
 		if(contains(key)){
-			node = get(key);
+			Node<Key, Value> node = get(key);
 			node.value = value;
 		}
-		return node;
 	}
 	
 	

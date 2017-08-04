@@ -80,7 +80,6 @@ public class LinkedList<Key, Value>{
 			node = get(key);
 			node.value = value;
 		}
-		return node;
 	}
 	
 	
