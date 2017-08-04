@@ -11,7 +11,7 @@ public class ConnectedGrid {
 		return res;
 	}
 	
-	public static void printGrid(Object[][] grid){
+	public static printGrid(Object[][] grid){
 		
 	}
 

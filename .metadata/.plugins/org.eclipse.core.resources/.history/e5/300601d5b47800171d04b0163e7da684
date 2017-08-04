@@ -7,12 +7,8 @@ public class ConnectedGrid {
 	public static int BFSGrid(int[][] matrix, int m, int n){
 		int res = 0;
 		Boolean [][] visitGrid = new Boolean [m][n];
-		
+		System.out.println(Arrays.toString(visitGrid));
 		return res;
-	}
-	
-	public static void printGrid(Object[][] grid){
-		
 	}
 
 }
