@@ -7,6 +7,6 @@ public class LRUCache<Key, Value> {
 	public LRUCache(int size){
 		this.size = size;
 		LinkedList<Key, Value> list = new LinkedList<>();
-		HashMap<Key, Node<Key, Value>> map = new HashMap<>();
+		HashMap<Key, Node<T>> map = new HashMap<>();
 	}
 }

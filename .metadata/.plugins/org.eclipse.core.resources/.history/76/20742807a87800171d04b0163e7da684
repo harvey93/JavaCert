@@ -1,0 +1,9 @@
+package cache;
+
+public class LRUCache {
+
+	private int size;
+	public LRUCache(size){
+		
+	}
+}
