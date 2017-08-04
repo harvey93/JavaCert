@@ -18,9 +18,7 @@ public class LRUCache<Key, Value> {
 			add(key, value);
 			currentSize++;
 		}else {
-			Node<Key, Value> node = list.removeFirst();
-			map.delete(node.key);
-			add(key, value);
+			
 		}
 	}
 	
