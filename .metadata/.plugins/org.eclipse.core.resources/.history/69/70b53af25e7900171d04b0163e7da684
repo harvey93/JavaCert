@@ -39,7 +39,7 @@ public class Graph {
 //				return hasPathDFS(c.id, destination);
 //			}
 //		}
-		HashSet<Integer> visited = new HashSet<>();
+		HashSet<Integer> visited = new HashSetM<>();
 	}
 
 }

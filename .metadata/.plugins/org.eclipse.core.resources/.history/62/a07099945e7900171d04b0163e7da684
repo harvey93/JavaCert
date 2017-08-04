@@ -30,16 +30,7 @@ public class Graph {
 	
 	public boolean hasPathDFS(int source, int destination){
 		Node s = getNode(source);
-		Node d = getNode(destination);
-//		if(s.adjacent.contains(d)){
-//			return true;
-//		}else {
-//			while(!s.adjacent.isEmpty()){
-//				Node c = s.adjacent.removeFirst();
-//				return hasPathDFS(c.id, destination);
-//			}
-//		}
-		HashSet<Integer> visited = new HashSet<>();
+		
 	}
 
 }
