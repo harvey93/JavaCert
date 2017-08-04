@@ -6,7 +6,9 @@ import java.util.Arrays;
 public class Test {
 	
 	public static void main(String[] args) throws Exception{
-		
+		StringBuilder sb = new StringBuilder("Java");
+		sb.insert(5, "hi");
+		System.out.println(sb);
 		
 	}
 
