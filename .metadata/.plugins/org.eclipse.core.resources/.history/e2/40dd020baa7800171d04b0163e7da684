@@ -26,7 +26,6 @@ public class LinkedList<Key, Value>{
 		
 		newNode.next = tail;
 		tail.prev = newNode;
-		return newNode;
 	}
 	
 	public Node<Key, Value> get(Key key){

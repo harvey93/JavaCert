@@ -21,8 +21,7 @@ public class LRUCache<Key, Value> {
 	}
 	
 	private void add(Key key, Value value){
-		Node<Key, Value> node = list.add(key, value);
-		map.set(key, node);
+		list.add(key, value);
 	}
 	
 	private void update(Key key, Value value){

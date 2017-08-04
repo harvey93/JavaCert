@@ -11,7 +11,7 @@ public class LinkedList<Key, Value>{
 	}
 	
 	
-	public Node<Key, Value> add(Key key,  Value value){
+	public void add(Key key,  Value value){
 		Node<Key, Value> newNode = new Node<>(key, value);
 		Node<Key, Value> currentEnd;
 		
@@ -26,7 +26,6 @@ public class LinkedList<Key, Value>{
 		
 		newNode.next = tail;
 		tail.prev = newNode;
-		return newNode;
 	}
 	
 	public Node<Key, Value> get(Key key){
