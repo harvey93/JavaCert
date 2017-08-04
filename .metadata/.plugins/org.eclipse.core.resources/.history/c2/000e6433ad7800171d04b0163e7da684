@@ -55,10 +55,6 @@ public class LinkedList<Key, Value>{
 		return node;
 	}
 	
-	public Node<Key, Value> remove(Node<Key, Value> node){
-		
-	}
-	
 	public Node<Key, Value> removeFirst(){
 		Node<Key, Value> res = null;
 		if(!isEmpty()){

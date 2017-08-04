@@ -30,10 +30,8 @@ public class LRUCache<Key, Value> {
 	}
 	
 	private void update(Key key, Value value){
-		Node<Key, Value> node = map.get(key);
-		node.value = value;
-		
-		
+		Node<Key, Value> node = list.update(key, value);
+		map.set(key, node);
 	}
 	
 	public String toString(){
