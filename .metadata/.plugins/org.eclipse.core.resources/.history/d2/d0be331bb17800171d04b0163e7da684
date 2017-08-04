@@ -9,9 +9,7 @@ public class IceCream {
 		for(int i = 0; i < a.length; i++){
 			int current = a[i];
 			int target = m - current;
-			if(map.containsKey(target)){
-				System.out.print(map.get(target) + 1);
-				System.out.println(i + 1);
+			if(set.contains(target)){
 				break;
 			}
 		}
