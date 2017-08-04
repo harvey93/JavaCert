@@ -11,8 +11,8 @@ public class ConnectedGrid {
 		return res;
 	}
 	
-	public static void printGrid(boolean[][] grid){
-		for(boolean[] arr : grid){
+	public static void printGrid(Object[][] grid){
+		for(Object[] arr : grid){
 			System.out.println(Arrays.toString(arr));
 		}
 	}
