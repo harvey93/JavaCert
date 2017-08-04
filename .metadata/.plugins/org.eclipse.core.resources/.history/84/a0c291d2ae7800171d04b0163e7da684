@@ -27,7 +27,6 @@ public class LRUCache<Key, Value> {
 	public Value remove(Key key){
 		Node<Key, Value> node = map.delete(key);
 		list.remove(node);
-		currentSize--;
 		return node.value;
 	}
 	
