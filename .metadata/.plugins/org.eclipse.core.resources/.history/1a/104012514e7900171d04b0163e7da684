@@ -28,9 +28,8 @@ public class ConnectedGrid {
 		queue.add(new ArrayList<Integer>(Arrays.asList(i,j)));
 		while(!queue.isEmpty()){
 			ArrayList<Integer> currentList = queue.removeFirst();
-			int currentRow = currentList.get(0);
-			int currentCol = currentList.get(1);
-			if(currentRow >= 0 && currentRow < matrix.length && currentCol >= 0 && currentCol < matrix[0].length){
+			int currentVal = matrix[currentList.get(0)][currentList.get(1)]--;
+			if(currentVal == 1){
 				count++;
 			}
 		}

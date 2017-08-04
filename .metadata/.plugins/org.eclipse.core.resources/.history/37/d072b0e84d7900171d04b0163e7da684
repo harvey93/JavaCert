@@ -20,21 +20,16 @@ public class ConnectedGrid {
 	}
 	
 	public static int getCountsBFS(int [][] matrix, int i, int j){
-		int count = 0;
+		int res = 0;
 		if(matrix[i][j] == 0){
-			return count;
+			return res;
 		}
 		LinkedList<ArrayList<Integer>> queue = new LinkedList<>();
 		queue.add(new ArrayList<Integer>(Arrays.asList(i,j)));
 		while(!queue.isEmpty()){
-			ArrayList<Integer> currentList = queue.removeFirst();
-			int currentRow = currentList.get(0);
-			int currentCol = currentList.get(1);
-			if(currentRow >= 0 && currentRow < matrix.length && currentCol >= 0 && currentCol < matrix[0].length){
-				count++;
-			}
+			
 		}
-		return count;
+		return res;
 		
 	}
 	

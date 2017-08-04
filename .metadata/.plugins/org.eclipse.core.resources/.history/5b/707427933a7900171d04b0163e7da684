@@ -12,7 +12,7 @@ public class Test {
 				{0,0,1,0},
 				{1,0,0,0}
 		};
-		System.out.println(ConnectedGrid.regionGrid(matrix, 4, 4));
+		System.out.println(ConnectedGrid.BFSGrid(matrix, 4, 4));
 	}
 	
 }

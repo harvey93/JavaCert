@@ -2,8 +2,7 @@ package hackerRank;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
-
+import java.util.Queue;
 
 public class ConnectedGrid {
 	
@@ -19,25 +18,6 @@ public class ConnectedGrid {
 		return max;
 	}
 	
-	public static int getCountsBFS(int [][] matrix, int i, int j){
-		int count = 0;
-		if(matrix[i][j] == 0){
-			return count;
-		}
-		LinkedList<ArrayList<Integer>> queue = new LinkedList<>();
-		queue.add(new ArrayList<Integer>(Arrays.asList(i,j)));
-		while(!queue.isEmpty()){
-			ArrayList<Integer> currentList = queue.removeFirst();
-			int currentRow = currentList.get(0);
-			int currentCol = currentList.get(1);
-			if(currentRow >= 0 && currentRow < matrix.length && currentCol >= 0 && currentCol < matrix[0].length){
-				count++;
-			}
-		}
-		return count;
-		
-	}
-	
 	
 	public static int getCountsDFS(int[][] matrix, int i, int j){
 		if(i < 0 || j < 0 || i >= matrix.length || j >= matrix[0].length){
@@ -45,14 +25,14 @@ public class ConnectedGrid {
 		}
 		if(matrix[i][j] == 0){return 0;}
 		int count = matrix[i][j]--;
-		count += getCountsDFS(matrix, i + 1, j);
-		count += getCountsDFS(matrix, i - 1, j);
-		count += getCountsDFS(matrix, i, j + 1);
-		count += getCountsDFS(matrix, i, j - 1);
-		count += getCountsDFS(matrix, i + 1, j + 1);
-		count += getCountsDFS(matrix, i + 1, j - 1);
-		count += getCountsDFS(matrix, i - 1, j + 1);
-		count += getCountsDFS(matrix, i - 1, j - 1);
+		count += getCounts(matrix, i + 1, j);
+		count += getCounts(matrix, i - 1, j);
+		count += getCounts(matrix, i, j + 1);
+		count += getCounts(matrix, i, j - 1);
+		count += getCounts(matrix, i + 1, j + 1);
+		count += getCounts(matrix, i + 1, j - 1);
+		count += getCounts(matrix, i - 1, j + 1);
+		count += getCounts(matrix, i - 1, j - 1);
 		return count;
 	}
 	
