@@ -35,9 +35,8 @@ public class Graph {
 		return hasPathBFS(s, d, visited);
 	}
 	
-	private boolean hasPathBFS(Node source, Node destination, HashSet<Integer> visited){
+	private boolean hasPathDFS(Node source, Node destination, HashSet<Integer> visited){
 	
-		return true;
 	}
 
 	

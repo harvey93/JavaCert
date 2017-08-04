@@ -29,17 +29,8 @@ public class Graph {
 	}
 	
 	public boolean hasPathBFS(int source, int destination){
-		Node s = getNode(source);
-		Node d = getNode(destination);
-		HashSet<Integer> visited = new HashSet<>();
-		return hasPathBFS(s, d, visited);
-	}
-	
-	private boolean hasPathBFS(Node source, Node destination, HashSet<Integer> visited){
-	
 		return true;
 	}
-
 	
 	public boolean hasPathDFS(int source, int destination){
 		Node s = getNode(source);
@@ -48,7 +39,7 @@ public class Graph {
 		return hasPathDFS(s, d, visited);
 	}
 	
-	private boolean hasPathDFS(Node source, Node destination, HashSet<Integer> visited){
+	public boolean hasPathDFS(Node source, Node destination, HashSet<Integer> visited){
 		if(visited.contains(source.id)){
 			return false;
 		}
