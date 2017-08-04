@@ -46,13 +46,9 @@ public class Graph {
 		}
 		
 		for(Node child : source.adjacent){
-			if(hasPathDFS(child, destination, visited)){
-				return true;	
-			}
+			return hasPathDFS(child, destination, visited);
 		}
-		
-		return false;
-		
+
 	}
 
 }
