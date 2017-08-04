@@ -12,13 +12,11 @@ public class LRUCache<Key, Value> {
 	}
 	
 	public void set(Key key, Value value){
-		if(map.get(key) != null){
-			update(key, value);
-		}else if(currentSize < size){
+		if(currentSize < size){
 			add(key, value);
 			currentSize++;
-		}else {
-			
+		}else{
+			update(key, value);
 		}
 	}
 	
@@ -28,8 +26,7 @@ public class LRUCache<Key, Value> {
 	}
 	
 	private void update(Key key, Value value){
-		Node<Key, Value> node = list.update(key, value);
-		map.set(key, node);
+		
 	}
 	
 	public String toString(){
