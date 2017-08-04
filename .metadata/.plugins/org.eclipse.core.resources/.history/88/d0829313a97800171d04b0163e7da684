@@ -14,7 +14,6 @@ public class LRUCache<Key, Value> {
 	public void set(Key key, Value value){
 		if(currentSize < size){
 			add(key, value);
-			currentSize++;
 		}else{
 			update(key, value)
 		}
