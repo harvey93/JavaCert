@@ -10,11 +10,10 @@ public class IceCream {
 			int current = a[i];
 			int target = m - current;
 			if(map.containsKey(target)){
-				System.out.print(map.get(target) + 1 + " ");
+				System.out.print(map.get(target) + 1);
 				System.out.println(i + 1);
 				break;
 			}
-			map.put(current, i);
 		}
 	}
 }
