@@ -31,9 +31,9 @@ public class LRUCache<Key, Value> {
 	
 	private void update(Key key, Value value){
 		Node<Key, Value> node = map.get(key);
-		map.delete(key);
-		list.remove(node);
-		add(key, value);
+		node.value = value;
+		
+		
 	}
 	
 	public String toString(){

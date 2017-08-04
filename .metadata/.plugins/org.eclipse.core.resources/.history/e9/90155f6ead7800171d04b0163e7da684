@@ -56,16 +56,7 @@ public class LinkedList<Key, Value>{
 	}
 	
 	public Node<Key, Value> remove(Node<Key, Value> node){
-		if(node != null){
-			Node<Key, Value> prevNode = node.prev;
-			Node<Key, Value> nextNode = node.next;
-			
-			prevNode.next = nextNode;
-			nextNode.prev = prevNode;
-		}
 		
-		return node;
-
 	}
 	
 	public Node<Key, Value> removeFirst(){

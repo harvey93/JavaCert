@@ -33,7 +33,7 @@ public class LRUCache<Key, Value> {
 		Node<Key, Value> node = map.get(key);
 		map.delete(key);
 		list.remove(node);
-		add(key, value);
+		add()
 	}
 	
 	public String toString(){
