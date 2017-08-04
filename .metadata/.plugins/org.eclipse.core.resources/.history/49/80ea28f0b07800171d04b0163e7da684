@@ -8,7 +8,7 @@ public class IceCream {
 		HashSet<Integer> set = new HashSet<>();
 		for(int i = 0; i < a.length; i++){
 			int current = a[i];
-			int target = m - current;
+			int target = m - i;
 			if(set.contains(target)){
 				break;
 			}
