@@ -8,7 +8,6 @@ public class LRUCache<Key, Value> {
 	private HashMap<Key, Node<Key, Value>> map;
 	public LRUCache(int size){
 		this.size = size;
-		 this.map = new HashMap<>(size);
 	}
 	
 	public void set(Key key, Value value){

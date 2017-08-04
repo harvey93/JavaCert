@@ -5,10 +5,9 @@ public class LRUCache<Key, Value> {
 	private int size;
 	private int currentSize;
 	private LinkedList<Key, Value> list = new LinkedList<>();
-	private HashMap<Key, Node<Key, Value>> map;
+	private HashMap<Key, Node<Key, Value>> map = new HashMap<>();
 	public LRUCache(int size){
 		this.size = size;
-		 this.map = new HashMap<>(size);
 	}
 	
 	public void set(Key key, Value value){
@@ -16,7 +15,7 @@ public class LRUCache<Key, Value> {
 			add(key, value);
 			currentSize++;
 		}else{
-			update(key, value);
+			update(key, value)
 		}
 	}
 	
