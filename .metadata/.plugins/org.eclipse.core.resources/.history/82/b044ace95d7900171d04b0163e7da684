@@ -19,9 +19,7 @@ public class Graph {
 	}
 	
 	private Node getNode(int id){
-		return nodeLookUp.get(id);
+		
 	}
-	
-	
 
 }

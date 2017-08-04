@@ -1,0 +1,9 @@
+package hackerRank;
+
+public class Graph {
+	
+	public Graph(int size){
+		
+	}
+
+}
