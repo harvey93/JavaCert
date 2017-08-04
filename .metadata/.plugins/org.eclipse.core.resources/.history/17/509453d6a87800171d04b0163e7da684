@@ -10,7 +10,5 @@ public class LRUCache<Key, Value> {
 		HashMap<Key, Node<Key, Value>> map = new HashMap<>();
 	}
 	
-	public void add(Key key, Value value){
-		
-	}
+	
 }
