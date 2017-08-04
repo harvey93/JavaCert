@@ -13,7 +13,7 @@ public class ConnectedGrid {
 		
 		for(int i = 0; i < m; i++){
 			for(int j = 0; j < n; j++){
-				max = Math.max(max, getCountsBFS(matrix, i, j));
+				max = Math.max(max, getCountsDFS(matrix, i, j));
 			}
 		}
 		return max;

@@ -13,7 +13,7 @@ public class ConnectedGrid {
 		
 		for(int i = 0; i < m; i++){
 			for(int j = 0; j < n; j++){
-				max = Math.max(max, getCountsBFS(matrix, i, j));
+				max = Math.max(max, getCountsDFS(matrix, i, j));
 			}
 		}
 		return max;
@@ -31,20 +31,7 @@ public class ConnectedGrid {
 			int currentRow = currentList.get(0);
 			int currentCol = currentList.get(1);
 			if(currentRow >= 0 && currentRow < matrix.length && currentCol >= 0 && currentCol < matrix[0].length){
-				int currentVal = matrix[currentRow][currentCol]--;  
-				if(currentVal == 1){
-					count++;
-					queue.add(new ArrayList<Integer>(Arrays.asList(currentRow + 1, currentCol)));
-					queue.add(new ArrayList<Integer>(Arrays.asList(currentRow - 1, currentCol)));
-					queue.add(new ArrayList<Integer>(Arrays.asList(currentRow, currentCol + 1)));
-					queue.add(new ArrayList<Integer>(Arrays.asList(currentRow, currentCol - 1)));
-					
-					queue.add(new ArrayList<Integer>(Arrays.asList(currentRow + 1, currentCol + 1)));
-					queue.add(new ArrayList<Integer>(Arrays.asList(currentRow + 1, currentCol - 1)));
-					
-					queue.add(new ArrayList<Integer>(Arrays.asList(currentRow - 1, currentCol + 1)));
-					queue.add(new ArrayList<Integer>(Arrays.asList(currentRow - 1, currentCol - 1)));
-				}
+				count++;
 			}
 		}
 		return count;
