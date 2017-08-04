@@ -19,7 +19,7 @@ public class ConnectedGrid {
 	}
 	
 	
-	public static int getCounts(int[][] matrix, int i, int j){
+	public int getCounts(int[][] matrix, int i, int j){
 		if(i < 0 || j < 0 || i >= matrix.length || j >= matrix[0].length){
 			return 0;
 		}
@@ -28,11 +28,8 @@ public class ConnectedGrid {
 		count += getCounts(matrix, i + 1, j);
 		count += getCounts(matrix, i - 1, j);
 		count += getCounts(matrix, i, j + 1);
-		count += getCounts(matrix, i, j - 1);
-		count += getCounts(matrix, i + 1, j + 1);
-		count += getCounts(matrix, i + 1, j - 1);
-		count += getCounts(matrix, i - 1, j + 1);
-		count += getCounts(matrix, i - 1, j - 1);
+		count += getCounts(matrix, i, j + 1);
+		
 		return count;
 	}
 	
