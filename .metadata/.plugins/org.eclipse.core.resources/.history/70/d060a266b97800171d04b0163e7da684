@@ -15,7 +15,7 @@ public class ConnectedGrid {
 				max = Math.max(max, getCounts(matrix, i, j));
 			}
 		}
-		return max;
+		return res;
 	}
 	
 	public static ArrayList<ArrayList<Integer>> getCoords(int i, int j, int m, int n){

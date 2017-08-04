@@ -7,15 +7,15 @@ import java.util.Queue;
 public class ConnectedGrid {
 	
 	public static int BFSGrid(int[][] matrix, int m, int n){
-		int max = 0;
-		
-		
+		Queue<ArrayList<Integer>> queue = new Queue<>();
+		int res = 0;
+		boolean [][] visitGrid = new boolean [m][n];
 		for(int i = 0; i < m; i++){
 			for(int j = 0; j < n; j++){
-				max = Math.max(max, getCounts(matrix, i, j));
+				
 			}
 		}
-		return max;
+		return res;
 	}
 	
 	public static ArrayList<ArrayList<Integer>> getCoords(int i, int j, int m, int n){
