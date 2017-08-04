@@ -27,8 +27,6 @@ public class LRUCache<Key, Value> {
 	public Value remove(Key key){
 		Node<Key, Value> node = map.get(key);
 		list.remove(node);
-		map.delete(key);
-		return node.value;
 	}
 	
 	private void add(Key key, Value value){
