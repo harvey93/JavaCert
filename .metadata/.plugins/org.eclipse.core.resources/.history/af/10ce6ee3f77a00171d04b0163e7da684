@@ -4,14 +4,9 @@ import java.util.*;
 public class WeightedGraph {
 	private HashMap<String, Node> nodeMap = new HashMap<>();
 	
-	public ArrayList<Node> topoSort(){
-		ArrayList<Node> nodes = new ArrayList<>();
-		return topoSort(nodes);
-	}
-	
-	public ArrayList<Node> topoSort(ArrayList<Node> nodes){
+	public void topoSort(){
 		if(nodeMap.isEmpty()){
-			return nodes;
+			return;
 		}
 		Node node = null;
 		for(String key : nodeMap.keySet()){
@@ -22,12 +17,12 @@ public class WeightedGraph {
 			}
 		}
 		if(node == null){
-			return nodes;
+			return;
 		}
 		nodeMap.remove(node.id);
 		clearOutEdges(node);
-		nodes.add(node);
-		return topoSort(nodes);
+		System.out.println(node);
+		topoSort();
 	}
 	
 	public void clearOutEdges(Node node){

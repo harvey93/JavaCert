@@ -6,7 +6,6 @@ public class WeightedGraph {
 	
 	public ArrayList<Node> topoSort(){
 		ArrayList<Node> nodes = new ArrayList<>();
-		return topoSort(nodes);
 	}
 	
 	public ArrayList<Node> topoSort(ArrayList<Node> nodes){
@@ -26,7 +25,7 @@ public class WeightedGraph {
 		}
 		nodeMap.remove(node.id);
 		clearOutEdges(node);
-		nodes.add(node);
+		
 		return topoSort(nodes);
 	}
 	

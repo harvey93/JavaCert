@@ -22,7 +22,7 @@ public class Test {
 		graph.addEdge("D", "C", 10);
 		
 		
-		System.out.println(graph.topoSort());
+		graph.topoSort();
 	}
 	
 }

@@ -22,9 +22,21 @@ public class Test {
 		graph.addEdge("D", "C", 10);
 		
 		
-		System.out.println(graph.topoSort());
+		graph.topoSort();
 	}
 	
 }
 
+
+enum Speed{
+	FAST(2),
+	FASTER(3),
+	SLOW(1);
+	
+	public final int speed;
+	
+	Speed(int code){
+		this.speed = code;
+	}
+} 
 
