@@ -57,8 +57,7 @@ public class WeightedGraph {
 	public void edgeList(String id){
 		if(nodeMap.containsKey(id)){
 			Node node = nodeMap.get(id);
-			System.out.println("In Edges: " + node.inEdges);
-			System.out.println("Out Edges: " + node.outEdges);
+			System.out.println(node.edges);
 		}
 	}
 	

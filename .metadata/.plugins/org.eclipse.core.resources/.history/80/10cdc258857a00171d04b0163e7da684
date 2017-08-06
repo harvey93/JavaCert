@@ -7,8 +7,7 @@ public class WeightedGraph {
 	
 	private class Node{
 		private String id;
-		private HashMap<String, Edge> inEdges = new HashMap<>();
-		private HashMap<String, Edge> outEdges = new HashMap<>();
+		private HashMap<String, Edge> edges = new HashMap<>();
 		private Node(String id){
 			this.id = id;
 		}
@@ -25,7 +24,7 @@ public class WeightedGraph {
 			this.size = size;
 		}
 		public String toString(){
-			return "Size: " + size;
+			return "Id: " + id + " Size: " + size;
 		}
 
 	}
@@ -33,13 +32,8 @@ public class WeightedGraph {
 	public void addEdge(String id1, String id2, int size){		
 		if(nodeMap.containsKey(id2) && nodeMap.containsKey(id2)){
 			Node node1 = nodeMap.get(id1);
-			Node node2 = nodeMap.get(id2);
-			
-			Edge outEdge = new Edge(id2, size);
-			node1.outEdges.put(id2, outEdge);
-			
-			Edge inEdge = new Edge(id1, size);
-			node2.inEdges.put(id1, inEdge);
+			Edge edge = new Edge(id2, size);
+			node1.edges.put(id2, edge);
 		}
 		
 	}
@@ -57,8 +51,7 @@ public class WeightedGraph {
 	public void edgeList(String id){
 		if(nodeMap.containsKey(id)){
 			Node node = nodeMap.get(id);
-			System.out.println("In Edges: " + node.inEdges);
-			System.out.println("Out Edges: " + node.outEdges);
+			System.out.println(node.edges);
 		}
 	}
 	

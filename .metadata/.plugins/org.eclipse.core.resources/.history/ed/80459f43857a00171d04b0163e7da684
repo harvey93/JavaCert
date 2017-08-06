@@ -15,13 +15,6 @@ public class Test {
 		graph.addEdge("A", "B", 3);
 		graph.addEdge("A", "C", 4);
 		graph.addEdge("A", "D", 5);
-		
-		graph.addEdge("B", "C", 5);
-		graph.addEdge("B", "D", 9);
-		
-		graph.addEdge("D", "A", 1);
-		
-		graph.edgeList("D");
 	}
 	
 }

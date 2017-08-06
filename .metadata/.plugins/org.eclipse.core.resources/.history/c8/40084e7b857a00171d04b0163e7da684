@@ -21,7 +21,7 @@ public class Test {
 		
 		graph.addEdge("D", "A", 1);
 		
-		graph.edgeList("D");
+		graph.edgeList("B");
 	}
 	
 }

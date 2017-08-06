@@ -17,11 +17,11 @@ public class Test {
 		graph.addEdge("A", "D", 5);
 		
 		graph.addEdge("B", "C", 5);
-		graph.addEdge("B", "D", 9);
+		graph.addEdge("B", "D", 5);
 		
 		graph.addEdge("D", "A", 1);
 		
-		graph.edgeList("D");
+		graph.edgeList("B");
 	}
 	
 }
