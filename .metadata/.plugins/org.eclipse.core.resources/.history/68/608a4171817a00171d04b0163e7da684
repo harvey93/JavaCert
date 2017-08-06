@@ -20,11 +20,6 @@ public class WeightedGraph {
 	}
 	
 	public void addNode(String id){
-		Node node = new Node(id);
-		map.put(id, node);
-	}
-	
-	public void nodeList(){
 		
 	}
 	

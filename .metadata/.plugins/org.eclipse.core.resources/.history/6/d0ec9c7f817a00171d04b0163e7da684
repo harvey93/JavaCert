@@ -24,9 +24,5 @@ public class WeightedGraph {
 		map.put(id, node);
 	}
 	
-	public void nodeList(){
-		
-	}
-	
 	
 }
