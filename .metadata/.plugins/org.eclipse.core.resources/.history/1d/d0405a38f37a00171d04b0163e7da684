@@ -6,7 +6,6 @@ public class WeightedGraph {
 	
 	public ArrayList<Node> topoSort(){
 		ArrayList<Node> nodes = new ArrayList<>();
-		return nodes;
 	}
 	
 	
