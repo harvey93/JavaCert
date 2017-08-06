@@ -7,7 +7,7 @@ public class WeightedGraph {
 	
 	private class Node{
 		private String id;
-		private HashMap<String, Edge> edges = new HashMap<>();
+		private HashMap<String, Node> edges = new HashMap<>();
 		private Node(String id){
 			this.id = id;
 		}
@@ -28,8 +28,7 @@ public class WeightedGraph {
 	public void addEdge(String id1, String id2, int size){		
 		if(nodeMap.containsKey(id2) && nodeMap.containsKey(id2)){
 			Node node1 = nodeMap.get(id1);
-			Edge edge = new Edge(id2, size);
-			node1.edges.put(id2, edge);
+			Edge edge = new Edge(String2 )
 		}
 		
 	}

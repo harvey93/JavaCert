@@ -7,7 +7,7 @@ public class WeightedGraph {
 	
 	private class Node{
 		private String id;
-		private HashMap<String, Edge> edges = new HashMap<>();
+		private HashMap<String, Node> edges = new HashMap<>();
 		private Node(String id){
 			this.id = id;
 		}
