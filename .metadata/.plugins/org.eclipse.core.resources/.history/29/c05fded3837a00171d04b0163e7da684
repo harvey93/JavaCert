@@ -7,7 +7,7 @@ public class WeightedGraph {
 	
 	private class Node{
 		private String id;
-		private HashMap<String, Node> edges = new HashMap<>();
+		private LinkedList<Node> children = new LinkedList<Node>();
 		private Node(String id){
 			this.id = id;
 		}
@@ -18,11 +18,6 @@ public class WeightedGraph {
 	
 	private class Edge{
 		private String id;
-		private int size;
-		private Edge(String id, int size){
-			this.id = id;
-			this.size = size;
-		}
 	}
 	
 	
