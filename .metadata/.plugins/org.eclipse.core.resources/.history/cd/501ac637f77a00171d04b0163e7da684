@@ -17,17 +17,9 @@ public class WeightedGraph {
 		for(String key : map.keySet()){
 			Node current = map.get(key);
 			if(current.inEdges.isEmpty()){
-				node = current;
-				break;
+				
 			}
 		}
-		if(node == null){
-			return;
-		}
-		map.remove(node.id);
-		clearOutEdges(node);
-		System.out.println(node);
-		topoSort(map);
 	}
 	
 	public void clearOutEdges(Node node){

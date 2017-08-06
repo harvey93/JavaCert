@@ -25,9 +25,6 @@ public class WeightedGraph {
 			return;
 		}
 		map.remove(node.id);
-		clearOutEdges(node);
-		System.out.println(node);
-		topoSort(map);
 	}
 	
 	public void clearOutEdges(Node node){

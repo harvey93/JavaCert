@@ -18,8 +18,8 @@ public class Test {
 		
 		graph.addEdge("B", "C", 5);
 		graph.addEdge("B", "D", 9);
-		
-		graph.addEdge("D", "C", 10);
+//		
+//		graph.addEdge("D", "C", 10);
 		
 		
 		graph.topoSort();
