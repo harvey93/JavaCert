@@ -4,26 +4,28 @@ import java.util.*;
 public class WeightedGraph {
 	private HashMap<String, Node> nodeMap = new HashMap<>();
 	
-	public HashMap<Node, Double> shortestPath(String id1, String id2){
-		HashMap<Node, Double> nodes = new HashMap<>();
+	public HashMap<Node, Integer> shortestPath(String id1, String id2){
+		HashMap<Node, Integer> nodes = new HashMap<Node, Integer>();
 		HashSet<Node> visited = new HashSet<>();
 		HashSet<Node> unvisited = new HashSet<>();
 		visited.add(nodeMap.get(id1));
 		for(String key : nodeMap.keySet()){
 			Node node = nodeMap.get(key);
 			if(key == id1){
-				nodes.put(node, 0.0);
+				nodes.put(node, 0);
 				continue;
 			}
-			nodes.put(node, Double.POSITIVE_INFINITY);
+			
 			unvisited.add(node);
 		}
+		System.out.println(visited);
+		System.out.println(unvisited);
 		
 		return shortestPath(id2, visited, unvisited, nodes);
 	}
 	
-	public HashMap<Node, Double> shortestPath(String dest, HashSet<Node> visited, HashSet<Node> unvisited, HashMap<Node, Double> path){
-//		System.out.println(path);		
+	public HashMap<Node, Integer> shortestPath(String dest, HashSet<Node> visited, HashSet<Node> unvisited, HashMap<Node, Integer> path){
+		
 		return path;
 	}
 	

@@ -15,7 +15,7 @@ public class WeightedGraph {
 				nodes.put(node, 0.0);
 				continue;
 			}
-			nodes.put(node, Double.POSITIVE_INFINITY);
+			nodes.put(node, Double.MAX_VALUE);
 			unvisited.add(node);
 		}
 		
