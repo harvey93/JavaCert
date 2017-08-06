@@ -19,9 +19,5 @@ public class WeightedGraph {
 		}
 	}
 	
-	public void addNode(String id){
-		
-	}
-	
 	
 }

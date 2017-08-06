@@ -2,7 +2,6 @@ package hackerRank;
 import java.util.*;
 
 public class WeightedGraph {
-	private HashMap<String, Node> map = new HashMap<>();
 	
 	public WeightedGraph(){
 		System.out.println(new Node("hello"));
@@ -18,10 +17,4 @@ public class WeightedGraph {
 			return id;
 		}
 	}
-	
-	public void addNode(String id){
-		
-	}
-	
-	
 }

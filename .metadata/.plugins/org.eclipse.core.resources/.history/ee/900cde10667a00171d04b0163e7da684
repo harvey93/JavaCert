@@ -6,7 +6,7 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
-		WeightedGraph graph = new WeightedGraph();
+		Graph graph = new WeightedGraph();
 		
 	}
 	
