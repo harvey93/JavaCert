@@ -8,22 +8,11 @@ public class WeightedGraph {
 		ArrayList<Node> nodes = new ArrayList<Node>();
 		HashSet<Node> visited = new HashSet<>();
 		HashSet<Node> unvisited = new HashSet<>();
-		visited.add(nodeMap.get(id1));
 		for(String key : nodeMap.keySet()){
-			if(key == id1){
-				continue;
-			}
 			Node node = nodeMap.get(key);
 			unvisited.add(node);
 		}
-		System.out.println(visited);
-		System.out.println(unvisited);
-		
-		return shortestPath(id2, visited, unvisited, nodes);
-	}
-	
-	public ArrayList<Node> shortestPath(String dest, HashSet<Node> visited, HashSet<Node> unvisited, ArrayList<Node> path){
-		return path;
+		return nodes;
 	}
 	
 	public ArrayList<Node> topoSort(){

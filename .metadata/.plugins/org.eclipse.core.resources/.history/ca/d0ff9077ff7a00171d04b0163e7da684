@@ -19,11 +19,7 @@ public class WeightedGraph {
 		System.out.println(visited);
 		System.out.println(unvisited);
 		
-		return shortestPath(id2, visited, unvisited, nodes);
-	}
-	
-	public ArrayList<Node> shortestPath(String dest, HashSet<Node> visited, HashSet<Node> unvisited, ArrayList<Node> path){
-		return path;
+		return nodes;
 	}
 	
 	public ArrayList<Node> topoSort(){
