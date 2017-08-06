@@ -25,7 +25,7 @@ public class WeightedGraph {
 	}
 	
 	public void nodeList(){
-		System.out.println(map.toString());
+		
 	}
 	
 	
