@@ -19,10 +19,9 @@ public class Test {
 		graph.addEdge("B", "C", 5);
 		graph.addEdge("B", "D", 9);
 		
-		graph.addEdge("D", "C", 10);
+		graph.addEdge("D", "A", 1);
 		
-		
-		System.out.println(graph.topoSort());
+		graph.edgeList("D");
 	}
 	
 }

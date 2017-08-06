@@ -13,15 +13,11 @@ public class WeightedGraph {
 				Node current = mapCopy.get(key);
 				if(current.inEdges.isEmpty()){
 					nodes.add(current);
-					clearOutEdges(current);
+					
 				}
 			}
 		}
 		return nodes;
-	}
-	
-	public void clearOutEdges(Node node){
-		
 	}
 	
 	

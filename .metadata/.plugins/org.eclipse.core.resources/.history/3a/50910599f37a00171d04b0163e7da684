@@ -6,22 +6,7 @@ public class WeightedGraph {
 	
 	public ArrayList<Node> topoSort(){
 		ArrayList<Node> nodes = new ArrayList<>();
-		HashMap<String, Node> mapCopy = (HashMap<String, Node>) nodeMap.clone();
-		
-		while(!mapCopy.isEmpty()){
-			for(String key : mapCopy.keySet()){
-				Node current = mapCopy.get(key);
-				if(current.inEdges.isEmpty()){
-					nodes.add(current);
-					clearOutEdges(current);
-				}
-			}
-		}
 		return nodes;
-	}
-	
-	public void clearOutEdges(Node node){
-		
 	}
 	
 	
