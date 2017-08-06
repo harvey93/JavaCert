@@ -24,7 +24,7 @@ public class WeightedGraph {
 			this.size = size;
 		}
 		public String toString(){
-			return "Id: " + id + " Size: " + size;
+			return "ID: " + id + " Size: " + size;
 		}
 
 	}

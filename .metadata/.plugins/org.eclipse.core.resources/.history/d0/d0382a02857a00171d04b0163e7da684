@@ -23,10 +23,6 @@ public class WeightedGraph {
 			this.id = id;
 			this.size = size;
 		}
-		public String toString(){
-			return "Id: " + id + " Size: " + size;
-		}
-
 	}
 	
 	public void addEdge(String id1, String id2, int size){		
@@ -51,7 +47,6 @@ public class WeightedGraph {
 	public void edgeList(String id){
 		if(nodeMap.containsKey(id)){
 			Node node = nodeMap.get(id);
-			System.out.println(node.edges);
 		}
 	}
 	

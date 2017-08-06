@@ -13,8 +13,8 @@ public class Test {
 		graph.addNode("D");
 		
 		graph.addEdge("A", "B", 3);
-		graph.addEdge("A", "C", 4);
-		graph.addEdge("A", "D", 5);
+		graph.addEdge("A", "C", 3);
+		graph.addEdge("A", "D", 3);
 	}
 	
 }
