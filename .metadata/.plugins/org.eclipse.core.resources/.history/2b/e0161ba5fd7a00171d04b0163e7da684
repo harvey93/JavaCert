@@ -27,7 +27,7 @@ public class Test {
 		graph.addEdge("E", "B", 50);
 		
 		
-		System.out.println(graph.shortestPath("A", "E"));
+		System.out.println(graph.nodeList("A"));
 	}
 	
 }

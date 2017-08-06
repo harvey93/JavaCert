@@ -16,18 +16,16 @@ public class Test {
 		graph.addEdge("A", "B", 50);
 		graph.addEdge("A", "D", 80);
 		
-		graph.addEdge("B", "C", 60);
-		graph.addEdge("B", "D", 90);
+		graph.addEdge("B", "C", 5);
+		graph.addEdge("B", "D", 9);
 		
-		graph.addEdge("C", "E", 40);
+		graph.addEdge("D", "C", 10);
+		graph.addEdge("D", "F", 6);
 		
-		graph.addEdge("D", "C", 20);
-		graph.addEdge("D", "E", 70);
-		
-		graph.addEdge("E", "B", 50);
+		graph.addEdge("F", "E", 5);
 		
 		
-		System.out.println(graph.shortestPath("A", "E"));
+		System.out.println(graph.topoSort());
 	}
 	
 }

@@ -4,11 +4,6 @@ import java.util.*;
 public class WeightedGraph {
 	private HashMap<String, Node> nodeMap = new HashMap<>();
 	
-	public ArrayList<Node> shortestPath(String id1, String id2){
-		ArrayList<Node> nodes = new ArrayList<Node>();
-		return nodes;
-	}
-	
 	public ArrayList<Node> topoSort(){
 		ArrayList<Node> nodes = new ArrayList<>();
 		return topoSort(nodes);
