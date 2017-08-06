@@ -8,7 +8,7 @@ public class WeightedGraph {
 		ArrayList<Node> nodes = new ArrayList<>();
 		HashMap<String, Node> mapCopy = (HashMap<String, Node>) nodeMap.clone();
 		
-//		while(!mapCopy.isEmpty()){
+		while(!mapCopy.isEmpty()){
 			for(String key : mapCopy.keySet()){
 				Node current = mapCopy.remove(key);
 				if(current.inEdges.isEmpty()){
@@ -16,7 +16,7 @@ public class WeightedGraph {
 					clearOutEdges(current);
 				}
 			}
-//		}
+		}
 		return nodes;
 	}
 	

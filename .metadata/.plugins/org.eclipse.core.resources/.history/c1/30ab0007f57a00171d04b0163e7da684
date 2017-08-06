@@ -8,23 +8,22 @@ public class WeightedGraph {
 		ArrayList<Node> nodes = new ArrayList<>();
 		HashMap<String, Node> mapCopy = (HashMap<String, Node>) nodeMap.clone();
 		
-//		while(!mapCopy.isEmpty()){
+		while(!mapCopy.isEmpty()){
 			for(String key : mapCopy.keySet()){
-				Node current = mapCopy.remove(key);
+				Node current = mapCopy.get(key);
 				if(current.inEdges.isEmpty()){
 					nodes.add(current);
 					clearOutEdges(current);
 				}
 			}
-//		}
+		}
 		return nodes;
 	}
 	
 	public void clearOutEdges(Node node){
 		HashMap<String, Edge> edges = node.outEdges;
 		for(String key : edges.keySet()){
-			Node outNode = nodeMap.get(key);
-			outNode.inEdges.remove(node.id);
+			Node outNode = edges.get(key);
 		}
 	}
 	

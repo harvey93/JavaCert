@@ -16,10 +16,10 @@ public class Test {
 		graph.addEdge("A", "C", 4);
 		graph.addEdge("A", "D", 5);
 		
-//		graph.addEdge("B", "C", 5);
-//		graph.addEdge("B", "D", 9);
-//		
-//		graph.addEdge("D", "C", 10);
+		graph.addEdge("B", "C", 5);
+		graph.addEdge("B", "D", 9);
+		
+		graph.addEdge("D", "C", 10);
 		
 		
 		System.out.println(graph.topoSort());
