@@ -25,9 +25,9 @@ public class WeightedGraph {
 		}
 	}
 	
-	public void addEdge(String id1, String id2, int size){
-		Node node1 = nodeMap.get(id1);
-		Node node2 = nodeMap.get(id2);
+	public void addEdge(String node1, String node2, int size){
+		Node node1 = nodeMap.get(node1);
+		Node node1 = nodeMap.get(node2);
 	}
 	
 	
