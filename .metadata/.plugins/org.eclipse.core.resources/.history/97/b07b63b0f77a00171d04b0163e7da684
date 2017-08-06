@@ -5,7 +5,7 @@ public class WeightedGraph {
 	private HashMap<String, Node> nodeMap = new HashMap<>();
 	
 	public void topoSort(){
-		if(nodeMap.isEmpty()){
+		if(map.isEmpty()){
 			return;
 		}
 		Node node = null;

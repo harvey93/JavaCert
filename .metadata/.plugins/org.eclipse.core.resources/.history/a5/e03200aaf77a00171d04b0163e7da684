@@ -5,12 +5,12 @@ public class WeightedGraph {
 	private HashMap<String, Node> nodeMap = new HashMap<>();
 	
 	public void topoSort(){
-		if(nodeMap.isEmpty()){
+		if(map.isEmpty()){
 			return;
 		}
 		Node node = null;
-		for(String key : nodeMap.keySet()){
-			Node current = nodeMap.get(key);
+		for(String key : map.keySet()){
+			Node current = map.get(key);
 			if(current.inEdges.isEmpty()){
 				node = current;
 				break;

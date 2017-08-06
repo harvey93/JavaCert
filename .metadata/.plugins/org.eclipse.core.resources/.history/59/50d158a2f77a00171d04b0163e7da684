@@ -5,12 +5,17 @@ public class WeightedGraph {
 	private HashMap<String, Node> nodeMap = new HashMap<>();
 	
 	public void topoSort(){
-		if(nodeMap.isEmpty()){
+		HashMap<String, Node> mapCopy = (HashMap<String, Node>) nodeMap.clone();
+		topoSort(mapCopy);
+	}
+	
+	public void topoSort(HashMap<String, Node> map){
+		if(map.isEmpty()){
 			return;
 		}
 		Node node = null;
-		for(String key : nodeMap.keySet()){
-			Node current = nodeMap.get(key);
+		for(String key : map.keySet()){
+			Node current = map.get(key);
 			if(current.inEdges.isEmpty()){
 				node = current;
 				break;
@@ -19,10 +24,10 @@ public class WeightedGraph {
 		if(node == null){
 			return;
 		}
-		nodeMap.remove(node.id);
+		map.remove(node.id);
 		clearOutEdges(node);
 		System.out.println(node);
-		topoSort();
+		topoSort(map);
 	}
 	
 	public void clearOutEdges(Node node){
