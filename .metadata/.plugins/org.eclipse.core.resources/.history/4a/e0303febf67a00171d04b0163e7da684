@@ -4,12 +4,7 @@ import java.util.*;
 public class WeightedGraph {
 	private HashMap<String, Node> nodeMap = new HashMap<>();
 	
-	public void topoSort(){
-		HashMap<String, Node> mapCopy = (HashMap<String, Node>) nodeMap.clone();
-		topoSort(mapCopy);
-	}
-	
-	public void topoSort(HashMap<String, Node> map){
+	public void topoSort(){	
 		
 	}
 	
