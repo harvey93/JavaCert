@@ -49,9 +49,8 @@ public class WeightedGraph {
 		}
 		
 		Node nextVisit = getMin(node, path, unvisited);
-		
-		
-		return shortestPath(nextVisit, dest, visited, unvisited, path);
+		System.out.println(nextVisit);
+		return path;
 	}
 	
 	private Node getMin(Node node, HashMap<Node, Double> path, HashSet<Node> unvisited){
