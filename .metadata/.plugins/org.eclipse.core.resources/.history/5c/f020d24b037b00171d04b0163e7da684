@@ -10,13 +10,14 @@ public class WeightedGraph {
 		HashSet<Node> unvisited = new HashSet<>();
 		Node currentNode = nodeMap.get(id1); 
 		Node dest = nodeMap.get(id2);
+		visited.add(currentNode);
 		for(String key : nodeMap.keySet()){
 			Node node = nodeMap.get(key);
 			if(key == id1){
 				nodes.put(node, 0.0);
-			}else {
-				nodes.put(node, Double.POSITIVE_INFINITY);
+				continue;
 			}
+			nodes.put(node, Double.POSITIVE_INFINITY);
 			unvisited.add(node);
 		}
 		
@@ -24,21 +25,14 @@ public class WeightedGraph {
 	}
 	
 	public HashMap<Node, Double> shortestPath(Node node, Node dest, HashSet<Node> visited, HashSet<Node> unvisited, HashMap<Node, Double> path){
+//		while(!visited.isEmpty()){
+//			
+//		}
 		if(node == dest){
 			return path;
-		}else {
-			visited.add(node);
-			unvisited.remove(node);
 		}
-		for(String key : node.outEdges.keySet()){
-			Node currentNode = nodeMap.get(key);
-			Edge currentEdge = node.outEdges.get(key);
-			Double currentDistance = path.get(currentNode);
-			Double additionalDistance = currentEdge.size;
-			System.out.println(additionalDistance);
-//			if(currentDistance == Double.POSITIVE_INFINITY){
-//				path.put(currentNode, currentDistance);
-//			}
+		for(Edge edge : node.outEdges.keySet()){
+			
 		}
 		return path;
 	}
@@ -92,8 +86,8 @@ public class WeightedGraph {
 	
 	private class Edge{
 		private String id;
-		private Double size;
-		private Edge(String id, double size){
+		private int size;
+		private Edge(String id, int size){
 			this.id = id;
 			this.size = size;
 		}

@@ -33,9 +33,8 @@ public class WeightedGraph {
 		for(String key : node.outEdges.keySet()){
 			Node currentNode = nodeMap.get(key);
 			Edge currentEdge = node.outEdges.get(key);
-			Double currentDistance = path.get(currentNode);
-			Double additionalDistance = currentEdge.size;
-			System.out.println(additionalDistance);
+			Double currentDistance = currentEdge.size;
+			System.out.println(currentEdge);
 //			if(currentDistance == Double.POSITIVE_INFINITY){
 //				path.put(currentNode, currentDistance);
 //			}
