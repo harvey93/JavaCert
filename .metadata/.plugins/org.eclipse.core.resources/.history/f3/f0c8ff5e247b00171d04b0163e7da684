@@ -48,22 +48,14 @@ public class WeightedGraph {
 			}
 		}
 		
-		Node nextVisit = getMin(node, path, unvisited);
-		System.out.println(nextVisit);
+		Node nextVisit = getMin(node);
 		return path;
 	}
 	
-	private Node getMin(Node node, HashMap<Node, Double> path, HashSet<Node> unvisited){
-		Node res = null;
+	private Node getMin(Node node){
 		for(String key : node.outEdges.keySet()){
-			Node current = nodeMap.get(key);
-			if(unvisited.contains(current)){
-				if(res == null || path.get(res) > path.get(current)){
-					res = current;
-				}
-			}
+			
 		}
-		return res;
 	}
 	
 	public ArrayList<Node> topoSort(){

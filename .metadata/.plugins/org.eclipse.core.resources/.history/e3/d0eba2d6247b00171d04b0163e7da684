@@ -49,7 +49,6 @@ public class WeightedGraph {
 		}
 		
 		Node nextVisit = getMin(node, path, unvisited);
-		System.out.println(nextVisit);
 		return path;
 	}
 	

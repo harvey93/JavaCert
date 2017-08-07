@@ -49,7 +49,6 @@ public class WeightedGraph {
 		}
 		
 		Node nextVisit = getMin(node, path, unvisited);
-		System.out.println(nextVisit);
 		return path;
 	}
 	
@@ -57,10 +56,8 @@ public class WeightedGraph {
 		Node res = null;
 		for(String key : node.outEdges.keySet()){
 			Node current = nodeMap.get(key);
-			if(unvisited.contains(current)){
-				if(res == null || path.get(res) > path.get(current)){
-					res = current;
-				}
+			if(unvisited.contains(current){
+				
 			}
 		}
 		return res;
