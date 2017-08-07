@@ -31,29 +31,16 @@ public class WeightedGraph {
 			unvisited.remove(node);
 		}
 		for(String key : node.outEdges.keySet()){
-			Double distanceToCurrentVisited = path.get(node);
-			
 			Node currentNode = nodeMap.get(key);
-			
 			Edge currentEdge = node.outEdges.get(key);
 			Double currentDistance = path.get(currentNode);
 			Double additionalDistance = currentEdge.size;
 			
-			
 			if(currentDistance == Double.POSITIVE_INFINITY){
-				
-				path.put(currentNode, distanceToCurrentVisited + additionalDistance);
-			}else if(distanceToCurrentVisited + additionalDistance < currentDistance){
-				path.put(currentNode, distanceToCurrentVisited + additionalDistance);
+				path.put(currentNode, currentDistance);
 			}
 		}
-		
-		Node nextVisit = getMin(node);
 		return path;
-	}
-	
-	private Node getMin(Node node){
-		
 	}
 	
 	public ArrayList<Node> topoSort(){

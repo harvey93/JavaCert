@@ -41,19 +41,13 @@ public class WeightedGraph {
 			
 			
 			if(currentDistance == Double.POSITIVE_INFINITY){
-				
+				System.out.println(additionalDistance);
 				path.put(currentNode, distanceToCurrentVisited + additionalDistance);
 			}else if(distanceToCurrentVisited + additionalDistance < currentDistance){
 				path.put(currentNode, distanceToCurrentVisited + additionalDistance);
 			}
 		}
-		
-		Node nextVisit = getMin(node);
 		return path;
-	}
-	
-	private Node getMin(Node node){
-		
 	}
 	
 	public ArrayList<Node> topoSort(){

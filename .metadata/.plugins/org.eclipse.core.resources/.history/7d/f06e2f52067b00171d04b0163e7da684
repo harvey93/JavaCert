@@ -38,22 +38,14 @@ public class WeightedGraph {
 			Edge currentEdge = node.outEdges.get(key);
 			Double currentDistance = path.get(currentNode);
 			Double additionalDistance = currentEdge.size;
-			
-			
 			if(currentDistance == Double.POSITIVE_INFINITY){
-				
+				System.out.println(distanceToCurrentVisited);
 				path.put(currentNode, distanceToCurrentVisited + additionalDistance);
 			}else if(distanceToCurrentVisited + additionalDistance < currentDistance){
 				path.put(currentNode, distanceToCurrentVisited + additionalDistance);
 			}
 		}
-		
-		Node nextVisit = getMin(node);
 		return path;
-	}
-	
-	private Node getMin(Node node){
-		
 	}
 	
 	public ArrayList<Node> topoSort(){

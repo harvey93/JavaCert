@@ -47,13 +47,8 @@ public class WeightedGraph {
 				path.put(currentNode, distanceToCurrentVisited + additionalDistance);
 			}
 		}
-		
-		Node nextVisit = getMin(node);
+		System.out.println(path);
 		return path;
-	}
-	
-	private Node getMin(Node node){
-		
 	}
 	
 	public ArrayList<Node> topoSort(){
