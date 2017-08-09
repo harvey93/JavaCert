@@ -22,8 +22,8 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-		Double x = 10.0;
-		switch(4){
+		double x = 10;
+		switch(x){
 		case 10:{System.out.println("in");}
 		}
 	}
