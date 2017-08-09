@@ -16,7 +16,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		StringBuilder sb = new StringBuilder("ABCDEF");
-		
+		System.out.println(sb.delete(4, 10));
 	}
 	
 	public static void sbTest(){
