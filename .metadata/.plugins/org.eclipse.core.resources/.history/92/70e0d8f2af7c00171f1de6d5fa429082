@@ -13,19 +13,19 @@ import java.time.format.DateTimeFormatter;
 
 class A{
 	static void print(){
-		System.out.println("A");
+		
 	}
 }
 
-public class Test extends A{
+public class Test {
 	static float f = 10;
 	
-	public static void print(){
-		System.out.println("Test");
-	}
+
 	public static void main(String[] args) {
-		A a = new Test();
-		a.print();
+		Double x = 10.0;
+		switch(4){
+		case 10:{System.out.println("in");}
+		}
 	}
 	
 	public static void sbTest(){

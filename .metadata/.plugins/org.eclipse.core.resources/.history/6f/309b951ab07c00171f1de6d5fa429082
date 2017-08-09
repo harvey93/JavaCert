@@ -20,12 +20,11 @@ class A{
 public class Test extends A{
 	static float f = 10;
 	
-	public static void print(){
-		System.out.println("Test");
-	}
+//	public static void print(){
+//		System.out.println("Test");
+//	}
 	public static void main(String[] args) {
-		A a = new Test();
-		a.print();
+		new Test().print();
 	}
 	
 	public static void sbTest(){

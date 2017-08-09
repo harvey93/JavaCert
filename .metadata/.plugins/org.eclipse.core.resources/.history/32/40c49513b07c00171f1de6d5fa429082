@@ -24,8 +24,7 @@ public class Test extends A{
 		System.out.println("Test");
 	}
 	public static void main(String[] args) {
-		A a = new Test();
-		a.print();
+		Test.print();
 	}
 	
 	public static void sbTest(){
