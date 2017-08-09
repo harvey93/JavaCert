@@ -41,6 +41,7 @@ public class WeightedGraph {
 			
 			
 			if(currentDistance == Double.POSITIVE_INFINITY){
+				
 				path.put(currentNode, distanceToCurrentVisited + additionalDistance);
 			}else if(distanceToCurrentVisited + additionalDistance < currentDistance){
 				path.put(currentNode, distanceToCurrentVisited + additionalDistance);

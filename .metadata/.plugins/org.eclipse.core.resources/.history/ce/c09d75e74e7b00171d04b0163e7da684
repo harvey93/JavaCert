@@ -24,12 +24,8 @@ public class WeightedGraph {
 	}
 	
 	public HashMap<Node, Double> shortestPath(Node node, Node dest, HashSet<Node> visited, HashSet<Node> unvisited, HashMap<Node, Double> path){
-		if(node == dest){
-			return path;
-		}else {
 			visited.add(node);
 			unvisited.remove(node);
-		}
 		for(String key : node.outEdges.keySet()){
 			Double distanceToCurrentVisited = path.get(node);
 			
@@ -41,6 +37,7 @@ public class WeightedGraph {
 			
 			
 			if(currentDistance == Double.POSITIVE_INFINITY){
+				
 				path.put(currentNode, distanceToCurrentVisited + additionalDistance);
 			}else if(distanceToCurrentVisited + additionalDistance < currentDistance){
 				path.put(currentNode, distanceToCurrentVisited + additionalDistance);

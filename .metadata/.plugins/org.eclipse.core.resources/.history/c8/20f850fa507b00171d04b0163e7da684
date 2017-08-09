@@ -12,7 +12,7 @@ public class Test {
 		graph.addNode("C");
 		graph.addNode("D");
 		graph.addNode("E");
-		
+		graph.addNode("F");
 		
 		graph.addEdge("A", "B", 50);
 		graph.addEdge("A", "D", 80);

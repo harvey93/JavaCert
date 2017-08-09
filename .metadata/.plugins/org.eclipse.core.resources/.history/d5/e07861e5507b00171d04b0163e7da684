@@ -13,7 +13,6 @@ public class Test {
 		graph.addNode("D");
 		graph.addNode("E");
 		
-		
 		graph.addEdge("A", "B", 50);
 		graph.addEdge("A", "D", 80);
 		

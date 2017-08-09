@@ -15,8 +15,7 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-		StringBuilder sb = new StringBuilder("hello");
-		System.out.println(sb.charAt(8));
+		
 	}
 	
 	public static void sbTest(){

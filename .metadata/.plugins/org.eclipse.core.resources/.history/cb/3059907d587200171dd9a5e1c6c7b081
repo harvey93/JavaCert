@@ -1,8 +1,0 @@
-package sectionTests;
-
-public class MiniDevice extends Device{
-
-	public void print(int x){
-		
-	}
-}
