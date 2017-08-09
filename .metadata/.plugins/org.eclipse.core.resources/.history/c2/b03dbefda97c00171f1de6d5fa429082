@@ -15,10 +15,7 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-		char [] chars = new char[4];
-		String out = "ABCDEF";
-		out.getChars(2, 5, chars, 1);
-		System.out.println(Arrays.toString(chars));
+		StringBuilder sb = new StringBuilder("ABCDEF");
 		
 	}
 	

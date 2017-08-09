@@ -17,7 +17,7 @@ public class Test {
 	public static void main(String[] args) {
 		char [] chars = new char[4];
 		String out = "ABCDEF";
-		out.getChars(2, 5, chars, 1);
+		out.getChars(2, 3, chars, 3);
 		System.out.println(Arrays.toString(chars));
 		
 	}
