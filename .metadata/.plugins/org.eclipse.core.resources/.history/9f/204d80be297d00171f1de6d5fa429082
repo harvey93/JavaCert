@@ -18,7 +18,6 @@ class A{
 		LocalTime lt = LocalTime.of(10, 15);
 		LocalDateTime dt = lt.atDate(ld);
 		System.out.println(dt.format(DateTimeFormatter.ofPattern("dd/MM/yyy")));
-//		System.out.println(lt.format(DateTimeFormatter.ofPattern("dd/MM/yyy")));
 		System.out.println(dt);
 	}
 }

@@ -8,18 +8,12 @@ import javax.lang.model.element.Element;
 
 import java.io.IOException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 class A{
 	static void print(){
-		LocalDate ld = LocalDate.of(2015, 2, 21);
-		LocalTime lt = LocalTime.of(10, 15);
-		LocalDateTime dt = lt.atDate(ld);
-		System.out.println(dt.format(DateTimeFormatter.ofPattern("dd/MM/yyy")));
-//		System.out.println(lt.format(DateTimeFormatter.ofPattern("dd/MM/yyy")));
-		System.out.println(dt);
+		System.out.println("A");
 	}
 }
 
