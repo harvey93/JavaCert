@@ -22,7 +22,7 @@ public class Test {
 		}
 		Double b = 10.5;
 		Short c = 12;
-		
+		Double y = (a + b);
 		System.out.println(y.intValue());
 	}
 	

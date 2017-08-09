@@ -20,10 +20,10 @@ public class Test {
 		switch(a){
 		case x: {System.out.println("in");}
 		}
-		Double b = 10.5;
-		Short c = 12;
-		
-		System.out.println(y.intValue());
+		Double b = 10.0;
+		Double c = 12.0;
+		Double y = (a + b);
+		System.out.println();
 	}
 	
 	public static void sbTest(){

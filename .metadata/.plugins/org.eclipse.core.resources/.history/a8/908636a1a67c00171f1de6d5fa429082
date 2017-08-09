@@ -15,15 +15,11 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-		final byte x = 10;
-		final int a = 10;
-		switch(a){
-		case x: {System.out.println("in");}
-		}
-		Double b = 10.5;
-		Short c = 12;
+		StringBuilder sb = new StringBuilder("hello");
 		
-		System.out.println(y.intValue());
+		String [] arr = new String[]{"he", "l", "lo"};
+		String [] arr2 = Arrays.copyOf(arr, 10);
+		System.out.println(Arrays.toString(arr));
 	}
 	
 	public static void sbTest(){
