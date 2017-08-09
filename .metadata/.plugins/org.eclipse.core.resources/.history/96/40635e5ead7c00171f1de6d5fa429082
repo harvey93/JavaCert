@@ -11,17 +11,13 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-interface A{
-	default void print(){
-		
-	}
-}
-
 public class Test {
 	static float f = 10;
 	
 
 	public static void main(String[] args) {
+		LocalDate l = LocalDate.of(2016, 1, 28g).plusMonths(1);
+		System.out.println(l);
 	}
 	
 	public static void sbTest(){

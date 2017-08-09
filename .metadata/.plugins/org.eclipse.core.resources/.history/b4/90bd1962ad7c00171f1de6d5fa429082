@@ -11,12 +11,6 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-interface A{
-	default void print(){
-		
-	}
-}
-
 public class Test {
 	static float f = 10;
 	
