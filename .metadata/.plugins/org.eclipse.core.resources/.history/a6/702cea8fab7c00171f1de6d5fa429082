@@ -16,8 +16,7 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-		LocalDate l = LocalDate.of(2016, 1, 28).plusMonths(1);
-		System.out.println(l);
+		LocalDate = LocalDate.of(2015, 1, 31).plusMonths(1);
 	}
 	
 	public static void sbTest(){

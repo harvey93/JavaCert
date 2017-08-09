@@ -16,8 +16,11 @@ public class Test {
 	
 
 	public static void main(String[] args) {
-		LocalDate l = LocalDate.of(2016, 1, 28).plusMonths(1);
-		System.out.println(l);
+		char [] chars = new char[4];
+		String out = "ABCDEF";
+		out.getChars(2, 5, chars, 1);
+		System.out.println(Arrays.toString(chars));
+		
 	}
 	
 	public static void sbTest(){
