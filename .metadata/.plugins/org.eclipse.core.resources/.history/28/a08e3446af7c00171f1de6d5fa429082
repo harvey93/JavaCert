@@ -23,7 +23,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		StringBuilder sb = new StringBuilder("Java");
-		sb.setLength(2);
+		sb.setLength(10);
 		System.out.println(sb);
 	}
 	
