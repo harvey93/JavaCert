@@ -2,7 +2,7 @@ package hackerRank;
 
 public class Fibonacci {
 	
-	public static int fibRec(int n){
+	public static fibRec(int n){
 		if(n == 0){
 			return 0;
 		}else if(n == 1){
