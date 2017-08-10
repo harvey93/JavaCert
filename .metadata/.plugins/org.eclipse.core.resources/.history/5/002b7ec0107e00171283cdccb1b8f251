@@ -8,7 +8,6 @@ public class Fibonacci {
 		}else if(n == 1){
 			return 1;
 		}
-		return fibRec(n - 1) + fibRec(n - 2);
 	}
 
 }
