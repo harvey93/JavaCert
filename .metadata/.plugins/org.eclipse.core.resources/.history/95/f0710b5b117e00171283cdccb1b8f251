@@ -14,13 +14,10 @@ public class Fibonacci {
 	}
 	
 	public static int fibMemo(int n){
-		HashMap<Integer, Integer> map = new HashMap<>();
-		map.put(0, 0);
-		map.put(1, 1);
-		return fibMemo(n, map);
+		return 5;
 	}
 	
-	public static int fibMemo(int n, HashMap<Integer, Integer> map){
+	public static int fibMemo(int n, HashMap<Integer> map){
 		return 5;
 	}
 
