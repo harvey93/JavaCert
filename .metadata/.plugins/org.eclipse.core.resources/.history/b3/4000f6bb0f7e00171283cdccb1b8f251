@@ -6,9 +6,10 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
-		for(int a : arr){
-			System.out.println(Primes.isPrime(a));
-		}
+		System.out.println(Primes.isPrime(4));
+//		for(int a : arr){
+//			System.out.println(Primes.isPrime(a));
+//		}
 	}
 	
 	static int[] arr = {30,
