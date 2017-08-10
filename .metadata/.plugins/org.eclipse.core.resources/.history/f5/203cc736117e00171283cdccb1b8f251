@@ -10,9 +10,5 @@ public class Fibonacci {
 		}
 		return fibRec(n - 1) + fibRec(n - 2);
 	}
-	
-	public static int fibMemo(int n){
-		return 5;
-	}
 
 }
