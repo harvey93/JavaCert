@@ -13,10 +13,10 @@ public class Fibonacci {
 		return fibRec(n - 1) + fibRec(n - 2);
 	}
 	
-	public static double fibMemo(double n){
+	public static int fibMemo(double n){
 		HashMap<Double, Double> map = new HashMap<>();
-		map.put(0.0, 0.0);
-		map.put(1.0, 1.0);
+		map.put(0, 0);
+		map.put(1, 1);
 		return fibMemo(n, map);
 	}
 	

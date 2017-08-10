@@ -13,14 +13,14 @@ public class Fibonacci {
 		return fibRec(n - 1) + fibRec(n - 2);
 	}
 	
-	public static double fibMemo(double n){
-		HashMap<Double, Double> map = new HashMap<>();
-		map.put(0.0, 0.0);
-		map.put(1.0, 1.0);
+	public static int fibMemo(int n){
+		HashMap<Integer, Integer> map = new HashMap<>();
+		map.put(0, 0);
+		map.put(1, 1);
 		return fibMemo(n, map);
 	}
 	
-	public static double fibMemo(double n, HashMap<Double, Double> map){
+	public static int fibMemo(int n, HashMap<Integer, Integer> map){
 		if(map.containsKey(n)){
 			return map.get(n);
 		}else {
