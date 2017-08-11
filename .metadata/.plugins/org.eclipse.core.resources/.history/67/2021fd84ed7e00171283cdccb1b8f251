@@ -1,0 +1,16 @@
+package concurrency;
+
+public class Test {
+
+	public static void main(String[] args) {
+		myThread t = new myThread();
+		System.out.println("main");
+		t.run();
+	}
+}
+
+class myThread extends Thread{
+	public void run(){
+		System.out.println("in my thread");
+	}
+}
