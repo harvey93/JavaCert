@@ -22,7 +22,6 @@ public class Paths {
 		}else if (matrix[row][col] == 0){
 			res = false;
 		}		
-		
 		return res;
 	}
 

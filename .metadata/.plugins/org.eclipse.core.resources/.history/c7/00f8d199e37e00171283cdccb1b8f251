@@ -19,10 +19,7 @@ public class Paths {
 			res = false;
 		}else if(col > matrix[0].length - 1 || col < 0){
 			res = false;
-		}else if (matrix[row][col] == 0){
-			res = false;
-		}		
-		
+		}
 		return res;
 	}
 

@@ -15,14 +15,7 @@ public class Paths {
 	
 	public static boolean validPath(int row, int col, int[][] matrix){
 		boolean res = true;
-		if(row > matrix.length - 1 || row < 0){
-			res = false;
-		}else if(col > matrix[0].length - 1 || col < 0){
-			res = false;
-		}else if (matrix[row][col] == 0){
-			res = false;
-		}		
-		
+		if()
 		return res;
 	}
 
