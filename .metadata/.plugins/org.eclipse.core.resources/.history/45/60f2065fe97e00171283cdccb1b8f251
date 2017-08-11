@@ -15,7 +15,7 @@ public class Paths {
 		for(int i = matrix.length - 1; i >= 0; i--){
 			for(int j = matrix[0].length - 1; j >= 0; j--){
 				if(end(i, j, matrix)){
-					paths[i][j] = 1;
+					continue;
 				}
 				if(validPath(i + 1, j, matrix)){
 					paths[i][j] += paths[i + 1][j];
@@ -26,7 +26,7 @@ public class Paths {
 			}
 		}
 		
-		return paths[0][0];
+		return paths[1][01];
 	}
 	
 	public static int countMemo(int row, int col, int[][] matrix, int[][] paths){

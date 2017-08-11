@@ -13,9 +13,9 @@ public class Paths {
 		int[][] paths = new int[matrix.length][matrix[0].length];
 		
 		for(int i = matrix.length - 1; i >= 0; i--){
-			for(int j = matrix[0].length - 1; j >= 0; j--){
+			in: for(int j = matrix[0].length - 1; j >= 0; j--){
 				if(end(i, j, matrix)){
-					paths[i][j] = 1;
+					continue in;
 				}
 				if(validPath(i + 1, j, matrix)){
 					paths[i][j] += paths[i + 1][j];
