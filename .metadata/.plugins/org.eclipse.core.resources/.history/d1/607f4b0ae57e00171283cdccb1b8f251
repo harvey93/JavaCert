@@ -4,12 +4,8 @@ public class Paths {
 	
 	public static int count(int[][] matrix){
 		
-		return countMemo(0, 0, matrix);
+		return countRec(0, 0, matrix);
 		
-	}
-	
-	public static int countMemo(int row, int col, int[][] matrix){
-		return 4;
 	}
 	
 	public static int countRec(int row, int col, int[][] matrix){
