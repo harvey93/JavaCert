@@ -7,6 +7,4 @@ public class Davis {
 		HashMap<Integer, Integer> map = new HashMap<>();
 		return staircase(num, map);
 	}
-	
-	
 }
