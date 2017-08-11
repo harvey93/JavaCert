@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Paths {
 	
 	public static int count(int[][] matrix){
-		int[][] paths = new int[matrix.length][matrix[0].length];
+		HashMap<int[], Integer> map = new HashMap<>();
 		return countMemo(0, 0, matrix, paths);
 		
 	}
@@ -17,7 +17,7 @@ public class Paths {
 		if(end(row, col, matrix)){
 			return 1;
 		}
-		return 5;
+		
 		
 	}
 	

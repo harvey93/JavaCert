@@ -17,7 +17,7 @@ public class Paths {
 		if(end(row, col, matrix)){
 			return 1;
 		}
-		return 5;
+		
 		
 	}
 	
