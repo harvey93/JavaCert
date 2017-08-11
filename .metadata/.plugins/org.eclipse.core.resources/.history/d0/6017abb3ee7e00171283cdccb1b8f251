@@ -8,14 +8,6 @@ public class Test {
 		Thread2 c = new Thread2("c");
 		Thread2 d = new Thread2("d");
 		
-		Thread w = new Thread(a);
-		Thread x = new Thread(b);
-		Thread y = new Thread(c);
-		Thread z = new Thread(d);
-		w.start();
-		x.start();
-		y.start();
-		z.start();
 	}
 }
 
