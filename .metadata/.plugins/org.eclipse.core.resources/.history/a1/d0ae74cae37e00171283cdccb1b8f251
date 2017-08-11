@@ -9,16 +9,7 @@ public class Paths {
 	}
 	
 	public static int countRec(int row, int col, int[][] matrix){
-		if(!validPath(row, col, matrix)){
-			return 0;
-		}
-		if(end(row, col)){
-			return 1;
-		}
 		
-	}
-	
-	public static boolean end(int row, int col, int[][] matrix){
 		
 	}
 	
