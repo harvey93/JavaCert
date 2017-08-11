@@ -3,18 +3,16 @@ package concurrency;
 public class Test {
 
 	public static void main(String[] args) {
-		
-		
+		myThread a = new myThread();
+		myThread b = new myThread();
+		myThread c = new myThread();
+		myThread d = new myThread();
+		System.out.println("main");
+		a.start();
+		b.start();
+		c.start();
+		d.start();
 	}
-}
-
-class Thread2 implements Runnable{
-
-	public void run() {
-		// TODO Auto-generated method stub
-		
-	}
-	
 }
 
 class myThread extends Thread{

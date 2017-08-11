@@ -8,15 +8,6 @@ public class Test {
 	}
 }
 
-class Thread2 implements Runnable{
-
-	public void run() {
-		// TODO Auto-generated method stub
-		
-	}
-	
-}
-
 class myThread extends Thread{
 	public static int count;
 	public void run(){
