@@ -21,7 +21,6 @@ public class Paths {
 			paths[row][col] = countMemo(row + 1,  col, matrix, paths) + countMemo(row, col + 1, matrix, paths);
 		}
 		
-		return paths[row][col];
 		
 	}
 	
