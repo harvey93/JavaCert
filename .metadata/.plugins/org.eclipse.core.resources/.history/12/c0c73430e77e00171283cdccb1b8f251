@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Paths {
 	
 	public static int count(int[][] matrix){
-		return countDP(matrix);
+		return countDP(0, 0, matrix);
 		
 	}
 	

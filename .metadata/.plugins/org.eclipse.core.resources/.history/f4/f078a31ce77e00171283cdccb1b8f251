@@ -5,13 +5,9 @@ import java.util.HashMap;
 public class Paths {
 	
 	public static int count(int[][] matrix){
-		return countDP(matrix);
-		
-	}
-	
-	public static int countDP(int [][] matrix){
 		int[][] paths = new int[matrix.length][matrix[0].length];
-		return 5;
+		return countMemo(0, 0, matrix, paths);
+		
 	}
 	
 	public static int countMemo(int row, int col, int[][] matrix, int[][] paths){
