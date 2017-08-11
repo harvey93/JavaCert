@@ -6,7 +6,11 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
-		System.out.println(Davis.staircase(30));
+//		System.out.println(Davis.staircase(30));
+		int j;
+		if(go()){ j = 5;}
+		
+		System.out.println(j);
 	}
 	
 }
