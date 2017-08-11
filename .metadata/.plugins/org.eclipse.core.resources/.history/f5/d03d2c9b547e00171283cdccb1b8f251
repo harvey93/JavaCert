@@ -8,7 +8,7 @@ public class Davis {
 		map.put(1, 1);
 		map.put(2, 2);
 		map.put(3, 4);
-		return staircaseDP(num, map);
+		return staircase(num, map);
 	}
 	
 	private static int staircase(int num, HashMap<Integer, Integer> map){
@@ -26,12 +26,5 @@ public class Davis {
 		map.put(num - 3, back3);
 		
 		return back1 + back2 + back3;
-	}
-	
-	public static int staircaseDP(int num, HashMap<Integer, Integer> map){
-		if(num < 1){
-			return 0;
-		}
-		return 5;
 	}
 }

@@ -29,9 +29,6 @@ public class Davis {
 	}
 	
 	public static int staircaseDP(int num, HashMap<Integer, Integer> map){
-		if(num < 1){
-			return 0;
-		}
-		return 5;
+		
 	}
 }
