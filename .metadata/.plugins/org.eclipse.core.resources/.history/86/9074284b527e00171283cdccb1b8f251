@@ -21,10 +21,7 @@ public class Davis {
 		int back1 = staircase( num - 1, map);
 		int back2 = staircase( num - 2, map);
 		int back3 = staircase( num - 3, map);
-		map.put(num - 1, back1);
-		map.put(num - 2, back2);
-		map.put(num - 3, back3);
 		
-		return back1 + back2 + back3;
+		return back1 * map.get(1) + back2 * map.get(2);
 	}
 }
