@@ -11,18 +11,13 @@ public class Paths {
 	
 	public static int countDP(int [][] matrix){
 		int count = 0;
-		int row = 0;
-		int col = 0;
-		
 		int[][] paths = new int[matrix.length][matrix[0].length];
-		
-		for(int i = matrix.length - 1; i >= 0; i--){
-			for(int j = matrix[0].length - 1; j >= 0; j--){
-				
+		while(true){
+			if(end()){
+				break;
 			}
 		}
-		
-		return paths[0][0];
+		return count;
 	}
 	
 	public static int countMemo(int row, int col, int[][] matrix, int[][] paths){
