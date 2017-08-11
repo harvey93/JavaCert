@@ -12,7 +12,7 @@ public class Paths {
 		if(!validPath(row, col, matrix)){
 			return 0;
 		}
-		if(end(row, col, matrix)){
+		if(end(row, col)){
 			return 1;
 		}
 		
