@@ -38,6 +38,6 @@ public class Davis {
 			map.put(current, currentCount);
 			current++;
 		}
-		return map.get(num);
+		return current;
 	}
 }
