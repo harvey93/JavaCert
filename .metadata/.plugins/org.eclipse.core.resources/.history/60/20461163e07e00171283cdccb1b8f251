@@ -3,7 +3,7 @@ package hackerRank;
 public class Paths {
 	
 	public static int count(int[][] matrix){
-		return countRec(matrix);
+		return countRec(matrix)
 		
 	}
 	
