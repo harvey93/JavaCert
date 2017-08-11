@@ -1,0 +1,15 @@
+package hackerRank;
+
+public class Paths {
+	
+	public static int count(int[][] matrix){
+		
+		return countRec(0, new int[] {0,0}, matrix);
+		
+	}
+	
+	public static int countRec(int paths, int[] pos, int[][] matrix){
+		
+	}
+
+}
