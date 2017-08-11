@@ -15,6 +15,6 @@ public class Davis {
 		if(map.containsKey(num)){
 			return map.get(num);	
 		}
-		return 5;
+		
 	}
 }
