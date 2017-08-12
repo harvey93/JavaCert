@@ -1,0 +1,23 @@
+package concurrency;
+
+public class Race {
+	
+	Runner winner;
+	public void start(Runner runner){
+		
+		try{
+			int random = (int)(Math.random() * 100);
+			Thread.sleep(100);
+		}catch(InterruptedException e){
+			System.out.println(e.getMessage());
+		}
+		
+		
+		
+		if(winner == null){
+			System.out.println("in");
+			winner = runner;
+		}
+		
+	}
+}

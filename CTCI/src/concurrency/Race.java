@@ -1,12 +1,25 @@
 package concurrency;
 
 public class Race {
-
-	public Runner start(Runner runner){
-		for(int i = 0; i <= 100; i++){
-			
+	
+	Runner winner;
+	public void start(Runner runner){
+		
+		try{
+//			System.out.println("Start: " + runner.name);
+			int random = (int)(Math.random() * 500);
+			Thread.sleep(random);
+		}catch(InterruptedException e){
+			System.out.println(e.getMessage());
 		}
 		
-		return runner;
+//		System.out.println("End: " + runner.name);
+		
+		
+		if(winner == null){
+			System.out.println(runner.name);
+			winner = runner;
+		}
+		
 	}
 }

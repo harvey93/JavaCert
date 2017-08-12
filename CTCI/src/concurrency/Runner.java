@@ -11,5 +11,6 @@ public class Runner extends Thread{
 	
 	public void run(){
 		race.start(this);
+//		System.out.println(name);
 	}
 }
