@@ -12,7 +12,6 @@ public class Test {
 		Runner papa = new Runner("papa", race);
 		Runner mama = new Runner("mama", race);
 		Runner nush = new Runner("nush", race);
-		Runner winner = null;
 		john.start();
 		hrant.start();
 		jane.start();

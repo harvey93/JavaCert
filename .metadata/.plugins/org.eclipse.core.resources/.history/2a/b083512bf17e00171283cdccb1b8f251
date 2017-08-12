@@ -9,7 +9,7 @@ public class Runner extends Thread{
 		this.race = race;
 	}
 	
-	public void run(){
-		race.start(this);
+	public void run(int a){
+		System.out.println();
 	}
 }

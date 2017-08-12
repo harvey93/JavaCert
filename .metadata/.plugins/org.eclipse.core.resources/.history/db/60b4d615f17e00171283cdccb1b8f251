@@ -1,0 +1,14 @@
+package concurrency;
+
+public class Runner extends Thread{
+
+	String name;
+	
+	public Runner(String name){
+		this.name = name;
+	}
+	
+	public void run(int a){
+		
+	}
+}

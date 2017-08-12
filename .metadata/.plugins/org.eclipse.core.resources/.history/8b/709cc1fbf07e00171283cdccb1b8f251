@@ -3,13 +3,12 @@ package concurrency;
 public class Runner extends Thread{
 
 	String name;
-	Race race;
-	public Runner(String name, Race race){
+	
+	public Runner(String name){
 		this.name = name;
-		this.race = race;
 	}
 	
 	public void run(){
-		race.start(this);
+		
 	}
 }
