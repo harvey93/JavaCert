@@ -21,7 +21,7 @@ public class GetTheStock implements Runnable{
 		// TODO Auto-generated method stub
 		
 		try{
-			Thread.sleep(5000);
+			Thread.sleep(1000);
 		}catch(InterruptedException e){
 			System.out.println("Error");
 		}
@@ -31,7 +31,6 @@ public class GetTheStock implements Runnable{
 		if(name == "GOOG") { stockGrabber.setGoogPrice(price);
 		
 		System.out.println(name + " " + price);
-		
 		}
 		
 	}

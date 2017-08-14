@@ -19,13 +19,7 @@ public class Test {
 		stockGrabber.setAaplPrice(21.22);
 		stockGrabber.setGoogPrice(98.23);
 		
-		Runnable getIBM = new GetTheStock(stockGrabber, "IBM", 1);
-		Runnable getAAPL = new GetTheStock(stockGrabber, "AAPL", 2);
-		Runnable getGOOG = new GetTheStock(stockGrabber, "GOOG", 3);
-		
-		new Thread(getIBM).start();
-		new Thread(getAAPL).start();
-		new Thread(getGOOG).start();
+		Runnable getIBM = new GetTheStock(stockGrabber, "IBM", 1.0);
 
 	}
 }
