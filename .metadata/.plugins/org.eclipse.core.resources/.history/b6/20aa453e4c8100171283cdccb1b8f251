@@ -15,7 +15,7 @@ public class Test {
 		System.out.println(theGrunt + "\n");
 		
 		
-		EnemyShip theBoss = makeUFOs.orderTheShip("UFO BOSS");
+		EnemyShip theBoss = new makeUFOs.orderTheShip("UFO BOSS");
 		
 		System.out.println(theBoss + "\n");
 

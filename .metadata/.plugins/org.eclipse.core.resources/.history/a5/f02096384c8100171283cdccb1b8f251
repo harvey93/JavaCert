@@ -6,7 +6,7 @@ public abstract class EnemyShipBuilding {
 
 	protected abstract EnemyShip makeEnemyShip(String typeOfShip);
 	
-	public EnemyShip orderTheShip(String typeOfShip){
+	public EnemyShip orderEnemyShip(String typeOfShip){
 		EnemyShip enemyShip = makeEnemyShip(typeOfShip);
 		
 		enemyShip.makeShip();

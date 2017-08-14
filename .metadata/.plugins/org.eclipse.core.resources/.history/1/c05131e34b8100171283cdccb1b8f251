@@ -8,14 +8,14 @@ public class Test {
 	
 	public static void main(String[] args) {
 		
-		EnemyShipBuilding makeUFOs = new UFOShipBuilding();
+		EnemyShipBuilding makeUFOs = new EnemyShipBuilding();
 		
-		EnemyShip theGrunt = makeUFOs.orderTheShip("UFO");
+		EnemyShip theGrunt = new EnemyShipBuilding.orderTheShip("UFO");
 		
 		System.out.println(theGrunt + "\n");
 		
 		
-		EnemyShip theBoss = makeUFOs.orderTheShip("UFO BOSS");
+		EnemyShip theBoss = new EnemyShipBuilding.orderTheShip("UFO BOSS");
 		
 		System.out.println(theBoss + "\n");
 
