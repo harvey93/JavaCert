@@ -1,0 +1,11 @@
+package Factory;
+
+public class EnemyShipFactory {
+	
+
+	public EnemyShip makeEnemyShip(String newShipType){
+		EnemyShip ship = null;
+		
+		return ship;
+	}
+}

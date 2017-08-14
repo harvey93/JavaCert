@@ -7,11 +7,11 @@ public class EnemyShipFactory {
 		EnemyShip ship = null;
 		
 		if(newShipType == "U"){
-			ship = new UFOEnemyShip();
+			
 		}else if(newShipType == "R"){
-			ship = new RocketEnemyShip();
-		}else if(newShipType == "BU"){
-			ship = new BigUFOEnemyShip();
+			
+		}else if(newShiptType == "BU"){
+			
 		}
 		return ship;
 	}

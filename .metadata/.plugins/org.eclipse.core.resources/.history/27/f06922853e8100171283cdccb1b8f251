@@ -1,0 +1,18 @@
+package Factory;
+
+public class EnemyShipFactory {
+	
+
+	public EnemyShip makeEnemyShip(String newShipType){
+		EnemyShip ship = null;
+		
+		if(newShipType = "U"){
+			
+		}else if(newShipType = "R"){
+			
+		}else if(newShiptType - "BU"){
+			
+		}
+		return ship;
+	}
+}
