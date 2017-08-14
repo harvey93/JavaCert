@@ -38,7 +38,6 @@ public class StockGrabber implements Subject{
 	@Override
 	public void unRegister(Observer deleteObserver) {
 		int oIndex = observers.indexOf(deleteObserver);
-		System.out.println("Deleted Observer: " + ((StockObserver) deleteObserver).getObserverID());
 		observers.remove(oIndex);
 		
 	}

@@ -18,8 +18,6 @@ public class Test {
 		stockGrabber.setIbmPrice(15.21);
 		stockGrabber.setAaplPrice(21.22);
 		stockGrabber.setGoogPrice(98.23);
-		
-		
 
 	}
 }

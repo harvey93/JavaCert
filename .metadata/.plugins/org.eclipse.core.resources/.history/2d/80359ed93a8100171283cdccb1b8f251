@@ -1,0 +1,33 @@
+package observer;
+
+public class GetTheStock implements Runnable{
+
+	private String name;
+	private double price;
+	
+	private StockGrabber stockGrabber;
+	
+	public GetTheStock(StockGrabber stockGrabber, String name, double price) {
+		super();
+		this.name = name;
+		this.price = price;
+		this.stockGrabber = stockGrabber;
+	}
+
+
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+		try{
+			Thread.sleep(1000);
+		}catch(InterruptedException e){
+			System.out.println("Error");
+		}
+		
+		
+		
+	}
+
+}

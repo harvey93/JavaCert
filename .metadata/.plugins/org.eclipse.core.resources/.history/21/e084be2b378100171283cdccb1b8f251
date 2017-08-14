@@ -1,0 +1,14 @@
+package observer;
+
+public class Test {
+
+	public static void main(String[] args) {
+		StockGrabber stockGrabber = new StockGrabber();
+		StockObserver observer1 = new StockObserver(stockGrabber);
+		stockGrabber.setIbmPrice(15.21);
+		stockGrabber.setAaplPrice(21.22);
+		stockGrabber.setGoogPrice(98.23);
+		stockGrabber.setGoogPrice(44.23);
+
+	}
+}

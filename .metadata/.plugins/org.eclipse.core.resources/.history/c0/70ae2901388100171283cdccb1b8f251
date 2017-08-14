@@ -14,12 +14,5 @@ public class Test {
 		stockGrabber.setAaplPrice(21.22);
 		stockGrabber.setGoogPrice(98.23);
 
-		stockGrabber.unRegister(observer1);
-		stockGrabber.setIbmPrice(15.21);
-		stockGrabber.setAaplPrice(21.22);
-		stockGrabber.setGoogPrice(98.23);
-		
-		
-
 	}
 }

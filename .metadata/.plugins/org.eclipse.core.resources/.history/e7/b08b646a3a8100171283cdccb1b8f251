@@ -1,0 +1,16 @@
+package observer;
+
+public class GetTheStock implements Runnable{
+
+	private String name;
+	private double price;
+	
+	
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
