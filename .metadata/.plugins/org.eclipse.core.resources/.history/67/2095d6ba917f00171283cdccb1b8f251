@@ -21,18 +21,11 @@ public class Test {
 		int a = i << 1;
 		int b = i >> 1;
 		System.out.println(a);
-		System.out.println(5 & 3);
-		
+		System.out.println(b);
+		System.out.println(1 ^ 1);
 	}
 	
 }
-
-
-
-		
-
-
-
 
 
 
