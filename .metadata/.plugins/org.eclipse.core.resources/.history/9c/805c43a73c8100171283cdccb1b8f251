@@ -23,12 +23,8 @@ public abstract class EnemyShip {
 	}
 	
 	public void enemyShip(){
-		System.out.println(getName() + "is on the screen");
+		System.out.println(getName + "is on the screen");
 	}
 	
-	public void enemyShootsShip(){
-		System.out.println(getName() + "attacks and does" + getAmtDamage());
-	}
-
 	
 }

@@ -1,8 +1,9 @@
 package Factory;
-
+import java.util.*;
 
 public class Test {
 
 	public static void main(String[] args) {
+		Scanner userInput = new Scanner(System.in);
 	}
 }

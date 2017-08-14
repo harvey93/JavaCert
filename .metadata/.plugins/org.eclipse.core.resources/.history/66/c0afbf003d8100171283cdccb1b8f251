@@ -1,0 +1,9 @@
+package Factory;
+
+public class RocketEnemyShip {
+
+	public RocketEnemyShip(){
+		setName("Rocket Enemy Ship");
+		setAmtDamage(10.0);
+	}
+}

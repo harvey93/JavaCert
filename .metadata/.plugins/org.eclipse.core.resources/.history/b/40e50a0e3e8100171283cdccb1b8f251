@@ -1,0 +1,13 @@
+package Factory;
+import java.util.*;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner userInput = new Scanner(System.in);
+		
+		System.out.println("Enter Num: ");
+		
+		System.out.println(Integer.parseInt(userInput.nextLine()) + 5);
+	}
+}
