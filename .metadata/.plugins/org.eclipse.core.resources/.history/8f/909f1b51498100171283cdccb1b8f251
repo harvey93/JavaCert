@@ -11,12 +11,6 @@ public class Test {
 		EnemyShip theGrunt = new EnemyShipBuilding.orderTheShip("UFO");
 		
 		System.out.println(theGrunt + "\n");
-		
-		
-		EnemyShip theBoss = new EnemyShipBuilding.orderTheShip("UFO BOSS");
-		
-		System.out.println(theBoss + "\n");
-
 
 	}
 

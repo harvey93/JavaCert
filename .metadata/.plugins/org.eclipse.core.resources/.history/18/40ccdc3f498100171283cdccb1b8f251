@@ -1,0 +1,9 @@
+package AbstractFactory;
+
+public class Test {
+	
+	EnemyShipBuilding makeUFOs = new EnemyShipBuilding();
+	
+	EnemyShip theGrunt = new EnemyShipBuilding.orderTheShip("UFO");
+
+}
