@@ -7,9 +7,5 @@ public class Test {
 		Animal b = new Bird();
 		System.out.println(d.tryToFly());
 		System.out.println(b.tryToFly());
-		
-		d.setFlyingType(new ItFlys());
-		
-		System.out.println(d.tryToFly());
 	}
 }

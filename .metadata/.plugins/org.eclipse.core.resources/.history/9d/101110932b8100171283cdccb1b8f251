@@ -9,7 +9,5 @@ public class Test {
 		System.out.println(b.tryToFly());
 		
 		d.setFlyingType(new ItFlys());
-		
-		System.out.println(d.tryToFly());
 	}
 }
