@@ -1,0 +1,9 @@
+package Factory;
+
+public class EnemyShip {
+
+	private String name;
+	private double amtDamage;
+	
+	
+}
