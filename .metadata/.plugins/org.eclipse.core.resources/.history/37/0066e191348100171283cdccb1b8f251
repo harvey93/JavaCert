@@ -1,0 +1,31 @@
+package observer;
+
+import java.util.ArrayList;
+
+public class StockGrabber implements Subject{
+
+	private ArrayList<Observer> observers;
+	
+	public StockGrabber() {
+		this.observers = new ArrayList<>();
+	}
+
+	@Override
+	public void register(Observer newObserver) {
+		observers.add(newObserver);
+		
+	}
+
+	@Override
+	public void unRegister(Observer o) {
+		 
+		
+	}
+
+	@Override
+	public void notifyObserver() {
+		 
+		
+	}
+
+}
