@@ -3,7 +3,7 @@ package trees;
 public class Test {
 
 	public static void main(String[] args) {
-	
+	System.out.println("hi");
 		Node<Integer> node1 = new Node<>(6);
 		
 		Node<Integer> node2 = new Node<>(3);
@@ -24,6 +24,6 @@ public class Test {
 		node3.left = node6;
 		node3.right = node7;
 		
-		TreeOps.preOrderStack(node1);
+		TreeOps.preOrderTraversal(node1);
 	}
 }

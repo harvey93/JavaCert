@@ -1,0 +1,9 @@
+package trees;
+
+public class Test {
+
+	public static void main(String[] args) {
+	
+		Node<Integer> node = new Node<>(5);
+	}
+}
