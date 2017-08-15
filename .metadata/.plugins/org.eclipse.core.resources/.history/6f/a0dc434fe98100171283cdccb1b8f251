@@ -19,9 +19,8 @@ public class TreeOps {
 			Node<Integer> current = stack.pop();
 			if(current != null){
 				System.out.println(current);
-				stack.push(current.right);
 				stack.push(current.left);
-//				stack.push(current.right);
+				stack.push(current.right);
 			}
 		}
 	}

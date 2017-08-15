@@ -17,12 +17,7 @@ public class TreeOps {
 		stack.push(node);
 		while(!stack.isEmpty()){
 			Node<Integer> current = stack.pop();
-			if(current != null){
-				System.out.println(current);
-				stack.push(current.right);
-				stack.push(current.left);
-//				stack.push(current.right);
-			}
+			
 		}
 	}
 
