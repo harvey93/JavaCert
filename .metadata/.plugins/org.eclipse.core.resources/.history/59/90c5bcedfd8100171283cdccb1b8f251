@@ -24,9 +24,9 @@ public class Test {
 		node3.left = node6;
 		node3.right = node7;
 		
-		TreeOps.postOrderTraversal(node1);
+		TreeOps.InOrderTraversal(node1);
 		System.out.println("----------------");
-		TreeOps.postOrderStack(node1);
+		TreeOps.InOrderStack(node1);
 		
 	}
 }

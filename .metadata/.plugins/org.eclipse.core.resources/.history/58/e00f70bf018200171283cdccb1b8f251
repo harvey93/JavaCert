@@ -13,7 +13,7 @@ public class TreeOps {
 	}
 	
 	public static void postOrderStack(Node<Integer> node){
-		System.out.println("in");
+		
 	}
 	
 	public static void preOrderTraversal(Node<Integer> node){
