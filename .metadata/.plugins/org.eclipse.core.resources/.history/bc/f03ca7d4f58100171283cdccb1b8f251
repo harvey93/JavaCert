@@ -20,25 +20,6 @@ public class TreeOps {
 		}
 	}
 	
-	public static void InOrderTraversal(Node<Integer> node){
-		if(node != null){
-			preOrderTraversal(node.left);
-			System.out.println(node);
-			preOrderTraversal(node.right);
-		}
-
-	}
-	
-	public static void InOrderStack(Node<Integer> node){
-		if(node != null){
-			preOrderTraversal(node.left);
-			System.out.println(node);
-			preOrderTraversal(node.right);
-		}
-
-	}
-
-	
 
 	
 	public static void preOrderStack(Node<Integer> node){

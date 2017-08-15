@@ -26,7 +26,6 @@ public class Test {
 		
 		TreeOps.InOrderTraversal(node1);
 		System.out.println("----------------");
-		TreeOps.InOrderStack(node1);
 		
 	}
 }
