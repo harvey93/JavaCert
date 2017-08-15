@@ -1,7 +1,5 @@
 package trees;
 
-import java.util.Stack;
-
 public class TreeOps {
 	
 	public static void preOrderTraversal(Node<Integer> node){
@@ -13,7 +11,7 @@ public class TreeOps {
 	}
 	
 	public static void preOrderStack(Node<Integer> node){
-		Stack<Node<Integer>> stack = new Stack<>();
+		
 	}
 
 }
