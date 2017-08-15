@@ -1,0 +1,11 @@
+package AbstractFactory;
+
+public class UFOBossEnemyShip extends EnemyShip {
+
+	@Override
+	void makeShip() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
