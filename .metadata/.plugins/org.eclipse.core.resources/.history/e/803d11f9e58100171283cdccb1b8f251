@@ -1,0 +1,9 @@
+package trees;
+
+public class TreeOps {
+	
+	public static void preOrderTraversal(Node<T> node){
+		
+	}
+
+}
