@@ -10,7 +10,7 @@ public abstract class EnemyShipBuilding {
 		EnemyShip enemyShip = makeEnemyShip(typeOfShip);
 		
 		enemyShip.makeShip();
-//		enemyShip.displayShip();
+		enemyShip.displayShip();
 		
 		return enemyShip;
 	}

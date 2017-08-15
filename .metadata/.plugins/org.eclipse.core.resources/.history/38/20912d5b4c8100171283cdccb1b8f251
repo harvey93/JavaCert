@@ -1,6 +1,6 @@
 package AbstractFactory;
 
-
+import Factory.EnemyShip;
 
 public abstract class EnemyShipBuilding {
 
@@ -9,7 +9,7 @@ public abstract class EnemyShipBuilding {
 	public EnemyShip orderTheShip(String typeOfShip){
 		EnemyShip enemyShip = makeEnemyShip(typeOfShip);
 		
-		enemyShip.makeShip();
+//		enemyShip.makeShip();
 //		enemyShip.displayShip();
 		
 		return enemyShip;

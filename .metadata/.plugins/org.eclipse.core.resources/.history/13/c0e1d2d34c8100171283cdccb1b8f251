@@ -1,6 +1,6 @@
 package AbstractFactory;
 
-
+import Factory.EnemyShip;
 
 public class Test {
 	
