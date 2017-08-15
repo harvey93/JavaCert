@@ -22,9 +22,9 @@ public class TreeOps {
 	
 	public static void InOrderTraversal(Node<Integer> node){
 		if(node != null){
-			InOrderTraversal(node.left);
+			preOrderTraversal(node.left);
 			System.out.println(node);
-			InOrderTraversal(node.right);
+			preOrderTraversal(node.right);
 		}
 
 	}
@@ -41,7 +41,6 @@ public class TreeOps {
 		
 		while(!stack.isEmpty()){
 			current = stack.pop();
-			System.out.println(current);
 			if(current.right != null){
 				current = current.right;
 				
