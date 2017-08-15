@@ -17,15 +17,7 @@ public class Test {
 	
 	public static void main(String[] args) {
 		Stack<Integer> stack = new Stack<>();
-		stack.add(5);
-		stack.add(0);
-		stack.add(12);
-		stack.add(1);
-		stack.add(55);
-		System.out.println(stack);
-		StacksProbs.stackSort(stack);
-		System.out.println(stack);
-		
+		System.out.println(StacksProbs.stackSort());
 	}
 	
 }

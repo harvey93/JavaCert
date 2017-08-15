@@ -10,27 +10,11 @@ public class StacksProbs {
 		Stack<Integer> main = new Stack<>();
 		
 		while(!stack.isEmpty()){
-			int val = stack.pop();
-			add(main, temp, val);
+			add(main, temp);
 		}
-		
-		while(!main.isEmpty()){
-			stack.push(main.pop());
-		}
-		
-//		System.out.println(main);
 	}
 	
-	public static void add(Stack<Integer> main, Stack<Integer> temp, int val){
-		while(!main.isEmpty() && main.peek() < val){
-			temp.push(main.pop());
-		}
-		
-		main.push(val);
-		
-		while(!temp.isEmpty()){
-			main.push(temp.pop());
-		}
+	public static void add(Stack<Integer> main, Stack<Integer> temp){
 		
 	}
 	

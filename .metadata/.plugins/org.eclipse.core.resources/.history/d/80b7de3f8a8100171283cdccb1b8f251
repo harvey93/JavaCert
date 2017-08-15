@@ -22,10 +22,7 @@ public class Test {
 		stack.add(12);
 		stack.add(1);
 		stack.add(55);
-		System.out.println(stack);
-		StacksProbs.stackSort(stack);
-		System.out.println(stack);
-		
+		System.out.println(StacksProbs.stackSort());
 	}
 	
 }

@@ -14,11 +14,7 @@ public class StacksProbs {
 			add(main, temp, val);
 		}
 		
-		while(!main.isEmpty()){
-			stack.push(main.pop());
-		}
-		
-//		System.out.println(main);
+		System.out.println(main);
 	}
 	
 	public static void add(Stack<Integer> main, Stack<Integer> temp, int val){
