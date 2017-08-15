@@ -4,11 +4,6 @@ import java.util.Stack;
 
 public class StacksProbs {
 	
-	
-	public static boolean stackSort(){
-		return true;
-	}
-	
 	public static char[][] TOKENS = {{'{','}'},{'[',']'},{'(',')'}};
 
 	public static boolean isBalancedThree(String str){
