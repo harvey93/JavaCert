@@ -29,9 +29,7 @@ public class TreeOps {
 				stack1.push(popped.right);
 			}
 		}
-		while(!stack2.isEmpty()){
-			System.out.println(stack2.pop());
-		}
+		System.out.println(stack2);
 	}
 	
 	public static void preOrderTraversal(Node<Integer> node){

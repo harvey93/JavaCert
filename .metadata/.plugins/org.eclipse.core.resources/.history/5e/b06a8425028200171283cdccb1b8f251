@@ -20,17 +20,8 @@ public class TreeOps {
 		stack1.push(current);
 		
 		while(!stack1.isEmpty()){
-			Node<Integer> popped = stack1.pop();
-			stack2.push(popped);
-			if(popped.left != null){
-				stack1.push(popped.left);
-			}
-			if(popped.right != null){
-				stack1.push(popped.right);
-			}
-		}
-		while(!stack2.isEmpty()){
-			System.out.println(stack2.pop());
+			Node<Integer> popped = stack1.pop()
+			stack2.push();
 		}
 	}
 	

@@ -13,25 +13,7 @@ public class TreeOps {
 	}
 	
 	public static void postOrderStack(Node<Integer> node){
-		Stack<Node<Integer>> stack1 = new Stack<>();
-		Stack<Node<Integer>> stack2 = new Stack<>();
-		
-		Node<Integer> current = node;
-		stack1.push(current);
-		
-		while(!stack1.isEmpty()){
-			Node<Integer> popped = stack1.pop();
-			stack2.push(popped);
-			if(popped.left != null){
-				stack1.push(popped.left);
-			}
-			if(popped.right != null){
-				stack1.push(popped.right);
-			}
-		}
-		while(!stack2.isEmpty()){
-			System.out.println(stack2.pop());
-		}
+		System.out.println("in");
 	}
 	
 	public static void preOrderTraversal(Node<Integer> node){
