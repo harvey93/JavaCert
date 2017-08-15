@@ -4,14 +4,6 @@ import java.util.Stack;
 
 public class TreeOps {
 	
-	public static void postOrderTraversal(Node<Integer> node){
-		if(node != null){
-			postOrderTraversal(node.left);
-			postOrderTraversal(node.right);
-			System.out.println(node);
-		}
-	}
-	
 	public static void preOrderTraversal(Node<Integer> node){
 		if(node != null){
 			System.out.println(node);
