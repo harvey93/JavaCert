@@ -14,7 +14,7 @@ public class UFOShipBuilding extends EnemyShipBuilding{
 		}else if(typeOfShip == "UFO BOSS"){
 			EnemyShipFactory shipPartsFactory = new UFOBossEnemyShipFactory();
 			theShip = new UFOBossEnemyShip(shipPartsFactory);
-			theShip.setName("UFO BOSS");
+			theShip.setName("UFO Grunt Ship");
 
 		}
 		

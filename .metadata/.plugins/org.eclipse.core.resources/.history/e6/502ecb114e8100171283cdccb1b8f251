@@ -1,0 +1,19 @@
+package AbstractFactory;
+
+
+public class UFOShipBuilding extends EnemyShipBuilding{
+
+	protected EnemyShip makeEnemyShip(String typeOfShip) {
+		// TODO Auto-generated method stub
+		EnemyShip theShip = null;
+		
+		if(typeOfShip == "UFO"){
+			
+		}else if(typeOfShip == "BOSS"){
+			
+		}
+		
+		return theShip;
+	}
+
+}
