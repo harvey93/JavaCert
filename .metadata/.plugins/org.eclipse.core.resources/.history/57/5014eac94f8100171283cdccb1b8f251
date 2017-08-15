@@ -3,9 +3,6 @@ package AbstractFactory;
 public abstract class EnemyShip {
 	
 	private String name;
-	ESWeapon weapon;
-	ESEngine engine;
-	
 	
 	abstract void makeShip();
 
