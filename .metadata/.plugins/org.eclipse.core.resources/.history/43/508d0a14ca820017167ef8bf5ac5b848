@@ -8,12 +8,6 @@ import java.util.Collections;
 import java.util.HashMap;
 
 public class StringProbs {
-	
-	
-	public static String longestSubstring(String s1, String s2){
-		String result = s1;
-		return result;
-	}
 
 	public int numbersNeeded(String first, String second){
 		HashMap<Character, Integer> map1 = new HashMap<>();
