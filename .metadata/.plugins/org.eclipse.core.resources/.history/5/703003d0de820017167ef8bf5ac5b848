@@ -16,8 +16,6 @@ public class Coffee {
 	
 	private Coffee(String milkType, double milk, String beanType, double beans, String sweetenerType, double sweetener,
 			double whippedCream, double cinnamon){
-		this.milkType = milkType;
-		this.milk = milk;
 		
 	}
 	 
@@ -48,9 +46,7 @@ public class Coffee {
 	}
 
 	public String toString(){
-		return "Milk Type: " + this.milkType + "\nMilk: " + this.milk + "\nBean Type" + this.beanType + "\nBeans: " +
-				this.beans + "\nSweetener Type: " + this.sweetenerType + "\nSweetener: " + this.sweetener +
-					"\nWhipped Cream: " + this.whippedCream + "\nCinnamon: " + this.cinnamon;
+		
 	}
 
 }

@@ -16,8 +16,6 @@ public class Coffee {
 	
 	private Coffee(String milkType, double milk, String beanType, double beans, String sweetenerType, double sweetener,
 			double whippedCream, double cinnamon){
-		this.milkType = milkType;
-		this.milk = milk;
 		
 	}
 	 
