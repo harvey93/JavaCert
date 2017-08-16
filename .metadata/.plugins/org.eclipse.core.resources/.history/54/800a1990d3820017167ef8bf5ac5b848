@@ -16,7 +16,7 @@ public class StringProbs {
 		String result = "";
 		int[][] table = new int[s1.length()][s2.length()];
 		int longest = 0;
-		int row = 0;
+		String longestSub = "";
 		
 		for(int i = 0; i < s1.length(); i++){
 			for(int j = 0; j < s2.length(); j++){
@@ -32,7 +32,6 @@ public class StringProbs {
 				
 				if(longest < table[i][j]){
 					longest = table[i][j];
-					row = i;
 //					longestSub = s1.substring(i - longest + 1, i + 1);
 //					result.add(s1.substring(i - longest + 1, i + 1));
 
@@ -41,8 +40,7 @@ public class StringProbs {
 				
 			}
 		}
-		
-		result = s1.substring(row - longest + 1, row + 1);
+		System.out.println("LONGEST: " + longestSub);
 		return result;
 	}
 
