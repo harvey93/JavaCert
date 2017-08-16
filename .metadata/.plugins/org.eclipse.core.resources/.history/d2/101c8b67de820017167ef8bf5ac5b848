@@ -39,11 +39,12 @@ public class Coffee {
 		}
 		
 		public Coffee build(){
-			return new Coffee(this.milkType, this.milk, this.beanType, this.beans, this.sweetenerType, this.sweetener, 
-					this.whippedCream, this.cinnamon);
+			
 		}
 
 	}
+	
+	
 	
 
 }

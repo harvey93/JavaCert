@@ -11,8 +11,8 @@ public class Coffee {
 	private String sweetenerType;
 	private double sweetener;
 	
-	private double whippedCream;
-	private double cinnamon;
+	public double whippedCream;
+	public double cinnamon;
 	
 	private Coffee(String milkType, double milk, String beanType, double beans, String sweetenerType, double sweetener,
 			double whippedCream, double cinnamon){
@@ -30,20 +30,11 @@ public class Coffee {
 		private String sweetenerType;
 		private double sweetener;
 		
-		private double whippedCream;
-		private double cinnamon;
-		
-		public CoffeeBuilder milkType(String milkType){
-			this.milkType = milkType;
-			return this;
-		}
-		
-		public Coffee build(){
-			return new Coffee(this.milkType, this.milk, this.beanType, this.beans, this.sweetenerType, this.sweetener, 
-					this.whippedCream, this.cinnamon);
-		}
+		public double whippedCream;
+		public double cinnamon;
 
 	}
+	
 	
 
 }
