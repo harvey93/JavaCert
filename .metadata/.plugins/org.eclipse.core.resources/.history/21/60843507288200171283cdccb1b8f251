@@ -7,17 +7,7 @@ public class ListProbs {
 		ListNode<Integer> slow = head;
 		ListNode<Integer> fast = head;
 		while(fast != null){
-			if(fast.next != null){
-				
-				if(fast.next.next != null){
-					fast = fast.next.next;
-					slow = slow.next;
-				}else {
-					break;
-				}
-			}else {
-				break;
-			}
+			
 		}
 		return slow;
 	}
