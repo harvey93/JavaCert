@@ -1,0 +1,11 @@
+package hackerRank;
+import java.util.*;
+
+public class ListProbs {
+
+	public static Integer findMid(LinkedList<Integer> list){
+		int i = 0;
+		int j = 0;
+		return 5;
+	}
+}
