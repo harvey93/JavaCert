@@ -1,0 +1,34 @@
+package builder;
+
+public class Coffee {
+	
+	private String milkType;
+	private double milk;
+	
+	private String beanType;
+	private double beans;
+	
+	private String sweetenerType;
+	private double sweetener;
+	
+	public double whippedCream;
+	public double cinnamon;
+	
+	public static class CoffeeBuilder{
+		
+		private String milkType;
+		private double milk;
+		
+		private String beanType;
+		private double beans;
+		
+		private String sweetenerType;
+		private double sweetener;
+		
+		public double whippedCream;
+		public double cinnamon;
+		
+
+	}
+
+}
