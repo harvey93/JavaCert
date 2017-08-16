@@ -9,8 +9,6 @@ public class TreeOps {
 			Node<Integer> oldLeft = node.left;
 			node.left = node.right;
 			node.right = oldLeft;
-			reverseTree(node.left);
-			reverseTree(node.right);
 		}
 	}
 	

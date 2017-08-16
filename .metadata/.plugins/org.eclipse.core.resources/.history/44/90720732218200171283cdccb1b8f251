@@ -24,10 +24,6 @@ public class Test {
 		node3.left = node6;
 		node3.right = node7;
 		
-		TreeOps.inOrderTraversal(node1);
-		System.out.println("----------------");
-		TreeOps.reverseTree(node1);
-		TreeOps.inOrderTraversal(node1);
 		
 		
 	}

@@ -4,16 +4,6 @@ import java.util.Stack;
 
 public class TreeOps {
 	
-	public static void reverseTree(Node<Integer> node){
-		if(node != null){
-			Node<Integer> oldLeft = node.left;
-			node.left = node.right;
-			node.right = oldLeft;
-			reverseTree(node.left);
-			reverseTree(node.right);
-		}
-	}
-	
 	public static void postOrderTraversal(Node<Integer> node){
 		if(node != null){
 			postOrderTraversal(node.left);
@@ -52,16 +42,16 @@ public class TreeOps {
 		}
 	}
 	
-	public static void inOrderTraversal(Node<Integer> node){
+	public static void InOrderTraversal(Node<Integer> node){
 		if(node != null){
-			inOrderTraversal(node.left);
+			InOrderTraversal(node.left);
 			System.out.println(node);
-			inOrderTraversal(node.right);
+			InOrderTraversal(node.right);
 		}
 
 	}
 	
-	public static void inOrderStack(Node<Integer> node){
+	public static void InOrderStack(Node<Integer> node){
 		
 		Stack<Node<Integer>> stack = new Stack<>();
 		

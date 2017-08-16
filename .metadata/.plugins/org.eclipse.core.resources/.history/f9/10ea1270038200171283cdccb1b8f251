@@ -16,10 +16,7 @@ public class Test {
 	};
 	
 	public static void main(String[] args) {
-		String s = "he1l3lo5";
-		String[] arr = s.split("");
-		Collections.sort(Arrays.asList(arr));
-		System.out.println(Arrays.toString(arr));
+		System.out.println(Collections.sort(Arrays.asList("hello".toCharArray())));
 		
 	}
 	
