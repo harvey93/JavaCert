@@ -33,16 +33,16 @@ public class StringProbs {
 				}
 				
 				if(longest == table[i][j]){
-					result.add(s1.substring(i - longest + 1, i + 1));
+					System.out.println(s1.substring(i - longest + 1, i + 1));
 				}
 				
 				
 			}
 		}
 		
-//		for(int[] arr : table){
-//			System.out.println(Arrays.toString(arr));
-//		}
+		for(int[] arr : table){
+			System.out.println(Arrays.toString(arr));
+		}
 		return result;
 	}
 

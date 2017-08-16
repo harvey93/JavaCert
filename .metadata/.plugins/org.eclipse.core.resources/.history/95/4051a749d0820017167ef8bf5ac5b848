@@ -6,13 +6,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class StringProbs {
 	
 	
-	public static HashSet<String> longestSubstring(String s1, String s2){
-		HashSet<String> result = new HashSet<>();
+	public static String longestSubstring(String s1, String s2){
+		String result = s1;
 		int[][] table = new int[s1.length()][s2.length()];
 		int longest = 0;
 		
@@ -30,19 +29,15 @@ public class StringProbs {
 				
 				if(longest < table[i][j]){
 					longest = table[i][j];
+				}else {
+					
 				}
-				
-				if(longest == table[i][j]){
-					result.add(s1.substring(i - longest + 1, i + 1));
-				}
-				
-				
 			}
 		}
 		
-//		for(int[] arr : table){
-//			System.out.println(Arrays.toString(arr));
-//		}
+		for(int[] arr : table){
+			System.out.println(Arrays.toString(arr));
+		}
 		return result;
 	}
 

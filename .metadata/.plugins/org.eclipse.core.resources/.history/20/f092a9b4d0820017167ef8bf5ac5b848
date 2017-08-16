@@ -40,9 +40,9 @@ public class StringProbs {
 			}
 		}
 		
-//		for(int[] arr : table){
-//			System.out.println(Arrays.toString(arr));
-//		}
+		for(int[] arr : table){
+			System.out.println(Arrays.toString(arr));
+		}
 		return result;
 	}
 
