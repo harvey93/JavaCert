@@ -16,10 +16,6 @@ public class Graph<T> {
 		return nodeMap.get(label).outEdges;
 	}
 	
-	public void addEdge(String label1, String label2){
-		
-	}
-	
 	public void addNode(String label, T data){
 		Node<T> node = new Node<>(data);
 		nodeMap.put(label, node);

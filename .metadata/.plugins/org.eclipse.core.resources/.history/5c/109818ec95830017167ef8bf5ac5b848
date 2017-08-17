@@ -9,14 +9,6 @@ public class Graph<T> {
 	}
 	
 	public HashSet<Edge> getNodeInEdges(String label){
-		return nodeMap.get(label).inEdges;
-	}
-	
-	public HashSet<Edge> getNodeOutEdges(String label){
-		return nodeMap.get(label).outEdges;
-	}
-	
-	public void addEdge(String label1, String label2){
 		
 	}
 	

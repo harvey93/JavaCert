@@ -9,7 +9,7 @@ public class Test {
 		graph.addNode("NY", "New York");
 		graph.addNode("LA", "Los Angeles");
 		graph.addNode("P", "Paris");
-
 		
+		Node<String> y = graph.getNode("Y");
 	}
 }
