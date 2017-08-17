@@ -11,12 +11,6 @@ public class Test {
 	public static Node<Integer> buildBST(int [] arr){
 		int mid = arr.length / 2;
 		Node<Integer> head = new Node<Integer>(arr[mid]);
-		buildBST(head, arr, mid);
-		return head;
-	}
-	
-	public static void buildBST(Node<Integer> node, int[] arr, int i){
-		
 	}
 	
 	public static boolean BFS(String label1, String label2, Graph graph){

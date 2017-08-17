@@ -15,7 +15,7 @@ public class Test {
 		return head;
 	}
 	
-	public static void buildBST(Node<Integer> node, int[] arr, int i){
+	public static void buildBST(Node<Integer> int[] arr, int i){
 		
 	}
 	
