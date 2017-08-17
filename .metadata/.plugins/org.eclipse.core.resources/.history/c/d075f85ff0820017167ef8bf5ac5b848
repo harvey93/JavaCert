@@ -9,11 +9,10 @@ public class Singleton {
 		ReentrantLock lock = new ReentrantLock();
 		
 		if(instance == null){
-			lock.lock();
+			
 			if(instance == null){
 				instance = new Singleton();
 			}
-			lock.unlock();
 			
 		}
 

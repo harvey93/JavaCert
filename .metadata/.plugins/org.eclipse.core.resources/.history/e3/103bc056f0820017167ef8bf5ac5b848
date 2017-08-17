@@ -7,13 +7,11 @@ public class Singleton {
 	
 	public static Singleton getIntance(){
 		ReentrantLock lock = new ReentrantLock();
-		
 		if(instance == null){
-			lock.lock();
+			
 			if(instance == null){
 				instance = new Singleton();
 			}
-			lock.unlock();
 			
 		}
 

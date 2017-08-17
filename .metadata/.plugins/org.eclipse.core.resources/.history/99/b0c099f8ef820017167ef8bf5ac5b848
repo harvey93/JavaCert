@@ -1,20 +1,17 @@
 package singleton;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.*;
 
 public class Singleton {
 	
 	private static Singleton instance;
 	
 	public static Singleton getIntance(){
-		ReentrantLock lock = new ReentrantLock();
-		
 		if(instance == null){
-			lock.lock();
-			if(instance == null){
-				instance = new Singleton();
+			synchronized(Singleton.class){
+				if(instance == null){
+					instance = new Singleton();
+				}
 			}
-			lock.unlock();
-			
 		}
 
 //		if(instance == null){
