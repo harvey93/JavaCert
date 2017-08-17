@@ -20,9 +20,7 @@ public class Test {
 		
 	}
 	
-	public static boolean BFS(String label1, String label2, Graph graph){
-		boolean res = false;
+	public static BFS(String label1, String label2, Graph graph){
 		
-		return res;
 	}
 }

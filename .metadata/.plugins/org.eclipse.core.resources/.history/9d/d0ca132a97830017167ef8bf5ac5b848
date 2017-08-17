@@ -21,8 +21,6 @@ public class Test {
 	}
 	
 	public static boolean BFS(String label1, String label2, Graph graph){
-		boolean res = false;
 		
-		return res;
 	}
 }
