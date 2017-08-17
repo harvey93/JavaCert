@@ -4,7 +4,6 @@ public class App {
 	
 	public static void main(String[] args) {
 		Runnable u1  = new User();
-		Runnable u2  = new User();
 		new Thread(u1).start();
 		new Thread(u2).start();
 	}
