@@ -81,7 +81,7 @@ public class Coffee {
 	}
 
 	public String toString(){
-		return "Milk Type: " + this.milkType + "\nMilk: " + this.milk + "\nBean Type: " + this.beanType + "\nBeans: " +
+		return "Milk Type: " + this.milkType + "\nMilk: " + this.milk + "\nBean Type" + this.beanType + "\nBeans: " +
 				this.beans + "\nSweetener Type: " + this.sweetenerType + "\nSweetener: " + this.sweetener +
 					"\nWhipped Cream: " + this.whippedCream + "\nCinnamon: " + this.cinnamon;
 	}
