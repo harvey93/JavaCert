@@ -1,0 +1,14 @@
+package singleton;
+
+public class Singleton {
+	
+	Singleton instance;
+	
+	public static Singleton getIntance(){
+		return instance;
+	}
+
+	private Singleton(){
+		
+	}
+}

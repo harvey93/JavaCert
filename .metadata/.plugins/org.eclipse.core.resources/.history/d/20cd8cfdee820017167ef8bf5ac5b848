@@ -1,0 +1,12 @@
+package singleton;
+
+public class Singleton {
+	
+	public static getIntance(){
+		
+	}
+
+	private Singleton(){
+		
+	}
+}
