@@ -54,7 +54,7 @@ public class Graph<T> {
 		}
 		
 		public String toString(){
-			return "Connection: " + this.destLabel + " Weight: " + this.weight;
+			
 		}
 	}
 	

@@ -52,10 +52,6 @@ public class Graph<T> {
 			this.destLabel = destLabel;
 			this.weight = weight;
 		}
-		
-		public String toString(){
-			return "Connection: " + this.destLabel + " Weight: " + this.weight;
-		}
 	}
 	
 	public String toString(){

@@ -11,14 +11,5 @@ public class Test {
 		graph.addNode("P", "Paris");
 
 		graph.addEdge("Y", "L", 5);
-		graph.addEdge("Y", "NY", 10);
-		graph.addEdge("Y", "LA", 6);
-		
-		
-		graph.addEdge("LA", "P", 6);
-		
-		
 	}
-	
-	
 }
