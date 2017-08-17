@@ -44,32 +44,32 @@ public class Coffee {
 			this.milkType = milkType;
 			return this;
 		}
-		public CoffeeBuilder milke(double milk){
-			this.milk = milk;
+		public CoffeeBuilder milke(String milk){
+			this.milke = milk;
 			return this;
 		}
 		public CoffeeBuilder beanType(String beanType){
 			this.beanType = beanType;
 			return this;
 		}
-		public CoffeeBuilder beans(double beansType){
-			this.beans = beans;
+		public CoffeeBuilder beans(String beansType){
+			this.milkType = milkType;
 			return this;
 		}
-		public CoffeeBuilder sweetnerType(String sweetenerType){
-			this.sweetenerType = sweetenerType;
+		public CoffeeBuilder milkType(String milkType){
+			this.milkType = milkType;
 			return this;
 		}
-		public CoffeeBuilder sweetener(double sweetener){
-			this.sweetener = sweetener;
+		public CoffeeBuilder milkType(String milkType){
+			this.milkType = milkType;
 			return this;
 		}
-		public CoffeeBuilder whippedCream(double whippedCream){
-			this.whippedCream = whippedCream;
+		public CoffeeBuilder milkType(String milkType){
+			this.milkType = milkType;
 			return this;
 		}
-		public CoffeeBuilder cinnamon(double cinnamon){
-			this.cinnamon = cinnamon;
+		public CoffeeBuilder milkType(String milkType){
+			this.milkType = milkType;
 			return this;
 		}
 		

@@ -60,16 +60,16 @@ public class Coffee {
 			this.sweetenerType = sweetenerType;
 			return this;
 		}
-		public CoffeeBuilder sweetener(double sweetener){
-			this.sweetener = sweetener;
+		public CoffeeBuilder milkType(String milkType){
+			this.milkType = milkType;
 			return this;
 		}
-		public CoffeeBuilder whippedCream(double whippedCream){
-			this.whippedCream = whippedCream;
+		public CoffeeBuilder milkType(String milkType){
+			this.milkType = milkType;
 			return this;
 		}
-		public CoffeeBuilder cinnamon(double cinnamon){
-			this.cinnamon = cinnamon;
+		public CoffeeBuilder milkType(String milkType){
+			this.milkType = milkType;
 			return this;
 		}
 		
