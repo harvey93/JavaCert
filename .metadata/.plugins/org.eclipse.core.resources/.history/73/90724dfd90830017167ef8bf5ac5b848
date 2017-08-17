@@ -1,0 +1,9 @@
+package ch4;
+
+public class Graph {
+	
+	private class Node{
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package ch4;
+
+public class Graph<T> {
+	
+	private class Node<T>{
+		T data;
+		HashSet<Edge> inEdges = new HashSet<>;
+		HashSet<Edge> outEdges = new HashSet<>;
+	}
+
+}
