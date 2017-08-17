@@ -4,8 +4,8 @@ import java.util.*;
 public class Graph<T> {
 	private HashMap<String, Node<T>> nodeMap = new HashMap<>();
 	
-	public Node<T> getNode(String label){
-		return nodeMap.get(label);
+	public void getNode(String label){
+		
 	}
 	
 	public void addNode(String label, T data){
