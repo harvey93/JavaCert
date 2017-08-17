@@ -5,25 +5,29 @@ public class Test {
 
 	public static void main(String[] args) {
 		Node<Integer> head = buildBST(new int []{1,2,3,4,5,6,7});
-		System.out.println(head);	
+			
 	}
 	
 	public static Node<Integer> buildBST(int [] arr){
-		return buildBST(arr, 0, arr.length - 1);
+		int mid = arr.length / 2;
+		Node<Integer> head = new Node<Integer>(arr[mid]);
+		buildBST(head, arr, mid);
+		return head;
 	}
 	
-	public static Node<Integer> buildBST(int[] arr, int start, int end){
-		if(end < start){
-			return null;
+	public static void buildBST(Node<Integer> node, int[] arr, int i){
+		if(i == 0 || i == arr.length - 1){
+			return;
 		}
+		System.out.println(node);
+		int leftI = (i - 1) / 2;
+		int rightI = i + ((arr.length - i) / 2);
+		node.left = new Node(arr[leftI]);
+		node.right = new Node(arr[rightI]);
 		
-		int mid = (end + start) / 2;
+		buildBST(node.left, arr, leftI);
+		buildBST(node.right, arr, rightI);
 		
-		Node<Integer> node = new Node(arr[mid]);
-		node.left = buildBST(arr, 0, mid - 1);
-		node.right = buildBST(arr, mid + 1, end);
-		return node;
-	
 		
 	}
 	

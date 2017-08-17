@@ -5,7 +5,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		Node<Integer> head = buildBST(new int []{1,2,3,4,5,6,7});
-		System.out.println(head);	
+			
 	}
 	
 	public static Node<Integer> buildBST(int [] arr){
@@ -17,13 +17,7 @@ public class Test {
 			return null;
 		}
 		
-		int mid = (end + start) / 2;
 		
-		Node<Integer> node = new Node(arr[mid]);
-		node.left = buildBST(arr, 0, mid - 1);
-		node.right = buildBST(arr, mid + 1, end);
-		return node;
-	
 		
 	}
 	

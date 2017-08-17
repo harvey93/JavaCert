@@ -10,7 +10,4 @@ public class Node<T> {
 		this.data = data;
 	}
 
-	public String toString(){
-		return this.data == null ? "null" : this.data.toString();
-	}
 }
