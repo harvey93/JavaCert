@@ -36,9 +36,5 @@ public class Graph<T> {
 			this.weight = weight;
 		}
 	}
-	
-	public String toString(){
-		return nodeMap.toString();
-	}
 
 }

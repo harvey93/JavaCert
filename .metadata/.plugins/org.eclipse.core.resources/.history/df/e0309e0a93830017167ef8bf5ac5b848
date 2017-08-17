@@ -2,11 +2,7 @@ package ch4;
 import java.util.*;
 
 public class Graph<T> {
-	private HashMap<String, Node<T>> nodeMap = new HashMap<>();
-	
-	public void getNode(String label){
-		
-	}
+	HashMap<String, Node<T>> nodeMap = new HashMap<>();
 	
 	public void addNode(String label, T data){
 		Node<T> node = new Node<>(data);
@@ -22,9 +18,7 @@ public class Graph<T> {
 			this.data = data;
 		}
 		
-		public String toString(){
-			return data == null ? "null" : data.toString();
-		}
+		
 	}
 	
 	class Edge{
@@ -35,10 +29,6 @@ public class Graph<T> {
 			this.destLabel = destLabel;
 			this.weight = weight;
 		}
-	}
-	
-	public String toString(){
-		return nodeMap.toString();
 	}
 
 }
