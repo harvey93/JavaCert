@@ -10,8 +10,6 @@ public class Test {
 		graph.addNode("NY", "New York");
 		graph.addNode("LA", "Los Angeles");
 		graph.addNode("P", "Paris");
-		
-		graph.addNode("O", "Oakland");
 
 		graph.addEdge("Y", "L", 5);
 		graph.addEdge("Y", "NY", 10);
@@ -20,7 +18,7 @@ public class Test {
 		
 		graph.addEdge("LA", "P", 6);
 		
-		System.out.println(BFS("Y", "O", graph));
+		
 	}
 	
 	public static boolean BFS(String label1, String label2, Graph graph){

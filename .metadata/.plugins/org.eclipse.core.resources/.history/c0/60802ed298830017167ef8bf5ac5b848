@@ -44,24 +44,22 @@ public class Graph<T> {
 		}
 	}
 	
+	class Edge{
+		String destLabel;
+		int weight;
+		
+		public Edge(String destLabel, int weight){
+			this.destLabel = destLabel;
+			this.weight = weight;
+		}
+		
+		public String toString(){
+			return "Connection: " + this.destLabel + " Weight: " + this.weight;
+		}
+	}
 	
 	public String toString(){
 		return nodeMap.toString();
 	}
 
 }
-
-class Edge{
-	String destLabel;
-	int weight;
-	
-	public Edge(String destLabel, int weight){
-		this.destLabel = destLabel;
-		this.weight = weight;
-	}
-	
-	public String toString(){
-		return "Connection: " + this.destLabel + " Weight: " + this.weight;
-	}
-}
-
