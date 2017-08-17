@@ -20,7 +20,7 @@ public class Test {
 		
 		graph.addEdge("LA", "P", 6);
 		
-		System.out.println(BFS("Y", "O", graph));
+		System.out.println(BFS("Y", "P", graph));
 	}
 	
 	public static boolean BFS(String label1, String label2, Graph graph){
@@ -28,22 +28,9 @@ public class Test {
 		LinkedList<GNode> queue = new LinkedList<>();
 		HashSet<GNode> visited = new HashSet<>();
 		
-		GNode destNode = graph.getNode(label2);
-		
 		queue.add(graph.getNode(label1));
 		
 		while(!queue.isEmpty()){
-			GNode currentNode = queue.removeFirst();
-			if(currentNode.data == destNode.data){
-				res = true;
-				break;
-			}
-			HashSet<Edge> edges = currentNode.outEdges;
-			
-			for(Edge e : edges){
-				GNode currentConnection = graph.getNode(e.destLabel);
-				queue.addLast(currentConnection);
-			}
 		}
 		
 		return res;

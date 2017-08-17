@@ -20,7 +20,7 @@ public class Test {
 		
 		graph.addEdge("LA", "P", 6);
 		
-		System.out.println(BFS("Y", "O", graph));
+		System.out.println(BFS("Y", "P", graph));
 	}
 	
 	public static boolean BFS(String label1, String label2, Graph graph){
@@ -39,11 +39,6 @@ public class Test {
 				break;
 			}
 			HashSet<Edge> edges = currentNode.outEdges;
-			
-			for(Edge e : edges){
-				GNode currentConnection = graph.getNode(e.destLabel);
-				queue.addLast(currentConnection);
-			}
 		}
 		
 		return res;

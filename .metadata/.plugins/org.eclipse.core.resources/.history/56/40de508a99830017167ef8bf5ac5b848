@@ -4,10 +4,18 @@ import java.util.*;
 public class Graph<T> {
 	private HashMap<String, GNode<T>> nodeMap = new HashMap<>();
 	
-	public GNode<T> getNode(String label){
-		return nodeMap.get(label);
+	public T getNodeData(String label){
+		return nodeMap.get(label).data;
 	}
-		
+	
+	public HashSet<Edge> getNodeInEdges(String label){
+		return nodeMap.get(label).inEdges;
+	}
+	
+	public HashSet<Edge> getNodeOutEdges(String label){
+		return nodeMap.get(label).outEdges;
+	}
+	
 	public void addEdge(String label1, String label2, int weight){
 		GNode<T> node1 = nodeMap.get(label1);
 		GNode<T> node2 = nodeMap.get(label2);
