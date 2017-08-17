@@ -10,6 +10,6 @@ public class Test {
 		graph.addNode("LA", "Los Angeles");
 		graph.addNode("P", "Paris");
 
-		graph.addEdge("Y", "L", 5);
+		
 	}
 }

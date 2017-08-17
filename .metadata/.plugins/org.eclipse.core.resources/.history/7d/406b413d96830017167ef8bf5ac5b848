@@ -16,13 +16,9 @@ public class Graph<T> {
 		return nodeMap.get(label).outEdges;
 	}
 	
-	public void addEdge(String label1, String label2, int weight){
+	public void addEdge(String label1, String label2){
 		Node<T> node1 = nodeMap.get(label1);
 		Node<T> node2 = nodeMap.get(label2);
-		Edge inEdge = new Edge(label1, weight);
-		Edge outEdge = new Edge(label2, weight);
-		node1.outEdges.add(outEdge);
-		node2.inEdges.add(inEdge);
 	}
 	
 	public void addNode(String label, T data){
