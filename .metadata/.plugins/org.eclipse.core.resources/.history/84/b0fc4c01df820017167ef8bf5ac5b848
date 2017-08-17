@@ -18,12 +18,7 @@ public class Coffee {
 			double whippedCream, double cinnamon){
 		this.milkType = milkType;
 		this.milk = milk;
-		this.beanType = beanType;
-		this.beans = beans;
-		this.sweetenerType = sweetenerType;
-		this.sweetener = sweetener;
-		this.whippedCream = whippedCream;
-		this.cinnamon = cinnamon;
+		
 	}
 	 
 	public static class CoffeeBuilder{
