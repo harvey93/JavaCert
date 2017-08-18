@@ -27,10 +27,7 @@ public class Test {
 	public static ArrayList<LinkedList<Node<Integer>>> depthListBFS(Node<Integer> node){
 		ArrayList<LinkedList<Node<Integer>>> lists = new ArrayList<>();
 		LinkedList<Node<Integer>> currentList = new LinkedList<>();
-		currentList.add(node);
-		while(currentList.size() > 0){
-			
-		}
+		
 		return lists;
 
 	}
