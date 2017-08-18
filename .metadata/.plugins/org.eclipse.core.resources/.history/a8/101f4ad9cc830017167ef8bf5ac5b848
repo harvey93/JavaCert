@@ -30,10 +30,6 @@ public class Test {
 	}
 	
 	public static boolean checkBST(Node<Integer> node, Integer min, Integer max){
-		if(node == null){
-			return true;
-		}
-		
 		if(min != null && node.data < min){
 			return false;
 		}

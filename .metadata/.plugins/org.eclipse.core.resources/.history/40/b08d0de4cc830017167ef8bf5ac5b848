@@ -10,7 +10,7 @@ public class Test {
 		Node<Integer> node4 = new Node<>(2);
 		Node<Integer> node5 = new Node<>(6);
 		Node<Integer> node6 = new Node<>(10);
-		Node<Integer> node7 = new Node<>(20);
+		Node<Integer> node7 = new Node<>(0);
 		
 		node1.left = node2;
 		node1.right = node3;

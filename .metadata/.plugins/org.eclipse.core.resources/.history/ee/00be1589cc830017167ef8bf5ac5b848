@@ -29,20 +29,8 @@ public class Test {
 		return checkBST(node, null, null);
 	}
 	
-	public static boolean checkBST(Node<Integer> node, Integer min, Integer max){
-		if(node == null){
-			return true;
-		}
+	public static boolean checkBST(Node<Integer> node, Node<Integer> min, Node<Integer> max){
 		
-		if(min != null && node.data < min){
-			return false;
-		}
-		
-		if(max != null && node.data > max){
-			return false;
-		}
-		
-		return checkBST(node.left, min, node.data) && checkBST(node.right, node.data, max);
 	}
 	
 	public static int checkHeight(Node<Integer> node){
