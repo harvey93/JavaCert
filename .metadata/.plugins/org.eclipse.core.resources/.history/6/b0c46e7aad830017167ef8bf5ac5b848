@@ -29,13 +29,6 @@ public class Test {
 		return depthListDFS(node, list, 0);
 	}
 	
-	public static ArrayList<LinkedList<Node<Integer>>> depthListDFS(Node<Integer> node, 
-			ArrayList<LinkedList<Node<Integer>>> list, int level){
-		
-		
-		return list;
-	}
-	
 	public static Node<Integer> buildBST(int [] arr){
 		return buildBST(arr, 0, arr.length - 1);
 	}
