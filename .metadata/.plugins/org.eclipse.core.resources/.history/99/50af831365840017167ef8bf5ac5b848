@@ -55,7 +55,7 @@ public class Test {
 	}
 	
 	public static Node<Integer> commonAncestor(Node<Integer> node1, Node<Integer> node2){
-		Node<Integer> res = null;
+		Node<Integer> res;
 		HashSet<Node<Integer>> set = new HashSet<>();
 		Node<Integer> current1 = node1;
 		while(current1 != null){
@@ -68,7 +68,6 @@ public class Test {
 		while(current2 != null){
 			if(set.contains(current2)){
 				res = current2;
-				break;
 			}
 			current2 = current2.parent;
 		}

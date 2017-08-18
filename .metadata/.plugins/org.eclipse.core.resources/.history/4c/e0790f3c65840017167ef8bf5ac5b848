@@ -63,6 +63,7 @@ public class Test {
 			current1 = current1.parent;
 		}
 		
+		System.out.println(set);
 		
 		Node<Integer> current2 = node2;
 		while(current2 != null){

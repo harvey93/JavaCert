@@ -68,7 +68,6 @@ public class Test {
 		while(current2 != null){
 			if(set.contains(current2)){
 				res = current2;
-				break;
 			}
 			current2 = current2.parent;
 		}

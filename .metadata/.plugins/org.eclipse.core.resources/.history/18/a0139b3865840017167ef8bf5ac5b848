@@ -63,12 +63,12 @@ public class Test {
 			current1 = current1.parent;
 		}
 		
+		System.out.println(set);
 		
 		Node<Integer> current2 = node2;
 		while(current2 != null){
 			if(set.contains(current2)){
 				res = current2;
-				break;
 			}
 			current2 = current2.parent;
 		}

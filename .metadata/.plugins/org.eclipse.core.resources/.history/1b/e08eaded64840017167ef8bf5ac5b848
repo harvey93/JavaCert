@@ -55,25 +55,21 @@ public class Test {
 	}
 	
 	public static Node<Integer> commonAncestor(Node<Integer> node1, Node<Integer> node2){
-		Node<Integer> res = null;
 		HashSet<Node<Integer>> set = new HashSet<>();
 		Node<Integer> current1 = node1;
 		while(current1 != null){
 			set.add(current1);
 			current1 = current1.parent;
 		}
-		
-		
+		System.out.println(set);
 		Node<Integer> current2 = node2;
+		int k2 = 0;
 		while(current2 != null){
-			if(set.contains(current2)){
-				res = current2;
-				break;
-			}
-			current2 = current2.parent;
+			k2++;
+			
 		}
 		
-		return res;
+		return node1;
 	}
 	
 	public static ArrayList<GNode<String>> topoSort(Graph<String> graph){
