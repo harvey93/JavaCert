@@ -24,8 +24,6 @@ public class Test {
 		System.out.println(depthListBFS(node1));
 	}
 	
-	
-	
 	public static ArrayList<LinkedList<Node<Integer>>> depthListDFS(Node<Integer> node){
 		ArrayList<LinkedList<Node<Integer>>> lists = new ArrayList<>();
 		depthListDFS(node, lists, 0);
