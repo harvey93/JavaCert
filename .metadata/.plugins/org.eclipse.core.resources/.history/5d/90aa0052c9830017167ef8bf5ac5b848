@@ -4,13 +4,13 @@ import java.util.*;
 public class Test {
 
 	public static void main(String[] args) {
-		Node<Integer> node1 = new Node<>(8);
-		Node<Integer> node2 = new Node<>(4);
-		Node<Integer> node3 = new Node<>(15);
-		Node<Integer> node4 = new Node<>(2);
-		Node<Integer> node5 = new Node<>(6);
-		Node<Integer> node6 = new Node<>(10);
-		Node<Integer> node7 = new Node<>(20);
+		Node<Integer> node1 = new Node<>(1);
+		Node<Integer> node2 = new Node<>(2);
+		Node<Integer> node3 = new Node<>(3);
+		Node<Integer> node4 = new Node<>(4);
+		Node<Integer> node5 = new Node<>(5);
+		Node<Integer> node6 = new Node<>(6);
+		Node<Integer> node7 = new Node<>(7);
 		
 		node1.left = node2;
 		node1.right = node3;
@@ -21,12 +21,7 @@ public class Test {
 		node3.left = node6;
 		node3.right = node7;
 		
-		System.out.println(checkBST(node1));
-	}
-	
-	
-	public static boolean checkBST(Node<Integer> node){
-		
+		System.out.println(getHeight(node7));
 	}
 	
 	public static int checkHeight(Node<Integer> node){
