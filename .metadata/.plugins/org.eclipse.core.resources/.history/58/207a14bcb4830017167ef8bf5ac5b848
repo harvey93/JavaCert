@@ -21,7 +21,8 @@ public class Test {
 		node3.left = node6;
 		node3.right = node7;
 		
-		System.out.println(getHeight(node1));
+		System.out.println(depthListBFS(node1));
+		System.out.println(depthListDFS(node1));
 	}
 	
 	public static int getHeight(Node<Integer> node){
