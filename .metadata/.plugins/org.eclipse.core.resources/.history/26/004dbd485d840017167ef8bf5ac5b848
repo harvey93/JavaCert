@@ -28,31 +28,6 @@ public class Test {
 //		node3.setRight(node7);
 //				
 //		System.out.println(successor(node3));
-		
-		Graph<String> graph = new Graph<>();
-		
-		graph.addNode("f", "F");
-		graph.addNode("c", "C");
-		graph.addNode("b", "B");
-		graph.addNode("a", "A");
-		graph.addNode("e", "E");
-		
-		graph.addNode("d", "D");
-		graph.addNode("g", "G");
-		
-		graph.addEdge("f", "c", 10);
-		graph.addEdge("f", "b", 10);
-		graph.addEdge("f", "a", 10);
-		
-		graph.addEdge("c", "a", 10);
-		graph.addEdge("b", "a", 10);
-		graph.addEdge("b", "e", 10);
-		
-		graph.addEdge("d", "g", 10);
-		
-		System.out.println(graph);
-		
-		
 	}
 	
 	public static Node<Integer> successor(Node<Integer> node){

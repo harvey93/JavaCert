@@ -50,8 +50,6 @@ public class Test {
 		
 		graph.addEdge("d", "g", 10);
 		
-		System.out.println(graph);
-		
 		
 	}
 	
