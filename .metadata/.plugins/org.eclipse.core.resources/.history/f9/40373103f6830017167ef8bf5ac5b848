@@ -7,18 +7,6 @@ public class Node<T> {
 	Node<T> right;
 	Node<T> parent;
 	
-	
-	
-	public void setLeft(Node<T> left) {
-		left.parent = this;
-		this.left = left;
-	}
-
-	public void setRight(Node<T> right) {
-		right.parent = this;
-		this.right = right;
-	}
-
 	public Node(T data){
 		this.data = data;
 	}

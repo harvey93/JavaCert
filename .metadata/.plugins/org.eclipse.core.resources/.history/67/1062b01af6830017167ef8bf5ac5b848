@@ -15,7 +15,6 @@ public class Node<T> {
 	}
 
 	public void setRight(Node<T> right) {
-		right.parent = this;
 		this.right = right;
 	}
 
