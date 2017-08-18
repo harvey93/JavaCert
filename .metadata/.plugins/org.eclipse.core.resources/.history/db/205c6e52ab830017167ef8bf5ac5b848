@@ -21,13 +21,7 @@ public class Test {
 		node3.left = node6;
 		node3.right = node7;
 		
-		System.out.println(depthList(node1));
-	}
-	
-	public static ArrayList<LinkedList<Node<Integer>>> depthList(Node<Integer> node){
-		LinkedList<Node<Integer>> queue = new LinkedList<>();
-		ArrayList<LinkedList<Node<Integer>>> res = new ArrayList<>();
-		return res;
+		
 	}
 	
 	public static Node<Integer> buildBST(int [] arr){
