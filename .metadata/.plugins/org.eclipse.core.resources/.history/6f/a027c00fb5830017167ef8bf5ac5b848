@@ -21,11 +21,7 @@ public class Test {
 		node3.left = node6;
 		node3.right = node7;
 		
-		System.out.println(checkBalanced(node1));
-	}
-	
-	public static boolean checkBalanced2(Node<Integer> node){
-		
+		System.out.println(getHeight(node1));
 	}
 	
 	public static int getHeight(Node<Integer> node){
@@ -38,15 +34,8 @@ public class Test {
 	}
 	
 	public static boolean checkBalanced(Node<Integer> node){
-		if(node == null){
-			return true;
-		}
-		int heightDiff = getHeight(node.left) - getHeight(node.right);
-		if(heightDiff > 1){
-			return false;
-		}
 		
-		return checkBalanced(node.left) && checkBalanced(node.right);
+		return true;
 	}
 	
 	public static ArrayList<LinkedList<Node<Integer>>> depthListBFS(Node<Integer> node){
