@@ -21,7 +21,7 @@ public class Test {
 		node3.left = node6;
 		node3.right = node7;
 		
-		System.out.println(depthListDFS(node1));
+		System.out.println(depthList(node1));
 	}
 	
 	public static ArrayList<LinkedList<Node<Integer>>> depthListDFS(Node<Integer> node){

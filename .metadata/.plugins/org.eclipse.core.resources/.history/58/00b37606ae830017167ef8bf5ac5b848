@@ -21,26 +21,23 @@ public class Test {
 		node3.left = node6;
 		node3.right = node7;
 		
-		System.out.println(depthListDFS(node1));
+		System.out.println(depthList(node1));
 	}
 	
 	public static ArrayList<LinkedList<Node<Integer>>> depthListDFS(Node<Integer> node){
-		ArrayList<LinkedList<Node<Integer>>> lists = new ArrayList<>();
-		return depthListDFS(node, lists, 0);
+		ArrayList<LinkedList<Node<Integer>>> list = new ArrayList<>();
+		return depthListDFS(node, list, 0);
 	}
 	
 	public static ArrayList<LinkedList<Node<Integer>>> depthListDFS(Node<Integer> node, 
-		ArrayList<LinkedList<Node<Integer>>> lists, int level){
-		LinkedList<Node<Integer>> list= null;
-		
+			ArrayList<LinkedList<Node<Integer>>> list, int level){
 		
 		if(list.size() == level){
 			
 		}else {
 			
 		}
-		
-		return lists;
+		return list;
 	}
 	
 	public static Node<Integer> buildBST(int [] arr){
