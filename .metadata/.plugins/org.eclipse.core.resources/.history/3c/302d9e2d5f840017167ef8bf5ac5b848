@@ -55,12 +55,6 @@ public class Test {
 		
 	}
 	
-	public static ArrayList<GNode<String>> topoSort(){
-		 ArrayList<GNode<String>> list = new ArrayList<>();
-		 return list;
-	}
-
-	
 	public static Node<Integer> successor(Node<Integer> node){
 		Node<Integer> current = null;
 		if(node.right != null){

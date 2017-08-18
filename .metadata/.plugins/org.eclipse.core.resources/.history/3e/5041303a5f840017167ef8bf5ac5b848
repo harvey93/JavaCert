@@ -55,9 +55,8 @@ public class Test {
 		
 	}
 	
-	public static ArrayList<GNode<String>> topoSort(){
-		 ArrayList<GNode<String>> list = new ArrayList<>();
-		 return list;
+	public static topoSort(){
+		
 	}
 
 	

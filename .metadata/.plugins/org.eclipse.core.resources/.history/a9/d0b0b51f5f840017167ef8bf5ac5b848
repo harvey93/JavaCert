@@ -4,10 +4,6 @@ import java.util.*;
 public class Graph<T> {
 	private HashMap<String, GNode<T>> nodeMap = new HashMap<>();
 	
-	public HashMap<String, GNode<T>> getNodeMap(){
-		return nodeMap;
-	}
-	
 	public GNode<T> getNode(String label){
 		return nodeMap.get(label);
 	}
