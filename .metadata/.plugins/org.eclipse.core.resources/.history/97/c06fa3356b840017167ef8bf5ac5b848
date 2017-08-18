@@ -55,9 +55,7 @@ public class Test {
 				
 	}
 	
-	public static ArrayList<LinkedList<Integer>> allSequences(Node<Integer> node){
-		
-	}
+	
 	
 	
 	
