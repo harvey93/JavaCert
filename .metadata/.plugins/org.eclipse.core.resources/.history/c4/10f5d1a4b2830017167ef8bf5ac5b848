@@ -22,7 +22,6 @@ public class Test {
 		node3.right = node7;
 		
 		System.out.println(depthListBFS(node1));
-		System.out.println(depthListDFS(node1));
 	}
 	
 	public static ArrayList<LinkedList<Node<Integer>>> depthListBFS(Node<Integer> node){
@@ -30,19 +29,12 @@ public class Test {
 		LinkedList<Node<Integer>> currentList = new LinkedList<>();
 		currentList.add(node);
 		while(currentList.size() > 0){
-			lists.add(currentList);
 			LinkedList<Node<Integer>> parents = currentList;
 			currentList = new LinkedList<Node<Integer>>();
 			for(Node<Integer> parent: parents){
-				if(parent.left != null){
-					currentList.add(parent.left);
-				}
-				if(parent.right != null){
-					currentList.add(parent.right);
-				}
+				
 			}
 		}
-		
 		return lists;
 
 	}
