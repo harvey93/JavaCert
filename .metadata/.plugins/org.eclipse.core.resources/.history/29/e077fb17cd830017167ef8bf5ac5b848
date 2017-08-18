@@ -21,11 +21,7 @@ public class Test {
 		node3.left = node6;
 		node3.right = node7;
 		
-		System.out.println(successor(node1));
-	}
-	
-	public static Node<Integer> successor(Node<Integer> node){
-		return node;
+		System.out.println(checkBST(node1));
 	}
 	
 	

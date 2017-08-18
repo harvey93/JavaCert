@@ -24,10 +24,6 @@ public class Test {
 		System.out.println(successor(node1));
 	}
 	
-	public static Node<Integer> successor(Node<Integer> node){
-		return node;
-	}
-	
 	
 	public static boolean checkBST(Node<Integer> node){
 		return checkBST(node, null, null);

@@ -5,7 +5,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		Node<Integer> node1 = new Node<>(8);
-		Node<Integer> node2 = new Node<>(4);
+		Node<Integer> node2 = new Node<>(9);
 		Node<Integer> node3 = new Node<>(15);
 		Node<Integer> node4 = new Node<>(2);
 		Node<Integer> node5 = new Node<>(6);
@@ -21,11 +21,7 @@ public class Test {
 		node3.left = node6;
 		node3.right = node7;
 		
-		System.out.println(successor(node1));
-	}
-	
-	public static Node<Integer> successor(Node<Integer> node){
-		return node;
+		System.out.println(checkBST(node1));
 	}
 	
 	
