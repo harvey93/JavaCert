@@ -65,8 +65,7 @@ public class Test {
 				 GNode<String> currentNode = map.get(s);
 				 if(currentNode.inEdges.isEmpty()){
 					 for(Edge e : currentNode.outEdges){
-						 String dest = e.destLabel;
-						 GNode<String> edgeNode = map.get(dest);
+						 
 					 }
 				 }
 			 }

@@ -55,23 +55,8 @@ public class Test {
 		
 	}
 	
-	public static ArrayList<GNode<String>> topoSort(Graph<String> graph){
+	public static ArrayList<GNode<String>> topoSort(){
 		 ArrayList<GNode<String>> list = new ArrayList<>();
-		 HashMap<String, GNode<String>> map = graph.getNodeMap();
-		 HashSet<GNode<String>> visited = new HashSet<>();
-		 
-		 while(visited.size() < list.size()){
-			 for(String s : map.keySet()){
-				 GNode<String> currentNode = map.get(s);
-				 if(currentNode.inEdges.isEmpty()){
-					 for(Edge e : currentNode.outEdges){
-						 String dest = e.destLabel;
-						 GNode<String> edgeNode = map.get(dest);
-					 }
-				 }
-			 }
-		 }
-		 
 		 return list;
 	}
 

@@ -17,12 +17,12 @@ public class Graph<T> {
 		GNode<T> node2 = nodeMap.get(label2);
 		Edge inEdge = new Edge(label1, weight);
 		Edge outEdge = new Edge(label2, weight);
-		node1.outEdges.put(label2, outEdge);
-		node2.inEdges.put(label1, inEdge);
+		node1.outEdges.add(outEdge);
+		node2.inEdges.add(inEdge);
 	}
 	
 	public void addNode(String label, T data){
-		GNode<T> node = new GNode<>(label, data);
+		GNode<T> node = new GNode<>(data);
 		nodeMap.put(label, node);
 	}
 	
