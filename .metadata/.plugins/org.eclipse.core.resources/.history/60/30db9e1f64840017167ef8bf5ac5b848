@@ -24,6 +24,7 @@ import java.util.*;
 //
 //graph.addEdge("d", "g", 10);
 
+
 public class Test {
 
 	public static void main(String[] args) {
@@ -50,26 +51,8 @@ public class Test {
 		node3.setLeft(node6);
 		node3.setRight(node7);
 				
-		System.out.println(commonAncestor(node3, node7));
+		System.out.println(successor(node3));
 				
-	}
-	
-	public static Node<Integer> commonAncestor(Node<Integer> node1, Node<Integer> node2){
-		HashSet<Node<Integer>> set = new HashSet<>();
-		Node<Integer> current1 = node1;
-		while(current1 != null){
-			set.add(current1);
-			current1 = current1.parent;
-		}
-		System.out.println(set);
-//		Node<Integer> current2 = node2;
-//		int k2 = 0;
-//		while(current2 != null){
-//			k2++;
-//			
-//		}
-		
-		return node1;
 	}
 	
 	public static ArrayList<GNode<String>> topoSort(Graph<String> graph){

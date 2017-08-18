@@ -1,29 +1,6 @@
 package ch4;
 import java.util.*;
 
-//Graph<String> graph = new Graph<>();
-//
-//graph.addNode("f", "F");
-//graph.addNode("c", "C");
-//graph.addNode("b", "B");
-//graph.addNode("a", "A");
-//graph.addNode("e", "E");
-//
-//graph.addNode("d", "D");
-//graph.addNode("g", "G");
-//
-//graph.addEdge("f", "c", 10);
-//graph.addEdge("f", "b", 10);
-//graph.addEdge("f", "a", 10);
-//
-//graph.addEdge("c", "a", 10);
-//graph.addEdge("b", "a", 10);
-//graph.addEdge("b", "e", 10);
-//
-//graph.addEdge("a", "e", 10);
-//
-//graph.addEdge("d", "g", 10);
-
 public class Test {
 
 	public static void main(String[] args) {
@@ -50,26 +27,8 @@ public class Test {
 		node3.setLeft(node6);
 		node3.setRight(node7);
 				
-		System.out.println(commonAncestor(node3, node7));
+		System.out.println(successor(node3));
 				
-	}
-	
-	public static Node<Integer> commonAncestor(Node<Integer> node1, Node<Integer> node2){
-		HashSet<Node<Integer>> set = new HashSet<>();
-		Node<Integer> current1 = node1;
-		while(current1 != null){
-			set.add(current1);
-			current1 = current1.parent;
-		}
-		System.out.println(set);
-//		Node<Integer> current2 = node2;
-//		int k2 = 0;
-//		while(current2 != null){
-//			k2++;
-//			
-//		}
-		
-		return node1;
 	}
 	
 	public static ArrayList<GNode<String>> topoSort(Graph<String> graph){

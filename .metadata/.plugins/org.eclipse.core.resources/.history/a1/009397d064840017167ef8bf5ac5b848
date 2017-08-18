@@ -55,19 +55,17 @@ public class Test {
 	}
 	
 	public static Node<Integer> commonAncestor(Node<Integer> node1, Node<Integer> node2){
-		HashSet<Node<Integer>> set = new HashSet<>();
 		Node<Integer> current1 = node1;
 		while(current1 != null){
-			set.add(current1);
 			current1 = current1.parent;
 		}
-		System.out.println(set);
-//		Node<Integer> current2 = node2;
-//		int k2 = 0;
-//		while(current2 != null){
-//			k2++;
-//			
-//		}
+		
+		Node<Integer> current2 = node2;
+		int k2 = 0;
+		while(current2 != null){
+			k2++;
+			
+		}
 		
 		return node1;
 	}

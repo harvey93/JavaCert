@@ -1,75 +1,60 @@
 package ch4;
 import java.util.*;
 
-//Graph<String> graph = new Graph<>();
-//
-//graph.addNode("f", "F");
-//graph.addNode("c", "C");
-//graph.addNode("b", "B");
-//graph.addNode("a", "A");
-//graph.addNode("e", "E");
-//
-//graph.addNode("d", "D");
-//graph.addNode("g", "G");
-//
-//graph.addEdge("f", "c", 10);
-//graph.addEdge("f", "b", 10);
-//graph.addEdge("f", "a", 10);
-//
-//graph.addEdge("c", "a", 10);
-//graph.addEdge("b", "a", 10);
-//graph.addEdge("b", "e", 10);
-//
-//graph.addEdge("a", "e", 10);
-//
-//graph.addEdge("d", "g", 10);
-
 public class Test {
 
 	public static void main(String[] args) {
-		Node<Integer> node1 = new Node<>(8);
-		Node<Integer> node2 = new Node<>(4);
-		Node<Integer> node3 = new Node<>(15);
-		Node<Integer> node4 = new Node<>(2);
-		Node<Integer> node5 = new Node<>(6);
-		Node<Integer> node6 = new Node<>(10);
-		Node<Integer> node7 = new Node<>(20);
+//		Node<Integer> node1 = new Node<>(8);
+//		Node<Integer> node2 = new Node<>(4);
+//		Node<Integer> node3 = new Node<>(15);
+//		Node<Integer> node4 = new Node<>(2);
+//		Node<Integer> node5 = new Node<>(6);
+//		Node<Integer> node6 = new Node<>(10);
+//		Node<Integer> node7 = new Node<>(20);
+//		
+//		Node<Integer> node8 = new Node(100);
+//		Node<Integer> node9 = new Node(200);
+//		
+//		node5.setLeft(node8);
+//		node5.setRight(node9);
+//		
+//		node1.setLeft(node2);
+//		node1.setRight(node3);
+//		
+//		node2.setLeft(node4);
+//		node2.setRight(node5);
+//		
+//		node3.setLeft(node6);
+//		node3.setRight(node7);
+//				
+//		System.out.println(successor(node3));
 		
-		Node<Integer> node8 = new Node(100);
-		Node<Integer> node9 = new Node(200);
+		Graph<String> graph = new Graph<>();
 		
-		node5.setLeft(node8);
-		node5.setRight(node9);
+		graph.addNode("f", "F");
+		graph.addNode("c", "C");
+		graph.addNode("b", "B");
+		graph.addNode("a", "A");
+		graph.addNode("e", "E");
 		
-		node1.setLeft(node2);
-		node1.setRight(node3);
+		graph.addNode("d", "D");
+		graph.addNode("g", "G");
 		
-		node2.setLeft(node4);
-		node2.setRight(node5);
+		graph.addEdge("f", "c", 10);
+		graph.addEdge("f", "b", 10);
+		graph.addEdge("f", "a", 10);
 		
-		node3.setLeft(node6);
-		node3.setRight(node7);
-				
-		System.out.println(commonAncestor(node3, node7));
-				
-	}
-	
-	public static Node<Integer> commonAncestor(Node<Integer> node1, Node<Integer> node2){
-		HashSet<Node<Integer>> set = new HashSet<>();
-		Node<Integer> current1 = node1;
-		while(current1 != null){
-			set.add(current1);
-			current1 = current1.parent;
-		}
-		System.out.println(set);
-//		Node<Integer> current2 = node2;
-//		int k2 = 0;
-//		while(current2 != null){
-//			k2++;
-//			
-//		}
+		graph.addEdge("c", "a", 10);
+		graph.addEdge("b", "a", 10);
+		graph.addEdge("b", "e", 10);
 		
-		return node1;
+		graph.addEdge("a", "e", 10);
+		
+		graph.addEdge("d", "g", 10);
+		
+		
+		
+		
 	}
 	
 	public static ArrayList<GNode<String>> topoSort(Graph<String> graph){
