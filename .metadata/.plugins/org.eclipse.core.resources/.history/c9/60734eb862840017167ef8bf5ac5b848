@@ -48,8 +48,6 @@ public class Test {
 		graph.addEdge("b", "a", 10);
 		graph.addEdge("b", "e", 10);
 		
-		graph.addEdge("a", "e", 10);
-		
 		graph.addEdge("d", "g", 10);
 		
 		System.out.println(topoSort(graph));
