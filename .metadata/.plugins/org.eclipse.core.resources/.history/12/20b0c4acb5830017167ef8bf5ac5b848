@@ -24,12 +24,8 @@ public class Test {
 		System.out.println(checkBalanced(node1));
 	}
 	
-	public static int checkHeight(Node<Integer> node){
-		return 0;
-	}
-	
 	public static boolean checkBalanced2(Node<Integer> node){
-		return checkHeight(node) != Integer.MIN_VALUE;
+		
 	}
 	
 	public static int getHeight(Node<Integer> node){
