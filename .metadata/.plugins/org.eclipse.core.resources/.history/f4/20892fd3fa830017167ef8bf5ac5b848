@@ -27,32 +27,22 @@ public class Test {
 		node3.setLeft(node6);
 		node3.setRight(node7);
 				
-		System.out.println(successor(node3));
+		System.out.println(successor(node2));
 	}
 	
 	public static Node<Integer> successor(Node<Integer> node){
-		Node<Integer> current = null;
 		if(node.right != null){
-			current = node.right;
+			Node<Integer> current = node.right;
 			while(current.left != null){
 				current = current.left;
 			}	
 			return current;
 		}else {
-			current = node;
-			while(current.parent != null){
-				if(isLeftChild(current.parent, current)){
-					break;
-				}
-				current = current.parent;
+			while(){
+				
 			}
-			return current == null ? null : current.parent;
 		}
 		
-	}
-	
-	public static boolean isLeftChild(Node<Integer> parent, Node<Integer> child){
-		return parent.left == child;
 	}
 	
 	

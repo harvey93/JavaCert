@@ -27,7 +27,7 @@ public class Test {
 		node3.setLeft(node6);
 		node3.setRight(node7);
 				
-		System.out.println(successor(node3));
+		System.out.println(successor(node7));
 	}
 	
 	public static Node<Integer> successor(Node<Integer> node){

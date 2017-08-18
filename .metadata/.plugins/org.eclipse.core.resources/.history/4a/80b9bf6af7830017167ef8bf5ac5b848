@@ -12,12 +12,6 @@ public class Test {
 		Node<Integer> node6 = new Node<>(10);
 		Node<Integer> node7 = new Node<>(20);
 		
-		Node<Integer> node8 = new Node(100);
-		Node<Integer> node9 = new Node(200);
-		
-		node5.setLeft(node8);
-		node5.setRight(node9);
-		
 		node1.setLeft(node2);
 		node1.setRight(node3);
 		
@@ -27,32 +21,13 @@ public class Test {
 		node3.setLeft(node6);
 		node3.setRight(node7);
 				
-		System.out.println(successor(node3));
+		System.out.println(successor(node2));
 	}
 	
 	public static Node<Integer> successor(Node<Integer> node){
-		Node<Integer> current = null;
 		if(node.right != null){
-			current = node.right;
-			while(current.left != null){
-				current = current.left;
-			}	
-			return current;
-		}else {
-			current = node;
-			while(current.parent != null){
-				if(isLeftChild(current.parent, current)){
-					break;
-				}
-				current = current.parent;
-			}
-			return current == null ? null : current.parent;
+			
 		}
-		
-	}
-	
-	public static boolean isLeftChild(Node<Integer> parent, Node<Integer> child){
-		return parent.left == child;
 	}
 	
 	
