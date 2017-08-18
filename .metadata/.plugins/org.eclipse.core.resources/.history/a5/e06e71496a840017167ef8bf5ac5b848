@@ -50,17 +50,11 @@ public class Test {
 		node3.setLeft(node6);
 		node3.setRight(node7);
 				
-		LinkedList<Integer> list1 = new LinkedList<>(Arrays.asList(1,2));
-		LinkedList<Integer> list2 = new LinkedList<>(Arrays.asList(3,4));
+		LinkedList<Integer> list1 = new LinkedList<>();
 				
 	}
 	
-	
-	
-	
-	
-	public static void weaveLists(LinkedList<Integer> list1, LinkedList<Integer> list2, 
-			ArrayList<LinkedList<Integer>> results,	LinkedList<Integer> prefix){
+	public static ArrayList<LinkedList<Integer>> weave(LinkedList<Integer> list1, LinkedList<Integer> list2){
 		
 	}
 	

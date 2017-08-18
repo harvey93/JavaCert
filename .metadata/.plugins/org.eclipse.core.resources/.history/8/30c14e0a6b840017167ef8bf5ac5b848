@@ -57,10 +57,8 @@ public class Test {
 	
 	
 	
-	
-	
-	public static void weaveLists(LinkedList<Integer> list1, LinkedList<Integer> list2, 
-			ArrayList<LinkedList<Integer>> results,	LinkedList<Integer> prefix){
+	public static void weave(LinkedList<Integer> list1, LinkedList<Integer> list2, 
+			LinkedList<Integer> prefix){
 		
 	}
 	
