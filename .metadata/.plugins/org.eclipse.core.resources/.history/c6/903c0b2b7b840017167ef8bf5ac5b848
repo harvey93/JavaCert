@@ -84,10 +84,7 @@ public class Test {
 			ArrayList<LinkedList<Integer>> results,	LinkedList<Integer> prefix){
 		
 		if(left.size() == 0 || right.size() == 0){
-			LinkedList<Integer> result = (LinkedList<Integer>) prefix.clone();
-			result.addAll(left);
-			result.addAll(right);
-			return;
+			
 		}
 		
 	}
