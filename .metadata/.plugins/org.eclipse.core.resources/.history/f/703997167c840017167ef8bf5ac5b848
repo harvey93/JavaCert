@@ -44,11 +44,11 @@ public class Test {
 		node1.setLeft(node2);
 		node1.setRight(node3);
 		
-		node2.setLeft(node4);
-		node2.setRight(node5);
+//		node2.setLeft(node4);
+//		node2.setRight(node5);
 		
-//		node3.setLeft(node6);
-//		node3.setRight(node7);
+		node3.setLeft(node6);
+		node3.setRight(node7);
 				
 		System.out.println(allSequences(node1));
 	}
