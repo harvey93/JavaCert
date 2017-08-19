@@ -48,22 +48,22 @@ public class Test {
 		node2.setRight(node5);
 		
 		node3.setLeft(node6);
-//		node3.setRight(node7);
+		node3.setRight(node7);
 				
-		System.out.println(isSubTree(node1, node7));
+		System.out.println(treeString(node1));
 	}
 	
 	public static boolean isSubTree(Node<Integer> node1, Node<Integer> node2){
-		StringBuilder sb1 = new StringBuilder();
-		StringBuilder sb2 = new StringBuilder();
 		
-		treeString(node1, sb1);
-		treeString(node2, sb2);
-		
-		return sb1.indexOf(sb2.toString()) != -1;
 		
 	}
-		
+	
+	public static String treeString(Node<Integer> node){
+		StringBuilder sb = new StringBuilder();
+		treeString(node, sb);
+		return sb.toString();
+	}
+	
 	public static void treeString(Node<Integer> node, StringBuilder sb){
 		if(node == null){
 			sb.append("X");
