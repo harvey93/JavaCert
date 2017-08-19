@@ -57,14 +57,6 @@ public class Test {
 		return true;
 	}
 	
-	public static String treeString(Node<Integer> node){
-		return treeString(node, "");
-	}
-	
-	public static String treeString(Node<Integer> node, String s){
-		
-	}
-	
 	public static ArrayList<LinkedList<Integer>> allSequences(Node<Integer> node){
 		ArrayList<LinkedList<Integer>> result = new ArrayList<>();
 		

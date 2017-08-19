@@ -58,10 +58,6 @@ public class Test {
 	}
 	
 	public static String treeString(Node<Integer> node){
-		return treeString(node, "");
-	}
-	
-	public static String treeString(Node<Integer> node, String s){
 		
 	}
 	
