@@ -54,7 +54,9 @@ public class Test {
 	}
 	
 	public static boolean isSubTree(Node<Integer> node1, Node<Integer> node2){
-		return true;
+		if(node1 == node2){
+			
+		}
 	}
 	
 	public static ArrayList<LinkedList<Integer>> allSequences(Node<Integer> node){

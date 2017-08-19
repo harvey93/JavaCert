@@ -38,8 +38,8 @@ public class Test {
 		Node<Integer> node8 = new Node(100);
 		Node<Integer> node9 = new Node(200);
 		
-		node5.setLeft(node8);
-		node5.setRight(node9);
+//		node5.setLeft(node8);
+//		node5.setRight(node9);
 		
 		node1.setLeft(node2);
 		node1.setRight(node3);
@@ -47,14 +47,10 @@ public class Test {
 		node2.setLeft(node4);
 		node2.setRight(node5);
 		
-		node3.setLeft(node6);
-		node3.setRight(node7);
+//		node3.setLeft(node6);
+//		node3.setRight(node7);
 				
-		System.out.println(isSubTree(node1, node4));
-	}
-	
-	public static boolean isSubTree(Node<Integer> node1, Node<Integer> node2){
-		return true;
+		System.out.println(allSequences(node1));
 	}
 	
 	public static ArrayList<LinkedList<Integer>> allSequences(Node<Integer> node){
@@ -73,11 +69,9 @@ public class Test {
 		
 		for(LinkedList<Integer> left : leftSeq){
 			for(LinkedList<Integer> right : rightSeq){
-				
+				System.out.println(result);
 				ArrayList<LinkedList<Integer>> weaved = new ArrayList<>();
-				
 				weaveLists(left, right, weaved, prefix);
-				
 				result.addAll(weaved);
 			}
 		}
@@ -89,7 +83,7 @@ public class Test {
 	
 	public static void weaveLists(LinkedList<Integer> first, LinkedList<Integer> second, 
 			ArrayList<LinkedList<Integer>> results,	LinkedList<Integer> prefix){
-//		System.out.println(results);
+		
 		if(first.size() == 0 || second.size() == 0){
 			LinkedList<Integer> result = (LinkedList<Integer>) prefix.clone();
 			result.addAll(first);
