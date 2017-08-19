@@ -87,7 +87,7 @@ public class Test {
 			LinkedList<Integer> result = (LinkedList<Integer>) prefix.clone();
 			result.addAll(left);
 			result.addAll(right);
-			results.add(result);
+			results.addAll(result);
 			return;
 		}
 		
