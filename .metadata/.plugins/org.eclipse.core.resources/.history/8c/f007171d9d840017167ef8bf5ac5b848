@@ -68,9 +68,7 @@ public class Test {
 			sb.append("X");
 			return;
 		}
-		sb.append(node.data);
-		treeString(node.left, sb);
-		treeString(node.right, sb);
+		
 	}
 	
 	public static ArrayList<LinkedList<Integer>> allSequences(Node<Integer> node){

@@ -50,7 +50,7 @@ public class Test {
 		node3.setLeft(node6);
 		node3.setRight(node7);
 				
-		System.out.println(treeString(node1));
+		System.out.println((node1));
 	}
 	
 	public static boolean isSubTree(Node<Integer> node1, Node<Integer> node2){
@@ -66,11 +66,8 @@ public class Test {
 	public static void treeString(Node<Integer> node, StringBuilder sb){
 		if(node == null){
 			sb.append("X");
-			return;
+			
 		}
-		sb.append(node.data);
-		treeString(node.left, sb);
-		treeString(node.right, sb);
 	}
 	
 	public static ArrayList<LinkedList<Integer>> allSequences(Node<Integer> node){
