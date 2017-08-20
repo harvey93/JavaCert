@@ -5,18 +5,12 @@ public class BST{
 	
 	public String preOrder(){
 		StringBuilder sb = new StringBuilder();
-		preOrder(root, sb);
+		preOrder(sb);
 		return sb.toString();
 	}
 	
-	public void preOrder(Node node, StringBuilder sb){
-		if(node == null){
-			sb.append("X");
-			return;
-		}
-		sb.append(node.data);
-		preOrder(node.left, sb);
-		preOrder(node.right, sb);
+	public void preOrder(StringBuilder sb){
+		
 	}
 	
 	public void insert(Integer data){

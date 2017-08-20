@@ -10,13 +10,10 @@ public class BST{
 	}
 	
 	public void preOrder(Node node, StringBuilder sb){
-		if(node == null){
-			sb.append("X");
+		if(node.data == null){
+			sb.append(X);
 			return;
 		}
-		sb.append(node.data);
-		preOrder(node.left, sb);
-		preOrder(node.right, sb);
 	}
 	
 	public void insert(Integer data){

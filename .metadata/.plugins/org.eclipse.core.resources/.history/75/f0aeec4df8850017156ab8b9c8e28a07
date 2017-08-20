@@ -10,7 +10,7 @@ public class BST{
 	}
 	
 	public void preOrder(Node node, StringBuilder sb){
-		if(node == null){
+		if(node.data == null){
 			sb.append("X");
 			return;
 		}
