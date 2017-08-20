@@ -51,7 +51,7 @@ public class Test {
 		node3.setRight(node7);
 				
 		System.out.println(commonAncestor(node8, node9));
-		System.out.println(commonAncestor2(node1, node8, node9));
+		System.out.println(commonAncestor2(node8, node9));
 	}
 	
 	public static boolean isSubTree(Node<Integer> node1, Node<Integer> node2){
