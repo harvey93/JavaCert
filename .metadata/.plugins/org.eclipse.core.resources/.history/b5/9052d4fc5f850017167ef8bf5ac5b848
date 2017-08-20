@@ -137,10 +137,7 @@ public class Test {
 		return res;
 	}
 	
-	public static boolean checkSide(Node<Integer> current, Node<Integer> node1, Node<Integer> node2){
-		boolean res = false;
-		return res;
-	}
+	
 		
 	
 	public static Node<Integer> commonAncestor(Node<Integer> node1, Node<Integer> node2){
