@@ -147,7 +147,7 @@ public class Test {
 	}
 	public static Node<Integer> commonAncestor3(Node<Integer> root, Node<Integer> node1, Node<Integer> node2){
 		LinkedList<Node<Integer>> list = new LinkedList<>();
-		pathDFS(root, node1, list);
+		pathDFS(root, node1, list)
 		System.out.println(list);
 		return root;
 	}
