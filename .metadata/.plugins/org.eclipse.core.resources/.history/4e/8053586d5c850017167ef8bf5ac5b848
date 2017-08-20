@@ -130,11 +130,6 @@ public class Test {
 		
 	}
 	
-	public static Node<Integer> commonAncestor2(Node<Integer> node1, Node<Integer> node2){
-		Node<Integer> res = null;
-		return res;
-	}
-	
 	public static Node<Integer> commonAncestor(Node<Integer> node1, Node<Integer> node2){
 		Node<Integer> res = null;
 		HashSet<Node<Integer>> set = new HashSet<>();
