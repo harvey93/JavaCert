@@ -72,7 +72,7 @@ public class Test {
 	public static Node<Integer> commonAncestorDP(Node<Integer> root, Node<Integer> node1, Node<Integer> node2){
 		HashMap<Node<Integer>, Boolean> map1 = new HashMap<>();
 		HashMap<Node<Integer>, Boolean> map2 = new HashMap<>();
-		return commonAncestorDP(root, node1, node2, map1, map2);
+		return commonAncestor3(root, node1, node2, map1, map2);
 	}
 	
 	public static boolean checkSideDP(Node<Integer> current, Node<Integer> node){
