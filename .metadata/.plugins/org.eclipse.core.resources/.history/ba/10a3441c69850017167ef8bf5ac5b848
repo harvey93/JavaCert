@@ -60,11 +60,48 @@ public class Test {
 	
 	public static Node<Integer> commonAncestor3(Node<Integer> root, Node<Integer> node1, Node<Integer> node2){
 		LinkedList<Node<Integer>> list = new LinkedList<>();
+		pathStackDFS(root, node1, list);
+		System.out.println(list);
 		
 		
 		return root;
 	}
 	
+	public static void pathStackDFS(Node<Integer> root, Node<Integer> target, LinkedList<Node<Integer>> stack){
+		stack.add(root);
+		
+		while(!stack.isEmpty()){
+			
+			Node<Integer> current = stack.removeLast();
+			if(current.data == target.data){
+				break;
+			}
+			if(current.left != null){
+				stack.add(current.left);
+			}
+			
+			if(current.right != null){
+				stack.add(current.right);
+			}
+		}
+	}
+
+	public static void pathDFS(Node<Integer> current, Node<Integer> target, LinkedList<Node<Integer>> list){
+		if(current == null){
+			return;
+		}
+		if(current == target){
+			list.add(current);
+		}
+		
+		if(!list.isEmpty() && (list.getLast() == current.left || list.getLast() == current.right)){
+			list.add(current);
+		}
+		
+		pathDFS(current.left, target, list);
+		pathDFS(current.right, target, list);
+		
+	}
 
 	
 	public static boolean isSubTree(Node<Integer> node1, Node<Integer> node2){
