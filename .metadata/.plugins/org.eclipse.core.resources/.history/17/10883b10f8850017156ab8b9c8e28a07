@@ -9,10 +9,6 @@ public class BST{
 		return sb.toString();
 	}
 	
-	public void preOrder(StringBuilder sb){
-		
-	}
-	
 	public void insert(Integer data){
 		Node node = new Node(data);
 		if(root == null){

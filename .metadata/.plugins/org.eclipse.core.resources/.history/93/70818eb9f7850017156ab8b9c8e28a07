@@ -3,16 +3,6 @@ package ch4;
 public class BST{
 	Node root;
 	
-	public String preOrder(){
-		StringBuilder sb = new StringBuilder();
-		preOrder(sb);
-		return sb.toString();
-	}
-	
-	public void preOrder(StringBuilder sb){
-		
-	}
-	
 	public void insert(Integer data){
 		Node node = new Node(data);
 		if(root == null){
@@ -52,7 +42,7 @@ public class BST{
 		}
 		
 		public String toString(){
-			return data.toString();
+			return data;
 		}
 	}
 	

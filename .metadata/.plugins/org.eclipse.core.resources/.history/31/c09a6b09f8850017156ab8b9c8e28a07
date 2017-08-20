@@ -4,12 +4,6 @@ public class BST{
 	Node root;
 	
 	public String preOrder(){
-		StringBuilder sb = new StringBuilder();
-		preOrder(sb);
-		return sb.toString();
-	}
-	
-	public void preOrder(StringBuilder sb){
 		
 	}
 	
