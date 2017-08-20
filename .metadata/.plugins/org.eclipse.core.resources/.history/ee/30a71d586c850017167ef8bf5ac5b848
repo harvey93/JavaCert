@@ -62,7 +62,7 @@ public class Test {
 			Node<Integer> node2, HashMap<Node<Integer>, String> map1, HashMap<Node<Integer>, String> map2){
 		if(checkSideDP(root.left, node1, map1) && checkSideDP(root.left, node2, map2)){
 			return commonAncestorDP(root.left, node1, node2, map1, map2);
-		}else if(checkSideDP(root.right, node1, map1) && checkSideDP(root.right, node2, map2)){
+		}else if(checkSide(root.right, node1) && checkSideDP(root.right, node2)){
 			return commonAncestorDP(root.right, node1, node2, map1, map2);
 		}else{
 			return root;
