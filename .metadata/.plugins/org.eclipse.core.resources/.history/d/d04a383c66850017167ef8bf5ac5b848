@@ -65,9 +65,7 @@ public class Test {
 		return root;
 	}
 	
-	public static void pathStackDFS(Node<Integer> current, Node<Integer> target, LinkedList<Node<Integer>> list){
-		
-	}
+	
 
 	public static void pathDFS(Node<Integer> current, Node<Integer> target, LinkedList<Node<Integer>> list){
 		if(current == null){

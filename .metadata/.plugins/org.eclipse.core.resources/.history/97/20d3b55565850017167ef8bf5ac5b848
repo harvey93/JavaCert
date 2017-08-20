@@ -54,38 +54,8 @@ public class Test {
 				
 		System.out.println(commonAncestor(node4, node9));
 		System.out.println(commonAncestor2(node1, node4, node9));
-		System.out.println(commonAncestor3(node1, node4, node9));
-		
+		System.out.println(pathDFS(node5));
 	}
-	
-	public static Node<Integer> commonAncestor3(Node<Integer> root, Node<Integer> node1, Node<Integer> node2){
-		LinkedList<Node<Integer>> list = new LinkedList<>();
-		pathStackDFS(root, node1, list);
-		System.out.println(list);
-		return root;
-	}
-	
-	public static void pathStackDFS(Node<Integer> current, Node<Integer> target, LinkedList<Node<Integer>> list){
-		
-	}
-
-	public static void pathDFS(Node<Integer> current, Node<Integer> target, LinkedList<Node<Integer>> list){
-		if(current == null){
-			return;
-		}
-		if(current == target){
-			list.add(current);
-		}
-		
-		if(!list.isEmpty() && (list.getLast() == current.left || list.getLast() == current.right)){
-			list.add(current);
-		}
-		
-		pathDFS(current.left, target, list);
-		pathDFS(current.right, target, list);
-		
-	}
-
 	
 	public static boolean isSubTree(Node<Integer> node1, Node<Integer> node2){
 		StringBuilder sb1 = new StringBuilder();
@@ -173,6 +143,24 @@ public class Test {
 		}else{
 			return root;
 		}
+		
+	}
+	public static Node<Integer> commonAncestor3(Node<Integer> root, Node<Integer> node1, Node<Integer> node2){
+		LinkedList<Node<Integer>> list = new LinkedList<>();
+		pathDFS(root, node1, list);
+		System.out.println(list);
+		return root;
+	}
+
+	public static void pathDFS(Node<Integer> current, Node<Integer> target, LinkedList<Node<Integer>> list){
+		if(current == target){
+			list.add(current);
+		}
+		if(list.getLast() == current.left || list.getLast() == current.right){
+			list.add(current);
+		}
+		pathDFS(current.left, target, list);
+		pathDFS(current.right, target, list);
 		
 	}
 	
