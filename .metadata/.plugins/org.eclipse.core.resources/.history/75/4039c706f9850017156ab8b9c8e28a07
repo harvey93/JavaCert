@@ -3,14 +3,6 @@ import java.util.*;
 
 public class BST{
 	Node root;
-	int size = 0;
-	LinkedList<Integer> list = new LinkedList<>();
-	HashMap<Integer, Node> map = new HashMap<>(); 
-	
-	private void insertIntoMap(Node node){
-		map.put(size, node);
-		size++;
-	}
 	
 	public String preOrder(){
 		ArrayList<Integer> list = new ArrayList<>();
@@ -20,7 +12,7 @@ public class BST{
 	
 	public void preOrder(Node node, ArrayList<Integer> list){
 		if(node == null){
-			list.add(null);
+			list.add("X");
 			return;
 		}
 		list.add(node.data);
@@ -53,8 +45,6 @@ public class BST{
 				
 			}
 		}
-		insertIntoMap(node);
-		
 	}
 	
 	 
@@ -63,7 +53,6 @@ public class BST{
 		Integer data;
 		Node left;
 		Node right;
-		Node parent;
 		
 		public Node(Integer data){
 			this.data = data;

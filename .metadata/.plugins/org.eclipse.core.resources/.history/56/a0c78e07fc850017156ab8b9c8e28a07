@@ -4,12 +4,11 @@ import java.util.*;
 public class BST{
 	Node root;
 	int size = 0;
-	LinkedList<Integer> list = new LinkedList<>();
+	LinkedList<Integer> queue = new LinkedList<>();
 	HashMap<Integer, Node> map = new HashMap<>(); 
 	
 	private void insertIntoMap(Node node){
-		map.put(size, node);
-		size++;
+		
 	}
 	
 	public String preOrder(){
@@ -63,7 +62,6 @@ public class BST{
 		Integer data;
 		Node left;
 		Node right;
-		Node parent;
 		
 		public Node(Integer data){
 			this.data = data;

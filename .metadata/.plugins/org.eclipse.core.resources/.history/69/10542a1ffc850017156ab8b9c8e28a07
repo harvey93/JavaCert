@@ -8,8 +8,9 @@ public class BST{
 	HashMap<Integer, Node> map = new HashMap<>(); 
 	
 	private void insertIntoMap(Node node){
-		map.put(size, node);
-		size++;
+		if(!list.isEmpty()){
+			
+		}
 	}
 	
 	public String preOrder(){
@@ -63,7 +64,6 @@ public class BST{
 		Integer data;
 		Node left;
 		Node right;
-		Node parent;
 		
 		public Node(Integer data){
 			this.data = data;

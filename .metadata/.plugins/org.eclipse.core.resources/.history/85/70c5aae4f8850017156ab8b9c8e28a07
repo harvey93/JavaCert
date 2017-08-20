@@ -1,31 +1,22 @@
 package ch4;
-import java.util.*;
 
 public class BST{
 	Node root;
-	int size = 0;
-	LinkedList<Integer> list = new LinkedList<>();
-	HashMap<Integer, Node> map = new HashMap<>(); 
-	
-	private void insertIntoMap(Node node){
-		map.put(size, node);
-		size++;
-	}
 	
 	public String preOrder(){
-		ArrayList<Integer> list = new ArrayList<>();
-		preOrder(root, list);
-		return list.toString();
+		StringBuilder sb = new StringBuilder();
+		preOrder(root, sb);
+		return sb.toString();
 	}
 	
-	public void preOrder(Node node, ArrayList<Integer> list){
+	public void preOrder(Node node, StringBuilder sb){
 		if(node == null){
-			list.add(null);
+			sb.append("X");
 			return;
 		}
-		list.add(node.data);
-		preOrder(node.left, list);
-		preOrder(node.right, list);
+		sb.append(node.data);
+		preOrder(node.left, sb);
+		preOrder(node.right, sb);
 	}
 	
 	public void insert(Integer data){
@@ -53,8 +44,6 @@ public class BST{
 				
 			}
 		}
-		insertIntoMap(node);
-		
 	}
 	
 	 
@@ -63,7 +52,6 @@ public class BST{
 		Integer data;
 		Node left;
 		Node right;
-		Node parent;
 		
 		public Node(Integer data){
 			this.data = data;

@@ -59,7 +59,6 @@ public class Test {
 		bst.insert(0);
 		bst.insert(11);
 		System.out.println(bst.preOrder());
-		System.out.println(bst.map);
 	}
 	
 	public static boolean checkSideDP(Node<Integer> current, Node<Integer> node, HashMap<Node<Integer>, String> map){
