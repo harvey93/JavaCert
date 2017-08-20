@@ -133,6 +133,12 @@ public class Test {
 	
 	public static Node<Integer> commonAncestor2(Node<Integer> root, Node<Integer> node1, Node<Integer> node2){
 		Node<Integer> res = null;
+		ArrayList<Node<Integer>> nodeList1 = new ArrayList<>();
+		ArrayList<Node<Integer>> nodeList2 = new ArrayList<>();
+		treeList(root, node1, nodeList1);
+		treeList(root, node2, nodeList2);
+		System.out.println(nodeList1);
+		System.out.println(nodeList2);
 		return res;
 	}
 		
