@@ -2,7 +2,7 @@ package ch4;
 
 public class BST {
 	
-	private class Node{
+	private Node{
 		Integer data;
 		Node left;
 		Node right;
