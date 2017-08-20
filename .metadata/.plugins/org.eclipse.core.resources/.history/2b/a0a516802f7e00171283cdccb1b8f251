@@ -1,9 +1,0 @@
-package hackerRank;
-
-public class Davis {
-
-	public static void staircase(int num){
-		HashMap<Integer, Integer> map = new HashMap<>();
-		
-	}
-}

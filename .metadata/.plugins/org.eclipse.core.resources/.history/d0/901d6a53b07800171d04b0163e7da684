@@ -1,8 +1,0 @@
-package hackerRank;
-
-public class IceCream {
-
-	public static flavors(int m, int[] a){
-		
-	}
-}

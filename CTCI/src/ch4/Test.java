@@ -52,11 +52,51 @@ public class Test {
 		node5.setRight(node9);
 
 				
-		System.out.println(commonAncestor(node4, node9));
-		System.out.println(commonAncestor2(node1, node4, node9));
-		System.out.println(commonAncestorDP(node1, node4, node9));
+		BST bst = new BST();
+	}
+	
+	public static boolean checkSideDP(Node<Integer> current, Node<Integer> node, HashMap<Node<Integer>, String> map){
+		boolean left = false;
+		boolean right = false;
+		if(current == node){
+			return true;
+		}
+		if(current.left != null){
+			if(map.containsKey(current.left)){
+				String side = map.get(current.left);
+				if(side.equals("left")){
+					right = true;
+				}
+			}else{
+				left = checkSideDP(current.left, node, map);
+				if(left){
+					map.put(current.left, "left");
+				}else {
+					map.put(current.left, "right");
+				}
+			}
+
+		}
+		if(current.right != null){
+			if(map.containsKey(current.right)){
+				String side = map.get(current.right);
+				if(side.equals("right")){
+					right = true;
+				}
+			}else{
+				right = checkSideDP(current.right, node, map);
+				if(right){
+					map.put(current.right, "right");
+				}else {
+					map.put(current.right, "left");
+
+				}
+			}
+		}
+		return left || right;
 		
 	}
+
 	
 	public static Node<Integer> commonAncestorDP(Node<Integer> root, Node<Integer> node1, 
 			Node<Integer> node2, HashMap<Node<Integer>, String> map1, HashMap<Node<Integer>, String> map2){
@@ -72,24 +112,10 @@ public class Test {
 	public static Node<Integer> commonAncestorDP(Node<Integer> root, Node<Integer> node1, Node<Integer> node2){
 		HashMap<Node<Integer>, String> map1 = new HashMap<>();
 		HashMap<Node<Integer>, String> map2 = new HashMap<>();
-		return commonAncestorDP(root, node1, node2, map1, map2);
+		Node<Integer> res = commonAncestorDP(root, node1, node2, map1, map2);
+		return res;
 	}
 	
-	public static boolean checkSideDP(Node<Integer> current, Node<Integer> node, HashMap<Node<Integer>, String> map){
-		boolean left = false;
-		boolean right = false;
-		if(current == node){
-			return true;
-		}
-		if(current.left != null){
-			left = checkSide(current.left, node);
-		}
-		if(current.right != null){
-			right = checkSide(current.right, node);
-		}
-		return left || right;
-		
-	}
 
 	
 

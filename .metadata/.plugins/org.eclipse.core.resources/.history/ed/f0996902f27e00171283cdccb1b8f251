@@ -1,8 +1,0 @@
-package concurrency;
-
-public class Race {
-
-	public void start(Runner runner){
-		
-	}
-}
