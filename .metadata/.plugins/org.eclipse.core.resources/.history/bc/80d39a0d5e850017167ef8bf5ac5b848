@@ -137,13 +137,9 @@ public class Test {
 		ArrayList<Node<Integer>> nodeList2 = new ArrayList<>();
 		treeList(node1, nodeList1);
 		treeList(node2, nodeList2);
-		System.out.println(nodeList1);
-		System.out.println(nodeList2);
+		System.out.println(sb1);
+		System.out.println(sb2);
 		return res;
-	}
-	
-	public static void treeList(Node<Ingeger> node, ArrayList<Node<Integer>> list){
-		
 	}
 	
 	

@@ -142,10 +142,6 @@ public class Test {
 		return res;
 	}
 	
-	public static void treeList(Node<Ingeger> node, ArrayList<Node<Integer>> list){
-		
-	}
-	
 	
 	
 	public static Node<Integer> commonAncestor(Node<Integer> node1, Node<Integer> node2){

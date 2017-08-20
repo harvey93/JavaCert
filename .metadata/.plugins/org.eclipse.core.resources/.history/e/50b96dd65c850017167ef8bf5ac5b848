@@ -51,7 +51,6 @@ public class Test {
 		node3.setRight(node7);
 				
 		System.out.println(commonAncestor(node8, node9));
-		System.out.println(commonAncestor2(node8, node9));
 	}
 	
 	public static boolean isSubTree(Node<Integer> node1, Node<Integer> node2){
@@ -133,19 +132,9 @@ public class Test {
 	
 	public static Node<Integer> commonAncestor2(Node<Integer> node1, Node<Integer> node2){
 		Node<Integer> res = null;
-		ArrayList<Node<Integer>> nodeList1 = new ArrayList<>();
-		ArrayList<Node<Integer>> nodeList2 = new ArrayList<>();
-		treeList(node1, nodeList1);
-		treeList(node2, nodeList2);
-		System.out.println(nodeList1);
-		System.out.println(nodeList2);
+		HashSet<Node<Integer>> set = new HashSet<>();
 		return res;
 	}
-	
-	public static void treeList(Node<Ingeger> node, ArrayList<Node<Integer>> list){
-		
-	}
-	
 	
 	
 	public static Node<Integer> commonAncestor(Node<Integer> node1, Node<Integer> node2){
