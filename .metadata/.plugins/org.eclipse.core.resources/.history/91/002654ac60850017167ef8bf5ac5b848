@@ -132,30 +132,23 @@ public class Test {
 	}
 	
 	public static Node<Integer> commonAncestor2(Node<Integer> root, Node<Integer> node1, Node<Integer> node2){
+		Node<Integer> res = null;
 		
-		if(checkSide(root.left, node1) && checkSide(root.left, node2)){
-			return commonAncestor2(root.left, node1, node2);
-		}else if(checkSide(root.right, node1) && checkSide(root.right, node2)){
-			return commonAncestor2(root.right, node1, node2);
-		}else{
-			return root;
-		}
-		
+		return res;
 	}
 	
 	public static boolean checkSide(Node<Integer> current, Node<Integer> node){
-		boolean left = false;
-		boolean right = false;
+		boolean res = false;
 		if(current == node){
 			return true;
 		}
 		if(current.left != null){
-			left = checkSide(current.left, node);
+			res = checkSide(current.left, node);
 		}
 		if(current.right != null){
-			right = checkSide(current.right, node);
+			res = checkSide(current.right, node);
 		}
-		return left || right;
+		return res;
 		
 	}
 		
