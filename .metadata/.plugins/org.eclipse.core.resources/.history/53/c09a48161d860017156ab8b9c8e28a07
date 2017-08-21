@@ -72,18 +72,8 @@ public class Test {
 	}
 	
 	public static int countPathsWithSum(Node<Integer> node, int sum){
-		if(node == null){
-			return 0;
-		}
-		
 		
 	}
-	
-	public static int countPathsWithSum(Node<Integer> node, int targetSum, int currentSum){
-		
-	}
-
-	
 	
 	
 	

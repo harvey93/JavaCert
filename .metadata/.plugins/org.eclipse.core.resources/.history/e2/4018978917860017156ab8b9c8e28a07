@@ -67,23 +67,9 @@ public class Test {
 		ArrayList<Node<Integer>> list = new ArrayList<>();
 		treeList(node1, list);
 		System.out.println(list);
-		System.out.println(countPathsWithSum(node1, 8));		
-		
+				
+		System.out.println(0b101 ^ 0b101);
 	}
-	
-	public static int countPathsWithSum(Node<Integer> node, int sum){
-		if(node == null){
-			return 0;
-		}
-		
-		
-	}
-	
-	public static int countPathsWithSum(Node<Integer> node, int targetSum, int currentSum){
-		
-	}
-
-	
 	
 	
 	

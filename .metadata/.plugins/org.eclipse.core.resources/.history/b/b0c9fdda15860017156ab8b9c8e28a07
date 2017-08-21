@@ -27,8 +27,6 @@ import java.util.*;
 public class Test {
 
 	public static void main(String[] args) {
-		
-		
 		Node<Integer> node1 = new Node<>(10);
 		
 		Node<Integer> node2 = new Node<>(5);
@@ -67,25 +65,8 @@ public class Test {
 		ArrayList<Node<Integer>> list = new ArrayList<>();
 		treeList(node1, list);
 		System.out.println(list);
-		System.out.println(countPathsWithSum(node1, 8));		
-		
+				
 	}
-	
-	public static int countPathsWithSum(Node<Integer> node, int sum){
-		if(node == null){
-			return 0;
-		}
-		
-		
-	}
-	
-	public static int countPathsWithSum(Node<Integer> node, int targetSum, int currentSum){
-		
-	}
-
-	
-	
-	
 	
 	public static void treeList(Node<Integer> node, ArrayList<Node<Integer>> list){
 		if(node == null){
@@ -96,6 +77,8 @@ public class Test {
 		treeList(node.left, list);
 		treeList(node.right, list);
 	}
+	
+	 
 	
 	public static boolean checkSideDP(Node<Integer> current, Node<Integer> node, HashMap<Node<Integer>, String> map){
 		boolean left = false;
