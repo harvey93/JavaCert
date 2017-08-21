@@ -62,20 +62,10 @@ public class Test {
 		
 		node5.setRight(node9);
 		
-		ArrayList<Node<Integer>> list = new ArrayList<>();
-		treeList(node1, list);
-		System.out.println(list);
+		StringBuilder sb = new StringBuilder();
+		treeString(node1, sb);
+		System.out.println(sb);
 				
-	}
-	
-	public static void treeList(Node<Integer> node, ArrayList<Node<Integer>> list){
-		if(node == null){
-			list.add(null);
-			return;
-		}
-		list.add(node);
-		treeList(node.left, list);
-		treeList(node.right, list);
 	}
 	
 	 

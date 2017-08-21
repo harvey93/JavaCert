@@ -73,7 +73,6 @@ public class Test {
 			list.add(null);
 			return;
 		}
-		list.add(node);
 		treeList(node.left, list);
 		treeList(node.right, list);
 	}

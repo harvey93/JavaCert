@@ -13,7 +13,7 @@ public class BST{
 	}
 	
 	public Node getRandom(){
-		int i = (int)(Math.random() * size) + 1;
+		int i = (int)(Math.random() * (size) + 1;
 		System.out.println(i);
 		return map.get(i);
 	}

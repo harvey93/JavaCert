@@ -61,21 +61,7 @@ public class Test {
 		node4.setRight(node8);
 		
 		node5.setRight(node9);
-		
-		ArrayList<Node<Integer>> list = new ArrayList<>();
-		treeList(node1, list);
-		System.out.println(list);
 				
-	}
-	
-	public static void treeList(Node<Integer> node, ArrayList<Node<Integer>> list){
-		if(node == null){
-			list.add(null);
-			return;
-		}
-		list.add(node);
-		treeList(node.left, list);
-		treeList(node.right, list);
 	}
 	
 	 

@@ -3,19 +3,18 @@ import java.util.*;
 
 public class BST{
 	Node root;
-	int size = 0;
+	int size = 1;
 	LinkedList<Integer> list = new LinkedList<>();
 	HashMap<Integer, Node> map = new HashMap<>(); 
 	
 	private void insertIntoMap(Node node){
-		map.put(++size, node);
-		
+		map.put(size, node);
+		size++;
 	}
 	
 	public Node getRandom(){
-		int i = (int)(Math.random() * size) + 1;
-		System.out.println(i);
-		return map.get(i);
+		System.out.println((int)(Math.random() * (size - 1)) + 1);
+		return root;
 	}
 	
 	public String preOrder(){

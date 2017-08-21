@@ -8,14 +8,12 @@ public class BST{
 	HashMap<Integer, Node> map = new HashMap<>(); 
 	
 	private void insertIntoMap(Node node){
-		map.put(++size, node);
-		
+		map.put(size, node);
+		size++;
 	}
 	
 	public Node getRandom(){
-		int i = (int)(Math.random() * size) + 1;
-		System.out.println(i);
-		return map.get(i);
+		return root;
 	}
 	
 	public String preOrder(){
