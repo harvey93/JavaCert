@@ -79,9 +79,7 @@ public class Test {
 		int pathsFromRoot = countPathsWithSum(node, sum, 0);
 		
 		int pathsOnLeft = countPathsWithSum(node.left, sum, 0);
-		int pathsOnRight = countPathsWithSum(node.right, sum, 0);
-		
-		return pathsFromRoot + pathsOnLeft + pathsOnRight;
+		int pathsOnRIght = countPathsWithSum(node.right, sum, 0);
 		
 		
 	}
