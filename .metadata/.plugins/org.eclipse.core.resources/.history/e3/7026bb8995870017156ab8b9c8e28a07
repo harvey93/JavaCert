@@ -28,7 +28,7 @@ public class NextNum {
 				break;
 			}
 		}
-		return s.length() - 1 - res;
+		return s.length() - res;
 	}
 	
 	public static int getNextSmallest(int n){

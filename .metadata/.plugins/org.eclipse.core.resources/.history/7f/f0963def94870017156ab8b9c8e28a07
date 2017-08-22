@@ -9,8 +9,7 @@ public class NextNum {
 	public static int getNextLargest(int n){
 		String s = Integer.toBinaryString(n);
 		int p = findFirstNonTrailingZero(s);
-		System.out.println(s);
-		System.out.println(p);
+		
 		
 		return n;
 	}
@@ -20,15 +19,9 @@ public class NextNum {
 		int res = s.length() - 1;
 		for(; res >= 0; res--){
 			char c = s.charAt(res);
-			if(!b && c == '1'){
-				
-				b = true;
-			}
-			if(b && c == '0'){
-				break;
-			}
+			if(!b && )
 		}
-		return s.length() - 1 - res;
+		return res;
 	}
 	
 	public static int getNextSmallest(int n){
