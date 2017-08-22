@@ -1,11 +1,10 @@
 package ch5;
-import java.util.*;
 
 public class FlipBit {
 	
 	public static int flip(int n){
 		String bString = BinaryToString.bToString(n);
-		ArrayList<int[]> list = new ArrayList<>();
+		System.out.println();
 		return n;
 	}
 

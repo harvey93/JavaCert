@@ -1,5 +1,4 @@
 package ch5;
-import java.util.*;
 
 public class FlipBit {
 	

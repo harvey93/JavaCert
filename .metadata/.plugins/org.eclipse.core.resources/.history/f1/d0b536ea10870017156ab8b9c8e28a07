@@ -4,7 +4,7 @@ public class Test {
 	
 	public static void main(String[] args) {
 		int a = Insertion.insert(0b1101011001, 0b1011, 2, 6);
-		System.out.println(FlipBit.flip(1775));
+		
 	}
 
 }
