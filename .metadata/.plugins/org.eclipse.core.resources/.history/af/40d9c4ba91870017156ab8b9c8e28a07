@@ -8,16 +8,9 @@ public class NextNum {
 	
 	public static int getNextLargest(int n){
 		String s = Integer.toBinaryString(n);
-		int p = findFirstOne(s);
-		
-		
+		System.out.println(s);
 		return n;
 	}
-	
-	public static int findFirstOne(String s){
-		
-	}
-	
 	public static int getNextSmallest(int n){
 		return n;
 	}
