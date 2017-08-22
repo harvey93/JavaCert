@@ -1,0 +1,18 @@
+package ch5;
+import java.util.*;
+
+public class FlipBit {
+	
+	public static int flip(int n){
+		String bString = BinaryToString.bToString(n);
+		ArrayList<int[]> list = new ArrayList<>();
+		int [] arr = new int[2];
+//		int[0] = bString.charAt(0);
+		int[1] = 1;
+		for(int i = 1; i < bString.length(); i++){
+			
+		}
+		return n;
+	}
+
+}

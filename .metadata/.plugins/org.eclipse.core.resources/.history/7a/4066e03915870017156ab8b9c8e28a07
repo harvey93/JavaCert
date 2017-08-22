@@ -1,8 +1,6 @@
 package ch5;
 import java.util.*;
 
-import javax.swing.plaf.synth.SynthScrollBarUI;
-
 public class FlipBit {
 	
 	public static int flip(int n){
@@ -27,7 +25,6 @@ public class FlipBit {
 				list.add(arr);
 			}
 		}
-		list.forEach(el -> System.out.println(Arrays.toString(el)));
 		return n;
 	}
 

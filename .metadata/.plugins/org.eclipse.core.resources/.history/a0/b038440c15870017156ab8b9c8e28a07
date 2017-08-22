@@ -1,8 +1,6 @@
 package ch5;
 import java.util.*;
 
-import javax.swing.plaf.synth.SynthScrollBarUI;
-
 public class FlipBit {
 	
 	public static int flip(int n){
@@ -20,14 +18,8 @@ public class FlipBit {
 			int val = Integer.parseInt(s);
 			if(arr[0] == val){
 				arr[1]++;
-			}else {
-				arr = new int[2];
-				arr[0] = val;
-				arr[1] = 1;
-				list.add(arr);
 			}
 		}
-		list.forEach(el -> System.out.println(Arrays.toString(el)));
 		return n;
 	}
 
