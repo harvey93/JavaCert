@@ -1,0 +1,9 @@
+package ch5;
+
+public class NextNum {
+	
+	public static int getNext(){
+		return 5;
+	}
+
+}
