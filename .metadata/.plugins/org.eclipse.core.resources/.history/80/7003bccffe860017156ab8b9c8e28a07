@@ -1,0 +1,9 @@
+package ch5;
+
+public class BinaryToString {
+	
+	public static String BtoString(int n){
+		
+	}
+
+}
