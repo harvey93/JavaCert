@@ -2,6 +2,10 @@ package ch5;
 
 public class BinaryToString {
 	
+	public static int bitFlip(int n){
+		return n;
+	}
+	
 	public static String bToString(int n){
 		String s = "";
 		while(n > 0){
