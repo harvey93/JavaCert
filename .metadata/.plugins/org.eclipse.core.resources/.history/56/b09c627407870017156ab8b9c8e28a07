@@ -14,10 +14,5 @@ public class BinaryToString {
 		}
 		return s;
 	}
-	
-	public static String decToString(double n){
-		String s = "";
-		return s;
-	}
 
 }

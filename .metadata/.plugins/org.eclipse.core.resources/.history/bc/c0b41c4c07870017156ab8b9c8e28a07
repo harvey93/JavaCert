@@ -2,7 +2,7 @@ package ch5;
 
 public class BinaryToString {
 	
-	public static String bToString(int n){
+	public static String BtoString(int n){
 		String s = "";
 		while(n > 0){
 			if(n % 2 == 0){
@@ -12,12 +12,6 @@ public class BinaryToString {
 			}
 			n = n /2;
 		}
-		return s;
-	}
-	
-	public static String decToString(double n){
-		String s = "";
-		return s;
 	}
 
 }
