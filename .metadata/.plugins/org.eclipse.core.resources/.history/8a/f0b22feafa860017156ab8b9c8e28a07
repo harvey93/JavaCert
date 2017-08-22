@@ -5,8 +5,8 @@ public class Insertion {
 	public static int insert(int n, int m, int i, int j){
 		int cleared = clearBits(n, i, j); 
 		int mShifted = m << i;
-//		System.out.println(Integer.toBinaryString(cleared));
-//		System.out.println(Integer.toBinaryString(mShifted));
+		System.out.println(Integer.toBinaryString(cleared));
+		System.out.println(Integer.toBinaryString(mShifted));
 		return cleared | mShifted;
 	}
 	
