@@ -1,0 +1,30 @@
+package ch5;
+
+public class BinaryToString {
+	
+	public static String bToString(int n){
+		String s = "";
+		while(n > 0){
+			if(n % 2 == 0){
+				s = "0" + s;
+			}else {
+				s = "1" + s;
+			}
+			n = n /2;
+		}
+		return s;
+	}
+	
+	public static String decToBinaryString(double num){
+		StringBuilder sb = new StringBuilder(".");
+		while(n > 0){
+			double r = 2 * num;
+			if(num >= 1){
+				
+			}
+		}
+		return sb.toString();
+		
+	}
+
+}

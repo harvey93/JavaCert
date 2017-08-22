@@ -44,16 +44,16 @@ public class BinaryToString {
 		}
 		
 		 StringBuilder binary = new StringBuilder();
-		 binary.append(".");
+		 binary.append(".»);
 		 while (num > 0) {
-		 
+		 1* Setting a limit on length: 32 characters *1
 		 if (binary.length() >= 32) {
-		 return "ERROR";
+		 return "ERROR»;
 		 }
 		
 		double r = num * 2;
 		if (r >= 1) {
-		binary.append(1);
+		binary.append(l);
 		num = r - 1;
 		} else {
 		binary.append(0);
