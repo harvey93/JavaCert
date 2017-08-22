@@ -9,12 +9,10 @@ public class NextNum {
 	public static int getNextLargest(int n){
 		String s = Integer.toBinaryString(n);
 		int p = findFirstNonTrailingZero(s);
-		int flipped = setBit(n, p);
-		return n;
-	}
-	
-	public static int setBit(int n, int p){
+		System.out.println(s);
+		System.out.println(p);
 		
+		return n;
 	}
 	
 	public static int findFirstNonTrailingZero(String s){
