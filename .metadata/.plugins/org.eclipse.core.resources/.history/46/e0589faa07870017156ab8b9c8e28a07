@@ -16,10 +16,8 @@ public class BinaryToString {
 	}
 	
 	public static String decToString(double n){
-		StringBuilder sb = new StringBuilder(".");
-		
-		return sb.toString();
-		
+		String s = "";
+		return s;
 	}
 
 }

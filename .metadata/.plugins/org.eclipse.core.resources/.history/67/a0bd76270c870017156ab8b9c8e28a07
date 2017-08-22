@@ -16,10 +16,12 @@ public class BinaryToString {
 	}
 	
 	public static String decToString(double n){
-		StringBuilder sb = new StringBuilder(".");
-		
-		return sb.toString();
-		
+		String s = "0.";
+		double num = n;
+		while(num != (int) num){
+			num *= 10;
+		}
+		return s + bToString((int) num);
 	}
 
 }
