@@ -6,16 +6,13 @@ public class Insertion {
 		int cleared = clearBits(n, i, j); 
 		int a = m << i;
 		int b = n | a;
-		System.out.println(Integer.toBinaryString(cleared));
+		System.out.println(Integer.toBinaryString(c));
 		System.out.println(Integer.toBinaryString(n));
 		return n;
 	}
 	
 	public static int clearBits(int n, int i , int j){
-		int allOnes = ~0;
-		int left = allOnes << j;
-		System.out.println(Integer.toBinaryString(left));
-		return n;
+		
 	}
 
 }

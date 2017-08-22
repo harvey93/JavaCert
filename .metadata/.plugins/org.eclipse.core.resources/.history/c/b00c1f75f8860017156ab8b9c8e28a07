@@ -12,9 +12,6 @@ public class Insertion {
 	}
 	
 	public static int clearBits(int n, int i , int j){
-		int allOnes = ~0;
-		int left = allOnes << j;
-		System.out.println(Integer.toBinaryString(left));
 		return n;
 	}
 
