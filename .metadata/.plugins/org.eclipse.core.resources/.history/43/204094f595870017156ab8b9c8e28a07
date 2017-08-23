@@ -10,13 +10,13 @@ public class NextNum {
 		String s = Integer.toBinaryString(n);
 		int p = findFirstNonTrailingZero(s);
 		int flipped = setBit(n, p);
-		System.out.println(Integer.toBinaryString(n));
-		System.out.println(Integer.toBinaryString(flipped));
 		return n;
 	}
 	
 	public static int setBit(int n, int p){
 		int mask = 1 << p;
+		System.out.println(Integer.toBinaryString(n));
+		System.out.println();
 		return n | mask;
 	}
 	
