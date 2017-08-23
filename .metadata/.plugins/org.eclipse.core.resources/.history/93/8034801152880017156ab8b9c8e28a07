@@ -4,7 +4,6 @@ public class Primes {
 	
 	public static boolean isPrimeFast(int i){
 		boolean[] sieve = primeSieve(i);
-		return sieve[i];
 	}
 	
 	public static boolean[] primeSieve(int max){
