@@ -13,7 +13,7 @@ public class NextNum {
 	}
 	
 	public static int setBitToZero(int n, int p){
-		return 5;
+		
 	}
 
 	

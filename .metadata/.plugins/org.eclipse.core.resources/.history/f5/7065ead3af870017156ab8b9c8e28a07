@@ -2,21 +2,6 @@ package ch5;
 
 public class NextNum {
 	
-	public static int getNextSmallest(int n){
-		String s = Integer.toBinaryString(n);
-		int p = findFirstNonTrailingZero(s);
-		int flipped = setBitToZero(n, p);
-
-		System.out.println(Integer.toBinaryString(flipped));
-//		System.out.println(Integer.toBinaryString(n));
-		return n;
-	}
-	
-	public static int setBitToZero(int n, int p){
-		return 5;
-	}
-
-	
 	public static int getNextLargest(int n){
 		String s = Integer.toBinaryString(n);
 		int p = findFirstNonTrailingZero(s);
@@ -58,5 +43,8 @@ public class NextNum {
 		return s.length() - 1 - res;
 	}
 	
+	public static int getNextSmallest(int n){
+		return n;
+	}
 
 }
