@@ -7,7 +7,9 @@ public class Swap {
 		int odds = i & x;
 		int y = 0x5555555;
 		int evens = i & y;
-		
+//		System.out.println(Integer.toBinaryString(odds >> 1));
+//		System.out.println(Integer.toBinaryString(evens << 1));
+		System.out.println(Integer.toBinaryString(i));
 		
 		return (odds >> 1) | (evens << 1);
 	}
