@@ -1,9 +1,9 @@
-package ch5;
+package ch6;
 
 public class Test {
 	
 	public static void main(String[] args) {
-		System.out.println(Integer.toBinaryString(0XFF));
+		
 	}
 
 }
