@@ -1,0 +1,12 @@
+package ch6;
+
+public class Primes {
+
+	public static boolean isPrimes(int n){
+		boolean res = true;
+		for(int i = 2; i < Math.sqrt(n); i++){
+			
+		}
+		return res;
+	}
+}
