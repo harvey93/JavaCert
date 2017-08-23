@@ -32,8 +32,9 @@ public class Primes {
 	
 	public static void crossOffFlags(boolean[] flags, int prime){
 		for(int i = prime * prime; i < flags.length; i+= prime){
+			if(i % prime == 0){
 				flags[i] = false;
-			
+			}
 		}
 	}
 	
