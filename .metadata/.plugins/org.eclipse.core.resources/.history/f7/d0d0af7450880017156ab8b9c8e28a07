@@ -5,16 +5,8 @@ public class Primes {
 	public static boolean[] primeSieve(int max){
 		boolean flags[] = new boolean[max + 1];
 		init(flags);
-		int prime = 2;
-		crossOffFlags(flags, prime);
-//		while(prime <= (int) Math.sqrt(max)){
-//			crossOfFlags(flags, prime);
-//		}
-		return flags;
-	}
-	
-	public static void crossOffFlags(boolean[] flags, int prime){
 		
+		return flags;
 	}
 	
 	public static void init(boolean[] flags){
