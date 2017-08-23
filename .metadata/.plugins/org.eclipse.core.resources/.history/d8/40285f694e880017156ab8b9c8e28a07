@@ -1,13 +1,6 @@
 package ch6;
 
 public class Primes {
-	
-	public static boolean[] primeSieve(int max){
-		boolean flags[] = new boolean[max + 1];
-		init(flags);
-		return flags;
-	}
-	
 
 	public static boolean isPrime(int n){
 		if(n < 2){
