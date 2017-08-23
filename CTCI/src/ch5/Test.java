@@ -3,7 +3,8 @@ package ch5;
 public class Test {
 	
 	public static void main(String[] args) {
-		System.out.println(NextNum.getNextLargest(3400));
+		int i = NextNum.getNextLargest(13948);
+		System.out.println(Integer.toBinaryString(i));
 	}
 
 }

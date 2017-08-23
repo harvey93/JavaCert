@@ -26,6 +26,11 @@ public class NextNum {
 		int insertMask = (1 << ones) - 1;
 		
 		
+		
+		System.out.println(Integer.toBinaryString(insertMask));
+		System.out.println(Integer.toBinaryString(cleared));
+		System.out.println(Integer.toBinaryString(n));
+		System.out.println(Integer.toBinaryString(flipped));
 		return cleared | insertMask;
 	}
 	

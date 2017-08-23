@@ -23,10 +23,11 @@ public class NextNum {
 		int clearMask = ~0 << p;
 		int cleared = flipped & clearMask;
 		
-		int insertMask = (1 << ones) - 1;
-		
-		
-		return cleared | insertMask;
+		System.out.println(ones);
+		System.out.println(Integer.toBinaryString(cleared));
+		System.out.println(Integer.toBinaryString(n));
+		System.out.println(Integer.toBinaryString(flipped));
+		return n;
 	}
 	
 	public static int setBit(int n, int p){
