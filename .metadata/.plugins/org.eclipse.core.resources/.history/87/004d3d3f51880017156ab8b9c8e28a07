@@ -6,10 +6,10 @@ public class Primes {
 		boolean flags[] = new boolean[max + 1];
 		init(flags);
 		int prime = 2;
-		
-		while(prime <= (int) Math.sqrt(max)){
-			crossOffFlags(flags, prime);
-		}
+		crossOffFlags(flags, prime);
+//		while(prime <= (int) Math.sqrt(max)){
+//			crossOfFlags(flags, prime);
+//		}
 		return flags;
 	}
 	

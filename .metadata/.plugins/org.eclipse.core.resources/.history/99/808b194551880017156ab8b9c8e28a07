@@ -8,7 +8,7 @@ public class Primes {
 		int prime = 2;
 		
 		while(prime <= (int) Math.sqrt(max)){
-			crossOffFlags(flags, prime);
+			crossOfFlags(flags, prime);
 		}
 		return flags;
 	}

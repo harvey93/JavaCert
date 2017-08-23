@@ -7,9 +7,9 @@ public class Primes {
 		init(flags);
 		int prime = 2;
 		
-		while(prime <= (int) Math.sqrt(max)){
-			crossOffFlags(flags, prime);
-		}
+//		while(prime <= (int) Math.sqrt(max)){
+//			crossOfFlags(flags, prime);
+//		}
 		return flags;
 	}
 	
