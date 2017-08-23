@@ -1,0 +1,13 @@
+package ch5;
+
+public class Swap {
+	
+	public static int swap(int i){
+		int x = 0xaaaaaa;
+		int odds = i & x;
+		
+		System.out.println(Integer.toBinaryString(odds >> 1));
+		return i;
+	}
+
+}

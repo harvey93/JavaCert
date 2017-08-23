@@ -1,0 +1,11 @@
+package ch5;
+
+public class Swap {
+	
+	public static int swap(int i){
+		int v = 0xaaaaaa;
+		System.out.println(v);
+		return i;
+	}
+
+}
