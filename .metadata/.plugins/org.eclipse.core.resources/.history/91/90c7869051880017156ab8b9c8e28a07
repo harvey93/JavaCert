@@ -16,13 +16,8 @@ public class Primes {
 	}
 	
 	public static int getNextPrime(boolean[] flags, int prime){
-		int i = prime + 1;
-		for(;i < flags.length; i++){
-			if(flags[i]){
-				break;
-			}
-		}
-		return i;
+		int res = flags.length;
+		for(int i = prime + 1; i < flags.length - 1)
 	}
 	
 	public static void crossOffFlags(boolean[] flags, int prime){

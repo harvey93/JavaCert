@@ -9,20 +9,8 @@ public class Primes {
 		
 		while(prime <= (int) Math.sqrt(max)){
 			crossOffFlags(flags, prime);
-			
-			prime = getNextPrime(flags, prime);
 		}
 		return flags;
-	}
-	
-	public static int getNextPrime(boolean[] flags, int prime){
-		int i = prime + 1;
-		for(;i < flags.length; i++){
-			if(flags[i]){
-				break;
-			}
-		}
-		return i;
 	}
 	
 	public static void crossOffFlags(boolean[] flags, int prime){

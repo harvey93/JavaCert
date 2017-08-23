@@ -19,10 +19,11 @@ public class Primes {
 		int i = prime + 1;
 		for(;i < flags.length; i++){
 			if(flags[i]){
+				res = i;
 				break;
 			}
 		}
-		return i;
+		return res;
 	}
 	
 	public static void crossOffFlags(boolean[] flags, int prime){
