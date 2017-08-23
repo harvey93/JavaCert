@@ -23,7 +23,7 @@ public class NextNum {
 		int clearMask = ~0 << p;
 		int cleared = flipped & clearMask;
 		
-		System.out.println(Integer.toBinaryString(cleared));
+		System.out.println(Integer.toBinaryString(clearMask));
 		System.out.println(Integer.toBinaryString(n));
 		System.out.println(Integer.toBinaryString(flipped));
 		return n;

@@ -20,10 +20,8 @@ public class NextNum {
 				zeroes++;
 			}
 		}
-		int clearMask = ~0 << p;
-		int cleared = flipped & clearMask;
-		
-		System.out.println(Integer.toBinaryString(cleared));
+		int mask = 1 << (p - 1);
+		System.out.println(Integer.toBinaryString(mask));
 		System.out.println(Integer.toBinaryString(n));
 		System.out.println(Integer.toBinaryString(flipped));
 		return n;

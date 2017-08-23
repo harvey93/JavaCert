@@ -12,18 +12,7 @@ public class NextNum {
 		int flipped = setBit(n, p);
 		int zeroes = 0;
 		int ones = 0;
-		
-		for(int i = s.length() - p; i < s.length(); i++){
-			if(s.charAt(i) == '1'){
-				ones++;
-			}else {
-				zeroes++;
-			}
-		}
-		int clearMask = ~0 << p;
-		int cleared = flipped & clearMask;
-		
-		System.out.println(Integer.toBinaryString(cleared));
+		System.out.println(p);
 		System.out.println(Integer.toBinaryString(n));
 		System.out.println(Integer.toBinaryString(flipped));
 		return n;

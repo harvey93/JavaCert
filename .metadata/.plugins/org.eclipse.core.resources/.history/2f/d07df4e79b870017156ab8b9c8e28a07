@@ -14,16 +14,8 @@ public class NextNum {
 		int ones = 0;
 		
 		for(int i = s.length() - p; i < s.length(); i++){
-			if(s.charAt(i) == '1'){
-				ones++;
-			}else {
-				zeroes++;
-			}
+			System.out.println(i);
 		}
-		int clearMask = ~0 << p;
-		int cleared = flipped & clearMask;
-		
-		System.out.println(Integer.toBinaryString(cleared));
 		System.out.println(Integer.toBinaryString(n));
 		System.out.println(Integer.toBinaryString(flipped));
 		return n;
