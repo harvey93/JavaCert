@@ -6,7 +6,7 @@ public class NextNum {
 		String s = Integer.toBinaryString(n);
 		int p = findFirstNonTrailingOne(s);
 		int flipped = setBit(n, p);
-		
+
 		System.out.println(Integer.toBinaryString(flipped));
 //		System.out.println(Integer.toBinaryString(n));
 		return n;
@@ -17,11 +17,11 @@ public class NextNum {
 		int res = s.length() - 1;
 		for(; res >= 0; res--){
 			char c = s.charAt(res);
-			if(!b && c == '0'){
+			if(!b && c == '1'){
 				
 				b = true;
 			}
-			if(b && c == '1'){
+			if(b && c == '0'){
 				break;
 			}
 		}
