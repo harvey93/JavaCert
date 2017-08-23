@@ -5,21 +5,17 @@ public class NextNum {
 	public static int getNextSmallest(int n){
 		String s = Integer.toBinaryString(n);
 		int p = findFirstNonTrailingOne(s);
-		
+		int flipped = setBit(n, p);
 		int ones = 0;
 		for(int i = s.length() - p + 1; i < s.length(); i++){
 			if(s.charAt(i) == '1'){
 				ones++;
 			}
 		}
-		int clearMask = ~0 << (p + 1);
-		int cleared = n & clearMask;
-		
-		int insertMask = (1 << ones + 1) - 1;
-//		System.out.println(Integer.toBinaryString(insertMask));
-		
-		System.out.println(Integer.toBinaryString(n));
-		return cleared | insertMask;
+		int clearMask = ~0 << p;
+		System.out.println(Integer.toBinaryString(flipped));
+//		System.out.println(Integer.toBinaryString(n));
+		return n;
 	}
 	
 	

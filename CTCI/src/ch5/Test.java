@@ -3,10 +3,6 @@ package ch5;
 public class Test {
 	
 	public static void main(String[] args) {
-		int i = NextNum.getNextLargest(13948);
-		int j = NextNum.getNextSmallest(13949);
-//		System.out.println(Integer.toBinaryString(i));
-		System.out.println(Integer.toBinaryString(j));
 	}
 
 }

@@ -13,13 +13,10 @@ public class NextNum {
 			}
 		}
 		int clearMask = ~0 << (p + 1);
-		int cleared = n & clearMask;
-		
-		int insertMask = (1 << ones + 1) - 1;
-//		System.out.println(Integer.toBinaryString(insertMask));
-		
-		System.out.println(Integer.toBinaryString(n));
-		return cleared | insertMask;
+		System.out.println(Integer.toBinaryString(clearMask));
+		System.out.println(Integer.toBinaryString(flipped));
+//		System.out.println(Integer.toBinaryString(n));
+		return n;
 	}
 	
 	
