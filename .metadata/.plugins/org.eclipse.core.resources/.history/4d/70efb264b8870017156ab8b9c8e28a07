@@ -16,9 +16,7 @@ public class Conversion {
 	public static int convert2(int i, int j){
 		int count = 0;
 		
-		for(int a = i ^ j; a != 0; a = a >> 1){
-			count += a & 1;
-		}
+		fo
 		return count;
 	}
 
