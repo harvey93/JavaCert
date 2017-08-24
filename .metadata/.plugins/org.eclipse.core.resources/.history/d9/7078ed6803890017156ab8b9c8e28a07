@@ -1,11 +1,13 @@
 package ch7;
 
-public class Manager extends CallCenterEmployee{
+public class Director extends CallCenterEmployee{
 
 	@Override
 	public int getPriority() {
 		// TODO Auto-generated method stub
-		return 2;
+		return 3;
 	}
+	
+	
 
 }

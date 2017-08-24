@@ -9,5 +9,12 @@ public class Director extends CallCenterEmployee{
 		return 3;
 	}
 
+	
+	public boolean isAvailable() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
 
 }

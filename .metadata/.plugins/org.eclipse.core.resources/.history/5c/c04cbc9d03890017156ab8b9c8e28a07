@@ -8,10 +8,6 @@ public abstract class CallCenterEmployee {
 	
 	public boolean isAvailable(){
 		return this.available;
-	}
-
-	public void toggleAbalability() {
-		this.available = !this.available;
 	};
 
 }

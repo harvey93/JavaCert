@@ -10,8 +10,8 @@ public abstract class CallCenterEmployee {
 		return this.available;
 	}
 
-	public void toggleAbalability() {
-		this.available = !this.available;
+	public void setAvailable(boolean available) {
+		this.available = available;
 	};
 
 }
