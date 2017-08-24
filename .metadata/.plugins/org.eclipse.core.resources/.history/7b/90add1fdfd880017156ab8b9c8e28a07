@@ -1,0 +1,10 @@
+package ch7;
+import java.util.*;
+
+public class Deck <T extends Card>{
+		
+	ArrayList<T> deck;
+	public Deck(){
+		this.deck = new ArrayList<>();
+	}
+}

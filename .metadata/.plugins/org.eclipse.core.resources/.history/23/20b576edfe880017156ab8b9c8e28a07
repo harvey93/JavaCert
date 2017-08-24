@@ -1,0 +1,14 @@
+package ch7;
+
+public abstract class Card {
+	
+	public Suit getSuit();
+
+
+	public int getValue();
+	
+	public String toString(){
+		return value + " of " + this.suit;
+	}
+
+}
