@@ -1,8 +1,8 @@
 package ch7;
 
 public enum Suit {
-	Hearts,
-	Spades,
+	Heart,
+	Spade,
 	Diamonds,
 	Clubs
 }

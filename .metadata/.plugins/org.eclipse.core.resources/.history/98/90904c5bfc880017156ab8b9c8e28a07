@@ -1,11 +1,11 @@
 package ch7;
 
-public abstract class Card {
+public class Card {
 	
 	private Suit suit;
-	private int value;
+	private String value;
 	
-	public Card(Suit suit, int value){
+	public Card(Suit suit, String value){
 		this.suit = suit;
 		this.value = value;
 	}
@@ -14,12 +14,12 @@ public abstract class Card {
 		return this.suit;
 	}
 
-	public int getValue() {
+	public String getValue() {
 		return this.value;
 	}
 	
 	public String toString(){
-		return value + " of " + this.suit;
+		return value + " of " + this.suit + "s";
 	}
 
 }

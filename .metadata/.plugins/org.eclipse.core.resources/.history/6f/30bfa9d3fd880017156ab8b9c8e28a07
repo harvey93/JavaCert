@@ -14,7 +14,7 @@ public abstract class Card {
 		return this.suit;
 	}
 
-	public int getValue() {
+	public String getValue() {
 		return this.value;
 	}
 	
