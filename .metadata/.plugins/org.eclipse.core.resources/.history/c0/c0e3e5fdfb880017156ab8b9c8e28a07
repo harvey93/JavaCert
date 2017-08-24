@@ -11,11 +11,11 @@ public class Card {
 	}
 
 	public Suit getSuit() {
-		return this.suit;
+		return suit;
 	}
 
 	public String getValue() {
-		return this.value;
+		return value;
 	}
 
 }

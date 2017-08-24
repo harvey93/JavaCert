@@ -10,12 +10,4 @@ public class Card {
 		this.value = value;
 	}
 
-	public Suit getSuit() {
-		return this.suit;
-	}
-
-	public String getValue() {
-		return this.value;
-	}
-
 }

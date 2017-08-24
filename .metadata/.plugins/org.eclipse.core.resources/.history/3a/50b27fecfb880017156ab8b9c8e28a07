@@ -1,0 +1,12 @@
+package ch7;
+
+public class Card {
+	
+	private Suit suit;
+	private String value;
+	
+	public Card(Suit suit, String value){
+		
+	}
+
+}
