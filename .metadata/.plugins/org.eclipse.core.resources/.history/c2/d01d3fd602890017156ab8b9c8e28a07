@@ -1,7 +1,6 @@
 package ch7;
 
-public abstract class CallCenterEmployee {
+public abstract class callCenterEmployee {
 
 	public abstract int getPriority();
-
 }
