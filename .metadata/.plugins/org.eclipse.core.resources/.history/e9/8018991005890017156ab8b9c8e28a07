@@ -1,0 +1,9 @@
+package ch7;
+import java.util.*;
+
+public class CallQueue <T extends CallCenterEmployee>{
+	private PriorityQueue<T> store;
+	public CallQueue(){
+		this.store = new PriorityQueue<>();
+	}
+}

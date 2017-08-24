@@ -7,7 +7,7 @@ public class CallQueue {
 		this.store = new PriorityQueue<>(new Comparator<CallCenterEmployee>(){
 
 			@Override
-			public int compare(CallCenterEmployee a, CallCenterEmployee b) {
+			public int compare(T a, T b) {
 				// TODO Auto-generated method stub
 				return a.compareTo(b);
 			}

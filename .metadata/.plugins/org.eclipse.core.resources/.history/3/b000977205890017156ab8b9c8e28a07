@@ -8,6 +8,4 @@ public class Respondent extends CallCenterEmployee{
 		return 1;
 	}
 
-	
-
 }

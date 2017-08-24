@@ -16,7 +16,7 @@ public abstract class CallCenterEmployee implements Comparable<CallCenterEmploye
 	
 	public int compareTo(CallCenterEmployee e) {
 		// TODO Auto-generated method stub
-		return new Integer(getPriority()).compareTo(e.getPriority());
+		return ;
 	}
 
 
