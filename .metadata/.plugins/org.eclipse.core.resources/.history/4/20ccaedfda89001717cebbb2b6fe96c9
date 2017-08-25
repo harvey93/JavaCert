@@ -1,5 +1,4 @@
 package ch8;
-import java.util.*;
 
 public class Fib {
 	
@@ -11,14 +10,6 @@ public class Fib {
 			return 1;
 		}
 		return fibRec(n - 1) + fibRec(n - 2);
-	}
-	
-	public static int fibTopDown(int n){
-		
-	}
-	
-	public static int fibTopDown(int n, HashMap<Integer, Integer> memo){
-		
 	}
 
 }
