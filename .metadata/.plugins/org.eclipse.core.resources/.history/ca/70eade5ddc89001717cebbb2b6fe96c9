@@ -51,7 +51,6 @@ public class Fib {
 			memo.put(i, a + b);
 			i++;
 		}
-		return memo.get(n);
 	}
 
 }

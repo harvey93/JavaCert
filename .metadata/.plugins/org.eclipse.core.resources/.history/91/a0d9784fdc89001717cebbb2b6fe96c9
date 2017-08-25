@@ -47,11 +47,9 @@ public class Fib {
 		
 		while(i <= n){
 			int a = memo.get(i - 1);
-			int b = memo.get(i - 2);
-			memo.put(i, a + b);
+			int a = memo.get(i - 2);
 			i++;
 		}
-		return memo.get(n);
 	}
 
 }

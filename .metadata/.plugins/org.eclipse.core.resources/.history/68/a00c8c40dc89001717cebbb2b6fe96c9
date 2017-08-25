@@ -34,24 +34,14 @@ public class Fib {
 	}
 	
 	public static int fibBottomUp(int n){
-		if(n == 0){
-			return 0;
-		}
-		if(n == 1){
-			return 1; 
-		}
 		HashMap<Integer, Integer> memo = new HashMap<>();
 		memo.put(0, 0);
 		memo.put(1, 1);
 		int i = 2;
 		
 		while(i <= n){
-			int a = memo.get(i - 1);
-			int b = memo.get(i - 2);
-			memo.put(i, a + b);
-			i++;
+			
 		}
-		return memo.get(n);
 	}
 
 }
