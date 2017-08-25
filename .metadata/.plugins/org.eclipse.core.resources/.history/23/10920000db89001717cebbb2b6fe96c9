@@ -15,22 +15,11 @@ public class Fib {
 	
 	public static int fibTopDown(int n){
 		HashMap<Integer, Integer> memo = new HashMap<>();
-		memo.put(0, 0);
-		memo.put(1, 1);
 		return fibTopDown(n, memo);
 	}
 	
 	public static int fibTopDown(int n, HashMap<Integer, Integer> memo){
-		int res;
-		if(memo.containsKey(n)){
-			res = memo.get(n);
-		}else {
-			int n1 = fibTopDown(n - 1, memo);
-			int n2 = fibTopDown(n - 2, memo);
-			res = n1 + n2;
-			memo.put(n, res);
-		}
-		return res;
+		
 	}
 
 }

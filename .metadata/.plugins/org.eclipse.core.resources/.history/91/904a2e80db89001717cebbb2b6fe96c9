@@ -25,8 +25,8 @@ public class Fib {
 		if(memo.containsKey(n)){
 			res = memo.get(n);
 		}else {
-			int n1 = fibTopDown(n - 1, memo);
-			int n2 = fibTopDown(n - 2, memo);
+			int n1 = fibTopDown(n - 1);
+			int n2 = fibTopDown(n - 2);
 			res = n1 + n2;
 			memo.put(n, res);
 		}
