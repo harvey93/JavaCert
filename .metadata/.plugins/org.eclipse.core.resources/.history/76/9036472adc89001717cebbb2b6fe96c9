@@ -38,10 +38,6 @@ public class Fib {
 		memo.put(0, 0);
 		memo.put(1, 1);
 		int i = 2;
-		
-		while(i <= n){
-			
-		}
 	}
 
 }

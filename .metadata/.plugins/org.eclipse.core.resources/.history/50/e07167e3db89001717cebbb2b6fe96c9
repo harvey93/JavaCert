@@ -32,16 +32,5 @@ public class Fib {
 		}
 		return res;
 	}
-	
-	public static int fibBottomUp(int n){
-		HashMap<Integer, Integer> memo = new HashMap<>();
-		memo.put(0, 0);
-		memo.put(1, 1);
-		int i = 2;
-		
-		while(i <= n){
-			
-		}
-	}
 
 }
