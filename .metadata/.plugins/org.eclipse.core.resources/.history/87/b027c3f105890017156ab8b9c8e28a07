@@ -14,12 +14,4 @@ public class CallQueue {
 			
 		});
 	}
-	
-	public void enqueue(CallCenterEmployee e){
-		this.store.add(e);
-	}
-	
-	public CallCenterEmployee dequeue(){
-		return this.store.poll();
-	}
 }

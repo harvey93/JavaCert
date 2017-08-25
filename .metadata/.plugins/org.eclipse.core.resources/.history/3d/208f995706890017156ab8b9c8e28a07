@@ -1,0 +1,22 @@
+package ch7;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		Respondent r1 = new Respondent();
+		Respondent r2 = new Respondent();
+		Manager m1 = new Manager();
+		Manager m2 = new Manager();
+		Director d1 = new Director();
+		
+		CallQueue q = new CallQueue();
+		
+		q.enqueue(m2);
+		q.enqueue(m1);
+		q.enqueue(d1);
+		q.enqueue(r1);
+		q.enqueue(r2);
+		q.enqueue(r3);
+	}
+
+}

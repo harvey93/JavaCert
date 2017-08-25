@@ -20,6 +20,6 @@ public class CallQueue {
 	}
 	
 	public CallCenterEmployee dequeue(){
-		return this.store.poll();
+		this.store.poll();
 	}
 }

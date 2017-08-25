@@ -1,0 +1,13 @@
+package ch7;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		Respondent r1 = new Respondent();
+		Respondent r2 = new Respondent();
+		Manager m1 = new Manager();
+		Manager m2 = new Manager();
+		Director d1 = new Director();
+	}
+
+}
