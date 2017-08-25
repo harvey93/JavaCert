@@ -32,9 +32,7 @@ public class Staircase {
 		int current = 4;
 		while(current <= n){
 			int temp = a + b + c;
-			a = b;
-			b = c;
-			c = temp;
+			
 			current++;
 		}
 		return c;
