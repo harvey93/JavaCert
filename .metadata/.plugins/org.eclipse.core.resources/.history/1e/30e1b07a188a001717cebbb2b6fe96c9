@@ -6,14 +6,18 @@ public class MatrixProbs {
 
 	public static int pathsMemo(int[][] matrix){
 		int[][] memo = new int[matrix.length][matrix[0].length];
-		return pathsMemo(0, 0, matrix, memo);
+		int a = pathsMemo(0, 0, matrix, memo);
+		for(int[] arr : memo){
+			System.out.println(Arrays.toString(arr));
+		}
+		return a;
 	}
 	
 	public static int pathsMemo(int row, int col, int[][] matrix, int[][] memo){
 		if(matrix[row][col] == 0){
 			return 0;
 		}
-		if(row == matrix.length - 1 && col == matrix[0].length - 1){
+		if(row == matrix.length && col == matrix[0].length){
 			return 1;
 		}
 		if(memo[row][col] > 0){

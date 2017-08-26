@@ -1,7 +1,5 @@
 package ch8;
 
-import java.util.Arrays;
-
 public class MatrixProbs {
 
 	public static int pathsMemo(int[][] matrix){
@@ -12,9 +10,6 @@ public class MatrixProbs {
 	public static int pathsMemo(int row, int col, int[][] matrix, int[][] memo){
 		if(matrix[row][col] == 0){
 			return 0;
-		}
-		if(row == matrix.length - 1 && col == matrix[0].length - 1){
-			return 1;
 		}
 		if(memo[row][col] > 0){
 			return memo[row][col];

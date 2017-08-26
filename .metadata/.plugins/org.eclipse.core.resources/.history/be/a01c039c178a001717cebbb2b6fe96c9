@@ -1,0 +1,17 @@
+package ch8;
+
+public class MatrixProbs {
+
+	public static int pathsMemo(int[][] matrix){
+		int[][] memo = new int[matrix.length][matrix[0].length];
+		return pathsMemo(0, 0, matrix, memo);
+	}
+	
+	public static int pathsMemo(int row, int col, int[][] matrix, int[][] memo){
+		if(matrix[row][col] == 0){
+			return 0;
+		}
+		
+		
+	}
+}
