@@ -13,10 +13,10 @@ public class MatrixProbs {
 				if(i == matrix.length - 1 && j == matrix[0].length - 1){
 					memo[i][j] = 1;
 				}
-				if(valid(i + 1, j, matrix)){
+				if(validPath(i + 1, j, matrix)){
 					memo[i][j] += memo[i + 1][j];
 				}
-				if(valid(i, j + 1, matrix)){
+				if(validPath(i, j + 1, matrix)){
 					memo[i][j] += memo[i][j + 1];
 				}
 			}
@@ -24,8 +24,7 @@ public class MatrixProbs {
 		return memo[0][0];
 	}
 	
-
-	public static boolean valid(int row, int col, int[][] matrix){
+	public static boolean validPath(int row, int col, int[][] matrix){
 		boolean res = true;
 		if(row > matrix.length - 1 || row < 0){
 			res = false;
@@ -36,6 +35,10 @@ public class MatrixProbs {
 		}		
 		
 		return res;
+	}
+
+	public static boolean valid(int row, int col, int[][] matrix){
+		return (row >= 0 && row < matrix.length) && (col >= 0 && col < matrix[0].length);
 	}
 
 	public static int pathsMemo(int[][] matrix){
