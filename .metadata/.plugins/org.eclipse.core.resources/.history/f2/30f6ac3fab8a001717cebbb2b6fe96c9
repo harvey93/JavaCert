@@ -1,0 +1,12 @@
+package ch8;
+
+public class Sets {
+	
+	public static int[][] subSets(int [] arr){
+		if(arr.length == 0){
+			new int [][] {{}};
+		}
+		return res;
+	}
+
+}
