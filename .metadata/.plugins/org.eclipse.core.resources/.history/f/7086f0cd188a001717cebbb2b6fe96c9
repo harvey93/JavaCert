@@ -7,10 +7,6 @@ public class MatrixProbs {
 	public static int pathsDP(int[][] matrix){
 		int count = 0;
 		int[][] memo = new int[matrix.length][matrix[0].length];
-		int row = matrix.length - 1;
-		int col = matrix[0].length - 1;
-		memo[row][col] = 1;
-		
 		return count;
 	}
 
