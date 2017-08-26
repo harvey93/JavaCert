@@ -16,7 +16,7 @@ public class MagicIndex {
 		}else if(mid > arr[mid]){
 			return findIndexUnique(arr, mid + 1, end);
 		}else {
-			return findIndexUnique(arr, start, mid - 1);
+			return findIndexUnique(arr, mid - 1);
 		}
 	}
 }

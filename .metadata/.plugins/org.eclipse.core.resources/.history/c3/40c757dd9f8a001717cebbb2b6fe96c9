@@ -1,0 +1,12 @@
+package ch8;
+
+public class MagicIndex {
+
+	public static int findIndexUnique(int [] arr){
+		return findIndexUnique(arr, 0, arr.length - 1);
+	}
+	
+	public static int findIndexUnique(int [] arr, i, j){
+		
+	}
+}

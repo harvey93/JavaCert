@@ -1,0 +1,19 @@
+package ch8;
+
+public class MagicIndex {
+
+	public static int findIndexUnique(int [] arr){
+		int i = arr.length / 2;
+		while(i >= 0 && i < arr.length){
+			if(arr[i] == i){
+				break;
+			}else if(arr[i] > i){
+				
+			}else {
+				
+			}
+		}
+		
+		return i;
+	}
+}
