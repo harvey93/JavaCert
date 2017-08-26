@@ -14,8 +14,7 @@ public class Sets {
 		ArrayList<ArrayList<Integer>> prevPerms = perms(list);
 		for(ArrayList<Integer> sub : prevPerms){
 			for(int i = 0; i < sub.size(); i++){
-				ArrayList<Integer> newSub = (ArrayList<Integer>) sub.clone();
-				newSub.add(last);
+				
 			}
 		}
 		

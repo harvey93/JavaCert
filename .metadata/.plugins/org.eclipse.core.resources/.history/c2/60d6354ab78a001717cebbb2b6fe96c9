@@ -4,21 +4,11 @@ import java.util.*;
 public class Sets {
 	
 	public static ArrayList<ArrayList<Integer>> perms(ArrayList<Integer> list){
-		ArrayList<ArrayList<Integer>> res = new ArrayList<>();
 		if(list.size() <= 1){
+			ArrayList<ArrayList<Integer>> res = new ArrayList<>();
 			res.add(list);
 			return res;
 		}
-		
-		Integer last = list.remove(list.size() - 1);
-		ArrayList<ArrayList<Integer>> prevPerms = perms(list);
-		for(ArrayList<Integer> sub : prevPerms){
-			for(int i = 0; i < sub.size(); i++){
-				ArrayList<Integer> newSub = (ArrayList<Integer>) sub.clone();
-				newSub.add(last);
-			}
-		}
-		
 	}
 	
 	
