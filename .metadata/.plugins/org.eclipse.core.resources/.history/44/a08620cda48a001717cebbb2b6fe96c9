@@ -1,7 +1,5 @@
 package ch8;
 
-import java.util.Arrays;
-
 public class Test {
 	
 	static int[][] matrix = {
@@ -17,12 +15,8 @@ public class Test {
 
 
 	public static void main(String[] args) {
-		int [] arr = {1,2,3};
-		int [][] res = Sets.subSets(arr);
-		for(int [] a : res){
-			System.out.println(Arrays.toString(a));
-		}
-		
+		int[] arr1 = {-10, 5, 2, 2, 2, 3, 4, 7, 9, 12, 13};
+		System.out.println(MagicIndex.findIndexDups(arr1));
 		
 	}
 }

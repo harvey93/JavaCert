@@ -11,17 +11,14 @@ public class MagicIndex {
 		if(end < start){
 			return -1;
 		}
-		
 		int mid = (start + end) / 2;
-		
 		if(arr[mid] == mid){
 			return mid;
 		}
 		
 		int leftIndex = Math.min(mid - 1, arr[mid]);
-		
 		int left = findIndexDups(arr, start, leftIndex);
-		
+		System.out.println(mid);
 		if(left >= 0){
 			return left;
 		}

@@ -1,7 +1,5 @@
 package ch8;
 
-import java.util.Arrays;
-
 public class Test {
 	
 	static int[][] matrix = {
@@ -18,11 +16,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		int [] arr = {1,2,3};
-		int [][] res = Sets.subSets(arr);
-		for(int [] a : res){
-			System.out.println(Arrays.toString(a));
-		}
-		
+		System.out.println(Sets.subSets(arr));
 		
 	}
 }
