@@ -14,21 +14,11 @@ public class MagicIndex {
 		int mid = (start + end) / 2;
 		if(arr[mid] == mid){
 			return mid;
+		}else if(mid > arr[mid]){
+			
+		}else {
+			
 		}
-		
-		int leftIndex = Math.min(mid - 1, arr[mid]);
-		int left = findIndexDups(arr, start, leftIndex);
-		if(left >= 0){
-			return left;
-		}
-		
-		int rightIndex = Math.max(mid + 1, arr[mid]);
-		int right = findIndexDups(arr, rightIndex, end);
-		
-		return right;
-		
-		
-		
 	}
 
 	public static int findIndexUnique(int [] arr){

@@ -4,31 +4,7 @@ public class MagicIndex {
 	
 	
 	public static int findIndexDups(int [] arr){
-		return findIndexDups(arr, 0, arr.length - 1);
-	}
-	
-	public static int findIndexDups(int [] arr, int start, int end){
-		if(end < start){
-			return -1;
-		}
-		int mid = (start + end) / 2;
-		if(arr[mid] == mid){
-			return mid;
-		}
-		
-		int leftIndex = Math.min(mid - 1, arr[mid]);
-		int left = findIndexDups(arr, start, leftIndex);
-		if(left >= 0){
-			return left;
-		}
-		
-		int rightIndex = Math.max(mid + 1, arr[mid]);
-		int right = findIndexDups(arr, rightIndex, end);
-		
-		return right;
-		
-		
-		
+		return 5;
 	}
 
 	public static int findIndexUnique(int [] arr){

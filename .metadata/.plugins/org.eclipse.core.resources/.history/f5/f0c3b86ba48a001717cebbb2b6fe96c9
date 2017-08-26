@@ -16,19 +16,18 @@ public class MagicIndex {
 			return mid;
 		}
 		
-		int leftIndex = Math.min(mid - 1, arr[mid]);
+		int leftIndex = Math.min(mid, arr[mid]);
 		int left = findIndexDups(arr, start, leftIndex);
 		if(left >= 0){
 			return left;
 		}
 		
-		int rightIndex = Math.max(mid + 1, arr[mid]);
+		int rightIndex = Math.max(mid, arr[mid]);
 		int right = findIndexDups(arr, rightIndex, end);
-		
-		return right;
-		
-		
-		
+		if(right >= 0){
+			return right;
+		}
+		return -1;
 	}
 
 	public static int findIndexUnique(int [] arr){
