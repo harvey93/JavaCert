@@ -1,0 +1,21 @@
+package ch8;
+import java.util.*;
+
+public class Sets {
+	
+	public static ArrayList<ArrayList<Integer>> subSets(ArrayList<Integer> list){
+		if(list.size() == 0){
+			ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+			return new 
+		}
+		
+		Integer last = list.remove(list.size() - 1);
+		ArrayList<ArrayList<Integer>> prevList = subSets(list);
+		for(ArrayList<Integer> sub : prevList){
+			sub.add(last);
+		}
+		
+		return prevList;
+	}
+
+}
