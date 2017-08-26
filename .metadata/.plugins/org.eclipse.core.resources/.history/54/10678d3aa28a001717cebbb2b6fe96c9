@@ -1,11 +1,6 @@
 package ch8;
 
 public class MagicIndex {
-	
-	
-	public static int findIndexDups(int [] arr){
-		return 5;
-	}
 
 	public static int findIndexUnique(int [] arr){
 		return findIndexUnique(arr, 0, arr.length - 1);

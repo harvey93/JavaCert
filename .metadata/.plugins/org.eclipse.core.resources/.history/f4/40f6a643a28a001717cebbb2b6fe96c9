@@ -3,8 +3,8 @@ package ch8;
 public class MagicIndex {
 	
 	
-	public static int findIndexDups(int [] arr){
-		return 5;
+	public static findIndexDups(int [] arr){
+		
 	}
 
 	public static int findIndexUnique(int [] arr){
