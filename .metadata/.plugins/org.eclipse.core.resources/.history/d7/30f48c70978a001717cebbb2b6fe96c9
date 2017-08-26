@@ -15,8 +15,9 @@ public class Test {
 
 
 	public static void main(String[] args) {
-		int[] arr1 = {-40, -20, -1, 1, 2, 3, 5, 7, 9, 12, 13};
-		System.out.println(MagicIndex.findIndexUnique(arr1));
+		System.out.println(MatrixProbs.pathsDP(matrix));
+		System.out.println(MatrixProbs.pathsMemo(matrix));
+		
 		
 	}
 }
