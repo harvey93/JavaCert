@@ -17,14 +17,9 @@ public class Sets {
 				ArrayList<Integer> newSub = (ArrayList<Integer>) sub.clone();
 				newSub.add(last);
 				swap(newSub, i, newSub.size() - 1);
-				res.add(newSub);
 			}
-			ArrayList<Integer> newSub = (ArrayList<Integer>) sub.clone();
-			newSub.add(last);
-			res.add(newSub);
-
 		}
-		return res;
+		
 	}
 	
 	public static void swap(ArrayList<Integer> list, int i, int j){

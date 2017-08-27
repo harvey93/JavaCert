@@ -18,11 +18,11 @@ public class Sets {
 				newSub.add(last);
 				swap(newSub, i, newSub.size() - 1);
 				res.add(newSub);
-			}
-			ArrayList<Integer> newSub = (ArrayList<Integer>) sub.clone();
-			newSub.add(last);
-			res.add(newSub);
+				if(i == sub.size() - 1){
+					
 
+				}
+			}
 		}
 		return res;
 	}
