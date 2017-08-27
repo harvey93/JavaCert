@@ -8,11 +8,7 @@ public class RecOps {
 		}
 		
 		if(n2 % 2 == 0){
-			int half = recMult2(n1, n2 / 2);
-			return half + half;
-		}else {
-			int half = recMult2(n1, (n2 - 1) / 2);
-			return half + half + n1;
+			
 		}
 	}
 	
