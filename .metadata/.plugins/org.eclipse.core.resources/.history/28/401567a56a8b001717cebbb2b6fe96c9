@@ -18,7 +18,8 @@ public class Test {
 
 
 	public static void main(String[] args) {		
-		 
+		System.out.println(RecOps.recMult2(5, 13));
+		PriorityMap map = new PriorityMap<>();
 		
 	}
 }
