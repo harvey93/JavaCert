@@ -8,10 +8,10 @@ public class RecOps {
 		}
 		
 		if(n2 == 1){
-			return n1;
+			return n2;
 		}
 		
-		return n1 + recMult(n1, n2 - 1);
+		
 	
 	}
 
