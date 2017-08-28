@@ -9,9 +9,7 @@ public class Coins {
 		return makeChangeMemo(n, denoms, 0, map);
 	}
 	
-	public static int makeChangeMemo(int amount, int[] denoms, int index, int[][] map){
-		return 5;
-	}
+	public static int makeChangeMemo(int amount, int[] denoms, int index, int[][] map){}
 
 	
 	

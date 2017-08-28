@@ -3,16 +3,10 @@ package ch8;
 public class Coins {
 
 	
-	public static int makeChangeMemo(int n){
+	public static int makeChangeMemo(int amt){
 		int denoms[] = {25, 10, 5, 1};
 		int[][] map = new int[n + 1][denoms.length];
-		return makeChangeMemo(n, denoms, 0, map);
 	}
-	
-	public static int makeChangeMemo(int amount, int[] denoms, int index, int[][] map){
-		return 5;
-	}
-
 	
 	
 	public static int makeChange(int amt){

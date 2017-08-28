@@ -3,24 +3,10 @@ package ch8;
 public class Coins {
 
 	
-	public static int makeChangeMemo(int n){
-		int denoms[] = {25, 10, 5, 1};
-		int[][] map = new int[n + 1][denoms.length];
-		return makeChangeMemo(n, denoms, 0, map);
-	}
-	
-	public static int makeChangeMemo(int amount, int[] denoms, int index, int[][] map){
-		return 5;
-	}
-
-	
-	
 	public static int makeChange(int amt){
 		int denoms[] = {25, 10, 5, 1};
 		return makeChange(amt, denoms, 0);
 	}
-	
-	
 	
 	public static int makeChange(int amt, int[] denoms, int index){
 		if(index >= denoms.length - 1){
