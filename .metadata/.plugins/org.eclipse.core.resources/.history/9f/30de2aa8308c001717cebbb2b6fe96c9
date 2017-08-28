@@ -11,6 +11,10 @@ public class Parens {
 	}
 	
 	public static void addParens(ArrayList<String> parens, int left, int right, char[] arr, int index){
+		if(index == arr.length - 1){
+			parens.add(String.copyValueOf(arr));
+			return;
+		}
 		
 		if(left < 0 || right < left){
 			return;
@@ -24,7 +28,7 @@ public class Parens {
 			
 			arr[index] = ')';
 			
-			addParens(parens, left, right - 1, arr, index + 1);
+			addParens(parens, left, right + 1, arr, index + 1);
 		}
 		
 		
