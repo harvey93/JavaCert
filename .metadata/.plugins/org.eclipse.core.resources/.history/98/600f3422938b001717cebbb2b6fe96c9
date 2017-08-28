@@ -20,8 +20,6 @@ public class Test {
 	public static void main(String[] args) {		
 		TowersOfHanoi game = new TowersOfHanoi(5);
 		System.out.println(game.t1);
-		System.out.println(game.t2);
-		System.out.println(game.t3);
 		
 	}
 }

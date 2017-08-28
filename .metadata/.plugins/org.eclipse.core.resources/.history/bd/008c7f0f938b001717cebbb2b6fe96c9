@@ -24,7 +24,7 @@ public class TowersOfHanoi {
 }
 
 class Tower{
-	private Stack<Disk> stack = new Stack<>();
+	Stack<Disk> stack = new Stack<>();
 	
 	public Disk get(){
 		return stack.pop();

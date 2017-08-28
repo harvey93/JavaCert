@@ -8,23 +8,16 @@ public class TowersOfHanoi {
 	Tower t3;
 	
 	public TowersOfHanoi(int n){
-		buildTowers(n);
+		
 	}
 	
 	public void buildTowers(int n){
-		t1 = new Tower();
-		t2 = new Tower();
-		t3 = new Tower();
 		
-		while(n > 0){
-			t1.add(new Disk(n));
-			n--;
-		}
 	}
 }
 
 class Tower{
-	private Stack<Disk> stack = new Stack<>();
+	Stack<Disk> stack = new Stack<>();
 	
 	public Disk get(){
 		return stack.pop();
@@ -33,20 +26,12 @@ class Tower{
 	public void add(Disk disk){
 		stack.push(disk);
 	}
-	
-	public String toString(){
-		return this.stack.toString();
-	}
 }
 
 class Disk{
 
-	Integer size;
+	int size;
 	public Disk(int size){
 		this.size = size;
-	}
-	
-	public String toString(){
-		return this.size.toString();
 	}
 }

@@ -41,7 +41,7 @@ class Tower{
 
 class Disk{
 
-	Integer size;
+	private Integer size;
 	public Disk(int size){
 		this.size = size;
 	}

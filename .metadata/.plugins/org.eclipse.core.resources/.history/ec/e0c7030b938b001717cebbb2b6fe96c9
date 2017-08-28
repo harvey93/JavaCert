@@ -24,7 +24,7 @@ public class TowersOfHanoi {
 }
 
 class Tower{
-	private Stack<Disk> stack = new Stack<>();
+	Stack<Disk> stack = new Stack<>();
 	
 	public Disk get(){
 		return stack.pop();
@@ -32,10 +32,6 @@ class Tower{
 	
 	public void add(Disk disk){
 		stack.push(disk);
-	}
-	
-	public String toString(){
-		return this.stack.toString();
 	}
 }
 
