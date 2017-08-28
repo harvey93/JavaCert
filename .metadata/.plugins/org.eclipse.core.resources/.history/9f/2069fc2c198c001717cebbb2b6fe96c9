@@ -10,13 +10,13 @@ public class Sets {
 	}
 	
 	public static HashSet<StringBuilder> permString(StringBuilder s){
-		HashSet<StringBuilder> set = new HashSet<>();
+		HashSet<String> set = new HashSet<>();
 		if(s.length() <= 1){
 			set.add(s);
 			return set;
 		}
 		String last = new Character(s.charAt(s.length() - 1)).toString();
-		HashSet<StringBuilder> prevPerms = permString(s.substring(0,  s.length() - 1));
+		HashSet<String> prevPerms = permString(s.substring(0,  s.length() - 1));
 		
 	}
 

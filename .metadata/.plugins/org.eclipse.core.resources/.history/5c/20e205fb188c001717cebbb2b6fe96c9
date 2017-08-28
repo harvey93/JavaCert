@@ -4,19 +4,25 @@ import java.util.*;
 public class Sets {
 	
 	
-	public static HashSet<StringBuilder> permString(String s){
-		StringBuilder sb = new StringBuilder(s);
-		return permString(sb);
-	}
-	
-	public static HashSet<StringBuilder> permString(StringBuilder s){
-		HashSet<StringBuilder> set = new HashSet<>();
+	public static HashSet<String> permString(String s){
+		HashSet<String> set = new HashSet<>();
 		if(s.length() <= 1){
 			set.add(s);
 			return set;
 		}
 		String last = new Character(s.charAt(s.length() - 1)).toString();
-		HashSet<StringBuilder> prevPerms = permString(s.substring(0,  s.length() - 1));
+		HashSet<String> prevPerms = permString(s.substring(0,  s.length() - 1));
+		
+	}
+	
+	public static HashSet<String> permString(StringBuilder s){
+		HashSet<String> set = new HashSet<>();
+		if(s.length() <= 1){
+			set.add(s);
+			return set;
+		}
+		String last = new Character(s.charAt(s.length() - 1)).toString();
+		HashSet<String> prevPerms = permString(s.substring(0,  s.length() - 1));
 		
 	}
 

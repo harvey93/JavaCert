@@ -18,7 +18,7 @@ public class Test {
 
 
 	public static void main(String[] args) {		
-	System.out.println(Sets.permString("hello"));
+//	System.out.println(Sets.permString("hello"));
 		String s = "hello";
 		
 	}
