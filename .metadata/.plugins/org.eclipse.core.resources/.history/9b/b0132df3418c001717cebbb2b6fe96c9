@@ -1,0 +1,14 @@
+package ch8;
+
+public class Coins {
+
+	
+	public static int makeChange(int amt){
+		int denoms[] = {1, 5, 10 , 25};
+		return makeChange(amt, denoms, 0);
+	}
+	
+	public static int makeChange(int amt, int[] denoms, int index){
+		
+	}
+}

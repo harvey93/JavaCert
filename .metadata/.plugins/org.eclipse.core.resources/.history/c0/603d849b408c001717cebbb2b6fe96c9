@@ -1,0 +1,19 @@
+package ch8;
+
+public class Coins {
+
+	
+	public static int makeChange(int n){
+		return makeChange(n, 0, 0);
+	}
+	
+	public static  int makeChange(int n, int current, int total){
+		if(current == n){
+			return total + 1;
+		}
+		if(current > n){
+			return total;
+		}
+		
+	}
+}

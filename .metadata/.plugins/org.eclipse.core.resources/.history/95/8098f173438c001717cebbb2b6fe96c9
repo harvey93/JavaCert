@@ -1,0 +1,45 @@
+package ch8;
+
+public class Coins {
+
+	
+	public static int makeChange(int amt){
+		int denoms[] = {25, 10, 5, 1};
+		return makeChange(amt, 0, 0);
+	}
+	
+	public static int makeChange(int amt, int current, int ways){
+		if(current == amt){
+			return 1;
+		}
+		
+		if(current < amt){
+			return 0;
+		}
+		
+		
+		ways += makeChange(amt, current + 1);
+		ways += makeChange(amt, current + 5);
+		ways += makeChange(amt, current + 10);
+		ways += makeChange(amt, current + 25);
+		
+		return ways;
+	}
+	
+//	public static int makeChange(int amt, int[] denoms, int index){
+//		if(index >= denoms.length - 1){
+//			return 1;
+//		}
+//		
+//		int denomAmt = denoms[index];
+//		
+//		int ways = 0;
+//		
+//		for(int i = 0; i * denomAmt <= amt; i++){
+//			int remainder = amt - i * denomAmt;
+//			ways += makeChange(remainder, denoms, index + 1);
+//		}
+//		
+//		return ways;
+//	}
+}
