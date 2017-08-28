@@ -9,24 +9,8 @@ public class Coins {
 
 	}
 	
-	public static long makeChangeHR(int[] coins, int money, int index){
-		if(money == 0){
-			return 1;
-		}
+	public static long makeChangeHR(int[] coins, int amount, int index){
 		
-		if(index >= coins.length){
-			return 0;
-		}
-		
-		int amountWithCoin = 0;
-		long ways = 0;
-		while(amountWithCoin <= money){
-			int remaining = money - amountWithCoin;
-			ways += makeChangeHR(coins, remaining, index + 1);
-			amountWithCoin += coins[index];
-		}
-		
-		return ways;
 	}
 
 	

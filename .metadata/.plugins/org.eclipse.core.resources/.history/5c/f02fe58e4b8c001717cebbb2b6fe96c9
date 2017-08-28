@@ -14,10 +14,6 @@ public class Coins {
 			return 1;
 		}
 		
-		if(index >= coins.length){
-			return 0;
-		}
-		
 		int amountWithCoin = 0;
 		long ways = 0;
 		while(amountWithCoin <= money){

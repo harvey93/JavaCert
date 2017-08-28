@@ -31,7 +31,7 @@ public class Test {
 
 
 	public static void main(String[] args) {
-		System.out.println(Coins.makeChangeHR(6));	
+		System.out.println(Coins.makeChangeHR(1));	
 		
 	}
 }

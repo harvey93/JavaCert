@@ -3,30 +3,14 @@ package ch8;
 public class Coins {
 
 	
-	public static long makeChangeHR (int amount){
-		int coins[] = {25, 10, 5, 1};
-		return makeChange(amount, coins, 0);
-
+	public static int makeChangeMemo(int n){
+		int denoms[] = {25, 10, 5, 1};
+		int[][] map = new int[n + 1][denoms.length];
+		return makeChangeMemo(n, denoms, 0, map);
 	}
 	
-	public static long makeChangeHR(int[] coins, int money, int index){
-		if(money == 0){
-			return 1;
-		}
-		
-		if(index >= coins.length){
-			return 0;
-		}
-		
-		int amountWithCoin = 0;
-		long ways = 0;
-		while(amountWithCoin <= money){
-			int remaining = money - amountWithCoin;
-			ways += makeChangeHR(coins, remaining, index + 1);
-			amountWithCoin += coins[index];
-		}
-		
-		return ways;
+	public static int makeChangeMemo(int amount, int[] denoms, int index, int[][] map){
+		return 5;
 	}
 
 	
@@ -39,8 +23,14 @@ public class Coins {
 	
 	
 	public static int makeChange(int amt, int[] denoms, int index){
-		if(index >= denoms.length - 1){
+//		if(index >= denoms.length - 1){
+//			return 1;
+//		}
+		
+		if(amt == 0){
 			return 1;
+		}else if(amt < 0){
+			return 0;
 		}
 		
 		int ways = 0;
