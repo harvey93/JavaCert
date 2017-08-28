@@ -11,23 +11,14 @@ public class Sets {
 		return list;
 	}
 	
-	public static void printPerms(HashMap<Character, Integer> map, String prefix, int remainder, ArrayList<String> result){
-		if(remainder == 0){
+	public static void printPerms(HashMap<Character, Integer> map, String prefix, int remaining, ArrayList<String> result){
+		if(remaining == 0){
 			result.add(prefix);
 			return;
 		}
 		
-		for(Character c : map.keySet()){
-			int count = map.get(c);
-			if(count > 0){
-				map.put(c, count - 1);
-				printPerms(map, prefix + c, remainder - 1, result);
-				map.put(c, count);
-			}
-		}
 	}
 	
-		
 	public static HashMap<Character, Integer> buildFreqTable(String s){
 		HashMap<Character, Integer> table = new HashMap<>();
 		for(char c : s.toCharArray()){
