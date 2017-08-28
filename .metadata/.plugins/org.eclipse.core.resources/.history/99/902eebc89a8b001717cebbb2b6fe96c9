@@ -6,11 +6,6 @@ public class TowersOfHanoi {
 	Tower t1;
 	Tower t2;
 	Tower t3;
-	int size;
-	
-	public void solve(){
-		moveDisks(size, t1, t2, t3);
-	}
 	
 	public void moveDisks(int n, Tower beg, Tower aux, Tower dest){
 		if(n <= 0){
@@ -19,19 +14,13 @@ public class TowersOfHanoi {
 		
 		moveDisks(n - 1, beg, dest, aux);
 		
-		moveTop(beg, dest);
+		moveDisks(1, beg, aux, dest);
 		
 		moveDisks(n - 1, aux, beg, dest);
 	}
 	
-	public void moveTop(Tower beg, Tower dest){
-		Disk top = beg.get();
-		dest.add(top);
-	}
-	
-	public TowersOfHanoi(int size){
-		this.size = size;
-		buildTowers(size);
+	public TowersOfHanoi(int n){
+		buildTowers(n);
 	}
 	
 	public void buildTowers(int n){

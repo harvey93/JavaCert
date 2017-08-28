@@ -9,7 +9,7 @@ public class TowersOfHanoi {
 	int size;
 	
 	public void solve(){
-		moveDisks(size, t1, t2, t3);
+		moveDisks(t1.)
 	}
 	
 	public void moveDisks(int n, Tower beg, Tower aux, Tower dest){
