@@ -6,16 +6,9 @@ public class Sets {
 	public static ArrayList<String> printPerms(String s){
 		ArrayList<String> list = new ArrayList<>();
 		HashMap<Character, Integer> map = buildFreqTable(s);
-		printPerms(map, "", s.length(), list);
-		
-		return list;
 	}
 	
-	public static void printPerms(HashMap<Character, Integer> map, String prefix, int remaining, ArrayList<String> result){
-		
-	}
-	
-	public static HashMap<Character, Integer> buildFreqTable(String s){
+	public static HashMap<Character, Integer> buildFreqtable(String s){
 		HashMap<Character, Integer> table = new HashMap<>();
 		for(char c : s.toCharArray()){
 			if(!table.containsKey(c)){

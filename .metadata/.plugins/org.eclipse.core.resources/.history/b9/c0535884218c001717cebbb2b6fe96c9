@@ -11,7 +11,7 @@ public class Sets {
 		return list;
 	}
 	
-	public static void printPerms(HashMap<Character, Integer> map, String prefix, int remaining, ArrayList<String> result){
+	public static void printPerms(HashMap<Charachter, Integer> map, String prefix, int remaining, ArrayList<String> result){
 		
 	}
 	
