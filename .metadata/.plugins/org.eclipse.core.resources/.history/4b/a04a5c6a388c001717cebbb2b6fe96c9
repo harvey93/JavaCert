@@ -16,18 +16,6 @@ public class Paint {
 		}else if(col < 0 || col >= screen[0].length){
 			return false;
 		}
-		
-		if(screen[row][col] == ocolor){
-			screen[row][col] = ncolor;
-			fillPaint(screen, row + 1, col, ocolor, ncolor);
-			fillPaint(screen, row - 1, col, ocolor, ncolor);
-			fillPaint(screen, row, col + 1, ocolor, ncolor);
-			fillPaint(screen, row, col - 1, ocolor, ncolor);
-		}
-		
-		
-		
-		return true;
 	}
 
 

@@ -19,10 +19,10 @@ public class Paint {
 		
 		if(screen[row][col] == ocolor){
 			screen[row][col] = ncolor;
-			fillPaint(screen, row + 1, col, ocolor, ncolor);
-			fillPaint(screen, row - 1, col, ocolor, ncolor);
-			fillPaint(screen, row, col + 1, ocolor, ncolor);
-			fillPaint(screen, row, col - 1, ocolor, ncolor);
+			fillPaint(screen, row + 1, col, screen[row][col], ncolor);
+			fillPaint(screen, row - 1, col, screen[row][col], ncolor);
+			fillPaint(screen, row, col + 1, screen[row][col], ncolor);
+			fillPaint(screen, row, col - 1, screen[row][col], ncolor);
 		}
 		
 		
