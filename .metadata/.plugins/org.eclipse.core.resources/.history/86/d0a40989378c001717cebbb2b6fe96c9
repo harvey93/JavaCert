@@ -1,0 +1,14 @@
+package ch8;
+
+public class Paint {
+	
+	public static void fillPaint(Color[][] screen, int row, int col, Color ncolor){
+		
+	}
+
+}
+
+
+enum Color{
+	B, W, R, Y, G;
+}

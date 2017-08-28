@@ -32,15 +32,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-	for(Color[] a : screen){
-		System.out.println(Arrays.toString(a));
-	}
-	System.out.println("---------------------");
-	System.out.println(Paint.fillPaint(screen, 3, 4, Color.G));
-	System.out.println("---------------------");
-	for(Color[] a : screen){
-		System.out.println(Arrays.toString(a));
-	}
+	
 	
 	
 		

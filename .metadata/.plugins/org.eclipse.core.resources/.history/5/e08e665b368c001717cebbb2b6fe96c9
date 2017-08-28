@@ -1,0 +1,11 @@
+package ch8;
+
+public class Paint {
+	
+
+}
+
+
+enum Colors{
+	Black, White, Red, Yellow, Green;
+}

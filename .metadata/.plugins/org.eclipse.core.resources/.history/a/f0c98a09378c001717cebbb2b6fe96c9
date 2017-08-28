@@ -1,0 +1,11 @@
+package ch8;
+
+public class Paint {
+	
+
+}
+
+
+enum Color{
+	B, W, R, Y, G;
+}
