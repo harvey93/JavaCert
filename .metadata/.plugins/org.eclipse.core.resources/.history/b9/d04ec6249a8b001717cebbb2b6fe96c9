@@ -7,7 +7,7 @@ public class TowersOfHanoi {
 	Tower t2;
 	Tower t3;
 	
-	public void moveDisks(int n, Tower beg, Tower aux, Tower dest){
+	public void moveDisks(int n, Tower beg, Tower aux, Tow dest){
 		
 	}
 	
