@@ -4,7 +4,6 @@ import java.util.*;
 public class TowersOfHanoi {
 	
 	
-	
 	public TowersOfHanoi(int n){
 		
 	}
@@ -16,14 +15,6 @@ public class TowersOfHanoi {
 
 class Tower{
 	Stack<Disk> stack = new Stack<>();
-	
-	public Disk get(){
-		return stack.pop();
-	}
-	
-	public void add(Disk disk){
-		stack.push(disk);
-	}
 }
 
 class Disk{
