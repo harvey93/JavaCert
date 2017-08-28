@@ -3,10 +3,6 @@ import java.util.*;
 
 public class Sets {
 	
-	public static ArrayList<String> printPerms(String s){
-		
-	}
-	
 	
 	
 	public static HashSet<String> permString(String s){
