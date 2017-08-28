@@ -4,8 +4,7 @@ import java.util.*;
 public class Sets {
 	
 	public static ArrayList<String> printPerms(String s){
-		ArrayList<String> list = new ArrayList<>();
-		HashMap<Character, Integer> map = buildFreqTable(s);
+		
 	}
 	
 	
