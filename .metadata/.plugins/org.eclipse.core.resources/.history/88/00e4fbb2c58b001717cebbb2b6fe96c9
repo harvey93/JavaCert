@@ -18,7 +18,12 @@ public class Test {
 
 
 	public static void main(String[] args) {		
-	System.out.println(Sets.permString("hello"));
+		TowersOfHanoi game = new TowersOfHanoi(5);
+		game.solve();
+		System.out.println(game.t1);
+		System.out.println(game.t2);
+		System.out.println(game.t3);
+		
 	}
 }
 

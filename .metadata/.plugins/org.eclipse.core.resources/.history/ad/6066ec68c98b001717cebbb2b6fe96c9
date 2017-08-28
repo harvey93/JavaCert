@@ -3,13 +3,6 @@ import java.util.*;
 
 public class Sets {
 	
-	
-	public static HashSet<String> permString(String s){
-		
-	}
-	
-	
-	
 	public static ArrayList<ArrayList<Integer>> perms(ArrayList<Integer> list){
 		ArrayList<ArrayList<Integer>> res = new ArrayList<>();
 		if(list.size() <= 1){

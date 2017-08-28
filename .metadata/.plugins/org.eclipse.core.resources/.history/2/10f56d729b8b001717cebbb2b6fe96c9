@@ -24,7 +24,7 @@ public class TowersOfHanoi {
 		moveDisks(n - 1, aux, beg, dest);
 	}
 	
-	private void moveTop(Tower beg, Tower dest){
+	public void moveTop(Tower beg, Tower dest){
 		Disk top = beg.get();
 		dest.add(top);
 	}
@@ -34,7 +34,7 @@ public class TowersOfHanoi {
 		buildTowers(size);
 	}
 	
-	private void buildTowers(int n){
+	public void buildTowers(int n){
 		t1 = new Tower();
 		t2 = new Tower();
 		t3 = new Tower();
