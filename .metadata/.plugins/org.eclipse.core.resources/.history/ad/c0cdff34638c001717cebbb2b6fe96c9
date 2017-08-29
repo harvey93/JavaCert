@@ -8,7 +8,7 @@ public class Queens {
 	public static ArrayList<Integer []> eightQueens(){
 		ArrayList<Integer []> result = new ArrayList<>();
 		Integer[] cols = new Integer[GRID_SIZE];
-		eightQueens(0, cols, result);
+		eightQueens(GRID_SIZE - 1, cols, result);
 		return result;
 	}
 	
@@ -25,28 +25,17 @@ public class Queens {
 		}
 	}
 	
-	private static boolean checkValid(Integer [] cols, int row1, int col){
+	
+	private static boolean checkValid(Integer [] cols, int row, int col){
 		boolean res = true;
-		for(int row2 = 0; row2 < row1; row2++){
+		for(int row2 = 0; row2 < row; row2++){
 			int col2 = cols[row2];
 			
 			if(col == col2){
 				res = false;
 				break;
 			}
-			
-			int colDistance = Math.abs(col2 - col);
-			
-			int rowDistance = row1 - row2;
-			
-			if(colDistance == rowDistance){
-				res = false;
-				break;
-			}
-			
-			
 		}
 		return res;
-		
 	}
 }

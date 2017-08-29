@@ -31,8 +31,9 @@ public class Queens {
 			int col2 = cols[row2];
 			
 			if(col == col2){
-				res = false;
-				break;
+//				res = false;
+//				break;
+				return false;
 			}
 			
 			int colDistance = Math.abs(col2 - col);
@@ -40,13 +41,14 @@ public class Queens {
 			int rowDistance = row1 - row2;
 			
 			if(colDistance == rowDistance){
-				res = false;
-				break;
+//				res = false;
+//				break;
+				return false;
 			}
 			
 			
 		}
-		return res;
-		
+//		return res;
+		return true;
 	}
 }
