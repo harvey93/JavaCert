@@ -5,14 +5,8 @@ import java.util.*;
 
 public class Boxes {
 	
-	public static int createStack(ArrayList<Box> list){
-		Collections.sort(list, new BoxComparator());
-		System.out.println(list);
-		int maxHeight = 0;
-		for(int i = 0; i < list.size(); i++){
-			int height = createStack(list, i);
-			maxHeight = Math.max(maxHeight, height);
-		}
+	public static createStack(ArrayList<Box> list){
+		
 	}
 
 }
