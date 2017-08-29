@@ -31,7 +31,21 @@ public class Test {
 
 
 	public static void main(String[] args) {
-		System.out.println(BooleanEvaluation.evaluate("1^0|0|1", false));
+		ArrayList<Box> list = new ArrayList<>();
+		list.add(new Box(6, 5, 8));
+		list.add(new Box(10, 10, 12));
+		list.add(new Box(5, 4, 7));
+		list.add(new Box(8, 7, 10));
+		list.add(new Box(7, 6, 9));
+		list.add(new Box(9, 9, 11));
+		list.add(new Box(15, 15, 14));
+		list.add(new Box(18, 9, 11));
+		list.add(new Box(20, 4, 0));
+		list.add(new Box(19, 9, 1));
+		Collections.shuffle(list);
+		System.out.println(Boxes.createStack(list));
+		
+		
 	}
 }
 
