@@ -20,9 +20,9 @@ public class Boxes {
 	
 	public static int createStack(ArrayList<Box> boxes, int index, HashMap<Integer, Integer> map){
 		if(map.containsKey(index)){
+			
 			return map.get(index);
 		}
-		
 		Box bottom = boxes.get(index);
 		int maxHeight = 0;
 		for(int i = index + 1; i < boxes.size(); i++){

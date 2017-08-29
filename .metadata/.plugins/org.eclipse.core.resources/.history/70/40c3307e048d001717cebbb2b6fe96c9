@@ -6,7 +6,7 @@ import java.util.*;
 public class Boxes {
 	
 	public static int createStack(ArrayList<Box> list){
-		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+		HashMap<Integer, Integer> = new HashMap<Integer, Integer>();
 		Collections.sort(list, new BoxComparator());
 		System.out.println(list);
 		int maxHeight = 0;
@@ -19,22 +19,17 @@ public class Boxes {
 	
 	
 	public static int createStack(ArrayList<Box> boxes, int index, HashMap<Integer, Integer> map){
-		if(map.containsKey(index)){
-			return map.get(index);
-		}
-		
 		Box bottom = boxes.get(index);
 		int maxHeight = 0;
 		for(int i = index + 1; i < boxes.size(); i++){
 			Box current = boxes.get(i);
 			if(current.canBeAbove(bottom)){
 				
-				int height = createStack(boxes, i, map);
+				int height = createStack(boxes, i);
 				maxHeight = Math.max(maxHeight, height);
 			}
 		}
 		maxHeight += bottom.h;
-		map.put(index, maxHeight);
 		return maxHeight;
 	}
 
