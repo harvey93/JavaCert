@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ch8.Boxrs&apos; to &apos;Boxes&apos;&#x0A;- Original project: &apos;CTCI&apos;&#x0A;- Original element: &apos;ch8.Boxrs&apos;&#x0A;- Renamed element: &apos;ch8.Boxes&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Boxrs&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ch8{Boxrs.java[Boxrs" matchStrategy="1" name="Boxes" qualified="false" references="true" similarDeclarations="false" stamp="1504039475837" textual="false" version="1.0"/>
+</session>

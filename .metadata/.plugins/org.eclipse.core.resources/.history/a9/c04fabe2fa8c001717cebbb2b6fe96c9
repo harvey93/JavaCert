@@ -31,7 +31,8 @@ public class Test {
 
 
 	public static void main(String[] args) {
-		System.out.println();
+		ArrayList<Integer []> list = Queens.eightQueens();
+		System.out.println(list.size());
 		
 	}
 }
