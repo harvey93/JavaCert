@@ -10,16 +10,6 @@ class Box{
 	Integer h;
 	Integer w;
 	Integer d;
-	
-	public Box(int h, int w, int d){
-		this.h = h;
-		this.w = w;
-		this.d = d;
-	}
-	
-	public String toString(){
-		return this.h.toString();
-	} 
 }
 
 class BoxComparator implements Comparator<Box>{
@@ -29,5 +19,4 @@ class BoxComparator implements Comparator<Box>{
 	public int compare(Box o1, Box o2) {
 		// TODO Auto-generated method stub
 		return -1 * o1.h.compareTo(o2.h);
-	}
-}
+	}}

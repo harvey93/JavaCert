@@ -16,10 +16,6 @@ class Box{
 		this.w = w;
 		this.d = d;
 	}
-	
-	public String toString(){
-		return this.h.toString();
-	} 
 }
 
 class BoxComparator implements Comparator<Box>{

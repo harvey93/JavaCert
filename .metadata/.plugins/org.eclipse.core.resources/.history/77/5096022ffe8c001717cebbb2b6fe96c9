@@ -40,8 +40,6 @@ public class Test {
 		list.add(new Box(9, 9, 11));
 		Collections.shuffle(list);
 		System.out.println(list);
-		Collections.sort(list, new BoxComparator());
-		System.out.println(list);
 	}
 }
 

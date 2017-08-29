@@ -1,0 +1,24 @@
+package ch8;
+
+import java.util.Comparator;
+
+public class Boxes {
+
+}
+
+class Box{
+	int h;
+	int w;
+	int d;
+}
+
+class BoxCompartor implements Comparator<Box>{
+
+	@Override
+	public int compare(Box o1, Box o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+}

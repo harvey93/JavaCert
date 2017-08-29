@@ -1,0 +1,15 @@
+package ch8;
+
+public class Boxes {
+
+}
+
+class Box{
+	int h;
+	int w;
+	int d;
+}
+
+class BoxCompartor implements Comparator{
+	
+}
