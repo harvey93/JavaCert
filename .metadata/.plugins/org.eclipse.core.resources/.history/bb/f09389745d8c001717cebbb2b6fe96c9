@@ -1,0 +1,9 @@
+package ch8;
+
+public class Queens {
+
+	
+	public static boolean checkValid(){
+		return true;
+	}
+}

@@ -1,0 +1,15 @@
+package ch8;
+
+public class Queens {
+	
+	int GRID_SIZE = 8;
+	
+	public static eightQueens(){
+		
+	}
+	
+	
+	public static boolean checkValid(){
+		return true;
+	}
+}
