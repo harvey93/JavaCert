@@ -45,7 +45,6 @@ public class Test {
 		Collections.shuffle(list);
 		System.out.println(Boxes.createStack(list));
 		
-		
 	}
 }
 

@@ -16,10 +16,6 @@ public class Boxes {
 		return maxHeight;
 	}
 	
-	public static int createStack2(ArrayList<Box> boxes, int index){
-		
-	}
-	
 	public static int createStack(ArrayList<Box> boxes, int index){
 		Box bottom = boxes.get(index);
 		int maxHeight = 0;

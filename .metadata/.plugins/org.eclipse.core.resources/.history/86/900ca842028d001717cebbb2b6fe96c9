@@ -10,29 +10,17 @@ public class Boxes {
 		System.out.println(list);
 		int maxHeight = 0;
 		for(int i = 0; i < list.size(); i++){
-			int height = createStack2(list, i);
+			int height = createStack(list, i);
 			maxHeight = Math.max(maxHeight, height);
 		}
 		return maxHeight;
 	}
 	
-	public static int createStack2(ArrayList<Box> boxes, int index){
-		
-	}
-	
 	public static int createStack(ArrayList<Box> boxes, int index){
-		Box bottom = boxes.get(index);
-		int maxHeight = 0;
-		for(int i = index + 1; i < boxes.size(); i++){
-			Box current = boxes.get(i);
-			if(current.canBeAbove(bottom)){
-				
-				int height = createStack(boxes, i);
-				maxHeight = Math.max(maxHeight, height);
-			}
+		int height;
+		for(int i = index; i < boxes.size(); i++){
+			
 		}
-		maxHeight += bottom.h;
-		return maxHeight;
 	}
 
 }
@@ -41,10 +29,6 @@ class Box{
 	Integer h;
 	Integer w;
 	Integer d;
-	
-	public boolean canBeAbove(Box below){
-		return (below.h > this.h) && (below.w > this.w) && (below.d > this.d);
-	}
 	
 	public Box(int h, int w, int d){
 		this.h = h;

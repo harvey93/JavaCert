@@ -10,14 +10,10 @@ public class Boxes {
 		System.out.println(list);
 		int maxHeight = 0;
 		for(int i = 0; i < list.size(); i++){
-			int height = createStack2(list, i);
+			int height = createStack(list, i);
 			maxHeight = Math.max(maxHeight, height);
 		}
 		return maxHeight;
-	}
-	
-	public static int createStack2(ArrayList<Box> boxes, int index){
-		
 	}
 	
 	public static int createStack(ArrayList<Box> boxes, int index){
