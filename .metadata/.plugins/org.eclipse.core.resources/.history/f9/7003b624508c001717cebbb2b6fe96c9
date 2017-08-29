@@ -6,12 +6,12 @@ public class Coins {
 	
 	public static long makeChangeDP (int amount){
 		int coins[] = {25, 10, 5, 1};
-		HashMap<String, Long> map = new HashMap<>();
+		HashMap<String, Integer> map = new HashMap<>();
 		return makeChangeDP(coins, amount, 0, map);
 
 	}
 	
-	public static long makeChangeDP(int[] coins, int money, int index, HashMap<String, Long> map){
+	public static long makeChangeDP(int[] coins, int money, int index, HashMap<String, Integer> map){
 		
 		if(money == 0){
 			return 1;
@@ -37,7 +37,7 @@ public class Coins {
 		
 		map.put(key, ways);
 		
-		return map.get(key);
+		return ways;
 	}
 
 	

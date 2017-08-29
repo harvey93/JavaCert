@@ -1,18 +1,16 @@
 package ch8;
-import java.util.*;
 
 public class Coins {
 
 	
-	public static long makeChangeDP (int amount){
+	public static long makeChangeHR (int amount){
 		int coins[] = {25, 10, 5, 1};
-		HashMap<String, Long> map = new HashMap<>();
-		return makeChangeDP(coins, amount, 0, map);
+		return makeChangeDP(coins, amount, 0);
 
 	}
 	
-	public static long makeChangeDP(int[] coins, int money, int index, HashMap<String, Long> map){
-		
+	public static long makeChangeDP(int[] coins, int money, int index){
+		System.out.println(index);
 		if(money == 0){
 			return 1;
 		}
@@ -22,29 +20,24 @@ public class Coins {
 		}
 		
 		
-		String key = money + "-" + index;
-		if(map.containsKey(key)){
-			return map.get(key);
-		}
+		
 		int amountWithCoin = 0;
 		long ways = 0;
 		while(amountWithCoin <= money){
 			
 			int remaining = money - amountWithCoin;
-			ways += makeChangeDP(coins, remaining, index + 1, map);
+			ways += makeChangeHR(coins, remaining, index + 1);
 			amountWithCoin += coins[index];
 		}
 		
-		map.put(key, ways);
-		
-		return map.get(key);
+		return ways;
 	}
 
 	
 	
 	
 	public static long makeChangeHR(int[] coins, int money, int index){
-		
+		System.out.println(index);
 		if(money == 0){
 			return 1;
 		}
