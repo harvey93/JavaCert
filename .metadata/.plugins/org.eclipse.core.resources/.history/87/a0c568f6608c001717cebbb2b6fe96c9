@@ -27,10 +27,6 @@ public class Queens {
 	
 	
 	private static boolean checkValid(Integer [] cols, int row, int col){
-		boolean res = true;
-		for(int row2 = 0; row2 < row; row2++){
-			
-		}
-		return res;
+		return true;
 	}
 }

@@ -18,8 +18,7 @@ public class Queens {
 		}else {
 			for(int col = 0; col < GRID_SIZE; col++){
 				if(checkValid(cols, row, col)){
-					cols[row] = col;
-					eightQueens(row + 1, cols, result);
+					
 				}
 			}
 		}
@@ -27,10 +26,6 @@ public class Queens {
 	
 	
 	private static boolean checkValid(Integer [] cols, int row, int col){
-		boolean res = true;
-		for(int row2 = 0; row2 < row; row2++){
-			
-		}
-		return res;
+		return true;
 	}
 }

@@ -1,0 +1,23 @@
+package ch8;
+import java.util.*;
+
+public class Queens {
+	
+	int GRID_SIZE = 8;
+	
+	public static ArrayList<Integer []> eightQueens(){
+		ArrayList<Integer []> result = new ArrayList<>();
+		Integer[] cols = new Integer[gridSize];
+		eightQueens(GRID_SIZE - 1, cols, result);
+		return result;
+	}
+	
+	private static void eightQueens(int row, Integer[] cols, ArrayList<Integer[]> result){
+		
+	}
+	
+	
+	private static boolean checkValid(){
+		return true;
+	}
+}
