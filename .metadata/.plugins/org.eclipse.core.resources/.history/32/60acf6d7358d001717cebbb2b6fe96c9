@@ -13,6 +13,10 @@ public class Paint {
 	
 	
 	public static boolean fillPaint(Color[][] screen, int row, int col, Color ocolor, Color ncolor){
+		if(ocolor == ncolor){
+			return false;
+		}
+		
 		if(row < 0 || row >= screen.length || col < 0 || col >= screen[0].length){
 			return false;
 		}
@@ -63,6 +67,4 @@ public class Paint {
 
 enum Color{
 	B, W, R, Y, G;
-	
-	
 }
