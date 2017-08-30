@@ -52,8 +52,6 @@ public class BooleanEvaluation {
 			ways += subways;
 		}
 		
-		memo.put(result + s, ways);
-		
 		return ways;
 		
 	}

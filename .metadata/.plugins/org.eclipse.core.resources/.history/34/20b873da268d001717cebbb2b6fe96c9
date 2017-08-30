@@ -1,14 +1,12 @@
 package ch8;
-import java.util.*;
 
 public class BooleanEvaluation {
 	
 	public static int evaluate(String s, boolean result){
-		HashMap<String, Integer> memo = new HashMap<>();
-		return evaluate(s, result, memo);
+		
 	}
 
-	public static int evaluate(String s, boolean result, HashMap<String, Integer> memo){
+	public static int evaluate(String s, boolean result){
 
 		if(s.length() == 0){
 			return 0;
@@ -16,10 +14,6 @@ public class BooleanEvaluation {
 		
 		if(s.length() == 1){
 			return evalString(s) == result ? 1 : 0;
-		}
-		
-		if(memo.containsKey(result + s)){
-			return memo.get(result + s);
 		}
 		
 		int ways = 0;
@@ -51,8 +45,6 @@ public class BooleanEvaluation {
 			int subways = result ? totalTrue : total - totalTrue;
 			ways += subways;
 		}
-		
-		memo.put(result + s, ways);
 		
 		return ways;
 		
