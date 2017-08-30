@@ -5,26 +5,7 @@ public class Sets {
 	
 	public static ArrayList<String> printPerms(String s){
 		ArrayList<String> list = new ArrayList<>();
-		HashMap<Character, Integer> map = buildFreqTable(s);
-		System.out.println(map);
-		printPerms(map, "", s.length(), list);
-		return list;
-	}
-	
-	public static void printPerms(HashMap<Character, Integer> map, String prefix, int remainder, ArrayList<String> result){
-		if(remainder == 0){
-			result.add(prefix);
-			return;
-		}
-		
-		for(Character c : map.keySet()){
-			int count = map.get(c);
-			if(count > 0){
-				map.put(c, count - 1);
-				printPerms(map, prefix + c, remainder - 1, result);
-				map.put(c, count);
-			}
-		}
+		HashMap<Character, Integer> freqTable = buildFreqTable(s);
 		
 	}
 	
@@ -38,7 +19,6 @@ public class Sets {
 			}
 			map.put(c, map.get(c) + 1);
 		}
-		return map;
 	}
 	
 	
@@ -83,8 +63,20 @@ public class Sets {
 //		}
 //	}
 	
-			
-
+		
+	public static HashMap<Character, Integer> buildFreqTable(String s){
+		HashMap<Character, Integer> table = new HashMap<>();
+		for(char c : s.toCharArray()){
+			if(!table.containsKey(c)){
+				table.put(c, 0);
+			}
+			table.put(c, table.get(c) + 1);
+		}
+		return table;
+	
+	}
+	
+	
 	
 	public static HashSet<String> permString(String s){
 		HashSet<String> set = new HashSet<>();

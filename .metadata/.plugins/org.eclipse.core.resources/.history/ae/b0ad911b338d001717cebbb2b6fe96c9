@@ -20,9 +20,7 @@ public class Sets {
 		for(Character c : map.keySet()){
 			int count = map.get(c);
 			if(count > 0){
-				map.put(c, count - 1);
-				printPerms(map, prefix + c, remainder - 1, result);
-				map.put(c, count);
+				
 			}
 		}
 		

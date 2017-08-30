@@ -7,24 +7,10 @@ public class Sets {
 		ArrayList<String> list = new ArrayList<>();
 		HashMap<Character, Integer> map = buildFreqTable(s);
 		System.out.println(map);
-		printPerms(map, "", s.length(), list);
-		return list;
+		return printPerms(map, "", s.length(), list);
 	}
 	
-	public static void printPerms(HashMap<Character, Integer> map, String prefix, int remainder, ArrayList<String> result){
-		if(remainder == 0){
-			result.add(prefix);
-			return;
-		}
-		
-		for(Character c : map.keySet()){
-			int count = map.get(c);
-			if(count > 0){
-				map.put(c, count - 1);
-				printPerms(map, prefix + c, remainder - 1, result);
-				map.put(c, count);
-			}
-		}
+	public static void printPerms(HashMap<Character, Integer> map, String prefix, int remainder, ArrayList<String>){
 		
 	}
 	
