@@ -17,10 +17,6 @@ public class Boxes {
 	}
 	
 	public static int createStack(int index, ArrayList<Box> list, HashMap<Integer, Integer> map){
-		if(map.containsKey(index)){
-			return map.get(index);
-		}
-		
 		Box bottom = list.get(index);
 		int maxHeight = 0;
 		for(int i = index + 1; i < list.size(); i++){
@@ -31,9 +27,7 @@ public class Boxes {
 			}
 			
 		}
-		
 		maxHeight += bottom.h;
-		map.put(index, maxHeight);
 		return maxHeight;
 
 	}
