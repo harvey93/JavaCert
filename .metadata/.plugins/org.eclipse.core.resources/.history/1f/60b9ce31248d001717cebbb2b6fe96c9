@@ -2,9 +2,7 @@ package ch8;
 
 public class BooleanEvaluation {
 	
-
 	public static int evaluate(String s, boolean result){
-
 		if(s.length() == 0){
 			return 0;
 		}
@@ -15,8 +13,7 @@ public class BooleanEvaluation {
 		
 		int ways = 0;
 		
-		for(int i = 1; i < s.length(); i += 2){
-
+		for(int i = 1; i < s.length(); i++){
 			char c = s.charAt(i);
 			String left = s.substring(0, i);
 			String right = s.substring(i + 1, s.length());
@@ -24,26 +21,15 @@ public class BooleanEvaluation {
 			int leftTrue = evaluate(left, true);
 			int leftFalse = evaluate(left, false);
 			
-			int rightTrue = evaluate(right, true);
+			int rightTrue = evaluate(right, false);
 			int rightFalse = evaluate(right, false);
 			
-			int total = (leftTrue + leftFalse) * (rightTrue + rightFalse); 
-			  
-
-			int totalTrue = 0;
-			if(c == '^'){
-				totalTrue = leftTrue * rightFalse + rightTrue * leftFalse;
-			}else if(c == '&'){
-				totalTrue = leftTrue * rightTrue;
-			}else if (c == '|'){
-				totalTrue = leftTrue * rightTrue + leftTrue * rightFalse + rightTrue * leftFalse;
-			}
+			int total = (leftTrue * leftFalse) + (rightTrue + rightFalse); 
 			
-			int subways = result ? totalTrue : total - totalTrue;
-			ways += subways;
+			if(c == '^'){
+				tot
+			}
 		}
-		
-		return ways;
 		
 	}
 	

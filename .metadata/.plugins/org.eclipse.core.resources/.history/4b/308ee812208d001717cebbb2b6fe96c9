@@ -1,0 +1,15 @@
+package ch8;
+
+public class BooleanEvaluation {
+	
+	public static int evaluate(String s, boolean result){
+		if(s.length() == 0){
+			return 0;
+		}
+	}
+	
+	public boolean evalString(String s){
+		return s.equals("1") ? true : false;
+	}
+
+}
