@@ -5,7 +5,7 @@ public class BooleanEvaluation {
 	
 	public static int countEval(String s, boolean result){
 		HashMap<String, Integer> map = new HashMap<>();
-		return countEval(s, result, map);
+		return countEvan(s, result, map);
 	}	
 	public static int countEval(String s, boolean result, HashMap<String, Integer> map){
 		if(s.length() == 0){
@@ -14,10 +14,6 @@ public class BooleanEvaluation {
 		
 		if(s.length() == 1){
 			return evalString(s) == result ? 1 : 0;
-		}
-		
-		if(map.containsKey(result + s)){
-			return map.get(result + s);
 		}
 		
 		int ways = 0;
@@ -48,7 +44,6 @@ public class BooleanEvaluation {
 			ways += subWays;
 		}
 		
-		map.put(result + s, ways);
 		return ways;
 	}
 	

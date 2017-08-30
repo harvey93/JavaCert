@@ -16,10 +16,6 @@ public class BooleanEvaluation {
 			return evalString(s) == result ? 1 : 0;
 		}
 		
-		if(map.containsKey(result + s)){
-			return map.get(result + s);
-		}
-		
 		int ways = 0;
 		
 		for(int i = 1; i < s.length(); i+= 2){
@@ -48,7 +44,6 @@ public class BooleanEvaluation {
 			ways += subWays;
 		}
 		
-		map.put(result + s, ways);
 		return ways;
 	}
 	
