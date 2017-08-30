@@ -31,7 +31,12 @@ public class Test {
 
 
 	public static void main(String[] args) {
-		System.out.println(Coins.makeChange(5));
+//		System.out.println(BooleanEvaluation.evaluate("1^0|0|1", false));
+		System.out.println(Paint.fillPaint(screen, 3, 3, Color.R));
+		for(Color [] arr : screen){
+			System.out.println(Arrays.toString(arr));
+		}
+		
 	}
 }
 

@@ -18,11 +18,6 @@ public class Coins {
 			return 0;
 		}
 		
-		String key = amount + "-" + index;
-		if(map.containsKey(key)){
-			return map.get(key);
-		}
-		
 		int amtFromCoins = 0;
 		int ways = 0;
 		
@@ -31,8 +26,6 @@ public class Coins {
 			ways += makeChange(coins, rem, index + 1, map);
 			amtFromCoins += coins[index];
 		}
-		
-		map.put(key, ways);
 		
 		return ways;
 	}

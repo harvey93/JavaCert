@@ -32,8 +32,6 @@ public class Coins {
 			amtFromCoins += coins[index];
 		}
 		
-		map.put(key, ways);
-		
 		return ways;
 	}
 	

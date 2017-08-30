@@ -2,59 +2,7 @@ package ch8;
 import java.util.*;
 
 public class Coins {
-	
-	public static long makeChange(int amount){
-		HashMap<String, Integer> map = new HashMap<>();
-		int[] coins = {25, 10, 5, 1};
-		return makeChange(coins, amount, 0, map);
-	}
-	
-	public static long makeChange(int [] coins, int amount, int index, HashMap<String, Integer> map){
-		if(amount == 0){
-			return 1;
-		}
-		
-		if(index >= coins.length){
-			return 0;
-		}
-		
-		String key = amount + "-" + index;
-		if(map.containsKey(key)){
-			return map.get(key);
-		}
-		
-		int amtFromCoins = 0;
-		int ways = 0;
-		
-		while(amtFromCoins <= amount){
-			int rem = amount - amtFromCoins;
-			ways += makeChange(coins, rem, index + 1, map);
-			amtFromCoins += coins[index];
-		}
-		
-		map.put(key, ways);
-		
-		return ways;
-	}
-	
-	
-	
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	public static long makeChangeDP (int amount){
 		int coins[] = {25, 10, 5, 1};
@@ -121,4 +69,57 @@ public class Coins {
 
 	
 	
+	public static int makeChange(int amt){
+		int denoms[] = {25, 10, 5, 1};
+		return makeChange(amt, denoms, 0);
+	}
+	
+	
+	
+	public static int makeChange(int amt, int[] denoms, int index){
+		if(index >= denoms.length - 1){
+			return 1;
+		}
+		
+		int ways = 0;
+		int denomAmt = denoms[index];
+		
+		for(int i = 0; amt - i * denomAmt >= 0; i++){
+			int remainder = amt - i * denomAmt;
+			ways += makeChange(remainder, denoms, index + 1);
+		}
+		
+		return ways;
+	}
+	
+//	public static int makeChange(int amt){
+//		if(amt == 0){
+//			
+//			return 1;
+//		}
+//		
+//		if(amt < 0){
+//			return 0;
+//		}
+//		
+//				
+//		return makeChange(amt - 25) + makeChange(amt - 10) + makeChange(amt - 5) + makeChange(amt - 1);
+//	}
+	
+//	public static int makeChange(int amt, int[] denoms, int index){
+//		if(index >= denoms.length - 1){
+//			return 1;
+//		}
+//		
+//		int denomAmt = denoms[index];
+//		
+//		int ways = 0;
+//		
+//		for(int i = 0; i * denomAmt <= amt; i++){
+//			int remainder = amt - i * denomAmt;
+//			ways += makeChange(remainder, denoms, index + 1);
+//		}
+//		
+//		return ways;
+//	}
 }
