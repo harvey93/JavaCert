@@ -35,7 +35,7 @@ public class Test {
 		for(Integer[] arr : list){
 			System.out.println(Arrays.toString(arr));
 		}
-		System.out.println(list.size());
+		
 	}
 }
 

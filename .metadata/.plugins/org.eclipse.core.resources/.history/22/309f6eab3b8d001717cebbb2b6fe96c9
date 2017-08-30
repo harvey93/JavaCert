@@ -8,7 +8,7 @@ public class Queens {
 	public static ArrayList<Integer []> eightQueens(){
 		ArrayList<Integer []> results = new ArrayList<>();
 		Integer [] cols = new Integer[GRID_SIZE];
-		eightQueens(results, cols, 0);
+		eightQueens(results, cols, 0)
 		return results;
 	}
 	
@@ -16,37 +16,10 @@ public class Queens {
 		if(row == GRID_SIZE){
 			results.add(cols.clone());
 		}else {
-			for(int col = 0; col < cols.length; col++){
-				if(checkValid(row, col, cols)){
-					cols[row] = col;
-					eightQueens(results, cols, row + 1);
-				}
-			}
+			
 		}
 		
 		
-	}
-	
-	public static boolean checkValid(int row1, int col1, Integer[] cols){
-		boolean valid = true;
-		for(int row2 = 0; row2 < row1; row2++){
-			int col2 = cols[row2];
-			
-			if(col2 == col1){
-				valid = false;
-				break;
-			}
-			
-			int colDiff = Math.abs(col1 - col2);
-			int rowDiff = row1 - row2;
-			
-			if(colDiff == rowDiff){
-				valid = false;
-				break;
-			}
-		}
-		
-		return valid;
 	}
 	
 	

@@ -37,13 +37,7 @@ public class Queens {
 				break;
 			}
 			
-			int colDiff = Math.abs(col1 - col2);
-			int rowDiff = row1 - row2;
 			
-			if(colDiff == rowDiff){
-				valid = false;
-				break;
-			}
 		}
 		
 		return valid;

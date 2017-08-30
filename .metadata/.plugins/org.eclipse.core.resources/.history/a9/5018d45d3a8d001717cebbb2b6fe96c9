@@ -31,11 +31,7 @@ public class Test {
 
 
 	public static void main(String[] args) {
-		ArrayList<Integer []> list = Queens.eightQueens();
-		for(Integer[] arr : list){
-			System.out.println(Arrays.toString(arr));
-		}
-		System.out.println(list.size());
+		System.out.println(Coins.makeChange(5));
 	}
 }
 
