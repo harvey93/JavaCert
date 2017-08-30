@@ -32,7 +32,7 @@ public class Test {
 
 	public static void main(String[] args) {
 //		System.out.println(BooleanEvaluation.evaluate("1^0|0|1", false));
-		System.out.println(Parens.generateParens(3));
+		System.out.println(Sets.generateParens(3));
 		
 	}
 }
