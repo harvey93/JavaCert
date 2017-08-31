@@ -19,23 +19,18 @@ public class Boxes {
 	}
 	
 	public static int createStacK(ArrayList<Box> boxes, int index, HashMap<Integer, Integer> memo){
-		if(memo.containsKey(index)){
-			
-			return memo.get(index);
-		}
 		Box bottom = boxes.get(index);
 		
 		int maxHeight = 0;
 		for(int i = index + 1; i < boxes.size(); i++){
 			Box current = boxes.get(i);
 			if(current.canBeAbove(bottom)){
-				int height = createStacK(boxes, i, memo);;
+				int height = createStacK(boxes, i);;
 				maxHeight = Math.max(maxHeight, height);
 			}
 		}
 		
 		maxHeight += bottom.h;
-		memo.put(index, maxHeight);
 		return maxHeight;
 		
 	}

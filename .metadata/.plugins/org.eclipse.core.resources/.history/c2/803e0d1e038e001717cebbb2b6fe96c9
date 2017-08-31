@@ -19,10 +19,6 @@ public class Boxes {
 	}
 	
 	public static int createStacK(ArrayList<Box> boxes, int index, HashMap<Integer, Integer> memo){
-		if(memo.containsKey(index)){
-			
-			return memo.get(index);
-		}
 		Box bottom = boxes.get(index);
 		
 		int maxHeight = 0;
@@ -35,7 +31,6 @@ public class Boxes {
 		}
 		
 		maxHeight += bottom.h;
-		memo.put(index, maxHeight);
 		return maxHeight;
 		
 	}

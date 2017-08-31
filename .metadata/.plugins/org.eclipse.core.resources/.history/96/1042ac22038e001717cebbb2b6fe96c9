@@ -20,7 +20,6 @@ public class Boxes {
 	
 	public static int createStacK(ArrayList<Box> boxes, int index, HashMap<Integer, Integer> memo){
 		if(memo.containsKey(index)){
-			
 			return memo.get(index);
 		}
 		Box bottom = boxes.get(index);
