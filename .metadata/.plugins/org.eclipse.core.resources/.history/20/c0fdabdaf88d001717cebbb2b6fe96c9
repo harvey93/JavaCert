@@ -6,46 +6,49 @@ public class Queens {
 	private static int GRID_SIZE = 8;
 	
 	public static ArrayList<Integer []> eightQueens(){
-		ArrayList<Integer []> result = new ArrayList<>();
+		ArrayList<Integer []> results = new ArrayList<>();
 		Integer [] cols = new Integer[GRID_SIZE];
-		eightQueens(result, cols, 0);
-		return result;
+		eightQueens(results, cols, 0);
+		return results;
 	}
 	
-	public static void eightQueens(ArrayList<Integer[]> result, Integer [] cols, int row){
-		if(row >= cols.length){
-			result.add(cols);
-			return;
-		}
-		
-			for(int col = 0; col < GRID_SIZE; col++){
-				if(checkValid(cols, row, col)){
+	public static void eightQueens(ArrayList<Integer []> results, Integer[] cols, int row){
+		if(row == GRID_SIZE){
+			results.add(cols.clone());
+		}else {
+			for(int col = 0; col < cols.length; col++){
+				if(checkValid(row, col, cols)){
 					cols[row] = col;
-					eightQueens(result, cols, row + 1);
+					eightQueens(results, cols, row + 1);
 				}
 			}
+		}
+		
 		
 	}
 	
-	public static boolean checkValid(Integer[] cols, int row1, int col1){
-		boolean res = true;
+	public static boolean checkValid(int row1, int col1, Integer[] cols){
+		boolean valid = true;
 		for(int row2 = 0; row2 < row1; row2++){
 			int col2 = cols[row2];
+			
 			if(col2 == col1){
-				res = false;
+				valid = false;
 				break;
 			}
 			
-			int colDiff = Math.abs(col2 - col1);
+			int colDiff = Math.abs(col1 - col2);
 			int rowDiff = row1 - row2;
+			
 			if(colDiff == rowDiff){
-				res = false;
+				valid = false;
 				break;
 			}
-			
 		}
-		return res;	
+		
+		return valid;
 	}
+	
 	
 	
 	

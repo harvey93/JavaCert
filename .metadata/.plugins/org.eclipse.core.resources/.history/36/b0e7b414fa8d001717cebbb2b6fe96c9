@@ -5,46 +5,24 @@ public class Queens {
 	
 	private static int GRID_SIZE = 8;
 	
-	public static ArrayList<Integer []> eightQueens(){
+	public static ArrayList<Integer> eightQueens(){
 		ArrayList<Integer []> result = new ArrayList<>();
 		Integer [] cols = new Integer[GRID_SIZE];
 		eightQueens(result, cols, 0);
 		return result;
 	}
 	
-	public static void eightQueens(ArrayList<Integer[]> result, Integer [] cols, int row){
-		if(row >= cols.length){
+	public static void eightQueens(ArrayList<Integer[]> result, Integer [] cols, int col){
+		if(col >= cols.length){
 			result.add(cols);
-			return;
 		}
 		
-			for(int col = 0; col < GRID_SIZE; col++){
-				if(checkValid(cols, row, col)){
-					cols[row] = col;
-					eightQueens(result, cols, row + 1);
-				}
+		for(int row = col; row < cols.length; row++){
+			if(checkValid(cols, row, col)){
+				cols[row] = col;
+				eightQueens(result, cols, row + 1);
 			}
-		
-	}
-	
-	public static boolean checkValid(Integer[] cols, int row1, int col1){
-		boolean res = true;
-		for(int row2 = 0; row2 < row1; row2++){
-			int col2 = cols[row2];
-			if(col2 == col1){
-				res = false;
-				break;
-			}
-			
-			int colDiff = Math.abs(col2 - col1);
-			int rowDiff = row1 - row2;
-			if(colDiff == rowDiff){
-				res = false;
-				break;
-			}
-			
 		}
-		return res;	
 	}
 	
 	

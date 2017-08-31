@@ -43,11 +43,7 @@ public class Test {
 
 
 	public static void main(String[] args) {
-		ArrayList<Integer []> arr = Queens.eightQueens();
-		for(Integer [] a : arr){
-			System.out.println(Arrays.toString(a));
-		}
-		System.out.println(arr.size());
+		System.out.println(Sets.printPerms("hell"));
 	}
 }
 

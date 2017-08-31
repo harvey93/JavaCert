@@ -18,13 +18,12 @@ public class Queens {
 			return;
 		}
 		
-			for(int col = 0; col < GRID_SIZE; col++){
-				if(checkValid(cols, row, col)){
-					cols[row] = col;
-					eightQueens(result, cols, row + 1);
-				}
+		for(int col = 0; col < GRID_SIZE; col++){
+			if(checkValid(cols, row, col)){
+				cols[row] = col;
+				eightQueens(result, cols, row + 1);
 			}
-		
+		}
 	}
 	
 	public static boolean checkValid(Integer[] cols, int row1, int col1){
@@ -36,12 +35,6 @@ public class Queens {
 				break;
 			}
 			
-			int colDiff = Math.abs(col2 - col1);
-			int rowDiff = row1 - row2;
-			if(colDiff == rowDiff){
-				res = false;
-				break;
-			}
 			
 		}
 		return res;	

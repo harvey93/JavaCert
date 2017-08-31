@@ -16,7 +16,7 @@ public class Queens {
 		if(row >= cols.length){
 			result.add(cols);
 			return;
-		}
+		}else {
 		
 			for(int col = 0; col < GRID_SIZE; col++){
 				if(checkValid(cols, row, col)){
@@ -24,7 +24,7 @@ public class Queens {
 					eightQueens(result, cols, row + 1);
 				}
 			}
-		
+		}
 	}
 	
 	public static boolean checkValid(Integer[] cols, int row1, int col1){
