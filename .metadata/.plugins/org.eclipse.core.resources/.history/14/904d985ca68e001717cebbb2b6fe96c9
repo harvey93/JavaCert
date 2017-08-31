@@ -6,7 +6,6 @@ public class Parens {
 	
 	public static ArrayList<String> generateParens(int n){
 		ArrayList<String> result = new ArrayList<>();
-		
 		generateParens(result, n, n, new char[n * 2], 0);
 		return result;
 	}
@@ -23,10 +22,8 @@ public class Parens {
 		}
 		
 		chars[index] = '(';
-		generateParens(result, left - 1, right, chars, index + 1);
 		
 		chars[index] = ')';
-		generateParens(result, left, right - 1, chars, index + 1);
 		
 	} 
 	
