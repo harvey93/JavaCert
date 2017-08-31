@@ -6,25 +6,12 @@ public class Sets {
 	public static ArrayList<String> printPerms(String s){
 		ArrayList<String> result = new ArrayList<>();
 		HashMap<Character, Integer> map = buildFreqTable(s);
-		
-		printPerms(map, "", result, s.length());
+		printPerms(map, "", result, 0);
 		return result;
 	}
 	
-	public static void printPerms(HashMap<Character, Integer> map, String prefix, ArrayList<String> result, int remainder){
-		if(remainder == 0){
-			result.add(prefix);
-			return;
-		}
+	public static void printPerms(HashMap<Character, Integer> map, String prefix, ArrayList<String> result, int index){
 		
-		for(Character c : map.keySet()){
-			int count = map.get(c);
-			if(count > 0){
-				map.put(c, count - 1);
-				printPerms(map, prefix + c, result, remainder - 1);
-				map.put(c, count);
-			}
-		}
 	}
 	
 	

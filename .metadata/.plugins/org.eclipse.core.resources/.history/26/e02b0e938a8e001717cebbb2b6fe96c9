@@ -6,13 +6,12 @@ public class Sets {
 	public static ArrayList<String> printPerms(String s){
 		ArrayList<String> result = new ArrayList<>();
 		HashMap<Character, Integer> map = buildFreqTable(s);
-		
 		printPerms(map, "", result, s.length());
 		return result;
 	}
 	
 	public static void printPerms(HashMap<Character, Integer> map, String prefix, ArrayList<String> result, int remainder){
-		if(remainder == 0){
+		if(prefix.length() == remainder){
 			result.add(prefix);
 			return;
 		}

@@ -12,7 +12,7 @@ public class Sets {
 	}
 	
 	public static void printPerms(HashMap<Character, Integer> map, String prefix, ArrayList<String> result, int remainder){
-		if(remainder == 0){
+		if(prefix.length() == remainder){
 			result.add(prefix);
 			return;
 		}
