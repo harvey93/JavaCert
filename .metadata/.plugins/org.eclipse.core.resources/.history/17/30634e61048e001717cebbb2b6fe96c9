@@ -39,10 +39,10 @@ public class BooleanEvaluation {
 				totalTrue += (leftTrue * rightFalse) + (leftFalse * rightTrue) + leftTrue * rightTrue;
 			}
 			
-			ways += result ? totalTrue : total - totalTrue;
+			
 		}
 		
-		return ways;
+		
 	}
 	
 	

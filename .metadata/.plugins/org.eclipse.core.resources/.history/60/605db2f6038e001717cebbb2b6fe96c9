@@ -12,11 +12,7 @@ public class BooleanEvaluation {
 			return result == evalString(s) ? 1 : 0;
 		}
 		
-		int ways = 0;
-		
 		for(int i = 1; i < s.length(); i+= 2){
-			char c = s.charAt(i);
-			
 			String left = s.substring(0, i);
 			String right = s.substring(i + 1, s.length());
 			
@@ -27,22 +23,10 @@ public class BooleanEvaluation {
 			int rightFalse = countEval(right, false);
 			
 			
-			int total = (leftTrue + leftFalse) * (rightTrue + rightFalse);
 			
-			int totalTrue = 0;
-			
-			if(c == '^'){
-				totalTrue += (leftTrue * rightFalse) + (leftFalse * rightTrue);
-			}else if (c == '&'){
-				totalTrue += leftTrue * rightTrue;
-			}else if (c == '|'){
-				totalTrue += (leftTrue * rightFalse) + (leftFalse * rightTrue) + leftTrue * rightTrue;
-			}
-			
-			ways += result ? totalTrue : total - totalTrue;
 		}
 		
-		return ways;
+		
 	}
 	
 	
