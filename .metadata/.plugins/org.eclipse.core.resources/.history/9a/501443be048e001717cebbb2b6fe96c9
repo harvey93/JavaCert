@@ -56,7 +56,6 @@ public class BooleanEvaluation {
 			ways += result ? totalTrue : total - totalTrue;
 		}
 		
-		memo.put(key, ways);
 		return ways;
 	}
 	

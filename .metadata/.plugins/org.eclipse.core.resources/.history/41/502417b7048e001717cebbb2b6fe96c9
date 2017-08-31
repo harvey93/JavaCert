@@ -20,12 +20,6 @@ public class BooleanEvaluation {
 			return result == evalString(s) ? 1 : 0;
 		}
 		
-		String key = result + s;
-		
-		if(memo.containsKey(key)){
-			return memo.get(key);
-		}
-		
 		int ways = 0;
 		
 		for(int i = 1; i < s.length(); i+= 2){
@@ -56,7 +50,6 @@ public class BooleanEvaluation {
 			ways += result ? totalTrue : total - totalTrue;
 		}
 		
-		memo.put(key, ways);
 		return ways;
 	}
 	

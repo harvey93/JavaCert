@@ -23,6 +23,7 @@ public class BooleanEvaluation {
 		String key = result + s;
 		
 		if(memo.containsKey(key)){
+			System.out.println("in");
 			return memo.get(key);
 		}
 		

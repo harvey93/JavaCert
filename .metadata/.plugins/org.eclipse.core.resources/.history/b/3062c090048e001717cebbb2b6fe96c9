@@ -4,26 +4,12 @@ import java.util.*;
 public class BooleanEvaluation {
 	
 	public static int countEval(String s, boolean result){
-		HashMap<String, Integer> memo = new HashMap<>();
-		return countEval(s, result, memo);
-	}
-	
-	public static int countEval(String s, boolean result, HashMap<String, Integer> memo){
-		
-		
-		
 		if(s.length() == 0){
 			return 0;
 		}
 		
 		if(s.length() == 1){
 			return result == evalString(s) ? 1 : 0;
-		}
-		
-		String key = result + s;
-		
-		if(memo.containsKey(key)){
-			return memo.get(key);
 		}
 		
 		int ways = 0;
@@ -34,11 +20,11 @@ public class BooleanEvaluation {
 			String left = s.substring(0, i);
 			String right = s.substring(i + 1, s.length());
 			
-			int leftTrue = countEval(left, true, memo);
-			int leftFalse = countEval(left, false, memo);
+			int leftTrue = countEval(left, true);
+			int leftFalse = countEval(left, false);
 			
-			int rightTrue = countEval(right, true, memo);
-			int rightFalse = countEval(right, false, memo);
+			int rightTrue = countEval(right, true);
+			int rightFalse = countEval(right, false);
 			
 			
 			int total = (leftTrue + leftFalse) * (rightTrue + rightFalse);
@@ -56,7 +42,6 @@ public class BooleanEvaluation {
 			ways += result ? totalTrue : total - totalTrue;
 		}
 		
-		memo.put(key, ways);
 		return ways;
 	}
 	
