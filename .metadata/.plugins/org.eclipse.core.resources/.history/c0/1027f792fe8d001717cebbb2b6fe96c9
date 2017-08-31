@@ -4,7 +4,7 @@ import java.util.*;
 public class Coins {
 	
 	public static long makeChange(int n){
-		int[] coins = {25, 10, 5, 1};
+		int[] coin = {25, 10, 5, 1};
 		return makeChange(coins, n, 0);
 	}
 	
@@ -13,7 +13,7 @@ public class Coins {
 			return 1;
 		}
 		
-		if(index >= coins.length){
+		if(amount < 0){
 			return 0;
 		}
 		

@@ -4,30 +4,7 @@ import java.util.*;
 public class Coins {
 	
 	public static long makeChange(int n){
-		int[] coins = {25, 10, 5, 1};
-		return makeChange(coins, n, 0);
-	}
-	
-	public static long makeChange(int[] coins, int amount, int index){
-		if(amount == 0){
-			return 1;
-		}
 		
-		if(index >= coins.length){
-			return 0;
-		}
-		
-		int ways = 0;
-		int amountFromCoin = 0;
-		
-		while(amountFromCoin <= amount){
-			int remainder = amount - amountFromCoin;
-			ways += makeChange(coins, remainder, index + 1);
-			amountFromCoin += coins[index];
-			
-		}
-		
-		return ways;
 	}
 	
 	
