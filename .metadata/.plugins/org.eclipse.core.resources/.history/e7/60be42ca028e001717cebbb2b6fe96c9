@@ -24,12 +24,11 @@ public class Boxes {
 		for(int i = index + 1; i < boxes.size(); i++){
 			Box current = boxes.get(i);
 			if(current.canBeAbove(bottom)){
-				int height = createStacK(boxes, i);;
+				int height = createStacK(boxes, i + 1);;
 				maxHeight = Math.max(maxHeight, height);
 			}
 		}
 		
-		maxHeight += bottom.h;
 		return maxHeight;
 		
 	}

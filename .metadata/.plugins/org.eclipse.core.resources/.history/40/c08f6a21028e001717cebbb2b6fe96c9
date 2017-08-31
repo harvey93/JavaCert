@@ -9,7 +9,7 @@ public class Boxes {
 		Collections.sort(boxes, new BoxComparator());
 		int maxHeight = 0;
 		for(int i = 0; i < boxes.size(); i++){
-			int height = createStacK(boxes, i);
+			int height = createStack(boxes, i);
 			maxHeight = Math.max(maxHeight, height);
 		}
 		
@@ -17,22 +17,7 @@ public class Boxes {
 		
 	}
 	
-	public static int createStacK(ArrayList<Box> boxes, int index){
-		Box bottom = boxes.get(index);
-		
-		int maxHeight = 0;
-		for(int i = index + 1; i < boxes.size(); i++){
-			Box current = boxes.get(i);
-			if(current.canBeAbove(bottom)){
-				int height = createStacK(boxes, i);;
-				maxHeight = Math.max(maxHeight, height);
-			}
-		}
-		
-		maxHeight += bottom.h;
-		return maxHeight;
-		
-	}
+	
 	
 	
 	

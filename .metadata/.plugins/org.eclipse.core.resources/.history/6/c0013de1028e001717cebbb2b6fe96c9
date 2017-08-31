@@ -29,7 +29,6 @@ public class Boxes {
 			}
 		}
 		
-		maxHeight += bottom.h;
 		return maxHeight;
 		
 	}
