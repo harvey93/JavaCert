@@ -15,16 +15,6 @@ public class Parens {
 			result.add(String.copyValueOf(chars));
 			return;
 		}
-		
-		if(left < 0 || right < left){
-			return;
-		}
-		
-		chars[index] = '(';
-		generateParens(result, left - 1, right, chars, index + 1);
-		
-		chars[index] = ')';
-		generateParens(result, left, right - 1, chars, index + 1);
 	}
 	
 	

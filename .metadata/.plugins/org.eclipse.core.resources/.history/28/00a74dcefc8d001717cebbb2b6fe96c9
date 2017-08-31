@@ -16,10 +16,6 @@ public class Parens {
 			return;
 		}
 		
-		if(left < 0 || right < left){
-			return;
-		}
-		
 		chars[index] = '(';
 		generateParens(result, left - 1, right, chars, index + 1);
 		

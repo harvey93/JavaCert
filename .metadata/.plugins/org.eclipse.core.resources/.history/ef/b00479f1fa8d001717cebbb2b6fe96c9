@@ -43,7 +43,11 @@ public class Test {
 
 
 	public static void main(String[] args) {
-		System.out.println(Parens.generateParens(3));
+		ArrayList<Integer []> arr = Queens.eightQueens();
+		for(Integer [] a : arr){
+			System.out.println(Arrays.toString(a));
+		}
+		System.out.println(arr.size());
 	}
 }
 
