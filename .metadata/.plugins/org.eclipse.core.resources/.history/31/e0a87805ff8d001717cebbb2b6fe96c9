@@ -18,13 +18,6 @@ public class Coins {
 			return 0;
 		}
 		
-		String key = amount + "-" + index;
-		
-		if(memo.containsKey(key)){
-			System.out.println("in");
-			return memo.get(key);
-		}
-		
 		int ways = 0;
 		int amountFromCoin = 0;
 		
@@ -35,7 +28,6 @@ public class Coins {
 			
 		}
 		
-		memo.put(key, ways);
 		return ways;
 	}
 	

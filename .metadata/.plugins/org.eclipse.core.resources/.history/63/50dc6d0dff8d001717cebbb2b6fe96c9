@@ -21,7 +21,6 @@ public class Coins {
 		String key = amount + "-" + index;
 		
 		if(memo.containsKey(key)){
-			System.out.println("in");
 			return memo.get(key);
 		}
 		
@@ -35,7 +34,6 @@ public class Coins {
 			
 		}
 		
-		memo.put(key, ways);
 		return ways;
 	}
 	
