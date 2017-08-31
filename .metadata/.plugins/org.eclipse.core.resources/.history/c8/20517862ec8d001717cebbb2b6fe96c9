@@ -13,16 +13,8 @@ public class TowersOfHanoi {
 		moveDisks(size, t1, t2, t3);
 	}
 	
-	public void moveDisks(int n, Tower current, Tower aux, Tower dest){
-		if(n <= 0){
-			return;
-		}
+	public void moveDisks(int size, Tower current, Tower aux, Tower dest){
 		
-		moveDisks(n - 1, current, dest, aux);
-		
-		moveTop(current, dest);
-		
-		moveDisks(n - 1, aux, current, dest);
 	}
 	
 	public void moveTop(Tower current, Tower dest){

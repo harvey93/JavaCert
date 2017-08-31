@@ -8,50 +8,26 @@ public class TowersOfHanoi {
 	Tower t3;
 	int size;
 	
-	
 	public void solve(){
 		moveDisks(size, t1, t2, t3);
 	}
 	
-	public void moveDisks(int n, Tower current, Tower aux, Tower dest){
+	private void moveDisks(int n, Tower beg, Tower aux, Tower dest){
 		if(n <= 0){
 			return;
 		}
 		
-		moveDisks(n - 1, current, dest, aux);
+		moveDisks(n - 1, beg, dest, aux);
 		
-		moveTop(current, dest);
+		moveTop(beg, dest);
 		
-		moveDisks(n - 1, aux, current, dest);
+		moveDisks(n - 1, aux, beg, dest);
 	}
 	
-	public void moveTop(Tower current, Tower dest){
-		dest.add(current.get());
+	private void moveTop(Tower beg, Tower dest){
+		Disk top = beg.get();
+		dest.add(top);
 	}
-	
-	
-	
-	
-//	public void solve(){
-//		moveDisks(size, t1, t2, t3);
-//	}
-//	
-//	private void moveDisks(int n, Tower beg, Tower aux, Tower dest){
-//		if(n <= 0){
-//			return;
-//		}
-//		
-//		moveDisks(n - 1, beg, dest, aux);
-//		
-//		moveTop(beg, dest);
-//		
-//		moveDisks(n - 1, aux, beg, dest);
-//	}
-//	
-//	private void moveTop(Tower beg, Tower dest){
-//		Disk top = beg.get();
-//		dest.add(top);
-//	}
 	
 	public TowersOfHanoi(int size){
 		this.size = size;

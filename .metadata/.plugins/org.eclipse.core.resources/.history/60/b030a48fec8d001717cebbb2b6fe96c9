@@ -14,9 +14,6 @@ public class TowersOfHanoi {
 	}
 	
 	public void moveDisks(int n, Tower current, Tower aux, Tower dest){
-		if(n <= 0){
-			return;
-		}
 		
 		moveDisks(n - 1, current, dest, aux);
 		
