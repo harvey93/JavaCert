@@ -8,26 +8,10 @@ public class Coins {
 		return makeChange(coins, amount, 0);
 	}
 	
-	public static long makeChange(int[] coins, int amount, int index){
+	public static long makeChange(int[] coints, int amount, int index){
 		if(amount == 0){
 			return 1;
 		}
-		
-		
-		if(index >= coins.length){
-			return 0;
-		}
-		
-		int ways = 0;
-		int amountFromCoins = 0;
-		
-		while(amountFromCoins <= amount){
-			int remainder = amount - amountFromCoins;
-			ways += makeChange(coins, remainder, index + 1);
-			amountFromCoins += coins[index];
-		}
-		
-		return ways;
 	}
 	
 	

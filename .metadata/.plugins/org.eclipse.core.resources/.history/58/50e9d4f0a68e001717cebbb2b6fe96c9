@@ -3,32 +3,43 @@ import java.util.*;
 
 public class Coins {
 	
-	public static long makeChange(int amount){
-		int [] coins = {25, 10, 5, 1};
-		return makeChange(coins, amount, 0);
+	public static long makeChange(int n){
+		int[] coins = {25, 10, 5, 1};
+		HashMap<String, Integer> memo = new HashMap<>();
+		return makeChange(coins, n, 0, memo);
 	}
 	
-	public static long makeChange(int[] coins, int amount, int index){
+	public static long makeChange(int[] coins, int amount, int index, HashMap<String, Integer> memo){
 		if(amount == 0){
 			return 1;
 		}
-		
 		
 		if(index >= coins.length){
 			return 0;
 		}
 		
-		int ways = 0;
-		int amountFromCoins = 0;
+		String key = amount + "-" + index;
 		
-		while(amountFromCoins <= amount){
-			int remainder = amount - amountFromCoins;
-			ways += makeChange(coins, remainder, index + 1);
-			amountFromCoins += coins[index];
+		if(memo.containsKey(key)){
+			System.out.println("in");
+			return memo.get(key);
 		}
 		
+		int ways = 0;
+		int amountFromCoin = 0;
+		
+		while(amountFromCoin <= amount){
+			int remainder = amount - amountFromCoin;
+			ways += makeChange(coins, remainder, index + 1, memo);
+			amountFromCoin += coins[index];
+			
+		}
+		
+		memo.put(key, ways);
 		return ways;
 	}
+	
+	
 	
 	
 	

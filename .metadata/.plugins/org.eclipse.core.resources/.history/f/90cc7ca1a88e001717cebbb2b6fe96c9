@@ -12,7 +12,7 @@ public class Coins {
 		if(amount == 0){
 			return 1;
 		}
-		
+		System.out.println(index);
 		
 		if(index >= coins.length){
 			return 0;

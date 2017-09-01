@@ -13,21 +13,9 @@ public class Coins {
 			return 1;
 		}
 		
-		
 		if(index >= coins.length){
-			return 0;
+			
 		}
-		
-		int ways = 0;
-		int amountFromCoins = 0;
-		
-		while(amountFromCoins <= amount){
-			int remainder = amount - amountFromCoins;
-			ways += makeChange(coins, remainder, index + 1);
-			amountFromCoins += coins[index];
-		}
-		
-		return ways;
 	}
 	
 	
