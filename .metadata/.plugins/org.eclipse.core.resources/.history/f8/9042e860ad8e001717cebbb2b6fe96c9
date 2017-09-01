@@ -12,17 +12,15 @@ public class Queens {
 	}
 	
 	public static void eightQueens(ArrayList<Integer []> result, Integer [] cols, int row){
-		if(row == GRID_SIZE){
+		if(cols.length == GRID_SIZE){
 			result.add(cols);
 			return;
 		}
 		
-		for(int col = 0; col < GRID_SIZE; col++){
-		
+		for(int col = 0; col < cols.length; col++){
+			
 			if(checkValid(cols, row, col)){
 				
-				cols[row] = col;
-				eightQueens(result, cols, row + 1);
 			}
 		}
 	}
@@ -40,7 +38,7 @@ public class Queens {
 			int colDiff = Math.abs(col1 - col2);
 			int rowDiff = row1 - row2;
 			
-			if(colDiff == rowDiff){
+			if(){
 				res = false;
 				break;
 			}

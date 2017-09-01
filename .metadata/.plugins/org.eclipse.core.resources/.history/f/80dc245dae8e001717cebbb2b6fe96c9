@@ -12,7 +12,7 @@ public class Queens {
 	}
 	
 	public static void eightQueens(ArrayList<Integer []> result, Integer [] cols, int row){
-		if(row == GRID_SIZE){
+		if(cols.length == GRID_SIZE){
 			result.add(cols);
 			return;
 		}
