@@ -30,13 +30,12 @@ public class Boxes {
 		for(int i = index + 1; i < boxes.size(); i++){
 			Box current = boxes.get(i);
 			if(current.canBeAbove(bottom)){
-				int height = createStack(boxes, i, memo);
+				int height = createStack(boxes, i);
 				maxHeight = Math.max(maxHeight, height);
 			}
 		}
 		
 		maxHeight += bottom.h;
-		memo.put(index, maxHeight);
 		return maxHeight;
 	}
 	
