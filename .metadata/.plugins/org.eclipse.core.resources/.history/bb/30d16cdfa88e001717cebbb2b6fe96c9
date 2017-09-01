@@ -34,7 +34,6 @@ public class Coins {
 			amountFromCoins += coins[index];
 		}
 		
-		memo.put(key, ways);
 		return ways;
 	}
 	
