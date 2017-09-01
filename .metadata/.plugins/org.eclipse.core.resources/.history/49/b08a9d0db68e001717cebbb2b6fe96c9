@@ -27,7 +27,7 @@ public class Boxes {
 			Box current = boxes.get(i);
 			if(current.canBeAbove(bottom)){
 				int height = createStack(boxes, i);
-				maxHeight = Math.max(maxHeight, height);
+				maxHeight = Math.abs(maxHeight, height);
 			}
 		}
 		

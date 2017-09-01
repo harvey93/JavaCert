@@ -54,7 +54,7 @@ public class Test {
 		list.add(new Box(3, 13, 3));
 		list.add(new Box(2, 2, 2));
 
-		System.out.println(Boxes.createStack(list));
+		System.out.println(Boxes.createStack(boxes));
 	}
 }
 

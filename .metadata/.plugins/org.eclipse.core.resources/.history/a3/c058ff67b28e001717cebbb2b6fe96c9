@@ -13,26 +13,7 @@ public class Boxes {
 			maxHeight = Math.max(maxHeight, height);
 		}
 				
-		return maxHeight;
-	}
-	
-	
-	public static int createStack(ArrayList<Box> boxes, int index){
 		
-		Box bottom = boxes.get(index);
-		
-		int maxHeight = 0;
-		
-		for(int i = index + 1; i < boxes.size(); i++){
-			Box current = boxes.get(i);
-			if(current.canBeAbove(bottom)){
-				int height = createStack(boxes, i);
-				maxHeight = Math.max(maxHeight, height);
-			}
-		}
-		
-		maxHeight += bottom.h;
-		return maxHeight;
 	}
 	
 	
